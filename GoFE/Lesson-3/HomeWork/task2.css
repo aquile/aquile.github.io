@@ -1,0 +1,6 @@
+article :nth-child(2) {
+    font-size: 30px;
+}
+article :nth-child(4) {
+    color: #999;
+}
