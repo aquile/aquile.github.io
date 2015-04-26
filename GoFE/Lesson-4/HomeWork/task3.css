@@ -2,31 +2,40 @@
     display: inline-block;
     text-align: center;
 }
+
 a {
+    color: violet;
     text-decoration: none;
     font-family: arial;
     font-weight: bold;
     line-height: 30px;
     text-align: center;
 }
+
 .first::before {
     content: '<< ';
+    color: violet;
 }
+
 .last::after {
     content: ' >>';
+    color: violet;
 }
+
 .first, .last {
     width: 70px;
     height: 30px;
     margin: 0 20px;
 }
+
 .number {
     border: 2px solid grey;
     border-radius: 10px;
     width: 30px;
     height: 30px;
 }
+
 .number:hover {
-    background-color: violet;
+    background-color: darkviolet;
     color: white;
 }
