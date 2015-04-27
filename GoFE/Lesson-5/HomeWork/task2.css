@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
 }
+
 .planoffer__header {
     height: 73px;
     width: 288px;
@@ -17,18 +18,21 @@
     line-height: 73px;
     font-weight: bold;
 }
+
 .planoffer__name {
     font-size: 24px;
     text-align: center;
     margin: 23px 0 27px 0;
     color: #3f4042;
 }
+
 .planoffer__price {
     width: 150px;
     height: 70px;
     position: relative;
     margin: 0 auto;
 }
+
 .planoffer__currency {
     position: relative;
     top: 0;
@@ -37,6 +41,7 @@
     font-weight: bold;
     color: #35495a;
 }
+
 .planoffer__value {
     position: relative;
     top: -25px;
@@ -45,6 +50,7 @@
     font-weight: bold;
     color: #35495a;
 }
+
 .planoffer__period {
     font-size: 18px;
     color: #35495a;
@@ -52,16 +58,19 @@
     top: -55px;
     right: -90px;
 }
+
 .planoffer__details {
     display: block;
     position: relative;
     margin: 27px 14px 0;
     color: #888c94;
 }
+
 .planoffer__details ul {
     padding-left: 0;
 
 }
+
 .planoffer__details li {
     width: 167px;
     height: 33px;
@@ -70,9 +79,11 @@
     padding-left: 65px;
     line-height: 33px;
 }
+
 .planoffer__details ul li:nth-child(even) {
     background-color: #f5f5f6;
 }
+
 .planoffer__details ul li:nth-child(odd) {
     background-color: #edf5fd;
 }
@@ -86,6 +97,7 @@
     margin-left: -34px;
     margin-top: 9px;
 }
+
 .planoffer__button {
     display: block;
     background-color: #ee8129;
