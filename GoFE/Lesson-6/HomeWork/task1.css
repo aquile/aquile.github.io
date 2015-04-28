@@ -1,20 +1,24 @@
 
-.planofferbox {
+.planoffer__box {
 
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
     max-width: 870px;
     margin: auto;
 }
+.planofferbox__header {
+    display: inline-block;
 
-.planofferbox > h1 {
+}
+.planoffer__box > h1 {
     font-weight: bold;
     font-size: 30px;
     text-transform: uppercase;
     color: #54626b;
     text-align: center;
+    height: 65px;
 }
 
-.planoffers {
+.planoffer__items {
     position: relative;
     margin: 0 auto;
 }
@@ -150,8 +154,9 @@
 .planoffer__mainbox.standard {
     position: relative;
     left: 0;
+    top: 11px;
     width: 287px;
-    height: 468px;
+    height: 441px;
     border: 1px solid #e8eaec;
     border-radius: 4px;
     box-sizing: border-box;
@@ -279,8 +284,9 @@
 .planoffer__mainbox.ultimate {
     position: relative;
     left: 0;
+    top: 11px;
     width: 287px;
-    height: 468px;
+    height: 441px;
     border: 1px solid #e8eaec;
     border-radius: 4px;
     box-sizing: border-box;
