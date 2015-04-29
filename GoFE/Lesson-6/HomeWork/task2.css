@@ -1,0 +1,32 @@
+.feedback {
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    width: 1400px;
+    height: 315px;
+    background-image: url('Rectangle-35 copy.png');
+}
+.feedback__header {
+    height: 90px;
+    font-size: 40px;
+    line-height: 90px;
+    vertical-align: bottom;
+    text-align: center;
+}
+.feedback__header.orange {
+    color: #ee8129;
+
+}
+.feedback__header.blue {
+    color: #3170a8;
+}
+.feedback__photo {
+    width: 99px;
+    height: 98px;
+}
+
+.feedback__photo.stasia {
+    background-image: url('Layer-94.png');
+}
+
+.feedback__photo.david {
+    background-image: url('Layer-95.png');
+}
