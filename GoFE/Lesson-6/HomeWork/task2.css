@@ -34,7 +34,7 @@ footer, header, menu, nav, section {
 .feedback {
     position: relative;
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
-    width: 1400px;
+    width: 100%;
     height: 315px;
     background-image: url('Rectangle-35 copy.png');
 }
@@ -57,6 +57,27 @@ footer, header, menu, nav, section {
     vertical-align: -11px;
 }
 
+.feedbackbox {
+    position: relative;
+    width: 100%;
+    height: 225px;
+}
+
+.feedback__boxinside {
+    display: inline-block;
+    position: relative;
+    width: 490px;
+    height: 98px;
+    margin-top: 45px;
+}
+
+.stasia.feedback__boxinside {
+    margin-left: 210px;
+}
+.david.feedback__boxinside {
+    margin-left: 60px;
+}
+
 .feedback__photo {
     width: 99px;
     height: 98px;
@@ -64,20 +85,16 @@ footer, header, menu, nav, section {
 
 .feedback__photo.stasia {
     background-image: url('Layer-94.png');
-    position: absolute;
-    top: 138px;
-    left: 190px;
+    position: relative;
+    top: -3px;
+
 }
 
 .feedback__photo.david {
     background-image: url('Layer-95.png');
-    position: absolute;
-    top: 138px;
-    right: 580px;
-}
+    position: relative;
+    top: -3px;
 
-.feedbackbox {
-    width: 100%;
 }
 
 .stasia, .david {
@@ -85,21 +102,20 @@ footer, header, menu, nav, section {
 }
 
 .feedback__message {
-    position: absolute;
+    position: relative;
+    left: 23px;
     width: 364px;
     height: 98px;
     background: #ffffff;
 }
 
 .feedback__message.stasia {
-     left: 315px;
-     top: 138px;
- }
-.feedback__message.david {
-    right: 189px;
-    top: 138px;
+
 }
 
+.feedback__message.david {
+
+}
 
 .feedback__message__name::before {
     content: "- ";
