@@ -249,6 +249,7 @@ header {
     background: url("middle-banner.png") no-repeat center;
     overflow-y: auto;
 }
+
 @media (max-width: 1000px) {
     .middle-banner {
         padding: 3vw 6vw 2px;
@@ -713,8 +714,10 @@ a.planoffer__button.best:hover {
 @media (max-width: 870px) {
     .planoffer__mainbox {
         display: block;
+        margin: 0 auto;
     }
 }
+
 /*
 @keyframes standard-offer-plan-dance {
     from {
@@ -780,7 +783,8 @@ a.planoffer__button.best:hover {
 }
 
 .feedback__header {
-    height: 6vw;
+    -height: 6vw;
+    height: 90px;
     font-size: 40px;
     line-height: 90px;
     vertical-align: baseline;
@@ -789,13 +793,11 @@ a.planoffer__button.best:hover {
 
 .feedback__header__orange {
     color: #ee8129;
-   -vertical-align: -11px;
-}
+   }
 
 .feedback__header__blue {
     color: #3170a8;
-    -vertical-align: -11px;
-}
+   }
 
 .feedbackbox {
     position: relative;
@@ -898,34 +900,14 @@ a.planoffer__button.best:hover {
     float: right;
 }
 
-@media (max-width: 1470px)and (min-width: 1270px) {
-    .feedback {
-        padding: 0 10vw;
-    }
-}
-
-@media (max-width: 1269px)and (min-width: 1160px) {
-    .feedback {
-        padding: 0 6vw;
-    }
-}
-
-@media (max-width: 1159px)and (min-width: 1080px) {
+@media (max-width: 1470px) {
     .feedback {
         padding: 0 4vw;
     }
-}
-@media (max-width: 1079px) {
-    .feedback {
-        padding: 0 4vw;
-    }
-    .feedback__header {
-        font-size: 40px;
-        line-height: 90px;
-        vertical-align: baseline;
-        text-align: center;
-    }
-    .feedback__boxinside {
-        margin-top: 15px;
+
+    .feedback__boxinside.left, .feedback__boxinside.right {
+        float: none;
+        margin: 15px auto 0;
+        display: block;
     }
 }
