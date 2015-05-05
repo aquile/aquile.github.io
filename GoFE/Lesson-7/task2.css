@@ -37,7 +37,7 @@ body {
 
 header {
     max-width: 1400px;
-    height: 115px;
+    min-height: 115px;
     padding: 0 189px;
     margin: 0 auto;
 }
@@ -50,10 +50,26 @@ header {
     margin-left: 164px;
 }
 
+@media (max-width: 1450px) and (min-width: 1271px) {
+    .navigation {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1270px) {
+    header {
+        padding: 20px 20px 0;
+    }
+
+    .navigation {
+        margin-left: 0;
+    }
+}
+
 .logo {
     vertical-align: -1em;
     transform: scale(1, 1);
-    transition: all 0.5s;
+    transition: transform 0.5s;
 }
 
 .logo:hover {
@@ -89,10 +105,9 @@ header {
 }
 
 .banner {
-    content: " ";
-    background-image: url(Banner-witout-text.png);
-    width: 1400px;
-    height: 585px;
+    background: url(Banner-witout-text.png) no-repeat center;
+    max-width: 1400px;
+    min-height: 585px;
     margin: 0 auto;
     padding-top: 150px;
 }
@@ -124,6 +139,22 @@ header {
     padding-top: 28px;
 }
 
+@media (max-width: 800px) {
+    .banner {
+        min-height: 5vw;
+        padding-top: 9vw;
+        padding-bottom: 20px;
+    }
+
+    .text-block1 {
+        font-size: 2em;
+    }
+
+    .text-block2 {
+        font-size: 2.5em;
+    }
+}
+
 .banner__button {
     width: 247px;
     height: 59px;
@@ -148,10 +179,10 @@ header {
 }
 
 .white-banner {
-    width: 1400px;
-    height: 565px;
+    max-width: 1400px;
+    min-height: 565px;
     text-align: center;
-    padding: 68px 189px;
+    padding: 4vw 16vw;
     margin: 0 auto;
 }
 
@@ -161,15 +192,24 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     color: #41525c;
-    margin-bottom: 50px;
-
+    margin-bottom: 4vw;
 }
 
-.white-banner > div {
+.details-block {
     display: inline-block;
     text-align: center;
     width: 33%;
     padding: 25px;
+    transform: scale(1, 1);
+    transition: transform 0.5s;
+}
+
+@media (max-width: 1260px) {
+    .white-banner {
+        width: 100%;
+        padding: 4vw 1vw;
+        margin: 0 auto;
+    }
 }
 
 .white-banner > div h2 {
@@ -192,11 +232,6 @@ header {
     transition: transform 1s;
 }
 
-.details-block {
-    transform: scale(1, 1);
-    transition: transform 0.5s;
-}
-
 .details-block:hover {
     transform: scale(1.1, 1.1);
 }
@@ -206,12 +241,18 @@ header {
 }
 
 .middle-banner {
-    width: 1400px;
+    max-width: 116.67rem;
     height: 577px;
     text-align: left;
-    padding: 75px 189px;
+    padding: 75px 16vw 0;
     margin: 0 auto;
-    background-image: url("middle-banner.png");
+    background: url("middle-banner.png") no-repeat center;
+    overflow-y: auto;
+}
+@media (max-width: 1000px) {
+    .middle-banner {
+        padding: 3vw 6vw 2px;
+    }
 }
 
 .middle-banner h1 {
@@ -267,7 +308,7 @@ header {
 .planoffer__box {
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
     max-width: 900px;
-    height: 708px;
+    min-height: 708px;
     margin: 0 auto;
     padding-top: 70px;
 }
@@ -669,6 +710,12 @@ a.planoffer__button.best:hover {
     width: 253px;
 }
 
+@media (max-width: 870px) {
+    .planoffer__mainbox {
+        display: block;
+    }
+}
+/*
 @keyframes standard-offer-plan-dance {
     from {
         transform: rotateX(0deg);
@@ -719,6 +766,7 @@ a.planoffer__button.best:hover {
 .ultimate .planoffer__mainbox:hover {
     1.5s ultimate-offer-plan-dance;
 }
+*/
 
 /* FEEDBACK BANNER **********************************************************************************************/
 .feedback {
@@ -726,13 +774,13 @@ a.planoffer__button.best:hover {
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
     max-width: 1400px;
     height: 315px;
-    background-image: url('Rectangle-35 copy.png');
+    background: url('Rectangle-35 copy.png') no-repeat center;
     margin: 0 auto;
     padding: 0 189px;
 }
 
 .feedback__header {
-    height: 90px;
+    height: 6vw;
     font-size: 40px;
     line-height: 90px;
     vertical-align: baseline;
@@ -741,12 +789,12 @@ a.planoffer__button.best:hover {
 
 .feedback__header__orange {
     color: #ee8129;
-    vertical-align: -11px;
+   -vertical-align: -11px;
 }
 
 .feedback__header__blue {
     color: #3170a8;
-    vertical-align: -11px;
+    -vertical-align: -11px;
 }
 
 .feedbackbox {
@@ -765,14 +813,6 @@ a.planoffer__button.best:hover {
     width: 490px;
     height: 98px;
     margin-top: 45px;
-}
-
-.stasia.feedback__boxinside {
-    margin-left: 210px;
-}
-
-.david.feedback__boxinside {
-    margin-left: 60px;
 }
 
 .feedback__photo {
@@ -856,4 +896,36 @@ a.planoffer__button.best:hover {
 
 .feedback__boxinside.right {
     float: right;
+}
+
+@media (max-width: 1470px)and (min-width: 1270px) {
+    .feedback {
+        padding: 0 10vw;
+    }
+}
+
+@media (max-width: 1269px)and (min-width: 1160px) {
+    .feedback {
+        padding: 0 6vw;
+    }
+}
+
+@media (max-width: 1159px)and (min-width: 1080px) {
+    .feedback {
+        padding: 0 4vw;
+    }
+}
+@media (max-width: 1079px) {
+    .feedback {
+        padding: 0 4vw;
+    }
+    .feedback__header {
+        font-size: 40px;
+        line-height: 90px;
+        vertical-align: baseline;
+        text-align: center;
+    }
+    .feedback__boxinside {
+        margin-top: 15px;
+    }
 }
