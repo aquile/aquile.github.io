@@ -718,7 +718,7 @@ a.planoffer__button.best:hover {
     }
 }
 
-/*
+
 @keyframes standard-offer-plan-dance {
     from {
         transform: rotateX(0deg);
@@ -769,7 +769,7 @@ a.planoffer__button.best:hover {
 .ultimate .planoffer__mainbox:hover {
     1.5s ultimate-offer-plan-dance;
 }
-*/
+
 
 /* FEEDBACK BANNER **********************************************************************************************/
 .feedback {
