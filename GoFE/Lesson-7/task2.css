@@ -147,16 +147,16 @@ header {
 @media (max-width: 800px) {
     .banner {
         min-height: 5vw;
-        padding-top: 9vw;
+        padding-top: 5vw;
         padding-bottom: 20px;
     }
 
     .text-block1 {
-        font-size: 2em;
+        font-size: 1.5rem;
     }
 
     .text-block2 {
-        font-size: 2.5em;
+        font-size: 2rem;
     }
 }
 
@@ -735,7 +735,7 @@ a.planoffer__button.best:hover {
     width: 253px;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 950px) {
     .planoffer__mainbox {
         display: block;
         margin: 0 auto;
