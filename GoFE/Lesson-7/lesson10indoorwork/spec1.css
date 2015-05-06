@@ -34,7 +34,8 @@ body {
 }
 
 .home {
-    padding: 20px;
+   - margin: 20px -20px;
+    overflow: auto;
 }
 
 .block {
@@ -53,6 +54,7 @@ body {
     width: 85px;
     height: 85px;
     border: 1px solid transparent;
+    box-sizing: border-box;
     border-radius: 3px;
     overflow: hidden;
     background-image: url(http://lorempixel.com/85/85/);
@@ -60,14 +62,23 @@ body {
     margin-right: 30px;
 }
 
+.left {
+    -margin-right: 40px;
+    float: left;
+}
+.right {
+    margin-left: -5px;
+    float: right;
+}
+.up {
+    margin-bottom: 30px;
+}
+
 .text {
     width: 100%;
     font-family: monospace;
     font-size: 14px;
-    color: #959595;}
-
-.left .text {
-    padding-right: 40px;
+    color: #959595;
 }
 
 .text p {
@@ -75,16 +86,13 @@ body {
     font-size: 22px;
     color: #637f83;
 }
+
 .text:after {
     content: "+more";
     color: orange;
 }
-.up {
-    margin-bottom: 30px;
-}
-.right {
-    margin-right: -20px;
-}
+
+
 /*@media (max-width: 1400px) {
     .block {
         display: block;
