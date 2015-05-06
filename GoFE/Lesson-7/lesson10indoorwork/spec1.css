@@ -34,7 +34,6 @@ body {
 }
 
 .home {
-   - margin: 20px -20px;
     overflow: auto;
 }
 
@@ -63,13 +62,15 @@ body {
 }
 
 .left {
-    -margin-right: 40px;
     float: left;
+    padding-right: 20px;
 }
+
 .right {
-    margin-left: -5px;
     float: right;
+    padding-left: 20px;
 }
+
 .up {
     margin-bottom: 30px;
 }
@@ -93,12 +94,3 @@ body {
 }
 
 
-/*@media (max-width: 1400px) {
-    .block {
-        display: block;
-        width: 85%;
-    }
-}
-.up, .down {
-    margin: 15px 20px;
-}
