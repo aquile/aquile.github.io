@@ -1,6 +1,4 @@
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -59,6 +57,8 @@ header {
 @media (max-width: 1270px) {
     header {
         padding: 20px 20px 0;
+        text-align: center;
+        margin-bottom: 1px;
     }
 
     .navigation {
@@ -68,11 +68,16 @@ header {
 
 .logo {
     vertical-align: -1em;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
     transform: scale(1, 1);
+    -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
 }
 
 .logo:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
 }
 
@@ -105,7 +110,7 @@ header {
 }
 
 .banner {
-    background: url(Banner-witout-text.png) no-repeat center;
+    background: url('banner-under-the-header.jpg') no-repeat center;
     max-width: 1400px;
     min-height: 585px;
     margin: 0 auto;
@@ -200,7 +205,10 @@ header {
     text-align: center;
     width: 33%;
     padding: 25px;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
     transform: scale(1, 1);
+    -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;
 }
 
@@ -210,6 +218,13 @@ header {
         padding: 4vw 1vw;
         margin: 0 auto;
     }
+}
+
+@media (max-width: 900px) {
+    .details-block {
+        width: 49%;
+    }
+
 }
 
 .white-banner > div h2 {
@@ -228,31 +243,39 @@ header {
 }
 
 .details-block a {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
+    -webkit-transition: -webkit-transform 1s;
     transition: transform 1s;
 }
 
 .details-block:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
 }
 
 .details-block:hover a {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 
 .middle-banner {
-    max-width: 116.67rem;
+    max-width: 1400px;
     height: 577px;
     text-align: left;
-    padding: 75px 16vw 0;
+    padding: 75px 189px 0;
     margin: 0 auto;
-    background: url("middle-banner.png") no-repeat center;
+    background: url("banner-on-the-meddle-position.jpg") no-repeat center;
     overflow-y: auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1250px) {
     .middle-banner {
-        padding: 3vw 6vw 2px;
+        padding: 3vw 8vw 2px;
     }
 }
 
@@ -311,7 +334,7 @@ header {
     max-width: 900px;
     min-height: 708px;
     margin: 0 auto;
-    padding-top: 70px;
+    padding: 70px 20px 10px;
 }
 
 .planofferbox__header {
@@ -326,6 +349,7 @@ header {
     color: #54626b;
     text-align: center;
     height: 65px;
+    margin-bottom: 5px;
 }
 
 .planoffer__items {
@@ -716,49 +740,95 @@ a.planoffer__button.best:hover {
         display: block;
         margin: 0 auto;
     }
+
+    .planoffer__box {
+        padding: 30px;
+    }
 }
 
-
-@keyframes standard-offer-plan-dance {
+@-webkit-keyframes standard-offer-plan-dance {
     from {
+        -webkit-transform: rotateX(0deg);
         transform: rotateX(0deg);
     }
     to {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes standard-offer-plan-dance {
+    from {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+    to {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+}
+
+@-webkit-keyframes best-value-offer-plan-dance {
+    from {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+    to {
+        -webkit-transform: rotateX(360deg);
         transform: rotateX(360deg);
     }
 }
 
 @keyframes best-value-offer-plan-dance {
     from {
+        -webkit-transform: rotateX(0deg);
         transform: rotateX(0deg);
     }
     to {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+    }
+}
+
+@-webkit-keyframes offer-plan-dance {
+    from {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+    to {
+        -webkit-transform: rotateX(360deg);
         transform: rotateX(360deg);
     }
 }
 
 @keyframes offer-plan-dance {
     from {
+        -webkit-transform: rotateX(0deg);
         transform: rotateX(0deg);
     }
     to {
+        -webkit-transform: rotateX(360deg);
         transform: rotateX(360deg);
     }
 }
 
 .standard .planoffer__mainbox {
+    -webkit-transition: 1s standard-offer-plan-dance 1 ease-out;
     transition: 1s standard-offer-plan-dance 1 ease-out;
 }
 
 .planoffer__mainbox {
+    -webkit-transition: 1s best-value-offer-plan-dance 1 ease-out;
     transition: 1s best-value-offer-plan-dance 1 ease-out;
 }
 
 .ultimate .planoffer__mainbox {
+    -webkit-transition: 1s ultimate-offer-plan-dance 1 ease-out;
     transition: 1s ultimate-offer-plan-dance 1 ease-out;
 }
 
 .planoffer__mainbox:hover {
+    -webkit-animation: 1.5s best-value-offer-plan-dance;
     animation: 1.5s best-value-offer-plan-dance;
 }
 
@@ -770,20 +840,18 @@ a.planoffer__button.best:hover {
     1.5s ultimate-offer-plan-dance;
 }
 
-
 /* FEEDBACK BANNER **********************************************************************************************/
 .feedback {
     position: relative;
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
     max-width: 1400px;
     height: 315px;
-    background: url('Rectangle-35 copy.png') no-repeat center;
+    background: url('banner-above-the-footer.jpg') no-repeat center;
     margin: 0 auto;
     padding: 0 189px;
 }
 
 .feedback__header {
-    -height: 6vw;
     height: 90px;
     font-size: 40px;
     line-height: 90px;
@@ -793,11 +861,11 @@ a.planoffer__button.best:hover {
 
 .feedback__header__orange {
     color: #ee8129;
-   }
+}
 
 .feedback__header__blue {
     color: #3170a8;
-   }
+}
 
 .feedbackbox {
     position: relative;
@@ -815,11 +883,7 @@ a.planoffer__button.best:hover {
     width: 490px;
     height: 98px;
     margin-top: 45px;
-}
-
-.feedback__photo {
-    width: 99px;
-    height: 98px;
+    box-sizing: content-box;
 }
 
 .feedback__photo.stasia {
@@ -832,12 +896,19 @@ a.planoffer__button.best:hover {
     position: relative;
 }
 
+.feedback__photo {
+    width: 99px;
+    height: 98px;
+    top: -15px;
+}
+
 .feedback__message {
     position: relative;
     left: 23px;
     width: 364px;
     height: 98px;
     background: #ffffff;
+    padding: 15px;
 }
 
 .feedback__message__name::before {
@@ -851,8 +922,7 @@ a.planoffer__button.best:hover {
 
 .feedback__message__textfeedback {
     position: relative;
-    left: 17px;
-    top: 20px;
+    top: 11px;
     width: 330px;
     height: 60px;
     border-top: 2px dotted #666666;
@@ -864,26 +934,18 @@ a.planoffer__button.best:hover {
 
 .feedback__message__name {
     position: relative;
-    left: 15px;
-    top: 11px;
+    float: left;
 }
 
 .feedback__message__customer {
     position: relative;
-    right: -140px;
-    top: 11px;
-}
-
-.feedback__message__customer.david {
-    position: relative;
-    right: -170px;
-    top: 11px;
+    float: right;
 }
 
 .feedback__message__narrov {
     position: relative;
-    top: -40px;
-    left: -32px;
+    top: -48px;
+    left: -46px;
     width: 0;
     height: 0;
     border-top: 12px solid transparent;
@@ -905,9 +967,48 @@ a.planoffer__button.best:hover {
         padding: 0 4vw;
     }
 
+    .feedbackbox {
+        top: -20px;
+    }
+
     .feedback__boxinside.left, .feedback__boxinside.right {
         float: none;
         margin: 15px auto 0;
         display: block;
     }
 }
+
+.banner-befor-footer {
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    text-align: left;
+    max-width: 1400px;
+    height: 345px;
+    padding: 45px 0 35px 189px;
+}
+
+.facebook, .twitter, .in {
+    display: inline-block;
+}
+.facebook a, .twitter a, .in a {
+    width: 50px;
+    height: 50px;
+}
+
+
+.google_map {
+    width: 50%;
+    height: 345px;
+}
+
+
+.footer {
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    max-width: 1400px;
+    height: 100px;
+    text-align: center;
+    background: #3070a8;
+    padding: 25px;
+}
+
+
+
