@@ -34,13 +34,13 @@ body {
 }
 
 .home {
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .block {
     display: inline-block;
     width: 50%;
-    height: 85px;
+    min-height: 85px;
     border: 1px solid transparent;
     box-sizing: border-box;
 }
@@ -79,8 +79,9 @@ body {
     content: "+more";
     color: orange;
 }
-
-
+.up {
+    margin-bottom: 30px;
+}
 .right {
     margin-right: -20px;
 }
