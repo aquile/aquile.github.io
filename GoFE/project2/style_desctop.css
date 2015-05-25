@@ -153,7 +153,12 @@
     box-shadow: none;
     border: 1px solid #e6e6e6;
     padding-left: 17px;
-    color: #333333;
+    color: #b4adad;
+    font-size: 13px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.welcome__banner--form > input:active {
+    color: #333;
 }
 
 .welcome__banner--form--select-wrapper {
