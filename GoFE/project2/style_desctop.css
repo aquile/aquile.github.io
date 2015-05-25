@@ -53,14 +53,7 @@
 }
 
 .header__social {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 135px;
-    height: 77px;
-    visibility: visible;
-!important;
-    z-index: 2;
+    float: right;
 }
 
 .header__social--wrapper-connect {

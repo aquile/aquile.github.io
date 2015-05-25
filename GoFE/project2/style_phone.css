@@ -21,7 +21,7 @@
         display: block;
         text-align: center;
         position: relative;
-        top: 0;
+        top: -58px;
         margin: 0 auto;
     }
 
@@ -30,20 +30,24 @@
         text-align: center;
         width: 173px;
         border-bottom: 1px solid #2980b9;
-        bottom: 0;
         color: white;
         text-decoration: none;
         font-size: 20px;
         margin: 0 auto;
-        padding-top: 11px;
+        padding-bottom: 5px;
         line-height: 24px;
+        position: relative;
+        top: -52px;
     }
 
     .header__social {
+        float: none;
         display: block;
-        position: relative;
-
+        width: 132px;
         margin: 0 auto;
+        position: relative;
+        bottom: -84px;
+        line-height: 20px;
     }
 
     .header__social--wrapper-connect {

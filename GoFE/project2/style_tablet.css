@@ -31,8 +31,7 @@
     }
 
     .header__social {
-        position: absolute;
-        right: 0;
+       float: right;
     }
 
     .header__social--wrapper-connect {
