@@ -16,7 +16,7 @@
 }
 
 .wrapper {
-    width: 1145px;
+    max-width: 1145px;
     height: 550px;
     position: relative;
     margin: 0 auto;

@@ -992,22 +992,47 @@ a.planoffer__button.best:hover {
     height: 345px;
     vertical-align: top;
 }
+
 .contacts {
     padding: 45px 0 35px 189px;
     margin-right: -4px;
+}
+
+.public {
+    padding-left: 60px;
 }
 
 .text {
     font-size: 14px;
     color: #666;
     line-height: 2.1;
+    padding-left: 60px;
+    position: relative;
 }
 
-.contacts:nth-child(1)::before {
-    content: " ";
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAfCAYAAAAMeVbNAAADE0lEQVRIx6WWa2jNYRzHnx2X3I7huJ5SbqcxjUm2SGcvrFymxDgbWkvW1JLEKyK5NErLC29IOkIMI14glJDmuqaNmktySTkYlksu4+/7q+9TT0/POf//8uLT6Xn+z+97nuf3/C6Pyl9brxxkgYFgGtgOboPPoBN0gLugFhSAQbLe8zxl4xLuBxaCs+AL+AvegUegCbSCFPgDvoHzoAz09xPvA/ZQzAM3QQ2YASaCHJALpoNqcJ3rPoC9Yp9OvCd34dEFFXSP8mERxcXuKuhti/cFdXSBHL84oLC+n5mgmfb7QViLy8cF9ON7MAd0N4xDIA+sAOvASjAFdJPvIsI1xXRnOyiXOfkwAJzmv1ZxoRaWiNkNnoEkI+cAeEIfR7QLaFdO91yUKJLJyYyKO5YrelHoCBhmuSLCb4fEpeYlYnwF/ACFMtjEXddYAmvASTA8ja+HguNgiyVewXyolcEN3nah5Y6UNecij7ZRQ1zu4w1olMFHRkiOYRQHLwJGy30w3xAfw7lPike4x0ltUMI7CCJ+ASw1xEfSG50y+AoegJhhIDXlLRMrk7CE42MwyxAfBW5JaVB0ySswycrW12Cuj3gR3Ro2xCfwD9tkcBD8ArMtwyWM15gjW2U8lt+rrWgpYkE7KoNShuIuh8Bm0AAWM9Z7gCHM6HqwTbLZEt/IRKrUPnrJLAw5ym+Cl9bCi5ffS2C56Q5DvJlhHNMCSe6+LIN/JWnywQhz3hIu4a5PgGx9/AQvpoXHVkExhCOMOulUlaKrFw0G13ix6x3uySjODa4GP5kfUbtZJHgkaWXjuyguCdhI+ypXJ5LdnmPG7tT1OgAhRtVvcFkiKl0PHcekEv/PCygeZ3S0SX3K1KCzeBkdrGyjfYSj4DmTZpWcwu9pEQbH6L8GdirXumzWe1l3xuxKmcQVy28rd7SVXcl+KWxgB3sq3Szoo0gzlcWrnd3Ffk6kSNwl7Ceu2HC/M/4LOJfLOWFZOuEg4vKe2cHkeMhcaOKf1blqS1fEdfYmGf/6MXpK15j/FdeRsY/ih/myVX7i/wAE3veOR2FEgwAAAABJRU5ErkJggg==");
-    background-repeat: no-repeat;
-    background-size: contain;
+.text:nth-child(1)::before {
+    content: url("map_icon.png");
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.text:nth-child(5)::before {
+    content: url("phone_icon.png");
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.text:nth-child(6)::before {
+    content: url("mailto_icon.png");
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.googlemap {
+    background: #676767;
 }
 
 .footer {
@@ -1017,6 +1042,26 @@ a.planoffer__button.best:hover {
     text-align: center;
     background: #3070a8;
     padding: 25px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #ffffff;
 }
+
+.footer a {
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.footer__link--white {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.footer__link--black {
+    font-weight: bold;
+    color: black;
+}
+
 
 
