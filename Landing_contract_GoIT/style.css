@@ -1,0 +1,444 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header {
+    width: 1200px;
+    height: 700px;
+    display: block;
+    margin: 0 auto;
+    padding: 0 50px;
+    background: #d87a00 url("Header_bcg.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.header__navigation {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 119px;
+}
+
+.header__navigation--left {
+    display: inline-block;
+    width: 40%;
+    min-width: 330px;
+    height: 119px;
+}
+
+.header__navigation--left--logo {
+    display: inline-block;
+    width: 162px;
+    height: 60px;
+    background: url("Logo.png") center no-repeat;
+    line-height: 120px;
+    vertical-align: middle;
+
+}
+
+.header__navigation--left--contacts {
+    display: inline-block;
+    line-height: 120px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+}
+
+.header__navigation--right {
+    display: inline-block;
+    width: 655px;
+    height: 50px;
+    border: 1px solid #eabc7e;
+    background: url("Smartphone_ringing.png") 15px center no-repeat;
+    padding-left: 60px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.header__navigation--right > div {
+    display: inline-block;
+    width: 31%;
+    height: 38px;
+    font-size: 20px;
+    line-height: 51px;
+    text-align: center;
+}
+
+#second {
+    background: url("vertical-line.png") 1px 8px no-repeat;
+}
+
+#third {
+    background: url("vertical-line.png") 1px 8px no-repeat;
+}
+
+.header__ask-question {
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+}
+
+.header__down {
+    height: 580px;
+    background: url("Header_bcg_narrow.png") center 485px no-repeat;
+}
+
+.header__down > h1 {
+    display: block;
+    max-width: 1100px;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.header__down > h2 {
+    display: block;
+    max-width: 1100px;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.header__down > h3 {
+    display: block;
+    max-width: 1100px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.details {
+    display: block;
+    max-width: 1200px;
+    min-width: 1190px;
+    height: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.details > h1 {
+    text-align: center;
+    font-size: 35px;
+    display: block;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.details__usability {
+    display: block;
+    width: 100%;
+    height: 170px;
+    position: relative;
+    margin: 0 auto;
+    background: url("LCD_Screen.png") 420px center no-repeat;
+}
+
+.details__usability--left {
+    display: inline-block;
+    width: 49%;
+    height: 170px;
+    line-height: 172px;
+    font-size: 35px;
+    color: #ed6300;
+    text-align: right;
+    padding-right: 220px;
+    float: left;
+}
+
+.details__usability--right {
+    display: inline-block;
+    width: 49%;
+    height: 170px;
+    float: right;
+}
+
+.details__usability--right > div {
+    border-left: 5px solid #ed6300;
+    font-size: 20px;
+    width: 90%;
+    padding-left: 17px;
+}
+
+.details__usability--right > div:nth-child(1) {
+    margin-top: 30px;
+}
+
+.details__usability--right > div:nth-child(2) {
+    margin: 18px 0;
+}
+
+.details__modernity {
+    display: block;
+    width: 100%;
+    height: 170px;
+    position: relative;
+    margin: 20px auto 0;
+    background: url("Sertificate.png") 575px center no-repeat;
+}
+
+.details__modernity--right {
+    display: inline-block;
+    width: 49%;
+    height: 170px;
+    line-height: 172px;
+    font-size: 35px;
+    color: #ed6300;
+    text-align: left;
+    padding-left: 133px;
+    float: right;
+}
+
+.details__modernity--left {
+    display: inline-block;
+    width: 49%;
+    height: 170px;
+    float: left;
+    text-align: right;
+}
+
+.details__modernity--left > div {
+    font-size: 20px;
+    width: 90%;
+    padding-right: 17px;
+}
+
+.details__modernity--left > div:nth-child(1) {
+    margin-top: 30px;
+    border-right: 5px solid #ed6300;
+}
+
+.details__modernity--left > div:nth-child(2) {
+    margin: 18px 0;
+}
+
+.details__modernity--left--a {
+    color: #ed6300;
+}
+
+.details__security {
+    display: block;
+    width: 100%;
+    height: 170px;
+    position: relative;
+    margin: 0 auto;
+    background: url("Credit_card.png") 420px center no-repeat;
+}
+
+.details__security--left {
+    display: inline-block;
+    width: 49%;
+    height: 170px;
+    line-height: 172px;
+    font-size: 35px;
+    color: #ed6300;
+    text-align: right;
+    padding-right: 220px;
+    float: left;
+}
+
+.details__security--right {
+    display: inline-block;
+    width: 49%;
+    height: 170px;
+    float: right;
+}
+
+.details__security--right > div {
+    border-left: 5px solid #ed6300;
+    font-size: 20px;
+    width: 90%;
+    padding-left: 18px;
+}
+
+.details__security--right > div:nth-child(1) {
+    margin-top: 30px;
+}
+
+.details__security--right > div:nth-child(2) {
+    margin-top: 18px;
+}
+
+.details__security--right h3 {
+    color: #ed6300;
+}
+
+.contract-preview {
+    display: block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 970px;
+    background: #f8f8f8;
+    box-sizing: border-box;
+}
+
+.contract-preview__text {
+    display: inline-block;
+    position: relative;
+    margin-top: 45px;
+    width: 925px;
+    height: 278px;
+    background: #ed6300;
+    color: #ffffff;
+    font-size: 35px;
+    padding-left: 84px;
+    padding-top: 65px;
+}
+
+.contract-preview__narrow {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -73px;
+    width: 0;
+    height: 139px;
+    border-left: 75px solid #ed6300;
+    border-top: 139px solid transparent;
+    border-bottom: 140px solid transparent;
+}
+
+.contract-preview__preview {
+    display: block;
+    position: relative;
+    width: 920px;
+    height: 440px;
+    border: 1px solid #999fa9;
+    background: #fff;
+    overflow: scroll;
+    margin: 45px auto 20px;
+}
+
+.contract-preview__form {
+    display: inline-block;
+    margin-left: 140px;
+    margin-top: 40px;
+}
+
+.contract-preview__form span {
+    font-size: 14px;
+}
+
+.contract-preview__form input:checked + span {
+    background: #fc0;
+}
+
+.contract-preview__open-in-new-window {
+    color: #ed6300;
+    float: right;
+    margin: 40px 140px 0;
+    font-size: 14px;
+}
+
+.choose_group {
+    display: block;
+    width: 1200px;
+    height: 520px;
+    background: #ed6300 url("Choose_group.jpg") center no-repeat;
+    position: relative;
+    margin: 0 auto;
+}
+
+.choose_group--h2 {
+    display: block;
+    width: 650px;
+    height: 205px;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.clearfix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
+.choose_group--left {
+    display: block;
+    width: 49%;
+    height: 300px;
+    float: left;
+}
+
+.choose_group--right {
+    display: block;
+    width: 49%;
+    height: 300px;
+    float: right;
+}
+
+.topic {
+    display: block;
+    width: 338px;
+    height: 40px;
+    font-size: 26px;
+    line-height: 27px;
+    background: #df870e;
+    border: 1px solid #ebb973;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 22px;
+    padding-top: 5px;
+}
+
+.topic::after {
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
+.choose_group__wrapper {
+    display: block;
+    position: relative;
+    width: 920px;
+    margin: 0 auto;
+}
+
+.choose_group--left .list-ul {
+    display: block;
+    clear: left;
+    list-style-type: none;
+}
+
+.choose_group--left .list-ul li {
+    display: block;
+    width: 200px;
+    height: 32px;
+    padding-left: 14px;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+#GoStart {
+    background: #df6893;
+}
+#GoQA {
+    background: #6bc269;
+}
+
+#GoFrontend {
+    background: #6c49f7;
+}
+
+#GoCode {
+    background: #4783f6;
+}
+#GoiTeens {
+    background: #efba00;
+}
+
+#check1 > span:hover, #check2 > span:hover, .hover > span:hover {
+    color: blue;
+}
