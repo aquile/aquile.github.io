@@ -12,7 +12,7 @@ body {
     display: block;
     margin: 0 auto;
     padding: 0 50px;
-    background: #d87a00 url("background.jpg") center center no-repeat;
+    background: #ff6902 url("background.jpg") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     color: #ffffff;
@@ -21,7 +21,7 @@ body {
 .header__navigation {
     display: block;
     position: relative;
-    width: 1200px;
+    width: 1100px;
     height: 119px;
     margin: 0 auto;
 }
@@ -595,7 +595,7 @@ body {
     display: block;
     width: 1020px;
     height: 485px;
-    margin: 0 auto;
+    margin: 0 auto; !important;
 }
 
 .liqpay__head {
