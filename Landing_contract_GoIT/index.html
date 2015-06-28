@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="normalise.css"/>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="icon" href="http://goit.com.ua/wp-content/themes/goit/images/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="http://goit.com.ua/wp-content/themes/goit/images/favicon.ico" type="image/x-icon"/>
     <title>GoIT_contract</title>
 </head>
 <body>
@@ -14,9 +16,9 @@
     <div class="header__navigation">
         <div class="header__navigation--left">
             <a target="_blank" class="header__navigation--left--logo" href="http://goit.com.ua/"
-               title="http://goit.com.ua/"></a>
+               title="Главная GoIT"></a>
             <a target="_blank" href="http://goit.com.ua/contacts.html" class="header__navigation--left--contacts"
-               title="http://goit.com.ua/contacts.html">Контакты</a>
+               title="Контакты GoIT">Контакты</a>
         </div>
         <div class="header__navigation--right">
             <div><span>38 093 986 55 86</span></div>
@@ -82,6 +84,49 @@
     </div>
 </div>
 
+<div class="choose_group">
+    <h2 class="choose_group--h2">А теперь мы можем записать тебя в группу.
+        Введи свои данные и тогда договор, счет и аккаунт в LMS
+        сформируются автоматически!
+    </h2>
+
+    <div class="choose_group__wrapper">
+        <div class="choose_group--left">
+            <div class="choose_group--left--topic">ВЫБЕРИТЕ ГРУППУ</div>
+            <ul class="choose_group--left list-ul">
+                <li id="GoStart">GoStart</li>
+                <li id="GoQA">GoQA</li>
+                <li id="GoFrontend">GoFrontend</li>
+                <li id="GoCode">GoCode</li>
+                <li id="GoiTeens">GoiTeens</li>
+            </ul>
+        </div>
+        <div class="choose_group--right">
+            <div class="choose_group--right--topic">ФОРМА ОПЛАТЫ</div>
+            <div class="choose_group--right--form">
+                <form class="choose_group--right--form--inner" action="#">
+                    <label for="check2"><input class="hover" id="check2" type="checkbox"/><span>Рассрочка</span></label>
+
+                    <p>
+                        Сейчас -<span>_____</span> грн<br>
+                        <span>_____</span> -<span>_____</span> грн<br>
+                        <span>_____</span> -<span>_____</span> грн<br>
+                        <br>
+                        Полная стоимость -<span>_____</span> грн<br>
+                    </p>
+                    <label for="check3"><input id="check3" type="checkbox"/><span>Единоразовый платеж</span></label>
+
+                    <p>
+                        Сейчас -<span>_____</span> грн<br>
+                        Полная стоимость -<span>_____</span> грн<br>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
 <div class="contract-preview">
     <div class="contract-preview__text"><p>А сейчас ознакомься пожалуйста с договором,
         важные моменты мы выделили.
@@ -104,48 +149,82 @@
 
 </div>
 
-<div class="choose_group">
-    <h2 class="choose_group--h2">А теперь мы можем записать тебя в группу.
-        Введи свои данные и тогда договор, счет и аккаунт в LMS
-        сформируются автоматически!
-    </h2>
 
-    <div class="choose_group__wrapper">
-        <div class="choose_group--left">
-            <div class="choose_group--left topic">ВЫБЕРИТЕ ГРУППУ</div>
-            <ul class="choose_group--left list-ul">
-                <li id="GoStart">GoStart</li>
-                <li id="GoQA">GoQA</li>
-                <li id="GoFrontend">GoFrontend</li>
-                <li id="GoCode">GoCode</li>
-                <li id="GoiTeens">GoiTeens</li>
-            </ul>
-        </div>
-        <div class="choose_group--right">
-            <div class="choose_group--right topic">ФОРМА ОПЛАТЫ</div>
-            <div class="choose_group--right form">
-                <form action="#">
-                    <label for="check2"><input class="hover" id="check2" type="checkbox"/><span>Рассрочка</span></label>
+<div class="input-block">
+    <h2 class="input-block__h2">Введите свои данные</h2>
 
-                    <p>
-                        Сейчас -<span>_____</span> грн<br>
-                        <span>_____</span> -<span>_____</span> грн<br>
-                        <span>_____</span> -<span>_____</span> грн/br>
-                        <br>
-                        Полная стоимость -<span>_____</span> грн<br>
-                    </p>
-                    <label for="check3"><input id="check3" type="checkbox"/><span>Единоразовый платеж</span></label>
-
-                    <p>
-                        Сейчас -<span>_____</span> грн<br>
-                        Полная стоимость -<span>_____</span> грн<br>
-                    </p>
-                </form>
-            </div>
-        </div>
-        <div class="clearfix"></div>
+    <div class="input-block__form">
+        <form>
+            <input type="text" name="surname" placeholder="Фамилия" required/>
+            <input type="text" name="firstname" placeholder="Имя" required/>
+            <input type="text" name="middle_name" placeholder="Отчество" required/>
+            <input type="text" name="passport_serial" placeholder="Паспорт, серия" required/><input type="number"
+                                                                                                    name="passport_number"
+                                                                                                    placeholder="Номер"
+                                                                                                    required
+                                                                                                    pattern="[0-9]"/>
+            <input type="tel" name="tel_number" placeholder="Номер телефона" required/>
+            <input type="email" name="email" placeholder="email" required/>
+            <textarea name="adress_in_passport" cols="2" placeholder="Адрес прописки" required></textarea>
+            <input type="text" name="adres_in_real" placeholder="Адрес проживания" required/>
+        </form>
+        <p>* На e-mail и телефон вам придет оповещание об оплате</p>
     </div>
 </div>
-<div></div>
+
+
+<div class="liqpay">
+    <div class="liqpay__head">
+        <div class="liqpay__head--up"></div>
+        <div class="liqpay__head--down"></div>
+    </div>
+
+    <div class="liqpay__footer">
+        <div class="liqpay__foter--left">
+            <div class="liqpay__foter--left--topic">Оплатить</div>
+            <p>*И тем самым записаться в группу</p>
+        </div>
+        <div class="liqpay__foter--right">
+            <div class="liqpay__foter--right--topic">Сформировать квитанцию</div>
+            <p>*Если у вас нету возможности оплатить через <br/>
+                карточку, вы можете оплатить через кассу банка.</p>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer__up">
+        <div class="footer__up--left">
+            <a href="mailto:" class="footer__up--left--mail">infogoit@goit.com.ua</a>
+
+            <div class="footer__up--left--adress">
+                <p>
+                    <span>Офис:</span> iHUB, ул. Рыбальская, 22, Киев, Украина <br/>
+                    <span>Занятия:</span> Академия ДТЕК (БЦ Евразия), <br/>
+                    ул. Жилянская, 75, Киев, Украина
+                </p>
+            </div>
+        </div>
+        <div class="footer__up--right">
+            <div class="footer__up--right--phone-numbers">
+                <p>
+                    +38 093 986 55 86 <br/>
+                    +38 098 665 99 42 <br/>
+                    +38 050 886 76 03
+                </p>
+            </div>
+            <div class="footer__up--right--social">
+                <a href="https://vk.com/goitclub" target="_blank" title="Откроется в новом окне"></a>
+                <a href="https://www.facebook.com/goITclub" target="_blank" title="Откроется в новом окне"></a>
+                <a href="https://www.youtube.com/channel/UCN7NQEBOUuIoXrJZzqVb58Q" target="_blank"
+                   title="Откроется в новом окне"></a>
+                <a href="https://twitter.com/goITclub" target="_blank" title="Откроется в новом окне"></a>
+                <a href="http://www.slideshare.net/GoITClub" target="_blank" title="Откроется в новом окне"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__down"><p>GoIT 2014-2015 При использовании материалов ссылка обязательна</p></div>
+</div>
+
 </body>
 </html>
