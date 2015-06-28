@@ -12,7 +12,7 @@ body {
     display: block;
     margin: 0 auto;
     padding: 0 50px;
-    background: #d87a00 url("Header_bcg.jpg") center no-repeat;
+    background: #d87a00 url("background.jpg") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     color: #ffffff;
@@ -21,8 +21,9 @@ body {
 .header__navigation {
     display: block;
     position: relative;
-    width: 100%;
+    width: 1200px;
     height: 119px;
+    margin: 0 auto;
 }
 
 .header__navigation--left {
@@ -320,7 +321,7 @@ body {
     width: 72%;
     text-align: left;
     height: 278px;
-    background: #ed6300;
+    background: #ff6902;
     color: #ffffff;
     font-size: 35px;
     padding-left: 17%;
@@ -334,7 +335,7 @@ body {
     right: -74px;
     width: 0;
     height: 139px;
-    border-left: 75px solid #ed6300;
+    border-left: 75px solid #ff6902;
     border-top: 139px solid transparent;
     border-bottom: 140px solid transparent;
 }
@@ -349,14 +350,27 @@ body {
     overflow: scroll;
     margin: 45px auto 20px;
 }
-
+.contract-preview__form--wrapper {
+    width: 920px;
+    min-width: 920px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
 .contract-preview__form {
     display: inline-block;
     margin-left: 140px;
     margin-top: 40px;
 }
+.contract-preview__form label {
+    position: absolute;
+    left: 0;
+    width: 400px;
+}
 
 .contract-preview__form span {
+    position: absolute;
+    left: 20px;
     font-size: 14px;
     color: #000000;
     -webkit-transition-duration: 1s;
@@ -383,7 +397,7 @@ body {
 .contract-preview__open-in-new-window {
     color: #ed6300;
     float: right;
-    margin: 40px 140px 0;
+    margin: 40px 0;
     font-size: 14px;
     text-shadow: 0 0 1px #fff;
     -webkit-transition-duration: 1s;
@@ -400,9 +414,10 @@ body {
 
 .choose_group {
     display: block;
-    width: 1200px;
+    width: 100%;
+    min-width: 1200px;
     height: 520px;
-    background: #ed6300 url("Choose_group.jpg") center no-repeat;
+    background: #ed6300 url("background.jpg") center no-repeat;
     position: relative;
     margin: 0 auto;
 }
@@ -444,7 +459,7 @@ body {
     display: block;
     width: 338px;
     font-size: 26px;
-    background: #df870e;
+    background: #ff6902;
     border: 1px solid #ebb973;
     color: #ffffff;
     text-align: center;
@@ -635,7 +650,7 @@ body {
     font-size: 30px;
     text-align: center;
     padding: 14px 0;
-    background: #ed6300;
+    background: #ff6902;
     color: #ffffff;
     margin-bottom: 30px;
     -webkit-transition-duration: 1s;
@@ -683,7 +698,7 @@ body {
     display: block;
     width: 100%;
     margin: 0 auto;
-    background: #e36d00;
+    background: #ff6902;
     color: #ffffff;
     font-size: 13px;
     text-align: center;
