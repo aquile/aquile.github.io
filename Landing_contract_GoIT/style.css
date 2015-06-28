@@ -2,10 +2,12 @@
 
 body {
     font-family: 'Helvetica Neue', 'Roboto', 'Helvetica', Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
 }
 
 .header {
-    width: 1200px;
+    width: 100%;
+    min-width: 1200px;
     height: 700px;
     display: block;
     margin: 0 auto;
@@ -37,7 +39,17 @@ body {
     background: url("Logo_GoIT.png") center no-repeat;
     line-height: 120px;
     vertical-align: middle;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+}
 
+.header__navigation--left--logo:hover, .header__navigation--left--logo:focus, .header__navigation--left--logo:active {
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 
 .header__navigation--left--contacts {
@@ -47,6 +59,15 @@ body {
     text-decoration: none;
     color: white;
     padding-left: 50px;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    letter-spacing: 1px;
+}
+
+.header__navigation--left--contacts:hover, .header__navigation--left--contacts:focus, .header__navigation--left--contacts:active {
+    color: #000000;
 }
 
 .header__navigation--right {
@@ -82,6 +103,15 @@ body {
     position: absolute;
     right: 0;
     bottom: 4px;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    letter-spacing: 1px;
+}
+
+.header__ask-question:hover, .header__ask-question:active, .header__ask-question:focus {
+    color: #000000;
 }
 
 .header__down {
@@ -95,6 +125,7 @@ body {
     font-size: 50px;
     text-align: center;
     padding-top: 50px;
+    margin: 0 auto;
 }
 
 .header__down > h2 {
@@ -103,6 +134,7 @@ body {
     font-size: 40px;
     text-align: center;
     padding-top: 40px;
+    margin: 0 auto;
 }
 
 .header__down > h3 {
@@ -111,6 +143,7 @@ body {
     font-size: 30px;
     text-align: center;
     padding-top: 75px;
+    margin: 0 auto;
 }
 
 .details {
@@ -298,7 +331,7 @@ body {
     display: inline-block;
     position: absolute;
     top: 0;
-    right: -73px;
+    right: -74px;
     width: 0;
     height: 139px;
     border-left: 75px solid #ed6300;
@@ -325,10 +358,26 @@ body {
 
 .contract-preview__form span {
     font-size: 14px;
+    color: #000000;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: background, text-shadow, color;
+    transition-property: background, text-shadow, color;
+    letter-spacing: 1px;
 }
 
 .contract-preview__form input:checked + span {
-    background: #fc0;
+    text-shadow: 0 0 7px #d97a00;
+}
+#check2:checked + span, #check3:checked + span {
+    text-shadow: 0 0 7px white;
+}
+#check2:hover + span, #check3:hover + span {
+    text-shadow: 0 0 7px white;
+}
+#check1:hover + span {
+    background: #ed6300;
+    color: #ffffff;
 }
 
 .contract-preview__open-in-new-window {
@@ -336,6 +385,17 @@ body {
     float: right;
     margin: 40px 140px 0;
     font-size: 14px;
+    text-shadow: 0 0 1px #fff;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: color, text-shadow;
+    transition-property: color, text-shadow;
+    letter-spacing: 1px;
+}
+
+.contract-preview__open-in-new-window:hover, .contract-preview__open-in-new-window:focus, .contract-preview__open-in-new-window:active {
+    color: #000000;
+    text-shadow: 0 0 2px rgba(30, 30, 30, 0.2);
 }
 
 .choose_group {
@@ -423,6 +483,9 @@ body {
     color: #ffffff;
     padding-top: 5px;
 }
+.choose_group--left .list-ul li:hover, .choose_group--left .list-ul li:focus, .choose_group--left .list-ul li:active {
+    text-shadow: 0 0 7px white;
+}
 
 #GoStart {
     background: #df6893;
@@ -442,10 +505,6 @@ body {
 
 #GoiTeens {
     background: #efba00;
-}
-
-#check1:hover + span, #check2:hover + span, #check3:hover + span {
-    color: #1cb79a;
 }
 
 .choose_group--right--form {
@@ -483,6 +542,14 @@ body {
     border: 1px solid #ed6300;
     padding-left: 15px;
     font-size: 23px;
+}
+
+.input-block__form input:hover, .input-block__form textarea:hover {
+    box-shadow: 0 0 7px #e36d00;
+}
+
+.input-block__form input:focus, .input-block__form textarea:focus {
+    background: #f8f8f8;
 }
 
 .input-block__form textarea {
@@ -571,6 +638,14 @@ body {
     background: #ed6300;
     color: #ffffff;
     margin-bottom: 30px;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: color, text-shadow;
+    transition-property: color, text-shadow;
+    letter-spacing: 1px;
+}
+.liqpay__foter--left--topic:active, .liqpay__foter--right--topic:active, .liqpay__foter--left--topic:focus, .liqpay__foter--right--topic:focus, .liqpay__foter--left--topic:hover, .liqpay__foter--right--topic:hover {
+    color: #000000;
 }
 
 .liqpay__foter--left p, .liqpay__foter--right p {
@@ -623,10 +698,92 @@ body {
 
 .footer__up--right {
     display: block;
+    position: relative;
     float: right;
     width: 400px;
 }
 
 .footer__up--left--adress span {
     font-weight: bold;
+}
+
+.footer__up--right--social {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.footer__up--right--phone-numbers {
+    display: inline-block;
+}
+
+.footer__up--right--social i {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 3px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANoAAAAcCAYAAAAHrKFyAAAJ50lEQVR42u2cCWxUxxnHjSMtpIC4BCqHaEEIAY2UpsJOmqilJAEVCJRQFQESapo20JojiKOEAMWKVdVuSrGpbaAIMASE8cFlG4jBNhh8BTDGNvhe3we7+/by3l7vvzPj9WPXGHs3eJ63sJ/01+7Oe9p5evZvv5n/zPsCfh+WICOKIhKIwEmCsw/aVwAVgOdq04kaKhlRFJFABE4SnH3InH32eV0BZzVUMqIoIoEInCQ4+5A5++z7urbHU8mIoogEInCS2tmHzNlnn9dVMfenVDKiKCKBCJwkOPuQOfvs+351hYwoikggAiepnX3I6D99JEfAeircC9AiOQLWU+FegBbJEbCeCvcCtEiOgPVUuBegRXIErKfCvQBNxRGwngoP4JzJestsnoImSAia4AVogoSgCV6AJkgImuAFaIKEoAlegOaQEDQhQELIuuUpaJBYnoIGieUpaJBYnoIGieUpaJBUftD8oPlB84PmsY5ltqGs2YQWjRUqvY1pX2K9T4EWGK/BxIs6zP1Wj1FJWklAmxJ2GV/fLENEVhkmfnXJD5oHoI0dOxaTJk3CxIkT+xU9b9y4ca8GaCdvPUFv8VVygySgvRbvGWjr7xrRZnZAaXFgxwOTJKAVt2jF+3FbrsRrfz3nM6AZC/JhzMsV35uKHgw6aOvWrUNZWRny8vKQk5PTr3Jzc9n5ISEhLwba7kNX0VeodUacuFwwqKA1CdZBBW1MshZ/yDfiN9kGjE3uPVN9mNkOfYeDXVedoRMHyi0ITtdzB81q7xTvx5N2M2Q7E3wGtJZdO+GwWlGzaCEcdjtaQ/eiIvhnqP9kLepWr2TnVL4bDPnHS1H5zlzIly5G1fxfcANtxIgRKC0txapVqzB58mSPtWTJEhQWFmL06NH8QOsOL2AbUNA2E9k7HeJ13Je3Y8tJuaRzNNk5DU7Iu2C/1GTDJwQ6OkR0BTHzSccz96zF1In3CYA8QVt1OheC0YoWnQlLj2f71NCx8udBsAsqltXsWi0q33sbxu8KYGtpZu3qb04x6GhQ2GxNjXjydTg30CZMmIDs7Gw2HPRm/jVs2DCkpaVhypQp/EFrVmgHBbTPCVSuceWBelDMkFlpehSq7eJ1ZCs6EHKva3j42zsGWDp7v2/FGjumXtL5hBkSuOMchn6RIOkcTX3mm66R0ak49pllXgKTEHcc5pJiSUEbP348bt26hWnTpnkFGs1kqampfQPqDWjR524/c7ykqlk8LjVosektOJerdPvHLWkw4myOkmnnmVrJQAsiBkdVuztNNNHGVFpwvtHW54/Uqhwj+44fX9YNOGhfXi1G3N1anLxXi20pD1jbx3F3kFTcyPTvW+WY/o9UZpYUNWvwqE2HCyVNePvgdUlAa9oUwu5B0+cbfRa04cOHu30eOnQoZDKZtKBVNyjYMfoqNWjF9YY+/4F3x9dJBhp1ESMeW2DtJXPZOvsZDZAhJM2AdI430KA9bNGI/eTUKlkbhco1KhT6Z65JRYabM8JTuYPWGLK+C7TNG3wOtJkzZ+L8+fPMGNm4cSNrW7x4MbKyspCZmYmFCxfyAa2vCI/L8CnQ6Lxtc5y062hvXdOjSGPH9wk6h9twzzTgoF0rbxX7SCYZjLbtSC16pn+5YEAzmce5xun7dZKDZq2phqnwPizVVdBfT0f92jXsuLm4mBknPEEbM2YMbt68KYKWnJws3gsr6XvBggUoLy8X22pqajBy5EhmoqSkpLA5HlfQCkpq2XlSg5aQp0RuhfuvcYPKgpwKHTJKtJIvWE8iBkh6a4foLnoaac02LL9twMhErSSgbbpw392dvV6K13clYkLoRdxtFMT2Nr2ZO2jV789jkFV/+Cv2mTqQiqgDDKiqee+hIugtNO/YRlzI36Fh3R+J87iIC2hDhgzBjBkzWEbrNjVolhJ/uIkrumjRIgZXd9TV1WHUqFFsKElBmzNnDvserhmN2vyb9198Zc0QVx2ssHgMGR1qLshq52aG9JfRtGYbxuw9L56/+WKheMxos/MDjQCkjI2GVS5Hh+IJ7Dpdn+pQKmGtq2WmCbX6Bxq0wMBAHDlyBAaDgQFD22hmS0pKQn5+vjh0pMPFjIwM3LhxA/Pnz2dtU6dOhUKhwLFjx9j3cJmjUVvfS4v/pQEt8DkL1dRtrDV0egRaYoMNo5O1koK268pDsa1Ja2KZrPv8zxK/c4OQF2iN6/9EAFOwbEbVFhbqdl808WcZWL1F697dXIaOFCyaxQRBYNCsXr2aDRdXrFiB4OBgZooEBQVh2bJlbO1s5cqV7DyVSsXs/enTp/MzQ2ibOAS6XfpKgfaTK3q8cUXf61ytQNX/XI0uXL95Vc91Ha030L5IewpaKxkeum7N+kvyPUlAa923h9iynWzdrH7tatjVapgfPyJraC1MbX8Pgy7lEizlXcaNIecOjPl57L3yUAy3nSHUTdyyZQsbFrqGw+FAQUEBOjrc10Pr6+vZ+a4uJNeh4/NAfJlBo+tfO4tMiCOL1fT1y4dmHCfvq9v7z2ZlOjveSW/nvjPEV0GjczBmcjx+zJxFu07LMhvNZFQUNOHEcdR89GsGWfO2LSwLWuU1UP33MPdNxTRr9QwKW89Yvnz5wGwq9hS0wbD3fWGO9iOy9nWy1uqV+XG6zorZaXpJ9jr+P4NG7X1qluiupjEzpHHDn5krKQVoW7dudfub6fV6HD16lL26xvbt26UDzcMh40trhgwlW7DmZ7SzzGa09+44am0OnCGAUePjOe4iF9AKGp66iBlVbawt7Pojt2WQyWFPQdt6+YHbdXMbOob+7RnQGj77FMroKBE00/17qP5gHrH5v4XiwH4oY/4Da20tVIdjuIO2b98+t/ugI4bM/v37odVq3dpDQ0NfjcdkfMl1fD1Bix9e0OGXN9rxaYGRrYvR13evt7P2HyRoJX8ebXtKEeKL6pmorU/bPjqWLbYdvFOJUXuSxfM/OJKFxIcNOFNYh8N51fzMEJKdaHS0tUJ9+hQcZO6j+Nc/oT57hq2j6dOvQXXkEIOu02hkGVB5MJKdRyHlDRrdWNwzo0VHRzPgXGPNmjV+0PwPfvrwg59kl742KZEtQnsaFDIKIN18zBs0utuD7sjvDovFgj179sBsNottRUVFbJH7lXnwk+5p7NbWU3I/aP4nrAfkCetZs2ax3SF0kTo2NpY9EBoTE8M+061Zs2fP9pcy8IPmB20gShnQnR4UsJ5PYD93B4gfND9oftAGt2aIr5abU/touTm1v9ycV+Xm1D5abq5T6nJzUhZQjfDRAqoRPlpANcJHC6hG+GgB1QgvQDNLCFpEgEtJcDVHwNQvUBJcwxEwzQuUBNdwBEzzAiXBNRwB07xASXANR8A036MkeCmRiXNmczgrIsv+B4Lkfyd4fvdeAAAAAElFTkSuQmCC");
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+}
+
+.footer__up--right--social i:hover {
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+}
+
+.icon-vk i {
+    background-position: -38px;
+}
+
+.icon-fb i {
+    background-position: 0;
+}
+
+.icon-y i {
+    background-position: -152px;
+}
+
+.icon-tw i {
+    background-position: -76px;
+}
+
+.icon-sl i {
+    background-position: -190px;
+}
+
+.mail-to-me {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 13px;
+    -webkit-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+    -webkit-transition-property: color;
+    transition-property: color;
+    letter-spacing: 1px;
+}
+
+.mail-to-me:hover, .mail-to-me:focus, .mail-to-me:active {
+    color: #ffffff;
+}
+
+.mail-to-me::after {
+    content: '\2709';
+    position: absolute;
+    display: none;
+    right: -16px;
+    top: -1px;
+    font-family: FontAwesome, 'Helvetica Neue', 'Roboto', 'Helvetica', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+.mail-to-me:hover::after, .mail-to-me:active::after, .mail-to-me:focus::after {
+    display: block;
 }
