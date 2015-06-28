@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    font-family: 'Helvetica Neue','Roboto', 'Helvetica', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', 'Roboto', 'Helvetica', Helvetica, Arial, sans-serif;
 }
 
 .header {
@@ -543,6 +543,7 @@ body {
     display: block;
     width: 1020px;
     height: 165px;
+    margin: 0 auto;
 }
 
 .liqpay__foter--left {
@@ -595,12 +596,12 @@ body {
     padding-top: 25px;
     background: #f7f7f7;
 }
+
 .footer__up {
     display: block;
     width: 1020px;
     height: 100px;
     margin: 0 auto;
-    
 }
 
 .footer__down {
@@ -619,6 +620,7 @@ body {
     float: left;
     width: 600px;
 }
+
 .footer__up--right {
     display: block;
     float: right;
