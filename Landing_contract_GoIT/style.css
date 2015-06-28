@@ -797,7 +797,7 @@ body {
     right: -16px;
     top: -1px;
     font-family: FontAwesome, 'Helvetica Neue', 'Roboto', 'Helvetica', Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
 }
 .mail-to-me:hover::after, .mail-to-me:active::after, .mail-to-me:focus::after {
     display: block;
