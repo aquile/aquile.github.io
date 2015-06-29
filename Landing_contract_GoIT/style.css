@@ -590,14 +590,15 @@ body {
     font-size: 12px;
     font-style: italic;
 }
-.liqpay__wrapper {
+/*.liqpay__wrapper {
     display: block;
     width: 100%;
     margin: 0 auto;
     text-align: center;
-}
+}*/
 .liqpay {
-    display: inline-block;
+    display: block;
+    position: relative;
     width: 1020px;
     height: 485px;
     margin: 0 auto; !important;
