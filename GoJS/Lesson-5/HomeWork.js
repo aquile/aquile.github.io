@@ -47,23 +47,31 @@ console.log(multiplyX2(image));
 
 
 //Task3
-var object = {};
 
-function summaryOfObjElem(objectInFunction) {
-    var objectInFunction = {};
+
+function summaryOfObjElem() {
+    var numbers = [];
 
     do {
-        var number = +prompt('Type any number');
+        var n = +prompt('Type any number');
 
-        for (var i = 0; ; i++) {
+        numbers.push(n);
 
-            var sum = 0;
-            objectInFunction[i] = number;
-            sum = sum + number;
-        }
-    } while (number);
+    } while (n);
 
-    return console.log(sum);
+/*    Этой функции он передаёт три параметра callback(item, i, arr):
+
+    item — очередной элемент массива.
+        i — его номер.
+        arr — массив, который перебирается.*/
+
+var sum = 0;
+    numbers.forEach(function(item) {
+
+     sum = sum + item;
+    });
+
+    return sum;
 }
 
-summaryOfObjElem(object);
+console.log(summaryOfObjElem());
