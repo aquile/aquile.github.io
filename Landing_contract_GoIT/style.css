@@ -62,13 +62,13 @@ body {
     padding-left: 50px;
     -webkit-transition-duration: 0.7s;
     transition-duration: 0.7s;
-    -webkit-transition-property: color;
-    transition-property: color;
+    -webkit-transition-property: text-shadow;
+    transition-property: text-shadow;
     letter-spacing: 1px;
 }
 
 .header__navigation--left--contacts:hover, .header__navigation--left--contacts:focus, .header__navigation--left--contacts:active {
-    color: #000000;
+    text-shadow: 0 0 10px #fff;
 }
 
 .header__navigation--right {
@@ -350,6 +350,7 @@ body {
     overflow: scroll;
     margin: 45px auto 20px;
 }
+
 .contract-preview__form--wrapper {
     width: 920px;
     min-width: 920px;
@@ -357,11 +358,13 @@ body {
     position: relative;
     margin: 0 auto;
 }
+
 .contract-preview__form {
     display: inline-block;
     margin-left: 140px;
     margin-top: 40px;
 }
+
 .contract-preview__form label {
     position: absolute;
     left: 0;
@@ -383,12 +386,15 @@ body {
 .contract-preview__form input:checked + span {
     text-shadow: 0 0 7px #d97a00;
 }
+
 #check2:checked + span, #check3:checked + span {
     text-shadow: 0 0 7px white;
 }
+
 #check2:hover + span, #check3:hover + span {
     text-shadow: 0 0 7px white;
 }
+
 #check1:hover + span {
     background: #ed6300;
     color: #ffffff;
@@ -483,23 +489,44 @@ body {
     margin: 0 auto;
 }
 
+.choose_group--left ul {
+    list-style-type: none;
+}
+
 .choose_group--left .list-ul {
     display: block;
     clear: left;
     list-style-type: none;
 }
 
-.choose_group--left .list-ul li {
+.choose_group--left .list-ul > li {
     display: block;
+    position: relative;
     width: 200px;
     height: 32px;
-    padding-left: 14px;
+    padding: 5px 0 5px 14px;
     font-size: 18px;
     color: #ffffff;
-    padding-top: 5px;
+
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: box-shadow, border-radius, text-shadow;
+    transition-property: box-shadow, border-radius, text-shadow;
 }
+
+.choose_group--left .list-ul li {
+    display: block;
+    position: relative;
+    padding: 5px 0 5px 14px;
+    font-size: 18px;
+    color: #ffffff;
+
+}
+
 .choose_group--left .list-ul li:hover, .choose_group--left .list-ul li:focus, .choose_group--left .list-ul li:active {
     text-shadow: 0 0 7px white;
+    box-shadow: 0 0 7px #fff;
+    border-radius: 2px;
 }
 
 #GoStart {
@@ -590,6 +617,7 @@ body {
     font-size: 12px;
     font-style: italic;
 }
+
 /*.liqpay__wrapper {
     display: block;
     width: 100%;
@@ -601,7 +629,8 @@ body {
     position: relative;
     width: 1020px;
     height: 485px;
-    margin: 0 auto; !important;
+    margin: 0 auto;
+!important;
 }
 
 .liqpay__head {
@@ -659,14 +688,19 @@ body {
     background: #ff6902;
     color: #ffffff;
     margin-bottom: 30px;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-property: color, text-shadow;
-    transition-property: color, text-shadow;
+
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-property: box-shadow, border-radius, text-shadow;
+    transition-property: box-shadow, border-radius, text-shadow;
+
     letter-spacing: 1px;
 }
+
 .liqpay__foter--left--topic:active, .liqpay__foter--right--topic:active, .liqpay__foter--left--topic:focus, .liqpay__foter--right--topic:focus, .liqpay__foter--left--topic:hover, .liqpay__foter--right--topic:hover {
-    color: #000000;
+    text-shadow: 0 0 15px #fff;
+    box-shadow: 0 0 7px #383838;
+    border-radius: 2px;
 }
 
 .liqpay__foter--left p, .liqpay__foter--right p {
@@ -806,6 +840,104 @@ body {
     font-family: FontAwesome, 'Helvetica Neue', 'Roboto', 'Helvetica', Helvetica, Arial, sans-serif;
     font-size: 15px;
 }
+
 .mail-to-me:hover::after, .mail-to-me:active::after, .mail-to-me:focus::after {
     display: block;
+}
+
+.confirmation-of-payment {
+    display: block;
+    position: relative;
+    width: 600px;
+    margin: 30px auto 0;
+}
+
+.confirmation-of-payment > h2 {
+    font-size: 24px;
+    color: #ff6902;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.confirmation-of-payment > p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.confirmation-of-payment > a {
+    display: block;
+    width: 440px;
+    font-size: 30px;
+    text-align: center;
+    padding: 14px 0;
+    background: #ff6902;
+    margin: 30px auto 40px;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: none;
+    text-shadow: none;
+
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    -webkit-transition-property: box-shadow, border-radius, text-shadow;
+    transition-property: box-shadow, border-radius, text-shadow;
+}
+
+.confirmation-of-payment > a:hover, .confirmation-of-payment > a:focus, .confirmation-of-payment > a:active {
+    text-shadow: 0 0 15px #fff;
+    box-shadow: 0 0 7px #383838;
+    border-radius: 2px;
+}
+
+/*submenus of courses*/
+
+#GoCode--li > li {
+    display: block;
+    position: absolute;
+    left: 200px;
+    width: 170px;
+    height: 32px;
+    -color: #ffffff;
+    font-size: 18px;
+}
+
+#GoCode--li > li:nth-child(1) {
+    top: 0;
+    background: #4783f6;
+    height: 55px;
+}
+
+#GoCode--li > li:nth-child(2) {
+    top: 55px;
+    background: #1763f6;
+}
+
+#GoCode--li > li > ul > li {
+    display: block;
+    width: 30px;
+    height: 29px;
+    position: absolute;
+    left: 170px;
+    background: #4783f6;
+}
+
+#GoCode--li > li > ul > li:nth-child(1) {
+    top: 0;
+}
+
+#GoCode--li > li > ul > li:nth-child(2) {
+    top: 29px;
+}
+
+#GoCode--li > li > ul > li:nth-child(3) {
+    top: 58px;
+}
+
+.choose_group--lef--java-plan {
+    display: block;
+    position: absolute;
+    width: 170px;
+    background: #4783f6;
+    top: 0;
+    left: 16px;
 }
