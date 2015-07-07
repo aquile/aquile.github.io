@@ -57,7 +57,8 @@ function summaryOfObjElem() {
 
         numbers.push(n);
 
-    } while (n);
+    } while (n);   // 0 ломает выполнение!!!!!!!!!!
+
 
 /*    Этой функции он передаёт три параметра callback(item, i, arr):
 
