@@ -520,17 +520,13 @@ body {
     padding: 5px 0 5px 14px;
     font-size: 18px;
     color: #ffffff;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.choose_group--left .list-ul li:hover, .choose_group--left .list-ul li:focus, .choose_group--left .list-ul li:active {
+/*.choose_group--left .list-ul li:hover, .choose_group--left .list-ul li:focus, .choose_group--left .list-ul li:active {
     text-shadow: 0 0 7px white;
     box-shadow: 0 0 5px #888;
-}
-
-.choose_group--left .list-ul li ul {
-    visibility: hidden;
-}
+}*/
 
 .choose_group--left .list-ul li ul li {
     display: block;
@@ -541,7 +537,11 @@ body {
     top: 0;
 }
 
-.list-ul > li:hover .choose_group--left .list-ul li ul {
+#GoStart > ul {
+    visibility: hidden;
+}
+
+#GoStart:hover #GoStart > ul {
     visibility: visible;
 }
 
