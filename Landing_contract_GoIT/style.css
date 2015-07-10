@@ -514,7 +514,7 @@ body {
     transition-property: box-shadow, text-shadow;
 }
 
-.choose_group--left .list-ul li {
+.choose_group--left .list-ul > li {
     display: block;
     position: relative;
     padding: 5px 0 5px 14px;
@@ -523,12 +523,21 @@ body {
     cursor: pointer;
 }
 
-/*.choose_group--left .list-ul li:hover, .choose_group--left .list-ul li:focus, .choose_group--left .list-ul li:active {
+.choose_group--left .list-ul li {
+    padding: 5px 0 5px 14px;
+}
+
+.choose_group--left .list-ul li:hover, .choose_group--left .list-ul li:focus, .choose_group--left .list-ul li:active {
     text-shadow: 0 0 7px white;
     box-shadow: 0 0 5px #888;
-}*/
+}
 
-.choose_group--left .list-ul li ul li {
+.list-ul a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.choose_group--left .list-ul > li > ul > li {
     display: block;
     position: absolute;
     width: 170px;
@@ -537,12 +546,68 @@ body {
     top: 0;
 }
 
-#GoStart > ul {
+.list-ul > li > ul {
     visibility: hidden;
 }
 
-#GoStart:hover #GoStart > ul {
+#GoStart:hover > ul, #GoQA:hover > ul, #GoFrontend:hover > ul, #GoStart:hover > ul, #GoCode:hover > ul, #GoiTeens:hover > ul {
     visibility: visible;
+}
+
+.list-ul > li > ul > li > ul {
+    visibility: hidden;
+}
+
+.list-ul > li > ul > li:hover > ul {
+    visibility: visible;
+}
+
+.list-ul > li > ul > li:nth-child(2) {
+    display: block;
+    position: absolute;
+    width: 170px;
+    height: 32px;
+    left: 200px;
+    top: 32px;
+}
+
+#GoCode > ul > li:nth-child(1) {
+    height: 64px;
+}
+
+#GoCode > ul > li:nth-child(2) {
+    top: 64px;
+}
+
+.course-starting__above__one-column, .course-starting__above__two-columns, .course-starting__above__three-columns, .course-starting__below__two-columns, .course-starting__below__three-columns {
+    display: block;
+    position: absolute;
+    left: 170px;
+    width: 200px;
+}
+
+.course-starting__above__one-column, .course-starting__above__two-columns, .course-starting__above__three-columns {
+    top: 0;
+}
+
+.course-starting__below__two-columns {
+    top: 64px;
+}
+
+.course-starting__below__three-columns {
+    top: 96px;
+}
+
+.course-starting__above__one-column {
+    height: 32px;
+}
+
+.course-starting__above__two-columns {
+    height: 64px;
+}
+
+.course-starting__above__three-columns {
+    height: 96px;
 }
 
 #GoStart, #GoStart li {
@@ -912,50 +977,6 @@ body {
     text-shadow: 0 0 15px #fff;
     box-shadow: 0 0 7px #383838;
     border-radius: 2px;
-}
-
-/*submenus of courses*/
-
-#GoCode--li > li {
-    display: block;
-    position: absolute;
-    left: 200px;
-    width: 170px;
-    height: 32px;
-    color: #ffffff;
-    font-size: 18px;
-}
-
-#GoCode--li > li:nth-child(1) {
-    top: 0;
-    background: #4783f6;
-    height: 55px;
-}
-
-#GoCode--li > li:nth-child(2) {
-    top: 55px;
-    background: #1763f6;
-}
-
-#GoCode--li > li > ul > li {
-    display: block;
-    width: 30px;
-    height: 29px;
-    position: absolute;
-    left: 170px;
-    background: #4783f6;
-}
-
-#GoCode--li > li > ul > li:nth-child(1) {
-    top: 0;
-}
-
-#GoCode--li > li > ul > li:nth-child(2) {
-    top: 29px;
-}
-
-#GoCode--li > li > ul > li:nth-child(3) {
-    top: 58px;
 }
 
 .choose_group--lef--java-plan {
