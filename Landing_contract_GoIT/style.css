@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    font-family: 'Helvetica Neue', 'Roboto', 'Helvetica', Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
 }
 
@@ -507,11 +507,11 @@ body {
     padding: 5px 0 5px 14px;
     font-size: 18px;
     color: #ffffff;
-
+    box-shadow: none;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
-    -webkit-transition-property: box-shadow, border-radius, text-shadow;
-    transition-property: box-shadow, border-radius, text-shadow;
+    -webkit-transition-property: box-shadow, text-shadow;
+    transition-property: box-shadow, text-shadow;
 }
 
 .choose_group--left .list-ul li {
@@ -520,33 +520,58 @@ body {
     padding: 5px 0 5px 14px;
     font-size: 18px;
     color: #ffffff;
-
+    cursor:pointer;
 }
 
 .choose_group--left .list-ul li:hover, .choose_group--left .list-ul li:focus, .choose_group--left .list-ul li:active {
     text-shadow: 0 0 7px white;
-    box-shadow: 0 0 7px #fff;
-    border-radius: 2px;
+    box-shadow: 0 0 5px #888;
 }
 
-#GoStart {
+.choose_group--left .list-ul li ul {
+    visibility: hidden;
+}
+
+.choose_group--left .list-ul li ul li {
+    display: block;
+    position: absolute;
+    width: 170px;
+    height: 32px;
+    left: 200px;
+    top: 0;
+}
+
+.list-ul > li:hover .choose_group--left .list-ul li ul {
+    visibility: visible;
+}
+
+#GoStart, #GoStart li {
     background: #df6893;
 }
 
-#GoQA {
+#GoQA, #GoQA li {
     background: #6bc269;
 }
 
-#GoFrontend {
+#GoFrontend, #GoFrontend li {
     background: #6c49f7;
 }
 
-#GoCode {
+#GoCode, #GoCode li {
     background: #4783f6;
 }
 
-#GoiTeens {
+#GoiTeens, #GoiTeens li {
     background: #efba00;
+}
+
+.choose_group--lef--java-plan {
+    display: block;
+    position: absolute;
+    width: 170px;
+    background: #4783f6;
+    top: 0;
+    left: 16px;
 }
 
 .choose_group--right--form {
@@ -897,7 +922,7 @@ body {
     left: 200px;
     width: 170px;
     height: 32px;
-    -color: #ffffff;
+    color: #ffffff;
     font-size: 18px;
 }
 

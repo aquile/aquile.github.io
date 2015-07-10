@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <link rel="icon" href="http://goit.com.ua/wp-content/themes/goit/images/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="http://goit.com.ua/wp-content/themes/goit/images/favicon.ico" type="image/x-icon"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=cyrillic,latin' rel='stylesheet'
+          type='text/css'>
     <title>GoIT_contract</title>
 </head>
 
@@ -93,32 +95,40 @@
     <div class="choose_group__wrapper">
         <div class="choose_group--left">
             <div class="choose_group--left--topic">ВЫБЕРИТЕ ГРУППУ</div>
+
             <ul class="choose_group--left list-ul">
-                <li id="GoStart">GoStart</li>
-                <li id="GoQA">GoQA</li>
-                <li id="GoFrontend">GoFrontend</li>
+
+                <li id="GoStart">GoStart
+                    <ul>
+                        <li>GoStartOnline1</li>
+                    </ul>
+                </li>
+                <li id="GoQA">GoQA
+                    <ul>
+                        <li>QA Manual</li>
+                        <li>QA Automation</li>
+                    </ul>
+                </li>
                 <li id="GoCode">GoCode
-                    <ul id="GoCode--li">
-                        <li>Java Enterprice development
-                            <ul>
-                                <li>1
-                                    <ul>
-                                        <li class="choose_group--lef--java-plan">GoJavaB3 <br/>
-                                            Вт.Чт. 19.30-22.00 <br/>
-                                            Сб. 11.00-12.30 <br/>
-                                            Старт 11.06.15
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>2</li>
-                                <li>3</li>
-                            </ul>
-                        </li>
+                    <ul>
+                        <li>GoJava Enterprise Development</li>
                         <li>GoJava Basic</li>
                     </ul>
                 </li>
-                <li id="GoiTeens">GoiTeens</li>
+                <li id="GoFrontend">GoFrontend
+                    <ul>
+                        <li>GoFrontend offline</li>
+                        <li>GoFrontend onine</li>
+                    </ul>
+                </li>
+
+                <li id="GoiTeens">GoiTeens
+                    <ul>
+                        <li>Старт 1.09.15</li>
+                    </ul>
+                </li>
             </ul>
+
         </div>
         <div class="choose_group--right">
             <div class="choose_group--right--topic">ФОРМА ОПЛАТЫ</div>
@@ -180,14 +190,11 @@
             <input type="text" name="surname" placeholder="Фамилия" required/>
             <input type="text" name="firstname" placeholder="Имя" required/>
             <input type="text" name="middle_name" placeholder="Отчество" required/>
-            <input type="text" name="passport_serial" placeholder="Паспорт, серия" required/><input type="number"
-                                                                                                    name="passport_number"
-                                                                                                    placeholder="Номер"
-                                                                                                    required
-                                                                                                    pattern="[0-9]"/>
-            <input type="tel" name="tel_number" placeholder="Номер телефона" required/>
+            <input type="text" name="passport_serial" placeholder="Паспорт, серия" required/>
+            <input type="text" name="passport_number" placeholder="Номер"/>
+            <input type="text" name="tel_number" placeholder="Номер телефона" required/>
             <input type="email" name="email" placeholder="email" required/>
-            <textarea name="adress_in_passport" cols="2" placeholder="Адрес прописки" required></textarea>
+            <input type="text" name="adress_in_passport" cols="2" placeholder="Адрес прописки" required></input>
             <input type="text" name="adres_in_real" placeholder="Адрес проживания" required/>
         </form>
         <p>* На e-mail и телефон вам придет оповещание об оплате</p>
