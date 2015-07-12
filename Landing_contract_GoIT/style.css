@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
 }
 
@@ -926,9 +926,10 @@ body {
     position: absolute;
     display: none;
     right: -16px;
-    top: -1px;
-    font-family: FontAwesome, 'Helvetica Neue', 'Roboto', 'Helvetica', Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    bottom: -1px;
+
+    font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    font-size: 18px;
 }
 
 .mail-to-me:hover::after, .mail-to-me:active::after, .mail-to-me:focus::after {
