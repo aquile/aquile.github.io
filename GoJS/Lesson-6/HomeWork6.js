@@ -9,22 +9,22 @@
 
  У объекта есть свойство className, которое хранит список css класов – слов, разделенных пробелами:
 
- var obj = {
+ var objRemoveClas = {
  className: 'open menu'
  };
- Напишите функцию removeClass(obj, cls), которая удаляет класс cls, если он есть:
+ Напишите функцию removeClass(objRemoveClas, cls), которая удаляет класс cls, если он есть:
 
- removeClass(obj, 'open'); // obj.className='menu'
- removeClass(obj, 'blabla'); // без изменений
+ removeClass(objRemoveClas, 'open'); // objRemoveClas.className='menu'
+ removeClass(objRemoveClas, 'blabla'); // без изменений
  P.S. Дополнительное усложнение. Функция должна корректно обрабатывать дублирование класса в строке:
 
- obj = {
+ objRemoveClas = {
  className: 'my menu menu'
  };
 
- removeClass(obj, 'menu');
+ removeClass(objRemoveClas, 'menu');
 
- console.log( obj.className ); // 'my'
+ console.log( objRemoveClas.className ); // 'my'
  Лишних пробелов после функции образовываться не должно.*/
 
 //Task1
