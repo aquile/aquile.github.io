@@ -19,6 +19,147 @@
   margin-left: 0;
 }
 
+@keyframes slidy {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+div#slider {
+  overflow: hidden;
+  width: @max-width;
+  max-width: 2000px;
+  height: 1025px;
+  margin: 0 auto;
+  position: relative;
+  h2 {
+    display: block;
+    width: 230px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    font-family: @font-family-light;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    z-index: 1;
+    text-align: center;
+  }
+  h1 {
+    display: block;
+    width: 1170px;
+    height: 285px;
+    margin: auto;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    font-family: @font-family-light;
+    font-size: 120px;
+    color: #ffffff;
+
+    z-index: 1;
+    text-align: center;
+    border-bottom: 1px solid @color-orange;
+  }
+  .container {
+    width: @container-width;
+    height: 130px;
+    margin: auto;
+    position: absolute;
+    top: 650px;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    z-index: 1;
+    font-family: @font-family-light;
+    font-size: 17px;
+    text-align: center;
+    .row div {
+      margin: 0;
+    }
+  }
+}
+
+div#slider figure img {
+  width: 2000px;
+  height: 1025px;
+  float: left;
+}
+
+div#slider figure {
+  position: relative;
+  width: 10000px;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite;
+}
+
+.header-logo {
+  display: block;
+  width: 311px;
+  height: 76px;
+  position: absolute;
+  top: 70px;
+  left: 80px;
+  background: url("../img/Logo-prologus.png") center no-repeat;
+  z-index: 1;
+}
+
+.header-navigation {
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  font-family: @font-family-bold;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 65px;
+  z-index: 2;
+  li {
+    display: inline-block;
+    padding-left: 35px;
+    letter-spacing: 0;
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+  }
+  li:nth-child(1) {
+    padding-left: 0;
+  }
+
+}
+
 .clients {
   display: block;
   width: @container-width;
