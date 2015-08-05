@@ -5,7 +5,6 @@
 @font-family-black: "GothamProBlack", 'Open Sans', sans-serif;
 
 @main-width: 100%;
-@max-width: 2000px;
 @main-height: 791px;
 
 @container-width: 1170px;
@@ -15,13 +14,22 @@
 @color-of-the-ocean: #249885;
 //change margin on .row's
 
-body {max-width: 2000px; min-width: 1200px;}
+body {
+  max-width: 2000px;
+  min-width: 1200px;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
 
 .row {
   margin-right: 0;
   margin-left: 0;
 }
-
 
 @keyframes slidy {
   0% {
@@ -55,9 +63,8 @@ body {max-width: 2000px; min-width: 1200px;}
 
 div#slider {
   overflow: hidden;
-  width: @max-width;
-  max-width: 2000px;
-  height: 1025px;
+  width: @main-width;
+//  height: 1025px;
   margin: 0 auto;
   position: relative;
   h2 {
@@ -66,11 +73,11 @@ div#slider {
     height: 40px;
     margin: auto;
     position: absolute;
-    top: 250px;
+    top: 150px;
     left: 0;
     right: 0;
     font-family: @font-family-light;
-    font-size: 18px;
+    font-size: 1.125em;
     color: #ffffff;
     letter-spacing: 3px;
     z-index: 1;
@@ -82,11 +89,11 @@ div#slider {
     height: 285px;
     margin: auto;
     position: absolute;
-    top: 300px;
+    top: 200px;
     left: 0;
     right: 0;
     font-family: @font-family-light;
-    font-size: 120px;
+    font-size: 7.500em;
     color: #ffffff;
 
     z-index: 1;
@@ -98,13 +105,13 @@ div#slider {
     height: 130px;
     margin: auto;
     position: absolute;
-    top: 650px;
+    top: 500px;
     left: 0;
     right: 0;
     color: #ffffff;
     z-index: 1;
     font-family: @font-family-light;
-    font-size: 17px;
+    font-size: 1.063em;
     text-align: center;
     .row div {
       margin: 0;
@@ -113,14 +120,13 @@ div#slider {
 }
 
 div#slider figure img {
-  width: 2000px;
-  height: 1025px;
+  width: 20%;
   float: left;
 }
 
 div#slider figure {
   position: relative;
-  width: 10000px;
+  width: 500%;
   margin: 0;
   left: 0;
   text-align: left;
@@ -133,8 +139,8 @@ div#slider figure {
   width: 311px;
   height: 76px;
   position: absolute;
-  top: 70px;
-  left: 80px;
+  top: 50px;
+  left: 60px;
   background: url("../img/Logo-prologus.png") center no-repeat;
   z-index: 1;
 }
@@ -145,7 +151,7 @@ div#slider figure {
   bottom: 30px;
   width: 100%;
   font-family: @font-family-bold;
-  font-size: 18px;
+  font-size: 1.125em;
   text-align: center;
   padding-top: 65px;
   z-index: 2;
@@ -167,7 +173,6 @@ div#slider figure {
 .clients {
   display: block;
   width: @container-width;
-  max-width: @max-width;
   height: @main-height;
   color: #000000;
   margin: 0 auto;
@@ -177,7 +182,7 @@ div#slider figure {
     line-height: 201px;
     font-family: @font-family-regular;
     color: @color-orange;
-    font-size: 36px;
+    font-size: 2.250em;
     text-align: center;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfIAAAACCAYAAACjdF59AAAAKUlEQVRYR+3DAQkAIAwAMHkLQ1jE+O/wHNcahw0WdXf+raqOe2IBAGM99VltYL3Lk3QAAAAASUVORK5CYII=) no-repeat center 121px;
   }
@@ -192,25 +197,25 @@ div#slider figure {
     height: 130px;
     line-height: 131px;
     font-family: @font-family-medium;
-    font-size: 30px;
+    font-size: 1.875em;
     color: #000000;
     letter-spacing: 1px;
     text-align: center;
   }
   p {
     font-family: @font-family-light;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 42px;
     letter-spacing: -1px;
     text-align: justify;
   }
 }
+
 //сашин вариант
 .clients {
   display: block;
   width: 100%;
-// max-width: 2000px; /
-height: 791px;
+  height: 791px;
   color: #000000;
   margin: 0 auto;
 }
@@ -220,7 +225,6 @@ height: 791px;
     width: 80%;
   }
 }
-
 
 #sony {
   background: url("../img/sony.png") 0 center no-repeat;
@@ -265,7 +269,7 @@ height: 791px;
 .speak-fluently {
   display: block;
   width: @main-width;
-  max-width: @max-width;
+
   height: @main-height;
   color: #000000;
   margin: 0 auto;
@@ -274,13 +278,13 @@ height: 791px;
     height: 200px;
     line-height: 201px;
     font-family: @font-family-regular;
-    font-size: 36px;
+    font-size: 2.25em;
     text-align: center;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAAAAAASz9WiAAAAEUlEQVQ4EWMYBaNgFIyCYQwABOQAARGV0z8AAAAASUVORK5CYII=) no-repeat center 121px;
   }
   .container {
     font-family: @font-family-light;
-    font-size: 24px;
+    font-size: 1.5em;
     .row {
       margin-bottom: 80px;
       letter-spacing: 1px;
@@ -288,21 +292,21 @@ height: 791px;
       .col-lg-5 {
         padding-left: 60px;
       }
-      .button {
-        display: block;
-        width: 565px;
-        height: 65px;
-        background: @color-orange;
-        text-align: center;
-        font-family: @font-family-medium;
-        font-size: 21px;
-        color: #ffffff;
-        line-height: 66px;
-      }
     }
   }
 }
-
+.button {
+  display: block;
+  width: 565px;
+  height: 65px;
+  background: @color-orange;
+  text-align: center;
+  font-family: @font-family-medium;
+  font-size: 1.313em;
+  color: #ffffff;
+  line-height: 66px;
+  margin: 0 auto;
+}
 #speak-1 {
   background: url("../img/1b.png") 0 10px no-repeat;
 }
@@ -322,7 +326,7 @@ height: 791px;
 .mission-possible {
   display: block;
   width: @main-width;
-  max-width: @max-width;
+
   height: @main-height;
   background: @color-orange;
   color: #ffffff;
@@ -332,13 +336,13 @@ height: 791px;
     height: 200px;
     line-height: 201px;
     font-family: @font-family-regular;
-    font-size: 36px;
+    font-size: 2.25em;
     text-align: center;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV8AAAACCAAAAADauYDAAAAAE0lEQVQoz2P4PwpoCRhGg4CmAAC1z7thNn9RBAAAAABJRU5ErkJggg==) no-repeat center 121px;
   }
   .container {
     font-family: @font-family-light;
-    font-size: 24px;
+    font-size: 1.5em;
     .row {
       margin-bottom: 80px;
       letter-spacing: 1px;
@@ -370,7 +374,7 @@ height: 791px;
     height: 150px;
     line-height: 151px;
     font-family: @font-family-regular;
-    font-size: 36px;
+    font-size: 2.25em;
     text-align: center;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAe8AAAACCAAAAABUTwv5AAAAEElEQVQ4EWMYBaNgFAxbAAAD4AABAcEwogAAAABJRU5ErkJggg==) no-repeat center 97px;
   }
@@ -379,7 +383,7 @@ height: 791px;
     height: 68px;
     line-height: 69px;
     font-family: @font-family-regular;
-    font-size: 48px;
+    font-size: 3em;
     text-align: center;
     color: @color-of-the-ocean;
   }
@@ -387,7 +391,7 @@ height: 791px;
     display: block;
     width: 850px;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 1.5em;
     font-family: @font-family-light;
     text-align: center;
     padding: 50px 0 70px;
@@ -403,7 +407,7 @@ height: 791px;
   h5 {
     display: block;
     width: 545px;
-    font-size: 30px;
+    font-size: 1.875em;
     font-family: @font-family-medium;
     letter-spacing: 4px;
     color: #ffffff;
@@ -417,7 +421,7 @@ height: 791px;
     height: 62px;
     line-height: 63px;
     font-family: @font-family-light;
-    font-size: 30px;
+    font-size: 1.875em;
     color: @color-of-the-ocean;
     padding-left: 30px;
     margin: 0 auto 35px;
@@ -431,7 +435,7 @@ height: 791px;
     margin: 0 auto;
     background: @color-orange;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 1.875em;
     line-height: 35px;
     letter-spacing: 2px;
     border: 1px solid #e54a19;
@@ -441,7 +445,6 @@ height: 791px;
 .speak-after-3-mnth {
   display: block;
   width: @main-width;
-  max-width: @max-width;
   height: @main-height;
   background: #888888;
   color: #ffffff;
@@ -449,7 +452,7 @@ height: 791px;
   background: url("../img/speak-after-3-mnth-bcg.jpg") center no-repeat;
   h6 {
     font-family: @font-family-light;
-    font-size: 120px;
+    font-size: 7.5em;
     text-align: center;
     padding-top: 260px;
   }
@@ -458,7 +461,6 @@ height: 791px;
 .not-for-all {
   display: block;
   width: @main-width;
-  max-width: @max-width;
   background: @color-orange;
   color: #ffffff;
   margin: 0 auto -1px;
@@ -467,7 +469,7 @@ height: 791px;
     height: 150px;
     line-height: 151px;
     font-family: @font-family-regular;
-    font-size: 36px;
+    font-size: 2.25em;
     text-align: center;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAmsAAAACCAAAAAAiQ8SDAAAAFklEQVQ4y2P4PwpGAX0Aw2gQjAI6AQBFldFnjJG1ngAAAABJRU5ErkJggg==) no-repeat center 97px;
   }
@@ -476,13 +478,13 @@ height: 791px;
     height: 40px;
     line-height: 41px;
     font-family: @font-family-light;
-    font-size: 48px;
+    font-size: 3em;
     text-align: center;
     padding-bottom: 70px;
   }
   .container {
     font-family: @font-family-light;
-    font-size: 24px;
+    font-size: 1.5em;
     .row {
       margin-bottom: 80px;
       letter-spacing: 1px;
@@ -513,7 +515,6 @@ height: 791px;
 .guarantee {
   display: block;
   width: @main-width;
-  max-width: @max-width;
   height: 1233px;
   margin: 0 auto;
   background: url("../img/bcg-guarantee.jpg") center no-repeat;
@@ -522,7 +523,7 @@ height: 791px;
     height: 250px;
     line-height: 65px;
     font-family: @font-family-light;
-    font-size: 48px;
+    font-size: 3em;
     text-align: center;
     color: #ffffff;
     padding-top: 135px;
@@ -532,7 +533,7 @@ height: 791px;
     display: block;
     height: 160px;
     font-family: @font-family-light;
-    font-size: 24px;
+    font-size: 1.5em;
     text-align: center;
     color: #ffffff;
     padding-bottom: 110px;
@@ -551,7 +552,7 @@ height: 791px;
   h5 {
     display: block;
     width: 545px;
-    font-size: 30px;
+    font-size: 1.875em;
     font-family: @font-family-medium;
     letter-spacing: 5px;
     line-height: 36px;
@@ -567,7 +568,7 @@ height: 791px;
     border: 1px solid @color-of-the-ocean;
     line-height: 63px;
     font-family: @font-family-light;
-    font-size: 30px;
+    font-size: 1.875em;
     color: @color-of-the-ocean;
     padding-left: 30px;
     margin: 0 auto 35px;
@@ -581,7 +582,7 @@ height: 791px;
     margin: 0 auto;
     background: @color-of-the-ocean;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 1.875em;
     line-height: 35px;
     letter-spacing: 2px;
   }
@@ -590,15 +591,14 @@ height: 791px;
 .footer {
   display: block;
   width: @main-width;
-  max-width: @max-width;
-  height: 336px;
+//  height: 336px;
   margin: 0 auto;
   background: @color-orange;
   color: #ffffff;
   letter-spacing: 2px;
   .container {
     font-family: @font-family-regular;
-    font-size: 18px;
+    font-size: 1.125em;
     padding-top: 100px;
   }
   span {
@@ -629,7 +629,7 @@ height: 791px;
   display: block;
   width: 100%;
   font-family: @font-family-bold;
-  font-size: 18px;
+  font-size: 1.125em;
   text-align: center;
   padding-top: 65px;
   li {
