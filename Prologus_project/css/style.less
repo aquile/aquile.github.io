@@ -14,10 +14,14 @@
 @color-orange: #e54a19;
 @color-of-the-ocean: #249885;
 //change margin on .row's
+
+body {max-width: 2000px; min-width: 1200px;}
+
 .row {
   margin-right: 0;
   margin-left: 0;
 }
+
 
 @keyframes slidy {
   0% {
@@ -201,6 +205,22 @@ div#slider figure {
     text-align: justify;
   }
 }
+//сашин вариант
+.clients {
+  display: block;
+  width: 100%;
+// max-width: 2000px; /
+height: 791px;
+  color: #000000;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
 
 #sony {
   background: url("../img/sony.png") 0 center no-repeat;
