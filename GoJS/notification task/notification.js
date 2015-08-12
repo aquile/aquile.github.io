@@ -35,7 +35,7 @@ var counter = 1;
         setTimeout(function () {
             self.removeClassActive();
         }, 1500)
-    }, 3000);
+    }, 2900);
 
 }
 
