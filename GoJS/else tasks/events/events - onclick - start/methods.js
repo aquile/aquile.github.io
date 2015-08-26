@@ -25,12 +25,13 @@ inputButton.onclick = function () {
 //------------
 var ul = document.createElement('ul');
 ul.innerHTML = '<li>';
-console.log(ul);
-var li = document.querySelector('li');
+
 var liNodes = '';
 for (var i = 1; i <= 5; i++) {
     liNodes += '<li>' + 'Line' + [i] + '</li>';
 }
-li.innerHTML = liNodes;
+ul.innerHTML = liNodes;
+
+var div
 
 console.log(ul);
