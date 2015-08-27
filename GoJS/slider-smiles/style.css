@@ -33,12 +33,12 @@ figure {
 }
 /*can't add transition for appearing and disappearing*/
 img {
-    display: none;
+    width: 0;
     float: left;
-    transition: display ease-out 1s;
+    transition: width ease-out 1s;
 }
 
 .active {
-    display: block;
+   width: 130px;
 }
 
