@@ -12,7 +12,7 @@ function Slider() {
         if (counter >= 0 && counter <= 6) {
             images[counter].classList.remove('active');
             images[counter + 3].classList.add('active');
-            rightButton.style.color = 'black';
+            rightButton.style.color = 'grey';
             if (counter === 6) {
                 leftButton.style.color = '#e3e3e3';
             }
@@ -26,7 +26,7 @@ function Slider() {
             images[counter - 1].classList.add('active');
             images[counter + 2].classList.remove('active');
             if (counter === 5) {
-                leftButton.style.color = 'black';
+                leftButton.style.color = 'grey';
             }
 
         }
