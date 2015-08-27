@@ -23,6 +23,8 @@ figure {
     top: 50px;
     left: 5px;
     color: grey;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
 
 .arrow-right {
@@ -31,6 +33,8 @@ figure {
     top: 50px;
     right: 5px;
     color: grey;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
 
 /*can't add transition for appearing and disappearing*/
