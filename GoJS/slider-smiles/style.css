@@ -22,7 +22,7 @@ figure {
     position: absolute;
     top: 50px;
     left: 5px;
-
+    color: grey;
 }
 
 .arrow-right {
@@ -30,7 +30,9 @@ figure {
     position: absolute;
     top: 50px;
     right: 5px;
+    color: grey;
 }
+
 /*can't add transition for appearing and disappearing*/
 img {
     width: 0;
@@ -39,6 +41,6 @@ img {
 }
 
 .active {
-   width: 130px;
+    width: 130px;
 }
 
