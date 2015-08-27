@@ -31,7 +31,7 @@ figure {
     top: 50px;
     right: 5px;
 }
-
+/*can't add transition for appearing and disappearing*/
 img {
     display: none;
     float: left;
