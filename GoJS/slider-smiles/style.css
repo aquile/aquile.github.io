@@ -1,0 +1,44 @@
+.frame {
+    display: block;
+    position: relative;
+    width: 470px;
+    height: 125px;
+    overflow: hidden;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: lightgrey;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+figure {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.arrow-left {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+
+}
+
+.arrow-right {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 5px;
+}
+
+img {
+    display: none;
+    float: left;
+    transition: display ease-out 1s;
+}
+
+.active {
+    display: block;
+}
+
