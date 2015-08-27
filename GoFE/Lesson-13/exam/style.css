@@ -1,0 +1,66 @@
+.mainframe {
+    display: block;
+    position: relative;
+    width: 792px;
+    height: 602px;
+    background: #000000 url("bg.png") center center no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    font-family: 'Arvo', serif;
+}
+.timer {
+    display: block;
+    position: absolute;
+    color: #FFFFFF;
+    left: 400px;
+    font-size: 20px;
+}
+.fire {
+    display: block;
+    width: 140px;
+    height: 50px;
+    color: #000000;
+    font-family: 'Arvo', serif;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: absolute;
+    top: 145px;
+    right: 185px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 5px;
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+}
+
+.score {
+    display: block;
+    position: absolute;
+    color: #FFFFFF;
+    left: 40px;
+    bottom: 0;
+    font-size: 20px;
+}
+.score span {
+    color: #00FF00;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.gunman {
+    display: block;
+    width: 102px;
+    height: 195px;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    background: url("gunman.png");
+    background-repeat: no-repeat;
+    background-position: -300px 0;
+    background-size: 1385%;
+}
