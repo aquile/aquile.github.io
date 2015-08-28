@@ -25,7 +25,7 @@ function Slider() {
         if (counter >= 1 && counter <= 7) {
             images[counter - 1].classList.add('active');
             images[counter + 2].classList.remove('active');
-            if (counter === 5) {
+            if (counter === 7) {
                 leftButton.style.color = 'grey';
             }
 
