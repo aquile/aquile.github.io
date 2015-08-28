@@ -7,6 +7,7 @@ function Slider() {
 
     var counter = 0;
     rightButton.style.color = '#e3e3e3';
+
     //Methods
     leftButton.onclick = function () {
         if (counter >= 0 && counter <= 6) {
