@@ -16,11 +16,11 @@
 </div>
 
 <script type="text/x-handlebars-template" class="templates__city">
-    {{#cities}}
+    {{#cityObj}}
     <div tabindex="1" class="city" data-latitude="{{latitude}}" data-longitude="{{longitude}}">
         <span class="city__name">{{name}}</span><span class="city__description">{{description}}</span>
     </div>
-    {{/cities}}
+    {{/cityObj}}
 </script>
 
 <script type="text/x-handlebars-template" class="templates__weather">
@@ -42,10 +42,11 @@
     var $ = document.querySelector.bind(document);
     var weather = new Weather();
     var input = document.forms.weather__form.elements.cityName;
-    input.addEventListener('input', function(){
+    input.addEventListener('input', function () {
         weather.findCity(this.value);
-    });
 
+    });
+    setTimeout(findWeather, 5000);
 
 </script>
 </body>
