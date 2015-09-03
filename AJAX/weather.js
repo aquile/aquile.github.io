@@ -25,11 +25,13 @@ function findWeather() {
     var cityDivs = document.querySelectorAll('.city');
     console.log(cityDivs[0]);
 
-    for (var i = 0; i < cityDivs.length - 1; i++) {
-        console.log(cityDivs[i]);
+    for (var i = 0; i < cityDivs.length; i++) {
 
-        cityDivs[i].addEventListener('click', function () {
-            var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + objects[i].longitude + '&lon=' + objects[i].latitude;
+
+        cityDivs[i].onclick = function (event) {
+            console.log(event.currentTarget.dataset.longitude + ' ' + event.currentTarget.dataset.latitude);
+
+            var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + event.currentTarget.dataset.longitude + '&lon=' + event.currentTarget.dataset.latitude;
 
             Ajax.getJSON(urlWeather, function (weatherData) {
                     console.log("______ ");
@@ -40,35 +42,51 @@ function findWeather() {
                     return weatherData;
                 }
             )
-        });
-    }
 
+        }
+
+    }
 }
 
-function Weather() {
+/*function findWeather() {
+ var cityDivs = document.querySelectorAll('.city');
 
+ console.log(objects[0].longitude + ' ' + objects[0].latitude);
+
+ var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + cityDivs[0].dataset.longitude + '&lon=' + cityDivs[0].dataset.latitude;
+ Ajax.getJSON(urlWeather, function (weatherData) {
+ console.log(urlWeather);
+ document.querySelector('.weather__info').innerHTML = Templates.Weather.render({
+ weather: weatherData
+ });
+ console.log(weatherData);
+ return weatherData;
+ }
+ )
+ }*/
+
+function Weather() {
 
     this.findCity = function (name) {
 
         Ajax.getJSON('https://geocode-maps.yandex.ru/1.x/?format=json&kind=locality&geocode=' + name, function (geoData) {
             objects = geoData.response.GeoObjectCollection.featureMember.map(function (fm) {
-                console.log(geoData);
+                //console.log(geoData);
                 var go = fm.GeoObject,
                     cordinates = go.Point.pos.split(' ');
                 cities = {
                     name: go.name,
                     description: go.description,
                     kind: go.metaDataProperty.GeocoderMetaData.kind,
-                    longitude: cordinates[0].slice(0, 2),
-                    latitude: cordinates[1].slice(0, 2)
+                    longitude: cordinates[1].slice(0, 4),
+                    latitude: cordinates[0].slice(0, 4)
                 };
 
                 return cities;
-            });
-            /*.filter(function(o){
-             return o.kind === 'locality';
-             }); //left in list only cities*/
-
+            });/*.filter(function (o) {
+                return o.kind === 'locality';
+            }); //left in list only cities
+*/
             document.querySelector('.weather__cities').innerHTML = Templates.Cities.render({
                 cityObj: objects
             });

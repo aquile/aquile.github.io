@@ -28,9 +28,9 @@
     <div>
         <span>{{name}}</span><br/>
         <span>{{weather[0].description}}</span><br/>
-        <span>{{name}}</span><br/>
+        <span>{{coord.lon}}</span><br/>
+        <span>{{coord.lat}}</span><br/>
         <span>{{main.temp}}</span><br/>
-        <span>{{name}}</span><br/>
 
     </div>
     {{/weather}}
@@ -47,6 +47,8 @@
 
     });
     setTimeout(findWeather, 5000);
+//document.querySelector('.city').onclick =
+
 
 </script>
 </body>
