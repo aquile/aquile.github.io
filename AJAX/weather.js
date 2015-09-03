@@ -20,33 +20,7 @@ var Ajax = {
     }
 };
 
-function findWeather() {
 
-    var cityDivs = document.querySelectorAll('.city');
-    console.log(cityDivs[0]);
-
-    for (var i = 0; i < cityDivs.length; i++) {
-
-
-        cityDivs[i].onclick = function (event) {
-            console.log(event.currentTarget.dataset.longitude + ' ' + event.currentTarget.dataset.latitude);
-
-            var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + event.currentTarget.dataset.longitude + '&lon=' + event.currentTarget.dataset.latitude;
-
-            Ajax.getJSON(urlWeather, function (weatherData) {
-                    console.log("______ ");
-                    console.log(weatherData);
-                    document.querySelector('.weather__info').innerHTML = Templates.Weather.render({
-                        weather: weatherData
-                    });
-                    return weatherData;
-                }
-            )
-
-        }
-
-    }
-}
 
 /*function findWeather() {
  var cityDivs = document.querySelectorAll('.city');
