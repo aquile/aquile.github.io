@@ -26,12 +26,12 @@
 <script type="text/x-handlebars-template" class="templates__weather">
     {{#weathers}}
     <div>
-        <i class="owf owf-520 owf-5x"></i>
+        <i class="owf owf-{{weather.0.id}} owf-5x"></i>
         <span>{{name}}</span><br/>
         <span>Humidity {{main.humidity}}%</span><br/>
         <span>Latitude {{coord.lon}}</span><br/>
         <span>Longitude {{coord.lat}}</span><br/>
-        <span>Temp {{main.temp}} K</span><br/>
+        <span>Temp {{main.temp}} C</span><br/>
         <span>Wind {{wind.speed}} m/s</span><br/>
     </div>
     {{/weathers}}

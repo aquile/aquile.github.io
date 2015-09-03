@@ -1,6 +1,5 @@
 var cities,
-    objects,
-    weatherObj;
+    objects;
 
 var Templates = {
     Cities: Hogan.compile(document.querySelector('.templates__city').innerHTML),
@@ -60,7 +59,7 @@ function Weather() {
             elem.onclick = function (event) {
                 console.log(event.currentTarget.dataset.longitude + ' ' + event.currentTarget.dataset.latitude);
 
-                var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + event.currentTarget.dataset.longitude + '&lon=' + event.currentTarget.dataset.latitude;
+                var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + event.currentTarget.dataset.longitude + '&lon=' + event.currentTarget.dataset.latitude + '&units=metric';
 
                 Ajax.getJSON(urlWeather, function (weatherData) {
 
@@ -69,11 +68,6 @@ function Weather() {
                             weathers: weatherData
                         });
 
-                        elem.onclick = function () {
-                            var icon = document.querySelector('i');
-                            weatherObj = weatherData;
-                            icon.classList.add('owf-' + weatherObj.weather[0].id);
-                        };
                         return weatherData;
                     }
                 );
