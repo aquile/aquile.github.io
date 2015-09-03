@@ -24,16 +24,17 @@
 </script>
 
 <script type="text/x-handlebars-template" class="templates__weather">
-    {{#weather}}
+    {{#weathers}}
     <div>
+        <i class="owf owf-520 owf-5x"></i>
         <span>{{name}}</span><br/>
-        <span>{{weather[0].description}}</span><br/>
-        <span>{{coord.lon}}</span><br/>
-        <span>{{coord.lat}}</span><br/>
-        <span>{{main.temp}}</span><br/>
-
+        <span>Humidity {{main.humidity}}%</span><br/>
+        <span>Latitude {{coord.lon}}</span><br/>
+        <span>Longitude {{coord.lat}}</span><br/>
+        <span>Temp {{main.temp}} K</span><br/>
+        <span>Wind {{wind.speed}} m/s</span><br/>
     </div>
-    {{/weather}}
+    {{/weathers}}
 </script>
 
 <script src="http://twitter.github.com/hogan.js/builds/3.0.1/hogan-3.0.1.min.js"></script>
@@ -44,36 +45,7 @@
     var input = document.forms.weather__form.elements.cityName;
     input.addEventListener('input', function () {
         weather.findCity(this.value);
-
-        setTimeout(findWeather, 500);
-
-        function findWeather() {
-
-            var cityDivs = document.querySelectorAll('.city');
-            console.log(cityDivs[0]);
-
-            for (var i = 0; i < cityDivs.length; i++) {
-
-
-                cityDivs[i].onclick = function (event) {
-                    console.log(event.currentTarget.dataset.longitude + ' ' + event.currentTarget.dataset.latitude);
-
-                    var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + event.currentTarget.dataset.longitude + '&lon=' + event.currentTarget.dataset.latitude;
-
-                    Ajax.getJSON(urlWeather, function (weatherData) {
-                                console.log("______ ");
-                                console.log(weatherData);
-                                document.querySelector('.weather__info').innerHTML = Templates.Weather.render({
-                                    weather: weatherData
-                                });
-                                return weatherData;
-                            }
-                    )
-
-                }
-
-            }
-        }
+        setTimeout(weather.findWeather, 500);
     });
 
 </script>

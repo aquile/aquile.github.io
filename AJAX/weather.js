@@ -1,5 +1,6 @@
 var cities,
-    objects;
+    objects,
+    weatherObj;
 
 var Templates = {
     Cities: Hogan.compile(document.querySelector('.templates__city').innerHTML),
@@ -20,25 +21,6 @@ var Ajax = {
     }
 };
 
-
-
-/*function findWeather() {
- var cityDivs = document.querySelectorAll('.city');
-
- console.log(objects[0].longitude + ' ' + objects[0].latitude);
-
- var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + cityDivs[0].dataset.longitude + '&lon=' + cityDivs[0].dataset.latitude;
- Ajax.getJSON(urlWeather, function (weatherData) {
- console.log(urlWeather);
- document.querySelector('.weather__info').innerHTML = Templates.Weather.render({
- weather: weatherData
- });
- console.log(weatherData);
- return weatherData;
- }
- )
- }*/
-
 function Weather() {
 
     this.findCity = function (name) {
@@ -57,15 +39,45 @@ function Weather() {
                 };
 
                 return cities;
-            });/*.filter(function (o) {
+            }).filter(function (o) {
                 return o.kind === 'locality';
             }); //left in list only cities
-*/
             document.querySelector('.weather__cities').innerHTML = Templates.Cities.render({
                 cityObj: objects
             });
         });
     };
 
+    this.findWeather = function () {
 
+        var cityDivs = document.querySelectorAll('.city');
+        var elem;
+        console.log(cityDivs[0]);
+
+        for (var i = 0; i < cityDivs.length; i++) {
+
+            elem = cityDivs[i];
+            elem.onclick = function (event) {
+                console.log(event.currentTarget.dataset.longitude + ' ' + event.currentTarget.dataset.latitude);
+
+                var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + event.currentTarget.dataset.longitude + '&lon=' + event.currentTarget.dataset.latitude;
+
+                Ajax.getJSON(urlWeather, function (weatherData) {
+
+                        console.log('=======' + weatherData);
+                        document.querySelector('.weather__info').innerHTML = Templates.Weather.render({
+                            weathers: weatherData
+                        });
+
+                        elem.onclick = function () {
+                            var icon = document.querySelector('i');
+                            weatherObj = weatherData;
+                            icon.classList.add('owf-' + weatherObj.weather[0].id);
+                        };
+                        return weatherData;
+                    }
+                );
+            };
+        }
+    }
 }
