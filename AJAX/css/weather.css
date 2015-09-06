@@ -70,6 +70,8 @@
 
 .weather__name {
     font-weight: bold;
+    font-size: 1em;
+    text-align: center;
 }
 
 .weather__icon {
@@ -83,4 +85,8 @@
 ::-moz-progress-bar {
     background-color: deepskyblue;
     border: 0;
+}
+
+.weather_wind {
+    color: #0044cc;
 }

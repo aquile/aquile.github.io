@@ -1,6 +1,7 @@
 function Gunman() {
     //Local variables
     var gunman = document.body.querySelector('.gunman');
+    var fire = document.body.querySelector('.fire');
     var pathGunmanCounter = -100; //in the end set -100px
     var bcgGunmanCounter = 0;
 
@@ -38,6 +39,13 @@ function Gunman() {
     setInterval(function () {
         clearInterval(timerId);
         gunman.style.backgroundPositionX = "-300px";
+
+
+
     }, 10000)
+
+    function Fire (){
+
+    }
 
 }

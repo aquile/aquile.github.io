@@ -57,13 +57,14 @@ function Weather() {
 
             elem = cityDivs[i];
             elem.onclick = function (event) {
-                console.log(event.currentTarget.dataset.longitude + ' ' + event.currentTarget.dataset.latitude);
+                //console.log(event.currentTarget.dataset.longitude + ' ' + event.currentTarget.dataset.latitude);
 
                 var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + event.currentTarget.dataset.longitude + '&lon=' + event.currentTarget.dataset.latitude + '&units=metric';
-
+                //console.log(urlWeather);
                 Ajax.getJSON(urlWeather, function (weatherData) {
 
-                        console.log('=======' + weatherData);
+                        console.log(weatherData);
+
                         document.querySelector('.weather__info').innerHTML = Templates.Weather.render({
                             weathers: weatherData
                         });
@@ -71,6 +72,40 @@ function Weather() {
                         return weatherData;
                     }
                 );
+                var el = document.querySelector('.js-fade');
+
+                fadeOut(el);
+                fadeIn(el);
+                fadeIn(el, "block");
+
+                // fade out
+
+                function fadeOut(el) {
+                    el.style.opacity = 1;
+
+                    (function fade() {
+                        if ((el.style.opacity -= .1) < 0) {
+                            el.style.display = "none";
+                        } else {
+                            requestAnimationFrame(fade);
+                        }
+                    })();
+                }
+
+                // fade in
+
+                function fadeIn(el, display) {
+                    el.style.opacity = 0;
+                    el.style.display = display || "block";
+
+                    (function fade() {
+                        var val = parseFloat(el.style.opacity);
+                        if (!((val += .1) > 1)) {
+                            el.style.opacity = val;
+                            requestAnimationFrame(fade);
+                        }
+                    })();
+                }
             };
         }
     }
