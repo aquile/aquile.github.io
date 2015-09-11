@@ -1,4 +1,5 @@
 function Gunman() {
+
     //Local variables
     var gunman = document.body.querySelector('.gunman');
     var fire = document.body.querySelector('.fire');
@@ -42,7 +43,7 @@ function Gunman() {
 
 
 
-    }, 10000)
+    }, 1000);
 
     function Fire (){
 
