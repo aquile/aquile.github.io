@@ -1,0 +1,112 @@
+<!-- 
+
+Name: stockquote
+Copyright SocialEdge Consulting 2014.
+All rights reserved.
+
+-->
+<html>
+<head>
+    <style>
+
+        /***** DESIGNER, PUT YOUR CSS HERE *****/
+
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <script>
+
+        window._config = {
+            symbol: 'GOOGL'
+        };
+
+        $(document).ready(function () {
+
+            window._stockQuoteResults = function (res) {
+                var data = res.query.results.quote;
+                data['isUp'] = data.Change > 0;
+                var tmpl = $('#scr_main').html();
+                var out = Mustache.render(tmpl, data);
+                $('#content').html(out);
+            };
+
+            var quote = function (symbol) {
+                return $.Deferred(function (defer) {
+                    $.ajax({
+                        type: 'GET',
+                        url: 'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%3D%22' + symbol + '%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys',
+                        async: false,
+                        jsonpCallback: '_stockQuoteResults',
+                        contentType: "application/json",
+                        dataType: 'jsonp',
+                        success: function (json) {
+                            defer.resolve(json);
+                        },
+                        error: function (err) {
+                            defer.reject(err);
+                        }
+                    });
+                }).promise();
+            };
+
+            quote(window._config.symbol)
+                    .then(function (res) {
+                        // do nothing here.
+                        // the jsonp callback will be called with the data.
+                    },
+                    function (err) {
+                        var tmpl = $('#scr_error').html();
+                        var out = Mustache.render(tmpl, err);
+                        $('#content').html(out);
+                    });
+
+        });
+
+    </script>
+
+    <!-- -------------- PUT MAIN SCREEN HERE ------------------- -->
+    <script id="scr_main" type="text/html">
+        <p>This content is shown when the quote data is loaded.</p>
+        <pre>
+         ====== Variables ======
+            Symbol: {{Symbol}}
+               Ask: {{Ask}}
+AverageDailyVolume: {{AverageDailyVolume}}
+               Bid: {{Bid}}
+            Change: {{Change}}
+   ChangeinPercent: {{ChangeinPercent}}
+          Currency: {{Currency}}
+              Name: {{Name}}
+              Open: {{Open}}
+            Volume: {{Volume}}
+     StockExchange: {{StockExchange}}
+              isUp: {{isUp}}
+
+Current: {{Bid}}
+The value is: {{#isUp}}UP{{/isUp}}{{^isUp}}DOWN{{/isUp}}
+</pre>
+    </script>
+
+
+    <!-- -------------- PUT ERROR SCREEN HERE ------------------ -->
+    <script id="scr_error" type="text/html">
+        <p>This content is shown if the initial quote can't be loaded.</p>
+        <pre>
+         ====== Variables ======
+    readyState: {{readyState}} (eg. "4")
+        status: {{status}} (eg. "404")
+    statusText: {{statusText}} (eg. "error")
+</pre>
+    </script>
+
+
+</head>
+<body>
+
+<!-- -------------- PUT SPASH SCREEN HERE ------------------ -->
+<div id="content">
+    <p>Whatever content is here will be rendered prior to the quote being loaded.</p>
+</div>
+
+</body>
+</html>

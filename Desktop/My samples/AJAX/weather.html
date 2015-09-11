@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/weather.css"/>
+    <link href="css/owfont-regular.min.css" rel="stylesheet" type="text/css">
+    <link href="weather.png" rel="shortcut icon"/>
+</head>
+<body>
+<div class="weather">
+    <form action="" name="weather__form" onsubmit="return false">
+        <input type="text" name="cityName" class="weather__input" autofocus placeholder="Введите город..."/>
+    </form>
+    <div class="weather__cities"></div>
+    <div class="weather__info js-fade"></div>
+</div>
+
+<script type="text/x-handlebars-template" class="templates__city">
+    {{#cityObj}}
+    <div tabindex="1" class="city" data-latitude="{{latitude}}" data-longitude="{{longitude}}">
+        <span class="city__name">{{name}}</span><span class="city__description">{{description}}</span>
+    </div>
+    {{/cityObj}}
+</script>
+
+<script type="text/x-handlebars-template" class="templates__weather">
+    {{#weathers}}
+    <div>
+        <i class="owf owf-{{weather.0.id}} owf-5x weather__icon .owf"></i>
+        <i class="owf owf-{{weather.1.id}} owf-5x weather__icon .owf"></i>
+        <span>{{weather.0.description}}</span><br/>
+        <span>{{weather.1.description}}</span><br/><br/>
+        <span class="weather__name">{{name}}</span><br/><br/>
+        <span class="weather__temperature">Temp {{main.temp}} C</span><br/>
+        <span class="weather_wind">Wind {{wind.speed}} m/s</span><br/>
+        <span class="weather__pressure">Pressure {{main.pressure}} kPa</span><br/>
+        <span>Humidity {{main.humidity}}%</span>
+        <progress value="{{main.humidity}}" max="100"></progress><br/>
+        <span>Latitude {{coord.lon}}</span><br/>
+        <span>Longitude {{coord.lat}}</span><br/>
+
+    </div>
+    {{/weathers}}
+</script>
+
+<script src="http://twitter.github.com/hogan.js/builds/3.0.1/hogan-3.0.1.min.js"></script>
+<script src="weather.js"></script>
+<script>
+    var $ = document.querySelector.bind(document);
+    var weather = new Weather();
+    var input = document.forms.weather__form.elements.cityName;
+    input.addEventListener('input', function () {
+        weather.findCity(this.value);
+        setTimeout(weather.findWeather, 500);
+    });
+</script>
+</body>
+</html>
