@@ -50,6 +50,12 @@
         }
 
         /* MAIN STYLES */
+        .test {
+            display: block;
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+        }
 
         .wrapper {
             position: relative;
@@ -1511,30 +1517,32 @@
 <body>
 <!--  MAIN HTML -->
 
-<div class="wrapper">
-    <div class="latest_post">latest post</div>
-    <div class="str_wrap">
+<div class="test">
+    <div class="wrapper">
+        <div class="latest_post">latest post</div>
+        <div class="str_wrap">
 
-        <!--  DEFAULT CONTENT-->
+            <!--  DEFAULT CONTENT-->
 
-        <a data-number="1" class="ticker-link" href="http://htmlbook.ru/css/white-space" target="_top">1. Этим летом мне
-            посчастливилось... </a>
-        <a data-number="2" class="ticker-link" href="http://htmlbook.ru/css/white-space">2. А потом посчастливилось
-            осенью... </a>
-        <a data-number="3" class="ticker-link" href="http://htmlbook.ru/css/white-space" target="_top">3. Сбрось мне
-            ресет, которым ты
-            пользуешься... </a>
-        <a data-number="4" class="ticker-link" href="http://htmlbook.ru/css/white-space">4. А потом посчастливилось
-            осенью... </a>
-        <a data-number="5" class="ticker-link" href="http://htmlbook.ru/css/white-space" target="_top">5. Сбрось мне
-            ресет, которым ты
-            пользуешься... </a>
-    </div>
-    <div class="counter">
-        <span class="currentPostSpam">1</span> of <span class="postsSummarySpan"></span>
+            <a data-number="1" class="ticker-link" href="http://htmlbook.ru/css/white-space" target="_top">1. Этим летом
+                мне
+                посчастливилось... </a>
+            <a data-number="2" class="ticker-link" href="http://htmlbook.ru/css/white-space">2. А потом посчастливилось
+                осенью... </a>
+            <a data-number="3" class="ticker-link" href="http://htmlbook.ru/css/white-space" target="_top">3. Сбрось мне
+                ресет, которым ты
+                пользуешься... </a>
+            <a data-number="4" class="ticker-link" href="http://htmlbook.ru/css/white-space">4. А потом посчастливилось
+                осенью... </a>
+            <a data-number="5" class="ticker-link" href="http://htmlbook.ru/css/white-space" target="_top">5. Сбрось мне
+                ресет, которым ты
+                пользуешься... </a>
+        </div>
+        <div class="counter">
+            <span class="currentPostSpam">1</span> of <span class="postsSummarySpan"></span>
+        </div>
     </div>
 </div>
-
 <!--  HOGAN TEMPLATE WHICH FULFILL THE LINKS IN .str_wrap-->
 
 <script type="text/x-handlebars-template" class="template__latest_post">
@@ -1556,6 +1564,7 @@
             postsSummary,
             currentPostNode = document.querySelector('.currentPostSpam'),
             postsSummaryNode = document.querySelector('.postsSummarySpan'),
+            wrapperNode = document.querySelector('.wrapper'),
             linksArr1, linksArr2;
     var Templates = {
         Ticker: Hogan.compile(document.querySelector('.template__latest_post').innerHTML)
@@ -1680,7 +1689,7 @@
     setTimeout(function () {
         $('.str_wrap').liMarquee({circular: true, scrollamount: 50});
 
-        // UNBIND AND BIND AGAIN FOR THE CASE circular: true;
+        // UNBIND AND BIND AGAIN FOR THE CASE if liMarque {circular: true};
         linksArr2 = document.querySelectorAll('.ticker-link');
 
         $('.ticker-link').unbind().hover(function (event) {
@@ -1691,24 +1700,39 @@
     }, 3000);
 
     setInterval(function () {
-
+        var a = getCoords(wrapperNode);
         $('.ticker-link').each(function (i, elem) {
-            //console.log(i + ": " + getCoords(elem));
 
-            if (getCoords(this) > 200 && getCoords(this) < 300) {
-             console.log(i +": " + getCoords(this));
+            if (getCoords(this) > a + 200 && getCoords(this) < a + 300) {
+                console.log(i + ": " + getCoords(this) + ", " + pageXOffset);
+                currentPostNode.innerHTML = $(elem).data('number');
                 //console.log(elem.dataset.number); === equal to:
                 // === console.log($(elem).data('number'));
-                currentPostNode.innerHTML = $(elem).data('number');
-             return false;
-             } else {
-             //console.log(i + ': ' + $(elem).text());
-             }
+                return false;
+            }
         });
 
-        function getCoords(el) { // exluding IE8-
+        /*        function getCoords(el) { // exluding IE8-
+         var box = el.getBoundingClientRect();
+         return box.left + pageXOffset
+         }*/
+        function getCoords(el) {
+            // (1)
             var box = el.getBoundingClientRect();
-            return box.left + pageXOffset
+
+            var body = document.body;
+            var docEl = document.documentElement;
+
+            // (2)
+            var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
+
+            // (3)
+            var clientLeft = docEl.clientLeft || body.clientLeft || 0;
+
+            // (4)
+            var left = box.left + scrollLeft - clientLeft;
+
+            return left
         }
     }, 1000)
 </script>
