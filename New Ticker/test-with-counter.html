@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <style>
+        /* FONT SHOULD BE LOADED BY LINK */
+
         /*        @font-face {
                     font-family: Lucida Sans Regular;
                     src: url(Lucida%20Sans%20Regular.ttf);
                 }*/
+
+        /* RESET CSS*/
+
         * {
             -webkit-box-sizing: border-box;
             -moz-box-sizing: border-box;
@@ -44,67 +49,96 @@
             border-spacing: 0;
         }
 
+        /* MAIN STYLES */
+
         .wrapper {
             position: relative;
+            min-width: 450px;
             height: 50px;
             background: #eeeeee;
             font-family: Lucida Sans Regular, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            box-sizing: border-box;
         }
 
         .latest_post {
-            width: 14%;
-            height: 50px;
             display: inline-block;
-            font-size: 1.1em;
-            font-weight: 600;
             position: relative;
-            background: #eeeeee;
+            width: 11%;
+            min-width: 142px;
+            height: 50px;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            font-weight: bold;
             white-space: nowrap;
             vertical-align: middle;
             text-align: center;
             line-height: 51px;
             text-transform: uppercase;
             background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABBCAAAAAA1JpE5AAAAC0lEQVQYGWMYcAAAAIIAARDJCUIAAAAASUVORK5CYII=) 99% center no-repeat;
-            -webkit-background-size: 1px 35px;
-            background-size: 1px 35px;
+            -webkit-background-size: 1px 33px;
+            background-size: 1px 33px;
+        }
+
+        .latest_post:before {
+            content: '';
+            display: block;
+            position: absolute;
+            right: -24px;
+            top: 0;
+            width: 25px;
+            height: 100%;
+            background: -webkit-linear-gradient(0deg, #eeeeee 30%, rgba(238, 238, 238, 0.5) 100%);
+            z-index: 2;
+        }
+
+        .counter:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -24px;
+            top: 0;
+            width: 25px;
+            height: 100%;
+            background: -webkit-linear-gradient(180deg, #eeeeee 30%, rgba(238, 238, 238, 0.5) 100%);
+            z-index: 2;
         }
 
         .str_wrap {
             display: inline-block;
-            overflow: hidden;
-            width: 76%;
-
-            font-size: 1.7em;
             position: relative;
-            background: #eeeeee;
+            overflow: hidden;
+            min-width: 200px;
+            width: calc(100% - 240px);
+            margin: 0 5px;
+            font-size: 17px;
+            text-align: center;
             white-space: nowrap;
             vertical-align: middle;
-            margin: 0 1%;
-            text-align: center;
+            background: #eeeeee;
         }
 
         .counter {
             display: inline-block;
-            width: 7%;
-            height: 50px;
-            font-size: 1.1em;
-            font-weight: 600;
             position: relative;
-            background: #eeeeee;
+            width: 6%;
+            min-width: 77px;
+            height: 50px;
+            font-size: 13px;
+            line-height: 51px;
+            font-weight: 600;
             white-space: nowrap;
             vertical-align: middle;
             text-align: center;
-            line-height: 51px;
             background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABBCAAAAAA1JpE5AAAAC0lEQVQYGWMYcAAAAIIAARDJCUIAAAAASUVORK5CYII=) 1% center no-repeat;
-            -webkit-background-size: 1px 35px;
-            background-size: 1px 35px;
+            -webkit-background-size: 1px 33px;
+            background-size: 1px 33px;
         }
 
         .wrapper a {
             text-decoration: none;
             color: #000000;
             text-shadow: 0 0 0 #eeeeee;
-            transition: text-shadow ease-in-out 0.4s;
+            transition: text-shadow ease-in-out 0.3s;
         }
 
         .wrapper a:hover {
@@ -159,8 +193,6 @@
             max-width: none !important;
         }
     </style>
-    <!--<link rel="stylesheet" href="reset.css" type="text/css"/> WE SHOULD USE IT IN LOCAL VERSION-->
-    <!--<link rel="stylesheet" href="liMarquee.css" type="text/css"/>-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
         /*
@@ -1474,85 +1506,105 @@
     <script src="http://twitter.github.com/hogan.js/builds/3.0.1/hogan-3.0.1.min.js"></script>
 
 </head>
+
+
 <body>
+<!--  MAIN HTML -->
 
 <div class="wrapper">
     <div class="latest_post">latest post</div>
     <div class="str_wrap">
 
-        <a href="http://htmlbook.ru/css/white-space" target="_top">Этим летом мне посчастливилось... </a>
-        <a href="http://htmlbook.ru/css/white-space">А потом посчастливилось осенью... </a>
-        <a href="http://htmlbook.ru/css/white-space" target="_top">Сбрось мне ресет, которым ты пользуешься... </a>
+        <!--  DEFAULT CONTENT-->
+
+        <a data-number="1" class="ticker-link" href="http://htmlbook.ru/css/white-space" target="_top">1. Этим летом мне
+            посчастливилось... </a>
+        <a data-number="2" class="ticker-link" href="http://htmlbook.ru/css/white-space">2. А потом посчастливилось
+            осенью... </a>
+        <a data-number="3" class="ticker-link" href="http://htmlbook.ru/css/white-space" target="_top">3. Сбрось мне
+            ресет, которым ты
+            пользуешься... </a>
+        <a data-number="4" class="ticker-link" href="http://htmlbook.ru/css/white-space">4. А потом посчастливилось
+            осенью... </a>
+        <a data-number="5" class="ticker-link" href="http://htmlbook.ru/css/white-space" target="_top">5. Сбрось мне
+            ресет, которым ты
+            пользуешься... </a>
     </div>
-    <div class="counter">1 of 5</div>
+    <div class="counter">
+        <span class="currentPostSpam">1</span> of <span class="postsSummarySpan"></span>
+    </div>
 </div>
+
+<!--  HOGAN TEMPLATE WHICH FULFILL THE LINKS IN .str_wrap-->
 
 <script type="text/x-handlebars-template" class="template__latest_post">
     {{#table}}
-    <a href="{{link}}" target="_top" class="ticker-link"> {{description}}</a>
+    <a data-number="dataNumber" href="{{link}}" target="_top" class="ticker-link"> {{description}}</a>
     <span>... </span>
     {{/table}}
 </script>
 
 <script>
+
+    // You have to type here document ID !!!ATTENTION!!! ATTENTION!!! ATTENTION!!! ATTENTION!!! ATTENTION!!!
     window._config = {
         docID: '1091)'
     };
-    var tableObj,
-            postsSummary;
 
-    /*   var containerType = window.parent.containerType, ///for place
-     containerID = window.parent.containerID;*/
-
-    var containerType = 102, ///for place
-            containerID = window.parent.containerID;
-
+    var containerType = 102,
+            tableObj,
+            postsSummary,
+            currentPostNode = document.querySelector('.currentPostSpam'),
+            postsSummaryNode = document.querySelector('.postsSummarySpan'),
+            linksArr1, linksArr2;
     var Templates = {
         Ticker: Hogan.compile(document.querySelector('.template__latest_post').innerHTML)
     };
 
-     //in console: RESTWrapper.prototype.get("/api/core/v3/contents?filter=entityDescriptor(102,1072)")*/
+    /*   var containerType = window.parent.containerType, ///for place
+     containerID = window.parent.containerID;*/
+    //in console: RESTWrapper.prototype.get("/api/core/v3/contents?filter=entityDescriptor(102,1072)")*/
 
+
+    // IT DEPENDS ON VERSION OF JIVE
+    //IF VERSION DO NOT EQUAL TO 3 IT SHOULD BE REPLACED IN VARIABLE requ
     $(document).ready(function () {
         var requ = RESTWrapper.prototype.get("/v3/contents?filter=entityDescriptor(102," + _config.docID);
         $.when(requ).then(function (data) {
-
             //console.log(data.list[0].content.text);
-            tableObj = data;
 
             var content = data.list[0].content.text.replace(/\<\!--(.*?)--\>/gi, '');
-
+            var rows = $(content).find('tbody tr');
+            var rowsObj = [];
+            var i = 1; // <a> node data-number in .str_wrap
             //console.log(content);
 
-            //var total = $(content).find('tbody tr:nth-child(1) td:nth-child(1) strong').text();
-
-            //console.log(total);
-
-            var rows = $(content).find('tbody tr');
-
-            var rowsObj = [];
             $.each(rows, function (ind, el) {
-
-                var description = $(el).find('td strong').eq(0).html(),
+                //delete ind variable?
+                var description = $(el).find('td').eq(0).html(),
                         link = $(el).find('td').eq(1).find('a').attr('href');
 
-
-
-                rowsObj.push({description: description, link: link})
-
+                rowsObj.push({description: description, link: link, dataNumber: i});
+                i++;
             });
             tableObj = rowsObj;
-
-
 
             document.querySelector('.str_wrap').innerHTML = Templates.Ticker.render({
                 table: rowsObj
             });
         });
+
+// WILL BE INITIALIZED JUST THE LINKS WILL BE CREATED AND FULFILLED
+        linksArr1 = document.querySelectorAll('.ticker-link');
+        postsSummaryNode.innerHTML = +linksArr1.length; //тут придется поделить на 3 если включена функция circular: true
+
+        $('.ticker-link').bind('mouseenter', function (event) {
+            currentPostNode.innerHTML = event.currentTarget.dataset.number;
+        });
+
     });
 
-
-
+    // LIBRARY FROM MISHA TO WORK WITH AJAX IN JIVE
     if (!window.RESTWrapper) {
         RESTWrapper = function (win, version) {
             this.win = (typeof win == 'undefined') ? window : win;
@@ -1623,13 +1675,42 @@
         };
     }
     window.rest = window.rest || new RESTWrapper(window, 3);
-</script>
 
-<script>
-
+    //INITIALIZATION OF liMarquee - STARTING TEXT MOVING AFTER SET TIMEOUT
     setTimeout(function () {
-        $('.str_wrap').liMarquee();
-    }, 5000);
+        $('.str_wrap').liMarquee({circular: true, scrollamount: 50});
+
+        // UNBIND AND BIND AGAIN FOR THE CASE circular: true;
+        linksArr2 = document.querySelectorAll('.ticker-link');
+
+        $('.ticker-link').unbind().hover(function (event) {
+            currentPostNode.innerHTML = event.currentTarget.dataset.number;
+            console.log(event.pageX);
+        });
+
+    }, 3000);
+
+    setInterval(function () {
+
+        $('.ticker-link').each(function (i, elem) {
+            //console.log(i + ": " + getCoords(elem));
+
+            if (getCoords(this) > 200 && getCoords(this) < 300) {
+             console.log(i +": " + getCoords(this));
+                //console.log(elem.dataset.number); === equal to:
+                // === console.log($(elem).data('number'));
+                currentPostNode.innerHTML = $(elem).data('number');
+             return false;
+             } else {
+             //console.log(i + ': ' + $(elem).text());
+             }
+        });
+
+        function getCoords(el) { // exluding IE8-
+            var box = el.getBoundingClientRect();
+            return box.left + pageXOffset
+        }
+    }, 1000)
 </script>
 
 </body>
