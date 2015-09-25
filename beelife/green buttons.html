@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        console.log('ok2');
+    </script>
+    <style>
+        .green-buttons {
+            width: 210px;
+        }
+
+        .rules, .vacancy {
+            display: block;
+            width: 100%;
+            padding: 20px 10px 20px 44%;
+            background: #00FF00;
+            text-transform: uppercase;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .rules {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAArCAQAAABoD+ieAAACk0lEQVRYw9WYzUtUURjG33HSMswoij6IMdTMtCKKCFQypUUfC4OwQLQiokVQ/QMtpgiUKMI2talFbYQ2LS3pGz/6IHdBRZrhJmkhmUxl/p4WM4aj94zeumP2PpuzeOB37znPe+4518wUVoTtlKdDqmCuTSy28YYRfqRNMRoVSkZ2KM3FkGqTkEp7MUrzTCPhmjdykBc84WlQ0iPeM5pAXvVE8pwq8igMTCs4x7fExDqQD7XaAi1OEku8ZYvyKaWUDZo3HvlY+QEjT8WREjE+McAAn+lm2yQkudrCXvb8sXYrosxkZFKYWicgKdDLv07od0UVciGlichbgbRFP1XTR94LBDmgfdNH1vMjAGQ7K6aNVJg6NdH451ITZ7XJHZ9JSDMzZf2lMic2yZTI4PtyCqRCytFCb5E99uXTHHJdLs3ziaSGPmcsOthoZqb5nGHY6brNYh9IZdCVMouNCpux3v1YEkPU+ZvYqAYZ8tQw/dSYmbGMFmIO11e62exvYhdwgHpPHaJaWYm1jNBAg8NX9h8kNofTXOaSh5pV+/stixV1uC5qpy+kQlwnxk9PjTKs4wqZKUKb5HBBD+X+Ens/5fYZTST2Q8rE1vuLTzWv6aXHQ33cjR9WlMEJPjpcvdyMT//s3vBYShFrPLSW7N+HtExWOVyFvrd1dnGHDto91MUNFZuZkc0xHtDp6Wrnghb5i09byg3vvMJmlPAuhecL+/01yZWUyINmZqykNdUxhK3+1nKJanWEwx46SuXYbZEiGhyuw5Qpw3diFfJWciKncs3KJknbncSNfKYdilAQlLR87OblRKbvfulGzlj9CySdMwuk0yjhbVr/+3wfNx7hFevMTGHyqFRFmpRPeXxEJXkKm/0Cp7WnizVjOxMAAAAASUVORK5CYII=);
+            -webkit-background-size: 27%;
+            background-size: 27%;
+            background-position: 10% center;
+            background-repeat: no-repeat;
+        }
+
+        .vacancy {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAQAAADZLlsnAAAD2ElEQVRYw92Xb2hVdRjHf9t0ba1ttxytwpkjo0XOJlox/8SuLtFBYhjioqDmfBOoRPVCVDRqlmQY0RpiisxKNMFyYGYv5oLVaG2i1kyYjGFMpZjs4tq92+7n24t7tnt27jk38J77puf35sLn93zP7z7neZ7fc4xJ0biLcrbRz8vGbyNXa2hmQCLKOv/l9zAqSRIRnvJf/kl+tuRvU2D8N/Za8lc03X/xZQwT5QhDnFamz+IqolviqDJ5VlX+nPdR1upe6/f7Eld5wr9glNAl8T3FxrCKEFE2+Bnrj60XeYhSOiSO+RhxVhIGGrklcVniGo+lLprP0zxsjIr0q6TDymQDYYkxXks9O2ZzTOJ3atgpcU0Vxmg6b3CVveSlevLFnLeiPcSQxCbroVnMTF28gL8kLrGRE5LEWWX7WTY5fMtJ5hnDDN7lC5X5XZd3T4RAWcox6TbK2cn8dIkX0yFxQbPSI/+llUVfp0d+HQ0SDdSmKzyVEpV3nikZClDM/e5LhdRI1KjQawfFCijD+3RB2ujkF4/VQY9EDx2eOzppY4W3/G6iNHOAz13Xfk5JnGK/Bz9AM1H2JOnn9CW78f8r9hTQxz5vvI9+Fd65vArpTyZfp+PkJpF/nE7Kk05tx6kz/0fjIVZpDSWePI9Kapnn1fU1jTmsJzgxqEyFVfwhSdzkRY8h5CtJIsqHusfFP5u3GY5dOzzidL6PVlnGRc12kd8+ycfdug7LJ6ZliSZH7bKYW5o0nnNJubM2/qmL/Fs23uVo2izkehwnTozk8Y2Nf+Aiv8Um/5MecN6rRydhq4pc3DeCxQdV7RL7BdycVNie6D5Th+nhCieZ65oX2Wyhm17avT5zCPIDvVzivYRZnxms53U+oYlN1CXOBMpiOXXs5hDbqFe1shJ2lOlV3uQgH1HPC+RPhbskoowQZlyi29kaWMSgRIQRRoFhljrbAeclxhghDIyzY+rUHtIUY7PD/YyDn3HwzQ4eYk4cfiaHcYEHbc4rYgVj4yM8b/vvs/gtQaFxAlYwoASLv31l0+LCW+PFzw4XPqAKY4wyaJKL0Uup5VxLxIVHecXipfS6KjQpw2gJIYmxeElLREBiqzXf/ygRtT+CCFGJtlh+sDVBeJQxiZCWGBolwrRww4aPEJIYUI4xLLP60Dmb/zkuSpKqjVGA6xK36bL536CFsERjLCXbWc2gPW9okOihwBgt4B9CvMRpG/+OtfzNOEFjKOCyxDsctPFBVtMuaZdRgCAlzOdPG65XjqpixaVpPMNC8mMzvsVPkK8KFsU6v8pYSm68o0r0MZcSggr8C4hVQEsVPnUbAAAAAElFTkSuQmCC);
+            -webkit-background-size: 27%;
+            background-size: 27%;
+            background-position: 10% center;
+            background-repeat: no-repeat;
+        }
+
+        .rules p, .vacancy p {
+            font-family: Roboto, Arial, Helvetica, sans-serif;
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+        .rules span, .vacancy span {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="green-buttons">
+
+    <a class="rules">
+        <p><span>правила</span> <br/>
+            beelife
+        </p>
+    </a>
+
+    <a class="vacancy">
+        <p>открытые <br/>
+            <span>вакансии</span>
+        </p>
+    </a>
+
+
+</div>
+
+</body>
+</html>
