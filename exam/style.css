@@ -61,7 +61,7 @@
     height: 204px;
     position: absolute;
     top: 200px;
-    right: 0;
+    right: -96px;
     background: url("gunman.png");
     background-repeat: no-repeat;
     background-position-x: 0;
