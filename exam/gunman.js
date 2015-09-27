@@ -8,6 +8,7 @@ function Gunman() {
         timerGunmanSpan = document.body.querySelector('.timerNodeGunman'),
         rewardSpan = document.body.querySelector('.rewardNode'),
         loseDiv = document.body.querySelector('.lose'),
+        winDiv = document.body.querySelector('.win'),
         pathGunmanCounter = -120,
         i = 0,  //bcg-x GunmanCounter
         j = 0,  //bcg-y GunmanCounter
@@ -35,29 +36,20 @@ function Gunman() {
         youLose = 11;
 
     //main timer of appearance
-    var appear = 3600;
+    var appear = 2000;
 
 
-    //Local methods
+    //Local methods---------------------------------------------------------
     this.Go = function () {
         audioPlay(Audio.audioIntro);
+        fireDiv.style.display = "none";
+
         //change gunman on sprite
         gunmanDiv.style.backgroundPositionY = j * Y + 'px';
         pathGunmanCounter = -120;
         gunmanDiv.style.right = pathGunmanCounter + 'px';
 
-        var timerGoId = setInterval(function () {
-            pathGunmanCounter += 20;
-            gunmanDiv.style.right = pathGunmanCounter + 'px';
-
-            gunmanDiv.style.backgroundPositionX = run[i] * X + 'px';
-            console.log(run[i] * X + 'px' + "i=" + i) ;
-            i++;
-
-            if (i == 3) {
-                i = 0
-            }
-        }, 200);
+        var timerGoId = setInterval(Steps, 200);
 
         //erase player time
         timerYouSpan.innerHTML = ' ';
@@ -164,6 +156,7 @@ function Gunman() {
 
                 //next gunman
                 j++;
+                console.log(j);
                 if (j < 5) {
                     setTimeout(function () {
                         audioStop(Audio.audioWait);
@@ -171,6 +164,10 @@ function Gunman() {
                         i = 0;
                         self.Go();
                     }, 2000)
+                }
+                if (j == 5) {
+                    audioPlay(Audio.audioWin);
+                    LoseWin(winDiv, 100);
                 }
             }
 
@@ -185,25 +182,7 @@ function Gunman() {
         fireDiv.style.background = "white";
         fireDiv.style.color = "red";
 
-
-        var fs = 0,
-            opacity = 0;
-
-        function increaseFS() {
-            fs += 1;
-            opacity += 0.1;
-            loseDiv.style.fontSize = fs + "em";
-            loseDiv.style.opacity = opacity;
-        }
-
-        var setId = setInterval(increaseFS, x);
-
-        setTimeout(function () {
-            clearTimeout(setId);
-            setInterval(function () {
-                loseDiv.classList.toggle('flashing')
-            }, x * 5)
-        }, x * 8)
+        LoseWin(loseDiv, x);
     };
 
     this.GoBack = function () {
@@ -212,30 +191,15 @@ function Gunman() {
 
         setTimeout(function () {
             audioPlay(Audio.audioDeath);
-            i = 3;
-            var backId = setInterval(function () {
-                gunmanDiv.style.backgroundPositionX = fireGun[i] * X + "px";
-                i--;
-                if (i == 0) {
-                    //i = 0;
-                    clearInterval(backId);
-                    var intId = setInterval(function () {
-                        pathGunmanCounter += 20;
-                        gunmanDiv.style.right = pathGunmanCounter + 'px';
+            i = 0;
 
-                        gunmanDiv.style.backgroundPositionX = run[i] * X + 'px';
-                        i++;
+            var backId = setInterval(Steps, 200);
 
-                        if (i == 2) {
-                            i = 0
-                        }
-                    }, 200);
-                    setTimeout(function () {
-                        clearInterval(intId);
-                        audioStop(Audio.audioDeath);
-                    }, 6000)
-                }
-            }, 250);
+            setTimeout(function () {
+                clearInterval(backId);
+                audioStop(Audio.audioDeath);
+            }, 6000)
+
         }, 3000)
     };
 
@@ -251,13 +215,52 @@ function Gunman() {
         var fireInterval = setInterval(function () {
             gunmanDiv.style.backgroundPositionX = fireGun[i] * X + "px";
             i++;
-            if (i == 3) {
-                clearInterval(fireInterval);
-                self.Lose(100);
-                self.GoBack();
+            console.log(i);
+            if (i == 4) {
+                setTimeout(function () {
+                    clearInterval(fireInterval);
+                    self.Lose(100);
+                    self.GoBack();
+
+                }, 700)
             }
         }, 500);
     };
+
+    function Steps() {
+        pathGunmanCounter += 20;
+        gunmanDiv.style.right = pathGunmanCounter + 'px';
+
+        gunmanDiv.style.backgroundPositionX = run[i] * X + 'px';
+        i++;
+
+        if (i == 3) {
+            i = 0
+        }
+    }
+
+    function LoseWin(elem, x) {
+        elem.style.display = "block";
+        elem.style.opacity = "0";
+        var fs = 0,
+            opacity = 0;
+
+        function increaseFS() {
+            fs += 1;
+            opacity += 0.1;
+            elem.style.fontSize = fs + "em";
+            elem.style.opacity = opacity;
+        }
+
+        var setId = setInterval(increaseFS, x);
+
+        setTimeout(function () {
+            clearTimeout(setId);
+            setInterval(function () {
+                elem.classList.toggle('flashing')
+            }, x * 5)
+        }, x * 8)
+    }
 
     function audioPlay(audio) {
         audio.play();
