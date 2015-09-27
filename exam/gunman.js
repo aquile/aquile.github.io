@@ -36,7 +36,7 @@ function Gunman() {
         youLose = 11;
 
     //main timer of appearance
-    var appear = 2000;
+    var appear = 4000;
 
 
     //Local methods---------------------------------------------------------
@@ -228,7 +228,7 @@ function Gunman() {
     };
 
     function Steps() {
-        pathGunmanCounter += 20;
+        pathGunmanCounter += 25;
         gunmanDiv.style.right = pathGunmanCounter + 'px';
 
         gunmanDiv.style.backgroundPositionX = run[i] * X + 'px';
