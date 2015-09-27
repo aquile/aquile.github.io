@@ -8,11 +8,20 @@ function Gunman() {
         timerGunmanSpan = document.body.querySelector('.timerNodeGunman'),
         rewardSpan = document.body.querySelector('.rewardNode'),
         loseDiv = document.body.querySelector('.lose'),
-        pathGunmanCounter = 0,
+        pathGunmanCounter = -120,
         i = 0,  //bcg-x GunmanCounter
-        j = 0,  //bcg-x GunmanCounter
+        j = 0,  //bcg-y GunmanCounter
         timerGunmanCounter = 1.5,
-        rewardCounter = 0;
+        rewardCounter = 0,
+        Audio = {
+            audioIntro: document.querySelector('.sound__intro'),
+            audioDeath: document.querySelector('.sound__death'),
+            audioFire: document.querySelector('.sound__fire'),
+            audioShot: document.querySelector('.sound__shot'),
+            audioShot_Fall: document.querySelector('.sound__shot-fall'),
+            audioWait: document.querySelector('.sound__wait'),
+            audioWin: document.querySelector('.sound__win')
+        };
 
     //basic dimensions of gunmanDiv
     var X = -96,
@@ -31,27 +40,34 @@ function Gunman() {
 
     //Local methods
     this.Go = function () {
+        audioPlay(Audio.audioIntro);
         //change gunman on sprite
         gunmanDiv.style.backgroundPositionY = j * Y + 'px';
+        pathGunmanCounter = -120;
+        gunmanDiv.style.right = pathGunmanCounter + 'px';
 
         var timerGoId = setInterval(function () {
             pathGunmanCounter += 20;
             gunmanDiv.style.right = pathGunmanCounter + 'px';
 
             gunmanDiv.style.backgroundPositionX = run[i] * X + 'px';
+            console.log(run[i] * X + 'px' + "i=" + i) ;
             i++;
 
-            if (i == 2) {
+            if (i == 3) {
                 i = 0
             }
         }, 200);
+
+        //erase player time
+        timerYouSpan.innerHTML = ' ';
 
         self.GunmanTimer(timerGunmanCounter);
 
         setTimeout(function () {
             clearInterval(timerGoId);
             gunmanDiv.style.backgroundPositionX = stay * X + "px";
-
+            audioStop(Audio.audioIntro);
             self.Ready();
         }, appear);
     };
@@ -67,6 +83,7 @@ function Gunman() {
 
     //displaying div "READY?" then "FIRE!"
     this.Ready = function () {
+        audioPlay(Audio.audioWait);
         var border = 15;
 
         fireDiv.innerHTML = "READY?";
@@ -78,7 +95,11 @@ function Gunman() {
         }, 100);
 
         setTimeout(function () {
+            audioStop(Audio.audioWait);
+            audioPlay(Audio.audioFire);
+
             clearInterval(decreaseBorderId);
+
             fireDiv.innerHTML = "FIRE!!!";
             fireDiv.style.background = "red";
             fireDiv.style.color = "white";
@@ -104,6 +125,8 @@ function Gunman() {
         gunmanDiv.addEventListener('click', OneClick);
 
         function OneClick() {
+            audioPlay(Audio.audioShot_Fall);
+
             clearInterval(loseID);
             then = new Date().getTime();
             yourTime = ((then - past) / 1000).toFixed(2) + " s";
@@ -119,34 +142,42 @@ function Gunman() {
 
 
     this.Reward = function (score) {
-        score += 1000;
-        score = score + " ";
+        score = +score + 1000;
+        rewardCounter = score + " ";
         //добавить к скоре разницу в милиссекундах между твоим выстрелом и выстрелом ганмена
-        rewardSpan.firstChild.nodeValue = score;
+        rewardSpan.innerHTML = rewardCounter;
     };
 
     this.GunmanKilled = function () {
+        audioPlay(Audio.audioWait);
+
         fireDiv.innerHTML = "КРАСАУЧЕГ !";
+        fireDiv.style.background = "white";
+        fireDiv.style.color = "red";
+
         i = 0;
         var killedId = setInterval(function () {
             gunmanDiv.style.backgroundPositionX = gunmanKilled[i] * X + "px";
 
             if (i == 2) {
                 clearInterval(killedId);
+
+                //next gunman
+                j++;
+                if (j < 5) {
+                    setTimeout(function () {
+                        audioStop(Audio.audioWait);
+                        pathGunmanCounter = 0;
+                        i = 0;
+                        self.Go();
+                    }, 2000)
+                }
             }
 
             i++;
         }, 500);
 
-        //next gunman
-        j++;
-        if (j < 5) {
-            setTimeout(function () {
-                pathGunmanCounter = 0;
-                i = 0;
-                self.Go();
-            }, 2000)
-        }
+
     };
 
     this.Lose = function (x) {
@@ -172,13 +203,15 @@ function Gunman() {
             setInterval(function () {
                 loseDiv.classList.toggle('flashing')
             }, x * 5)
-        }, x * 7)
+        }, x * 8)
     };
+
     this.GoBack = function () {
         i = youLose;
         gunmanDiv.style.backgroundPositionX = i * X + "px";
 
         setTimeout(function () {
+            audioPlay(Audio.audioDeath);
             i = 3;
             var backId = setInterval(function () {
                 gunmanDiv.style.backgroundPositionX = fireGun[i] * X + "px";
@@ -198,7 +231,8 @@ function Gunman() {
                         }
                     }, 200);
                     setTimeout(function () {
-                        clearInterval(intId)
+                        clearInterval(intId);
+                        audioStop(Audio.audioDeath);
                     }, 6000)
                 }
             }, 250);
@@ -207,6 +241,8 @@ function Gunman() {
 
 
     this.GunmanShot = function () {
+        audioPlay(Audio.audioShot);
+
         //close gunman from the user
         loseDiv.style.display = "block";
         loseDiv.style.opacity = "0";
@@ -223,5 +259,12 @@ function Gunman() {
         }, 500);
     };
 
+    function audioPlay(audio) {
+        audio.play();
+    }
 
+    function audioStop(audio) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
 }
