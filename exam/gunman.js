@@ -43,7 +43,9 @@ function Gunman() {
         playAgain = 8500;
 
     //Global method--------------------------------------------------------
-    self.Go = function () {
+    Go();
+
+    function Go () {
         audioPlay(Audio.audioIntro);
         fireDiv.style.display = "none";
 
@@ -65,7 +67,7 @@ function Gunman() {
             audioStop(Audio.audioIntro);
             Ready();
         }, appear);
-    };
+    }
 
     //Local methods---------------------------------------------------------
     //Set timer for gunman
@@ -167,7 +169,7 @@ function Gunman() {
                         audioStop(Audio.audioWait);
                         pathGunmanCounter = 0;
                         i = 0;
-                        self.Go();
+                        Go();//__________________________________________________
                     }, 2000)
                 }
                 if (j == 5) {
@@ -262,20 +264,21 @@ function Gunman() {
         }
 
         var setId = setInterval(increaseFS, x);
+        var toggleId;
 
         setTimeout(function () {
             clearTimeout(setId);
-            var toggleId = setInterval(function () {
+            toggleId = setInterval(function () {
                 elem.classList.toggle('flashing')
             }, x * 5);
+        }, x * 8);
 
-            setTimeout(function () {
-                clearInterval(toggleId);
+        setTimeout(function () {
+            clearInterval(toggleId);
 
-                PlayAgain();
+            PlayAgain();
 
-            }, playAgain)
-        }, x * 8)
+        }, playAgain)
     }
 
     //play again fn
