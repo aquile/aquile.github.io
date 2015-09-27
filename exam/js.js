@@ -31,6 +31,9 @@ function Gunman() {
 
     //Local methods
     this.Go = function () {
+        //change gunman on sprite
+        gunmanDiv.style.backgroundPositionY = j * Y + 'px';
+
         var timerGoId = setInterval(function () {
             pathGunmanCounter += 20;
             gunmanDiv.style.right = pathGunmanCounter + 'px';
@@ -53,27 +56,7 @@ function Gunman() {
         }, appear);
     };
 
-    this.Ready = function () {
-        var border = 15;
-
-        fireDiv.innerHTML = "READY?";
-        fireDiv.style.display = "block";
-
-        var increaseBorderId = setInterval(function () {
-            fireDiv.style.border = border + "px solid red";
-            border -= 1;
-        }, 100);
-
-        setTimeout(function () {
-            clearInterval(increaseBorderId);
-            fireDiv.innerHTML = "FIRE!!!";
-            fireDiv.style.background = "red";
-            fireDiv.style.color = "white";
-            self.Win();
-        }, 1500)
-    };
-
-
+    //Set timer for gunman
     this.GunmanTimer = function (timer) {
         var t;
         timer -= 0.15;
@@ -82,23 +65,45 @@ function Gunman() {
         timerGunmanSpan.innerHTML = t;
     };
 
+    //displaying div "READY?" then "FIRE!"
+    this.Ready = function () {
+        var border = 15;
 
+        fireDiv.innerHTML = "READY?";
+        fireDiv.style.display = "block";
+
+        var decreaseBorderId = setInterval(function () {
+            fireDiv.style.border = border + "px solid red";
+            border -= 1;
+        }, 100);
+
+        setTimeout(function () {
+            clearInterval(decreaseBorderId);
+            fireDiv.innerHTML = "FIRE!!!";
+            fireDiv.style.background = "red";
+            fireDiv.style.color = "white";
+
+            self.Win();
+        }, 1500)
+    };
+
+    //implement lose timeOut and putting onclick to the div gunman
     this.Win = function () {
         var yourTime,
             past,
             then;
 
         past = new Date().getTime();
-        //Set timer for gunman
-
 
         // Implement Lose function timer
         var loseID = setTimeout(function () {
             self.GunmanShot();
-        }, timerGunmanCounter * 1000);  //1500 it's Ready() function Timeout
+        }, timerGunmanCounter * 1000);
 
         //Giving a chance to player))
-        gunmanDiv.addEventListener('click', function () {
+        gunmanDiv.addEventListener('click', OneClick);
+
+        function OneClick() {
             clearInterval(loseID);
             then = new Date().getTime();
             yourTime = ((then - past) / 1000).toFixed(2) + " s";
@@ -106,14 +111,10 @@ function Gunman() {
             timerYouSpan.innerHTML = yourTime;
             self.Reward(rewardCounter);
             self.GunmanKilled();
-//
-            //setTimeout(function () {
-            //    pathGunmanCounter = 0;
-            //    i = 0;
-            //    self.Go();
-            //}, 2000)
-        });
 
+            //removing event
+            gunmanDiv.removeEventListener('click', OneClick);
+        }
     };
 
 
@@ -122,6 +123,30 @@ function Gunman() {
         score = score + " ";
         //добавить к скоре разницу в милиссекундах между твоим выстрелом и выстрелом ганмена
         rewardSpan.firstChild.nodeValue = score;
+    };
+
+    this.GunmanKilled = function () {
+        fireDiv.innerHTML = "КРАСАУЧЕГ !";
+        i = 0;
+        var killedId = setInterval(function () {
+            gunmanDiv.style.backgroundPositionX = gunmanKilled[i] * X + "px";
+
+            if (i == 2) {
+                clearInterval(killedId);
+            }
+
+            i++;
+        }, 500);
+
+        //next gunman
+        j++;
+        if (j < 5) {
+            setTimeout(function () {
+                pathGunmanCounter = 0;
+                i = 0;
+                self.Go();
+            }, 2000)
+        }
     };
 
     this.Lose = function (x) {
@@ -180,19 +205,6 @@ function Gunman() {
         }, 3000)
     };
 
-    this.GunmanKilled = function () {
-        fireDiv.innerHTML = "КРАСАУЧЕГ !";
-        i = 0;
-        var killedId = setInterval(function () {
-            gunmanDiv.style.backgroundPositionX = gunmanKilled[i] * X + "px";
-
-            if (i == 2) {
-                clearInterval(killedId);
-            }
-
-            i++;
-        }, 500)
-    };
 
     this.GunmanShot = function () {
         //close gunman from the user
