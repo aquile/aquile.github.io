@@ -74,15 +74,14 @@
 
 <script src="gunman.js"></script>
 <script>
-
-
+    var game;
     var playButton = document.body.querySelector(".play_button");
 
     playButton.addEventListener("click", function () {
 
         playButton.parentElement.style.display = "none";
 
-        var game = new Gunman();
+        game = new Gunman();
     })
 
 </script>

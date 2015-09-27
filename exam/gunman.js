@@ -1,6 +1,5 @@
 function Gunman() {
 
-    var self = this;
     //Local variables
     var gunmanDiv = document.body.querySelector('.gunman'),
         fireDiv = document.body.querySelector('.fire'),
@@ -34,18 +33,18 @@ function Gunman() {
     var run = [0, 1, 2],
         stay = 3,
         fireGun = [4, 5, 6, 7],
-        gunmanKilled = [8, 9, 10],
+        gunmanKilling = [8, 9, 10],
         youLose = 11;
 
     //main timer of appearance
     var appear = 4000,
     //timeout of play again div
-        playAgain = 8500;
+        playAgainTimeout = 8500;
 
     //Global method--------------------------------------------------------
-    Go();
+    go();
 
-    function Go () {
+    function go () {
         audioPlay(Audio.audioIntro);
         fireDiv.style.display = "none";
 
@@ -59,19 +58,19 @@ function Gunman() {
         //erase player time
         timerYouSpan.innerHTML = ' ';
 
-        GunmanTimer(timerGunmanCounter);
+        gunmanTimer(timerGunmanCounter);
 
         setTimeout(function () {
             clearInterval(timerGoId);
             gunmanDiv.style.backgroundPositionX = stay * X + "px";
             audioStop(Audio.audioIntro);
-            Ready();
+            ready();
         }, appear);
     }
 
     //Local methods---------------------------------------------------------
     //Set timer for gunman
-    function GunmanTimer(timer) {
+    function gunmanTimer(timer) {
         var t;
         timer -= 0.15;
         timerGunmanCounter = timer;
@@ -80,7 +79,7 @@ function Gunman() {
     }
 
     //displaying div "READY?" then "FIRE!"
-    function Ready() {
+    function ready() {
         audioPlay(Audio.audioWait);
         var border = 15;
 
@@ -102,12 +101,12 @@ function Gunman() {
             fireDiv.style.background = "red";
             fireDiv.style.color = "white";
 
-            Win();
+            win();
         }, 1500)
     }
 
     //implement lose timeout and putting onclick to the div gunman
-    function Win() {
+    function win() {
         var yourTime,
             past,
             then;
@@ -116,13 +115,13 @@ function Gunman() {
 
         // Implement Lose function timer
         var loseID = setTimeout(function () {
-            GunmanShot();
+            gunmanShot();
         }, timerGunmanCounter * 1000);
 
         //Giving a chance to player))))))
-        gunmanDiv.addEventListener('click', OneClick);
+        gunmanDiv.addEventListener('click', oneClick);
 
-        function OneClick() {
+        function oneClick() {
             audioPlay(Audio.audioShot_Fall);
 
             clearInterval(loseID);
@@ -130,16 +129,16 @@ function Gunman() {
             yourTime = ((then - past) / 1000).toFixed(2) + " s";
 
             timerYouSpan.innerHTML = yourTime;
-            Reward(rewardCounter);
-            GunmanKilled();
+            reward(rewardCounter);
+            gunmanKilled();
 
             //removing event
-            gunmanDiv.removeEventListener('click', OneClick);
+            gunmanDiv.removeEventListener('click', oneClick);
         }
     }
 
     //calculating reward
-    function Reward(score) {
+    function reward(score) {
         score = +score + 1000;
         rewardCounter = score + " ";
         //добавить к скоре разницу в милиссекундах между твоим выстрелом и выстрелом ганмена
@@ -147,7 +146,7 @@ function Gunman() {
     }
 
     //when gunman was killed by player
-    function GunmanKilled() {
+    function gunmanKilled() {
         audioPlay(Audio.audioWait);
 
         fireDiv.innerHTML = "КРАСАУЧЕГ !";
@@ -156,7 +155,7 @@ function Gunman() {
 
         i = 0;
         var killedId = setInterval(function () {
-            gunmanDiv.style.backgroundPositionX = gunmanKilled[i] * X + "px";
+            gunmanDiv.style.backgroundPositionX = gunmanKilling[i] * X + "px";
 
             if (i == 2) {
                 clearInterval(killedId);
@@ -169,12 +168,12 @@ function Gunman() {
                         audioStop(Audio.audioWait);
                         pathGunmanCounter = 0;
                         i = 0;
-                        Go();//__________________________________________________
+                        go();//__________________________________________________
                     }, 2000)
                 }
                 if (j == 5) {
                     audioPlay(Audio.audioWin);
-                    LoseWin(winDiv, 100);
+                    loseWin(winDiv, 100);
 
                 }
             }
@@ -186,17 +185,17 @@ function Gunman() {
     }
 
     //display loser div
-    function Lose(x) {
+    function lose(x) {
         audioPlay(Audio.audioDeath);
         fireDiv.innerHTML = "LOSER !";
         fireDiv.style.background = "white";
         fireDiv.style.color = "red";
 
-        LoseWin(loseDiv, x);
+        loseWin(loseDiv, x);
     }
 
     //after gunman won he must left the window
-    function GoBack() {
+    function goBack() {
         i = youLose;
         gunmanDiv.style.backgroundPositionX = i * X + "px";
 
@@ -213,7 +212,7 @@ function Gunman() {
     }
 
     // when gunman was faster then player
-    function GunmanShot() {
+    function gunmanShot() {
         audioPlay(Audio.audioShot);
 
         //close gunman from the user
@@ -228,8 +227,8 @@ function Gunman() {
             if (i == 4) {
                 setTimeout(function () {
                     clearInterval(fireInterval);
-                    Lose(100);
-                    GoBack();
+                    lose(100);
+                    goBack();
 
                 }, 700)
             }
@@ -250,7 +249,7 @@ function Gunman() {
     }
 
     //display and flashing of  win/lose window
-    function LoseWin(elem, x) {
+    function loseWin(elem, x) {
         elem.style.display = "block";
         elem.style.opacity = "0";
         var fs = 0,
@@ -276,13 +275,13 @@ function Gunman() {
         setTimeout(function () {
             clearInterval(toggleId);
 
-            PlayAgain();
+            playAgain();
 
-        }, playAgain)
+        }, playAgainTimeout)
     }
 
     //play again fn
-    function PlayAgain() {
+    function playAgain() {
         //hide lose or win div
         loseDiv.style.display = "none";
         winDiv.style.display = "none";
