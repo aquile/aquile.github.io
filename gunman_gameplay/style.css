@@ -166,3 +166,15 @@
 .play_button:hover {
     cursor: pointer;
 }
+
+.version {
+    display: block;
+    width: 13%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 21px;
+}
