@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+<div class="slider-wrapper">
+
+    <div class="slider__images">
+        <div class="slider__images-wrap">
+            <a href="#" target="_top"><img src="maxresdefault.jpg" alt="Photo 1"></a>
+            <a href="#" target="_top"><img src="1373421260_3.jpg" alt="Photo 2"></a>
+            <a href="#" target="_top"><img src="b673.jpeg" alt="Photo 3"></a>
+            <a href="#" target="_top"><img src="IMG_1829.jpg" alt="Photo 4"></a>
+            <a href="#" target="_top"><img src="maxresdefault.jpg" alt="Photo 1"></a>
+        </div>
+    </div>
+
+    <div class="slider-circle-1"></div>
+    <div class="slider-circle-2"></div>
+    <a class="slider-circle-3">
+
+        <h2>Develop <br/> your skills</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+    </a>
+    <a class="slider-circle-4"><p>Learn more...</p></a>
+</div>
+
+<ul class="slider__pagination">
+    <li class="slider__pagination-item"><a href="#" data-slider__item="0" class=""></a></li>
+    <li class="slider__pagination-item"><a href="#" data-slider__item="1" class=""></a></li>
+    <li class="slider__pagination-item"><a href="#" data-slider__item="2" class=""></a></li>
+    <li class="slider__pagination-item"><a href="#" data-slider__item="3" class=""></a></li>
+</ul>
+
+<script src="view-slider.js"></script>
+<script>
+    var slider = new Slider(2000, 0.7);
+
+</script>
+
+</body>
+</html>
