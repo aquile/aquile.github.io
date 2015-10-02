@@ -1,0 +1,388 @@
+<script>
+    window._config = {
+
+
+
+
+        placeIDs : "2952,3333",      //empty for all, "current" for current place, one or more separated by commas. More then one allowed only for Jive8++
+        tags: "main-pg",      //search tag
+        types: "post",
+        count: 2
+    }
+
+</script>
+<link href="https://fonts.googleapis.com/css?family=Roboto:500,900italic,900,400italic,100,700italic,300,700,500italic,100italic,300italic,400&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:500,900italic,900,400italic,100,700italic,300,700,500italic,100italic,300italic,400&amp;subset=cyrillic,cyrillic-ext,latin,latin-ext" rel="stylesheet" type="text/css">
+<style>
+
+    *{
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
+    body{
+        min-height: 420px;
+        background: #E5E5E5;
+    }
+    .wrapper {
+        background: #E5E5E5;
+    }
+    .image{
+        display: block;
+        vertical-align: top;
+        background-size: cover;
+        background-position: center center;
+        height: 132px;
+    }
+    .image a {
+        color: #000000;
+        font-weight: bold;
+        margin: -120px 11px;
+        border: 3px solid #ffd500;
+        text-decoration: none;
+        width: 17%;
+        min-width: 275px;
+        max-width: 311px;
+        min-height: 70px;
+        text-transform: uppercase;
+        padding: 12px 10px;
+        position: absolute;
+        background: url(https://in.beeline.kz/resources/statics/1001/newspaper.png?234) 30px no-repeat;
+    }
+    .image a span {
+        position: absolute;
+        bottom: 16px;
+        line-height: 17px;
+        top: 13px;
+        width: 62%;
+        right: 10px;
+        overflow: hidden;
+        font-weight: bold;
+        word-break: break-word;
+        word-wrap: normal;
+        text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        font-size: 15px;
+    }
+    .description{
+        color: #333;
+        font-size: 13px;
+    }
+    .text{
+        display: block;
+        vertical-align: top;
+        margin: 15px 0 20px 0;
+    }
+    .new:first-child{
+        padding: 0 10px 0 1px;
+    }
+    .new{
+        display: inline-block;
+        vertical-align: top;
+        width: 23%;
+        padding: 0 10px 0 5px;
+
+    }
+    header{
+        background: #ffffff;
+        padding: 10px 0 10px 0;
+    }
+    header span{
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+    .triangle{
+        float: right;
+        top: 3px;
+        margin: 0 10%;
+        width: 62px;
+        height: 60px;
+        background: url(/resources/statics/3057/grey-triangle.png?a=143247ss15806233);
+    }
+    .news {
+        padding: 30px 0 5px 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .shadow.ent {
+        display: block;
+        background-color: #D9D9D9;
+    }
+    .shadow {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: inherit;
+        background-color: rgba(231, 205, 36, 0.85);
+        transition:         all .1s ease-in-out;
+        -webkit-transition: all .1s ease-in-out;
+        -moz-transition:    all .1s ease-in-out;
+        -o-transition:      all .1s ease-in-out;
+    }
+    .image:hover a {
+        border-color: transparent;
+        color: #000000;
+    }
+    .image:hover .shadow {
+        display: block;
+    }
+    .image:hover .shadow.ent {
+        display: none;
+    }
+    .read-more:hover{
+        color: #000000;
+        background: #ffd500 url(/resources/statics/3057/grey-right.png?a=1434727729349) no-repeat 12% 50%;
+    }
+    .read-more{
+        display: block;
+        background: url(/resources/statics/3057/yellow-right.png?a=1434715806233) no-repeat 12% 50%;
+        padding: 5px 10px 7px 30px;
+        border: 2px solid #ffd500;
+        margin-top: 15px;
+        color: #000000;
+        font-size: 15px;
+        text-decoration: none;
+        width: 60px;
+    }
+    .error,.no-res{
+        color: red;
+        font-size: 16px;
+        font-weight: bold;
+        border: 1px solid red;
+    }
+    @media screen and (max-width: 650px) {
+        .new {
+            padding: 0 18px 0 18px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .triangle{
+            right: 5%;
+        }
+        .new {
+            padding: 0 14px 0 14px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .image a span {
+            white-space: nowrap;
+        }
+        .new {
+            padding: 0 10px 0 10px;
+        }
+
+    }
+
+
+</style>
+
+<script type="text/javascript" src="https://in.beeline.kz/resources/statics/1001/jquery-1.11.3.min.js?a=1443785669138"></script>
+<script>
+    (function defineMustache(global,factory){if(typeof exports==="object"&&exports&&typeof exports.nodeName!=="string"){factory(exports)}else if(typeof define==="function"&&define.amd){define(["exports"],factory)}else{global.Mustache={};factory(Mustache)}})(this,function mustacheFactory(mustache){var objectToString=Object.prototype.toString;var isArray=Array.isArray||function isArrayPolyfill(object){return objectToString.call(object)==="[object Array]"};function isFunction(object){return typeof object==="function"}function typeStr(obj){return isArray(obj)?"array":typeof obj}function escapeRegExp(string){return string.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g,"\\$&")}function hasProperty(obj,propName){return obj!=null&&typeof obj==="object"&&propName in obj}var regExpTest=RegExp.prototype.test;function testRegExp(re,string){return regExpTest.call(re,string)}var nonSpaceRe=/\S/;function isWhitespace(string){return!testRegExp(nonSpaceRe,string)}var entityMap={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;","/":"&#x2F;"};function escapeHtml(string){return String(string).replace(/[&<>"'\/]/g,function fromEntityMap(s){return entityMap[s]})}var whiteRe=/\s*/;var spaceRe=/\s+/;var equalsRe=/\s*=/;var curlyRe=/\s*\}/;var tagRe=/#|\^|\/|>|\{|&|=|!/;function parseTemplate(template,tags){if(!template)return[];var sections=[];var tokens=[];var spaces=[];var hasTag=false;var nonSpace=false;function stripSpace(){if(hasTag&&!nonSpace){while(spaces.length)delete tokens[spaces.pop()]}else{spaces=[]}hasTag=false;nonSpace=false}var openingTagRe,closingTagRe,closingCurlyRe;function compileTags(tagsToCompile){if(typeof tagsToCompile==="string")tagsToCompile=tagsToCompile.split(spaceRe,2);if(!isArray(tagsToCompile)||tagsToCompile.length!==2)throw new Error("Invalid tags: "+tagsToCompile);openingTagRe=new RegExp(escapeRegExp(tagsToCompile[0])+"\\s*");closingTagRe=new RegExp("\\s*"+escapeRegExp(tagsToCompile[1]));closingCurlyRe=new RegExp("\\s*"+escapeRegExp("}"+tagsToCompile[1]))}compileTags(tags||mustache.tags);var scanner=new Scanner(template);var start,type,value,chr,token,openSection;while(!scanner.eos()){start=scanner.pos;value=scanner.scanUntil(openingTagRe);if(value){for(var i=0,valueLength=value.length;i<valueLength;++i){chr=value.charAt(i);if(isWhitespace(chr)){spaces.push(tokens.length)}else{nonSpace=true}tokens.push(["text",chr,start,start+1]);start+=1;if(chr==="\n")stripSpace()}}if(!scanner.scan(openingTagRe))break;hasTag=true;type=scanner.scan(tagRe)||"name";scanner.scan(whiteRe);if(type==="="){value=scanner.scanUntil(equalsRe);scanner.scan(equalsRe);scanner.scanUntil(closingTagRe)}else if(type==="{"){value=scanner.scanUntil(closingCurlyRe);scanner.scan(curlyRe);scanner.scanUntil(closingTagRe);type="&"}else{value=scanner.scanUntil(closingTagRe)}if(!scanner.scan(closingTagRe))throw new Error("Unclosed tag at "+scanner.pos);token=[type,value,start,scanner.pos];tokens.push(token);if(type==="#"||type==="^"){sections.push(token)}else if(type==="/"){openSection=sections.pop();if(!openSection)throw new Error('Unopened section "'+value+'" at '+start);if(openSection[1]!==value)throw new Error('Unclosed section "'+openSection[1]+'" at '+start)}else if(type==="name"||type==="{"||type==="&"){nonSpace=true}else if(type==="="){compileTags(value)}}openSection=sections.pop();if(openSection)throw new Error('Unclosed section "'+openSection[1]+'" at '+scanner.pos);return nestTokens(squashTokens(tokens))}function squashTokens(tokens){var squashedTokens=[];var token,lastToken;for(var i=0,numTokens=tokens.length;i<numTokens;++i){token=tokens[i];if(token){if(token[0]==="text"&&lastToken&&lastToken[0]==="text"){lastToken[1]+=token[1];lastToken[3]=token[3]}else{squashedTokens.push(token);lastToken=token}}}return squashedTokens}function nestTokens(tokens){var nestedTokens=[];var collector=nestedTokens;var sections=[];var token,section;for(var i=0,numTokens=tokens.length;i<numTokens;++i){token=tokens[i];switch(token[0]){case"#":case"^":collector.push(token);sections.push(token);collector=token[4]=[];break;case"/":section=sections.pop();section[5]=token[2];collector=sections.length>0?sections[sections.length-1][4]:nestedTokens;break;default:collector.push(token)}}return nestedTokens}function Scanner(string){this.string=string;this.tail=string;this.pos=0}Scanner.prototype.eos=function eos(){return this.tail===""};Scanner.prototype.scan=function scan(re){var match=this.tail.match(re);if(!match||match.index!==0)return"";var string=match[0];this.tail=this.tail.substring(string.length);this.pos+=string.length;return string};Scanner.prototype.scanUntil=function scanUntil(re){var index=this.tail.search(re),match;switch(index){case-1:match=this.tail;this.tail="";break;case 0:match="";break;default:match=this.tail.substring(0,index);this.tail=this.tail.substring(index)}this.pos+=match.length;return match};function Context(view,parentContext){this.view=view;this.cache={".":this.view};this.parent=parentContext}Context.prototype.push=function push(view){return new Context(view,this)};Context.prototype.lookup=function lookup(name){var cache=this.cache;var value;if(cache.hasOwnProperty(name)){value=cache[name]}else{var context=this,names,index,lookupHit=false;while(context){if(name.indexOf(".")>0){value=context.view;names=name.split(".");index=0;while(value!=null&&index<names.length){if(index===names.length-1)lookupHit=hasProperty(value,names[index]);value=value[names[index++]]}}else{value=context.view[name];lookupHit=hasProperty(context.view,name)}if(lookupHit)break;context=context.parent}cache[name]=value}if(isFunction(value))value=value.call(this.view);return value};function Writer(){this.cache={}}Writer.prototype.clearCache=function clearCache(){this.cache={}};Writer.prototype.parse=function parse(template,tags){var cache=this.cache;var tokens=cache[template];if(tokens==null)tokens=cache[template]=parseTemplate(template,tags);return tokens};Writer.prototype.render=function render(template,view,partials){var tokens=this.parse(template);var context=view instanceof Context?view:new Context(view);return this.renderTokens(tokens,context,partials,template)};Writer.prototype.renderTokens=function renderTokens(tokens,context,partials,originalTemplate){var buffer="";var token,symbol,value;for(var i=0,numTokens=tokens.length;i<numTokens;++i){value=undefined;token=tokens[i];symbol=token[0];if(symbol==="#")value=this.renderSection(token,context,partials,originalTemplate);else if(symbol==="^")value=this.renderInverted(token,context,partials,originalTemplate);else if(symbol===">")value=this.renderPartial(token,context,partials,originalTemplate);else if(symbol==="&")value=this.unescapedValue(token,context);else if(symbol==="name")value=this.escapedValue(token,context);else if(symbol==="text")value=this.rawValue(token);if(value!==undefined)buffer+=value}return buffer};Writer.prototype.renderSection=function renderSection(token,context,partials,originalTemplate){var self=this;var buffer="";var value=context.lookup(token[1]);function subRender(template){return self.render(template,context,partials)}if(!value)return;if(isArray(value)){for(var j=0,valueLength=value.length;j<valueLength;++j){buffer+=this.renderTokens(token[4],context.push(value[j]),partials,originalTemplate)}}else if(typeof value==="object"||typeof value==="string"||typeof value==="number"){buffer+=this.renderTokens(token[4],context.push(value),partials,originalTemplate)}else if(isFunction(value)){if(typeof originalTemplate!=="string")throw new Error("Cannot use higher-order sections without the original template");value=value.call(context.view,originalTemplate.slice(token[3],token[5]),subRender);if(value!=null)buffer+=value}else{buffer+=this.renderTokens(token[4],context,partials,originalTemplate)}return buffer};Writer.prototype.renderInverted=function renderInverted(token,context,partials,originalTemplate){var value=context.lookup(token[1]);if(!value||isArray(value)&&value.length===0)return this.renderTokens(token[4],context,partials,originalTemplate)};Writer.prototype.renderPartial=function renderPartial(token,context,partials){if(!partials)return;var value=isFunction(partials)?partials(token[1]):partials[token[1]];if(value!=null)return this.renderTokens(this.parse(value),context,partials,value)};Writer.prototype.unescapedValue=function unescapedValue(token,context){var value=context.lookup(token[1]);if(value!=null)return value};Writer.prototype.escapedValue=function escapedValue(token,context){var value=context.lookup(token[1]);if(value!=null)return mustache.escape(value)};Writer.prototype.rawValue=function rawValue(token){return token[1]};mustache.name="mustache.js";mustache.version="2.1.3";mustache.tags=["{{","}}"];var defaultWriter=new Writer;mustache.clearCache=function clearCache(){return defaultWriter.clearCache()};mustache.parse=function parse(template,tags){return defaultWriter.parse(template,tags)};mustache.render=function render(template,view,partials){if(typeof template!=="string"){throw new TypeError('Invalid template! Template should be a "string" '+'but "'+typeStr(template)+'" was given as the first '+"argument for mustache#render(template, view, partials)")}return defaultWriter.render(template,view,partials)};mustache.to_html=function to_html(template,view,partials,send){var result=mustache.render(template,view,partials);if(isFunction(send)){send(result)}else{return result}};mustache.escape=escapeHtml;mustache.Scanner=Scanner;mustache.Context=Context;mustache.Writer=Writer});
+</script>
+<script>
+console.log("script is ok");
+
+    jQuery( document ).ready(function( $ ) {
+        // Code that uses jQuery's $ can follow here.
+
+        window.onresize = function(){
+
+            var imageWidth  = $('.image').width();
+            $('.image a, .image a span').css('max-width',  imageWidth-50)
+
+        };
+
+        $(function(){
+
+            var renderNews = function(income){
+
+                $.grep(income, function (n, i) {
+
+                    n.subject =  $('<div/>').html(n.subject).text();
+
+                    income[i].content.text = $('<div/>').html(n.content.text).text();
+
+                });
+
+                var news = {news: income}
+                var tmpl = $('#scr_main').html();
+                var out = Mustache.render(tmpl, news);
+                $('#content').html(out);
+
+                setTimeout(function () {
+                    var containerWidth = $('#content').width(),
+                            imZeroWidth = $('.new').width(),
+                            tilesNumber = (Math.round(containerWidth/imZeroWidth) > $('.new').length) ? $('.new').length : Math.round(containerWidth/imZeroWidth),
+                    //10+4 is padding right
+                            imNewWidth = (containerWidth - tilesNumber*15 -40)/tilesNumber
+
+
+                    //console.log('test: ',$('#content').height(), containerWidth,tilesNumber,imZeroWidth,imNewWidth,$(".new:nth-child("+tilesNumber+"n)"))
+
+
+                    $(".new:nth-child("+tilesNumber+"n)").css('padding-right',0)
+                    $('.new').width(imNewWidth)
+                    $('.new .image a').width(imNewWidth-14)
+                    $('.news').width(containerWidth-40).css('padding-right',0).css('padding-left',0)
+                    resizeMe();
+                }, 800);
+
+
+                //resizeMe();
+
+            }
+
+            var getNews = function(){
+
+                var placesString = '',
+                        typesString = '',
+                        tagsString = '',
+                        count = '&count='+window._config.count,
+                        abridgedString = '&abridged=true';
+
+                if (window._config.placeIDs !== "" && window._config.placeIDs !== "current"){
+                    var places = [];
+
+                    $.grep(window._config.placeIDs.split(','), function (n, i) {
+
+                        places.push('/places/'+n)
+                    });
+
+                    placesString = '&filter=place('+places.toString()+')'
+                }
+
+                if (window._config.types !== ""){
+                    typesString = '&filter=type('+window._config.types+')'
+                }
+                if (window._config.tags !== ""){
+                    tagsString = '&filter=tag('+window._config.tags+')'
+
+                }
+
+                if (tagsString){
+                    tagsString = '?'+tagsString.substr(1, tagsString.length)
+                }else if(typesString){
+                    typesString = '?'+typesString.substr(1, typesString.length)
+                }else if(!typesString && placesString){
+                    placesString = '?'+placesString.substr(1, placesString.length)
+                }else{
+                    abridgedString = '?abridged=true'
+                }
+
+
+
+                return $.Deferred(function(defer) {
+                    $.ajax({
+                        type: 'GET',
+                        url: '/api/core/v3/contents'+tagsString+typesString+placesString+abridgedString+count,
+                        contentType: "application/json",
+                        dataType:'json',
+                        success: function(json) {
+                            defer.resolve(json);
+                        },
+                        error: function(json) {
+                            defer.reject(json);
+                        }
+                    });
+                }).promise();
+
+
+            };
+
+
+
+            function performSearch(){
+                getNews().always(function(res){
+
+                            if (res.status == 200){
+
+                                var response = $.parseJSON(res.responseText.replace('throw \'allowIllegalResourceCall is false.\';', '')).list;
+                                if (response.length == 0){
+                                    //no results screen
+                                    var tmpl = $('#scr_nores').html();
+                                    var out = Mustache.render(tmpl);
+                                    $('#content').html(out);
+                                    //resizeMe();
+
+                                }else{
+                                    renderNews(response);
+                                }
+
+                            }
+                            else{///error handling
+
+                                var tmpl = $('#scr_error').html();
+                                var out = Mustache.render(tmpl);
+                                $('#content').html(out);
+                                //resizeMe();
+                            }
+
+                        }
+                );
+            }
+
+
+            if( window._config.placeIDs == "current"){
+                var urlCurrent = '/api/core/v3/places?filter=entityDescriptor(' + window.parent.containerType + ',' + window.parent.containerID + ')';
+
+                $.ajax({type:"GET", url: urlCurrent}).always(function(data){
+                    window._config.placeIDs = $.parseJSON(data.responseText.replace('throw \'allowIllegalResourceCall is false.\';', '')).list[0].placeID;
+                    performSearch();
+                })
+
+            }else{
+                performSearch();
+
+            }
+
+
+
+        })
+    });
+
+
+</script>
+<!--------------------------------------VIEW SCREEN---------------------------------------------->
+<script id="scr_main" type="text/html">
+    <div class="wrapper">
+        <header>
+            <span>ГЛАВНЫЕ НОВОСТИ</span>
+            <div class="triangle"></div>
+        </header>
+        <div class="news">
+            {{#news}}
+            <div class="new">
+                <!--<div class="image" style="background-image:url({{image}})">-->
+                <div class="image">
+                    <div class="shadow ent"></div>
+                    <div class="shadow"></div>
+                    <a href="{{resources.html.ref}}" target="_top">
+                        <span>{{subject}}</span>
+                    </a>
+                </div>
+                <div class="text">
+                    <div class="description">{{content.text}}</div>
+                    <a href="{{resources.html.ref}}" class="read-more" target="_top">Читать</a>
+                </div>
+            </div>
+            {{/news}}
+        </div>
+    </div>
+</script>
+<!--------------------------------------NO RESULTS SCREEN---------------------------------------------->
+<script id="scr_nores" type="text/html">
+    <div class="no-res">Sorry. No search results here.</div>
+</script>
+<!--------------------------------------ERROR SCREEN---------------------------------------------->
+<script id="scr_error" type="text/html">
+    <div class="error">Error occurred retrieving content.</div>
+</script>
+
+
+
+<div id="content"></div>
