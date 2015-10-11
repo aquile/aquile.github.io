@@ -56,7 +56,7 @@ function Gunman() {
         var timerGoId = setInterval(Steps, 200);
 
         //erase player time
-        timerYouSpan.innerHTML = ' ';
+        timerYouSpan.textContent = ' ';
 
         gunmanTimer(timerGunmanCounter);
 
@@ -75,7 +75,7 @@ function Gunman() {
         timer -= 0.15;
         timerGunmanCounter = timer;
         t = timer.toFixed(2) + " s";
-        timerGunmanSpan.innerHTML = t;
+        timerGunmanSpan.textContent = t;
     }
 
     //displaying div "READY?" then "FIRE!"
@@ -83,7 +83,7 @@ function Gunman() {
         audioPlay(Audio.audioWait);
         var border = 15;
 
-        fireDiv.innerHTML = "READY?";
+        fireDiv.textContent = "READY?";
         fireDiv.style.display = "block";
 
         var decreaseBorderId = setInterval(function () {
@@ -97,7 +97,7 @@ function Gunman() {
 
             clearInterval(decreaseBorderId);
 
-            fireDiv.innerHTML = "FIRE!!!";
+            fireDiv.textContent = "FIRE!!!";
             fireDiv.style.background = "red";
             fireDiv.style.color = "white";
 
@@ -128,7 +128,7 @@ function Gunman() {
             then = new Date().getTime();
             yourTime = ((then - past) / 1000).toFixed(2) + " s";
 
-            timerYouSpan.innerHTML = yourTime;
+            timerYouSpan.textContent = yourTime;
             reward(rewardCounter);
             gunmanKilled();
 
@@ -142,14 +142,14 @@ function Gunman() {
         score = +score + 1000;
         rewardCounter = score + " ";
         //добавить к скоре разницу в милиссекундах между твоим выстрелом и выстрелом ганмена
-        rewardSpan.innerHTML = rewardCounter;
+        rewardSpan.textContent = rewardCounter;
     }
 
     //when gunman was killed by player
     function gunmanKilled() {
         audioPlay(Audio.audioWait);
 
-        fireDiv.innerHTML = "КРАСАУЧЕГ !";
+        fireDiv.textContent = "КРАСАУЧЕГ !";
         fireDiv.style.background = "white";
         fireDiv.style.color = "red";
 
@@ -187,7 +187,7 @@ function Gunman() {
     //display loser div
     function lose(x) {
         audioPlay(Audio.audioDeath);
-        fireDiv.innerHTML = "LOSER !";
+        fireDiv.textContent = "LOSER !";
         fireDiv.style.background = "white";
         fireDiv.style.color = "red";
 
@@ -293,9 +293,9 @@ function Gunman() {
         timerGunmanCounter = 1.5;
         rewardCounter = 0;
 
-        rewardSpan.innerHTML = '0';
+        rewardSpan.textContent = '0';
         //display play again div
-        playButtonSpan.innerHTML = "WONNA PLAY AGAIN ?";
+        playButtonSpan.textContent = "WONNA PLAY AGAIN ?";
         playButtonDiv.style.display = "block";
     }
 

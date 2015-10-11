@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/view-style.css">
+    <script src="angular.min.js"></script>
+    <script>
+        angular.module('slider', [])
+                .controller('mainCtrl', ['$scope', function ($scope) {
+
+                    jive.tile.onOpen(function (config, options) {
+
+                        $scope.slidesData = config['data'];
+                        //cloning first slide to provide slider carusele
+                        var clone = $scope.slidesData.slides[0];
+                        $scope.slidesData.slidesData.push(clone);
+
+                        //create paginator
+                        $scope.paginator = config['data'].slides;
+                    })
+                }]);
+
+    </script>
+</head>
+<body ng-app="slider">
+<div class="slider-wrapper" ng-controller="mainCtrl">
+
+    <div class="slider__images">
+        <div class="slider__images-wrap" ng-repeat="elem in slidesData.slides">
+            <a ng-href={{ elem.titleUrl }} data-title="{{ elem.title }}" data-subtitle="{{ elem.subtitle }}"
+               target="_top">
+                <img ng-src="{{ elem.imageUrl }}" alt="Photo">
+            </a>
+            <!--<a href="#" target="_top"><img src="1373421260_3.jpg" alt="Photo 2"></a>-->
+            <!--<a href="#" target="_top"><img src="b673.jpeg" alt="Photo 3"></a>-->
+            <!--<a href="#" target="_top"><img src="IMG_1829.jpg" alt="Photo 4"></a>-->
+            <!--<a href="#" target="_top"><img src="maxresdefault.jpg" alt="Photo 1"></a>-->
+        </div>
+    </div>
+
+    <div class="slider-circle-1 {{ slidesData.color }}"></div>
+    <a href="#" class="slider-circle-2 {{ slidesData.color }}"></a>
+    <a href="#" class="slider-circle-3 {{ slidesData.color }}">
+
+        <!--<h2>-->
+        <!--<span>Develop</span> <br/>-->
+        <!--<span> your skills</span>-->
+        <!--</h2>-->
+        <h2>
+            <span>Discover the</span> <br/>
+            <span> future of research.</span>
+        </h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+    </a>
+    <!--<a class="slider-circle-4"><p>Learn more...</p><span>&#62;</span></a>-->
+    <a class="slider-circle-4"><p>Dolor consecteur <span>&#62;</span></p></a>
+</div>
+
+<ul class="slider__pagination" ng-repeat="elem in paginator">
+    <li class="slider__pagination-item"><a href="#" data-slider__item="{{ $index }}" class=""></a></li>
+</ul>
+
+<script src="javascripts/view.js"></script>
+<script>
+    var slider = new Slider(2000, 5000, 0.7);
+
+</script>
+
+</body>
+</html>

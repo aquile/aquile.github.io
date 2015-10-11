@@ -26,7 +26,7 @@ function Weather() {
 
         Ajax.getJSON('https://geocode-maps.yandex.ru/1.x/?format=json&kind=locality&geocode=' + name, function (geoData) {
             objects = geoData.response.GeoObjectCollection.featureMember.map(function (fm) {
-                //console.log(geoData);
+                console.log(geoData);
                 var go = fm.GeoObject,
                     cordinates = go.Point.pos.split(' ');
                 cities = {
