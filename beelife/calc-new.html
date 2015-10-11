@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+
+<meta charset="UTF-8">
+<!-- ROBOTO medium -->
+<link rel="stylesheet" href="./font/webfontkit-20150612-045405/stylesheet.css"/>
+<!-- ROBOTO light -->
+<link rel="stylesheet" href="./font/webfontkit-20150617-123155/stylesheet.css"/>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+<style>
+    body {
+        font-size: 14px;
+        font-family: 'robotomedium', sans-serif;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-1 {
+        font-family: 'robotolight', sans-serif;
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .header-2 {
+        position: relative;
+        font-family: 'robotolight', sans-serif;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .yellow-table {
+        border: 2px solid #F4CF19;
+        width: 762px;
+        border-spacing: 0;
+
+    }
+
+    .pencil-icon {
+        background-image: url(/resources/statics/2935/pencil.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-position: 10px center;
+        background-size: 16px 16px;
+    }
+
+    .yellow-cell {
+        background-color: #F8E275;
+        color: #000;
+    }
+
+    .grey-cell {
+        background-color: #F2F2F2;
+        color: #000;
+    }
+
+    .white-cell {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .dark-grey-cell {
+        background-color: #BFBFBF;
+        color: #000;
+    }
+
+    .dark-yellow-cell {
+        background-color: #F4CF19;
+        color: #000;
+    }
+
+    .table-spacer {
+        height: 24px;
+        display: block;
+    }
+
+    .small-text {
+        font-size: 0.8em;
+    }
+
+    .left-cell {
+        padding: 0;
+        padding-left: 27px;
+        font-size: 15.3px;
+        height: 32px width : 523 px;
+        box-sizing: border-box;
+    }
+
+    .right-cell {
+        padding: 0;
+        padding-left: 38px;
+        font-size: 15.3px;
+        height: 32px;
+        width: 239px;
+        box-sizing: border-box;
+    }
+
+    .header-cell {
+        padding: 0;
+        padding-left: 8px;
+        font-size: 15.3px;
+        font-weight: bold;
+        height: 35px;
+        width: 523px;
+        box-sizing: border-box;
+    }
+
+    .header-right-cell {
+        padding: 0;
+        padding-left: 38px;
+        font-size: 15.3px;
+        font-weight: bold;
+        height: 35px;
+        width: 239px;
+        box-sizing: border-box;
+    }
+
+    .small-cell {
+        padding: 0;
+        padding-left: 27px;
+        font-size: 11px;
+        height: 32px;
+        width: 523px;
+        box-sizing: border-box;
+    }
+
+    .input {
+        background-color: transparent;
+        border-width: 0;
+        font-size: 15.3px;
+        width: 180px;
+        outline: 0;
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+    }
+
+    .percentage:after {
+        content: '%';
+        font-weight: bold;
+        position: relative;
+        right: 155px;
+    }
+
+    .control.annual-calc-btn,
+    .control.half-annual-calc-btn {
+        display: inline-block;
+        width: 110px;
+        height: 30px;
+        background-color: #BFBFBF;
+        color: #000;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    .control.annual-calc-btn.active,
+    .control.half-annual-calc-btn.active {
+        background-color: #F4CF19;
+        color: #000;
+    }
+
+    .control.annual-calc-btn:hover,
+    .control.half-annual-calc-btn:hover {
+        cursor: pointer;
+    }
+
+    .annual,
+    .half-annual {
+        position: absolute;
+        display: none;
+    }
+
+    .annual.active,
+    .half-annual.active {
+        display: block;
+    }
+
+</style>
+
+<script>
+    window.onload = function () {
+        var B5_input = document.querySelector('#B5');
+
+        plList.forEach(function (plData) {
+            var option = document.createElement('option');
+            option.value = option.textContent = plData.pl;
+            B5_input.appendChild(option);
+        });
+
+        B5_input.value = 'E7';
+
+        var B12_input = document.querySelector('#B12');
+
+        markList.forEach(function (markData) {
+            var option = document.createElement('option');
+            option.value = option.textContent = markData.mark;
+            B12_input.appendChild(option);
+        });
+
+        B12_input.value = 'C';
+
+        inputs.forEach(function (input) {
+            var element = document.querySelector(input);
+            element.onchange = update;
+            element.onkeyup = update;
+        });
+        controls();
+        update();
+
+    };
+
+    var inputs = [
+        '#B5',
+        '#B6',
+        '#B12',
+        '#B18'
+    ];
+
+    // позиционный уровень
+    var plList = [
+        {total: 0.5, ind: 0, korp: 0.5, pl: "A"},
+        {total: 0.5, ind: 0.1, korp: 0.4, pl: "M5"},
+        {total: 0.4, ind: 0.1, korp: 0.3, pl: "M4"},
+        {total: 0.4, ind: 0.1, korp: 0.3, pl: "E11"},
+        {total: 0.3, ind: 0, korp: 0.3, pl: "M3 (директор филиала)"},
+        {total: 0.3, ind: 0.1, korp: 0.2, pl: "M3"},
+        {total: 0.3, ind: 0.1, korp: 0.2, pl: "E10"},
+        {total: 0.2, ind: 0.1, korp: 0.1, pl: "M2"},
+        {total: 0.2, ind: 0.1, korp: 0.1, pl: "E9"},
+        {total: 0.15, ind: 0.1, korp: 0.05, pl: "M1"},
+        {total: 0.15, ind: 0.1, korp: 0.05, pl: "E8"},
+        {total: 0.15, ind: 0.1, korp: 0.05, pl: "M"},
+        {total: 0.15, ind: 0.1, korp: 0.05, pl: "E7"},
+        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E6"},
+        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E5"},
+        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E4"},
+        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E3"},
+        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E2"},
+        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E1"}
+    ];
+
+    var markList = [
+        {mark: "A", coefficient: 2},
+        {mark: "B", coefficient: 1.5},
+        {mark: "C", coefficient: 1},
+        {mark: "S", coefficient: 0},
+        {mark: "D", coefficient: 0}
+//	{ mark: "0", coefficient: 0 }
+    ];
+
+    var bindings = [
+        {func: B7, target: '#B7', format: formatPercent},
+        {func: B13, target: '#B13', format: formatPercent},
+        {func: B14, target: '#B14', format: formatNumber},
+        {func: B19, target: '#B19', format: formatPercent},
+        {func: B20, target: '#B20', format: formatNumber},
+
+        {func: B22, target: '#B22', format: formatNumber},
+        {func: B23, target: '#B23', format: formatNumber}
+    ];
+
+    // cell B5 after lookup to column "Общий размер"
+    var plTotal;
+    // cell B5 after lookup to column "�?НД"
+    var plInd;
+    // cell B5 after lookup to column "КОРП"
+    var plKorp;
+    // cell B12 after parseFloat(value)
+    var sum;
+    // cell B18 after ( parseFloat(value) / 100 )
+    var percent;
+
+    // cell B12 after lookup
+    var markCoefficient;
+
+    function formatPercent(value) {
+        value *= 1000;
+        value = Math.round(value);
+        value /= 10;
+
+        return value + '%';
+    }
+
+    function formatNumber(value) {
+        value = Math.round(value).toString();
+
+        if (value.length >= 5) {
+            value = value.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+        }
+
+        return value;
+    }
+
+    function findPl(pl) {
+        return plList.filter(function (plData) {
+            return plData.pl === pl;
+        })[0];
+    }
+
+    function findMark(mark) {
+        return markList.filter(function (markData) {
+            return markData.mark === mark;
+        })[0];
+    }
+
+    function controls() {
+        var controls = $('.control'),
+                annualTable = $('.annual'),
+                halfAnnualTable = $('.half-annual');
+
+        controls.click(function (e) {
+            if (this.dataset.period + '' == 'annual') {
+                $('.control.annual-calc-btn').addClass('active');
+                $('.control.half-annual-calc-btn').removeClass('active');
+                annualTable.addClass('active');
+                halfAnnualTable.removeClass('active');
+
+            } else {
+                $('.control.annual-calc-btn').removeClass('active');
+                $('.control.half-annual-calc-btn').addClass('active');
+                annualTable.removeClass('active');
+                halfAnnualTable.addClass('active');
+            }
+        })
+    }
+
+
+    function B5() {
+        var B5_input = document.querySelector('#B5');
+
+        var B5_value = B5_input.options[B5_input.selectedIndex].value;
+
+        return B5_value;
+    }
+
+    function B6() {
+        var B6_input = document.querySelector('#B6');
+        var B6_value = parseFloat(B6_input.value);
+        return B6_value;
+    }
+
+    function B7() {
+        return findPl(B5()).total;
+    }
+
+    function B12() {
+        var B12_input = document.querySelector('#B12');
+
+        var B12_value = B12_input.options[B12_input.selectedIndex].value;
+
+        return B12_value;
+    }
+
+    function B13() {
+        return findPl(B5()).ind * findMark(B12()).coefficient;
+    }
+
+    function B14() {
+        return B6() * B13();
+    }
+
+    function B18() {
+        var B18_input = document.querySelector('#B18');
+
+        var B18_value = parseFloat(B18_input.value) / 100;
+
+        return B18_value;
+    }
+
+    function B19() {
+        return findPl(B5()).korp;
+    }
+
+    function B20() {
+        var B12_value = B12();
+
+        if (B12_value === 'S' || B12_value === 'D' || B12_value === '0') {
+            return 0;
+        } else {
+            return B6() * B19() * B18();
+        }
+    }
+
+    function B22() {
+        return B20() + B14();
+    }
+
+    function B23() {
+        return B22() * 0.5;
+    }
+
+    function update() {
+        bindings.forEach(function (binding) {
+            var value = binding.func();
+
+            if (typeof binding.format === 'function') {
+                value = binding.format(value);
+            }
+
+            var element = document.querySelector(binding.target);
+            element.textContent = value;
+        });
+    }
+</script>
+
+
+<div class="header-2">Благодарим за Ваш вклад! :)</div>
+
+<div class="control annual-calc-btn" data-period="annual">За год</div>
+<div class="control half-annual-calc-btn active" data-period="half-annual">За полугодие</div>
+<div class="annual">
+    <table class="yellow-table">
+
+        <tr>
+            <td class="left-cell grey-cell">PL (позицонный уровень)</td>
+            <td class="right-cell yellow-cell pencil-icon">
+                <select id="B5" class="input"></select>
+            </td>
+        </tr>
+        <tr>
+            <td class="left-cell white-cell">Сумма окладов*, тг</td>
+            <td class="right-cell yellow-cell pencil-icon">
+                <input class="input" id="B6" type="text" value="1100000">
+            </td>
+        </tr>
+        <tr>
+            <td class="left-cell grey-cell">Общий размер целевой премии, %</td>
+            <td id="B7" class="right-cell grey-cell">15,0%</td>
+        </tr>
+        <tr>
+            <td class="small-cell white-cell">* пропорционально отработанному времени в году</td>
+            <td class="right-cell white-cell"></td>
+        </tr>
+        <tr>
+            <td class="left-cell white-cell"></td>
+            <td class="right-cell white-cell"></td>
+        </tr>
+
+        <!-- header -->
+        <tr>
+            <td class="header-cell dark-grey-cell">Часть премии за индивидуальные результаты</td>
+            <td class="header-right-cell dark-grey-cell"></td>
+        </tr>
+        <tr>
+            <td class="left-cell grey-cell">Буквенная оценка</td>
+            <td class="right-cell yellow-cell pencil-icon">
+                <select id="B12" class="input"></select>
+            </td>
+        </tr>
+        <tr>
+            <td class="left-cell white-cell">Размер части премии, %</td>
+            <td id="B13" class="right-cell white-cell">10,0%</td>
+        </tr>
+        <tr>
+            <td class="left-cell grey-cell">Сумма части премии, тг</td>
+            <td id="B14" class="right-cell grey-cell">80 000</td>
+        </tr>
+        <tr>
+            <td class="left-cell white-cell"></td>
+            <td class="right-cell white-cell"></td>
+        </tr>
+
+        <!-- header -->
+        <tr>
+            <td class="header-cell dark-grey-cell">Часть премии за результаты Компании/Филиала</td>
+            <td class="header-right-cell dark-grey-cell"></td>
+        </tr>
+        <tr>
+            <td class="left-cell grey-cell">Выполнение целей Компании/Филиала, %</td>
+            <td class="right-cell yellow-cell pencil-icon">
+                <input style="width: 30px" id="B18" class="input" type="text" value="100">%
+            </td>
+        </tr>
+        <tr>
+            <td class="left-cell white-cell">Размер части премии, %</td>
+            <td id="B19" class="right-cell white-cell">5,0%</td>
+        </tr>
+        <tr>
+            <td class="left-cell grey-cell">Сумма части премии, тг</td>
+            <td id="B20" class="right-cell grey-cell">40 000</td>
+        </tr>
+
+    </table>
+
+    <div class="table-spacer"></div>
+
+    <table class="yellow-table">
+
+        <tr>
+            <td class="header-cell dark-yellow-cell">Общая сумма премии, тг</td>
+            <td id="B22" class="header-right-cell dark-yellow-cell">120 000</td>
+        </tr>
+
+    </table>
+</div>
+
+<!--HALF-ANNUAL TABLE-->
+<div class="half-annual active">
+    <table class="yellow-table">
+        <tr>
+            <td class="left-cell grey-cell">Дата приема на работу</td>
+            <td class="right-cell yellow-cell pencil-icon">
+                <!--Insert here input with dates needed-->
+                <select id="B5" class="input"></select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="left-cell white-cell">PL (позицонный уровень)</td>
+            <td class="right-cell yellow-cell pencil-icon">
+                <select id="B5" class="input"></select>
+            </td>
+        </tr>
+        <tr>
+            <td class="left-cell grey-cell">Оклад в месяц, тг</td>
+            <td class="right-cell yellow-cell pencil-icon">
+                <input class="input" id="B6" type="text" value="100000">
+            </td>
+        </tr>
+        <tr>
+            <td class="left-cell white-cell">Общий размер целевой премии, %</td>
+            <td id="B7" class="right-cell grey-cell">15,0%</td>
+        </tr>
+
+        <tr>
+            <td class="left-cell white-cell"></td>
+            <td class="right-cell white-cell"></td>
+        </tr>
+
+        <!-- header -->
+        <tr>
+            <td class="header-cell dark-grey-cell">Полугодие</td>
+            <td class="header-right-cell dark-grey-cell"></td>
+        </tr>
+        <tr>
+            <td class="left-cell grey-cell">Премия за индивидуальные результаты</td>
+            <td class="right-cell grey-cell">
+
+            </td>
+        </tr>
+        <tr>
+            <td class="left-cell white-cell">Целевой размер полугодовой премии, % к окладу</td>
+            <td id="B13" class="right-cell white-cell">10,0%</td>
+        </tr>
+        <tr>
+            <td class="left-cell grey-cell">Сумма окладов (01.01.2015-30.06.2015 гг)*</td>
+            <td id="B14" class="right-cell grey-cell">500 000</td>
+        </tr>
+        <tr>
+            <td class="left-cell white-cell">Выполнение годовых целей при подведении итогов полугодия, %</td>
+            <td class="right-cell yellow-cell pencil-icon percentage">
+                <input class="input" id="B6" type="text" value="45"><!-- add % icon on left-side of numbers -->
+            </td>
+        </tr>
+
+    </table>
+
+    <div class="table-spacer"></div>
+
+    <table class="yellow-table">
+
+        <tr>
+            <td class="header-cell dark-yellow-cell">Сумма полугодовой премии, тг*</td>
+            <td id="B22" class="header-right-cell dark-yellow-cell">45 000</td>
+        </tr>
+
+
+    </table>
+</div>
+
+
+
