@@ -1,10 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
 
-</body>
-</html>
+<meta charset="UTF-8">
+<title>Permission</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+<style>
+    .permission-button {
+        display: block;
+        width: 210px;
+        height: 75px;
+        margin: 5px auto;
+
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: inset 0 3px 3px #B4E3F6, 0 3px 3px #BFBFBF;
+        background: #00a1df;
+        text-decoration: none;
+        user-select: none;
+        color: #ffffff;
+
+        opacity: 1;
+        -webkit-transition: opacity ease-in-out 0.5s;
+        -moz-transition: opacity ease-in-out 0.5s;
+        -o-transition: opacity ease-in-out 0.5s;
+        transition: opacity ease-in-out 0.5s;
+    }
+
+    .permission-button:hover {
+        opacity: 0.8;
+        -box-shadow: inset 0 3px 3px #67BBDC, inset 0 -2px 3px #B4E3F6;
+    }
+
+    .permission-button p {
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0;
+        transform: translate(0, 23%);
+    }
+
+    .permission-button span {
+        font-size: 23px;
+        font-weight: 600;
+    }
+</style>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+<a href="#" class="permission-button" >
+    <p>Are you a Juice Plus <br/>
+        <span>representative?</span>
+    </p>
+</a>
+
+<!--<a class="btn" href="https://towertalk.jiveon.com/support" target="_top">-->
+    <!--<img src="https://towertalk.jiveon.com/resources/statics/1002/NewHere4.png?a=1443039727218" />-->
+<!--</a>-->
+
+<!--<a class="btn" href="https://towertalk.jiveon.com/docs/DOC-1133" target="_top">-->
+    <!--<img src="https://towertalk.jiveon.com/resources/statics/1002/4GUIDLINES.png?a=1443039522471" />-->
+<!--</a>-->
+
+<!--<a class="permission-button" href="#" target="_top">-->
+    <!--<img src="https://towertalk.jiveon.com/resources/statics/1002/3Representitive.png?a=1443039036457" />-->
+<!--</a>-->
+
+
+<script>
+    //Put names of the groups here
+    window._config = {};
+    window._config.groupA = 'TowerGarden Distributors (Verified)';
+    window._config.linkA = 'https://towertalk.jiveon.com/community/distributor-enablement';
+
+    window._config.default = "https://towertalk.jiveon.com/docs/DOC-1171";
+
+    var button = document.body.querySelector('.permission-button');
+
+    $(document).ready(function () {
+        button.addEventListener('click', function () {
+            var request1 = RESTWrapper.prototype.get("/api/core/v3/people/@me");
+            $.when(request1).then(function (data1) {
+                console.log(data1);
+                return data1.id;
+            }).then(function (userID) {
+                var request2 = RESTWrapper.prototype.get("/api/core/v3/people/" + userID + "/securityGroups");
+                $.when(request2).then(function (data2) {
+                    console.log(data2);
+                    for (var i = 0; i < data2.list.length; i++) {
+                        if (data2.list[i].name == window._config.groupA) { //it can be id of the group
+                            window.parent.location.href = window._config.linkA;
+                        } else {
+                            window.parent.location.href = window._config.default;
+                        }
+                    }
+                })
+            })
+        })
+    });
+
+    // LIBRARY FROM MISHA TO WORK WITH AJAX IN JIVE
+    if (!window.RESTWrapper) {
+        RESTWrapper = function (win, version) {
+            this.win = (typeof win == 'undefined') ? window : win;
+            this.version = 'v' + (typeof version == 'undefined' ? 3 : version);
+        };
+        RESTWrapper.prototype = {
+            _query: function (method, url, params) {
+                var chunks = url.split('?');
+                if (chunks[0].indexOf('/api/core/') == -1) url = '/api/core' + url;
+                var def = jQuery.Deferred();
+                if (method == 'post' || method == 'put') {
+                    var ajax = jQuery.ajax({
+                        dataType: 'text',
+                        contentType: 'application/json',
+                        url: url,
+                        data: JSON.stringify(params),
+                        type: method
+                    });
+                } else {
+                    var ajax = jQuery.ajax({dataType: 'text', url: url, data: params, type: method});
+                }
+                ajax.done(function (result) {
+                    if (typeof result != 'undefined') {
+                        result = JSON.parse(result.replace("throw 'allowIllegalResourceCall is false.';", ''));
+                    }
+                    def.resolve(result);
+                    answer = result;
+                });
+                ajax.fail(function (a, b, c) {
+                    console.error('fail:', a, b, c);
+                    answer = a;
+                    def.reject(a)
+                });
+                return def.promise();
+            },
+            get: function (url, data) {
+                return this._query('get', url, data)
+            },
+            post: function (url, data) {
+                return this._query('post', url, data)
+            },
+            put: function (url, data) {
+                return this._query('put', url, data)
+            },
+            delete: function (url, data) {
+                return this._query('delete', url, data)
+            },
+            find: function (typeString, visibleID) {
+                var typeID;
+                var placeIDs = [4, 14, 600];
+                var typeIDs = {
+                    "community": 14,
+                    "space": 14,
+                    "group": 4,
+                    "project": 600,
+                    "discussion": 1,
+                    "thread": 1,
+                    "document": 102
+                };
+                var typeID = typeIDs[typeString];
+                return this.get((placeIDs.indexOf(typeID) != -1 ? '/places' : '/contents') + '?filter=entityDescriptor(' + typeID + ', ' + visibleID + ')');
+            },
+            printFind: function (typeString, visibleID) {
+                this.find(typeString, visibleID).then(function (data) {
+                    console.log(data.list[0])
+                })
+            }
+        };
+    }
+    window.rest = window.rest || new RESTWrapper(window, 3);
+</script>
+
+

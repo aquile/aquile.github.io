@@ -1,411 +1,461 @@
 <!DOCTYPE html>
 
+<html lang="en">
+<head>
 
-<meta charset="UTF-8">
-<!-- ROBOTO medium -->
-<link rel="stylesheet" href="./font/webfontkit-20150612-045405/stylesheet.css"/>
-<!-- ROBOTO light -->
-<link rel="stylesheet" href="./font/webfontkit-20150617-123155/stylesheet.css"/>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <meta charset="UTF-8">
+    <!-- ROBOTO medium -->
+    <!--<link rel="stylesheet" href="./font/webfontkit-20150612-045405/stylesheet.css"/>-->
+    <!--&lt;!&ndash;&lt;!&ndash; ROBOTO light &ndash;&gt;&ndash;&gt;-->
+    <!--<link rel="stylesheet" href="./font/webfontkit-20150617-123155/stylesheet.css"/>-->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
 
-<style>
-    body {
-        font-size: 14px;
-        font-family: 'robotomedium', sans-serif;
+    <style>
+        body {
+            height: 800px;
+            font-size: 14px;
+            font-family: 'robotomedium', sans-serif;
 
-        margin: 0;
-        padding: 0;
-    }
+            margin: 0;
+            padding: 0;
+        }
 
-    .header-1 {
-        font-family: 'robotolight', sans-serif;
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
 
-    .header-2 {
-        position: relative;
-        font-family: 'robotolight', sans-serif;
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
+        .header-1 {
+            font-family: 'robotolight', sans-serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
 
-    .yellow-table {
-        border: 2px solid #F4CF19;
-        width: 762px;
-        border-spacing: 0;
+        .header-2 {
+            position: relative;
+            font-family: 'robotolight', sans-serif;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
 
-    }
+        .yellow-table {
+            border: 2px solid #F4CF19;
+            width: 762px;
+            border-spacing: 0;
 
-    .pencil-icon {
-        background-image: url(/resources/statics/2935/pencil.png);
-        background-repeat: no-repeat;
-        background-position: left center;
-        background-position: 10px center;
-        background-size: 16px 16px;
-    }
+        }
 
-    .yellow-cell {
-        background-color: #F8E275;
-        color: #000;
-    }
+        .pencil-icon {
+            background-image: url(/resources/statics/2935/pencil.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-position: 10px center;
+            background-size: 16px 16px;
+        }
 
-    .grey-cell {
-        background-color: #F2F2F2;
-        color: #000;
-    }
+        .yellow-cell {
+            background-color: #F8E275;
+            color: #000;
+        }
 
-    .white-cell {
-        background-color: #fff;
-        color: #000;
-    }
+        .grey-cell {
+            background-color: #F2F2F2;
+            color: #000;
+        }
 
-    .dark-grey-cell {
-        background-color: #BFBFBF;
-        color: #000;
-    }
+        .white-cell {
+            background-color: #fff;
+            color: #000;
+        }
 
-    .dark-yellow-cell {
-        background-color: #F4CF19;
-        color: #000;
-    }
+        .dark-grey-cell {
+            background-color: #BFBFBF;
+            color: #000;
+        }
 
-    .table-spacer {
-        height: 24px;
-        display: block;
-    }
+        .dark-yellow-cell {
+            background-color: #F4CF19;
+            color: #000;
+        }
 
-    .small-text {
-        font-size: 0.8em;
-    }
+        .table-spacer {
+            height: 24px;
+            display: block;
+        }
 
-    .left-cell {
-        padding: 0;
-        padding-left: 27px;
-        font-size: 15.3px;
-        height: 32px width : 523 px;
-        box-sizing: border-box;
-    }
+        .small-text {
+            font-size: 0.8em;
+        }
 
-    .right-cell {
-        padding: 0;
-        padding-left: 38px;
-        font-size: 15.3px;
-        height: 32px;
-        width: 239px;
-        box-sizing: border-box;
-    }
+        .left-cell {
+            padding: 0;
+            padding-left: 27px;
+            font-size: 15.3px;
+            height: 32px width : 523 px;
+            box-sizing: border-box;
+        }
 
-    .header-cell {
-        padding: 0;
-        padding-left: 8px;
-        font-size: 15.3px;
-        font-weight: bold;
-        height: 35px;
-        width: 523px;
-        box-sizing: border-box;
-    }
+        .right-cell {
+            position: relative;
+            padding: 0;
+            padding-left: 38px;
+            font-size: 15.3px;
+            height: 32px;
+            width: 239px;
+            box-sizing: border-box;
+        }
 
-    .header-right-cell {
-        padding: 0;
-        padding-left: 38px;
-        font-size: 15.3px;
-        font-weight: bold;
-        height: 35px;
-        width: 239px;
-        box-sizing: border-box;
-    }
+        .header-cell {
+            padding: 0;
+            padding-left: 8px;
+            font-size: 15.3px;
+            font-weight: bold;
+            height: 35px;
+            width: 523px;
+            box-sizing: border-box;
+        }
 
-    .small-cell {
-        padding: 0;
-        padding-left: 27px;
-        font-size: 11px;
-        height: 32px;
-        width: 523px;
-        box-sizing: border-box;
-    }
+        .header-right-cell {
+            padding: 0;
+            padding-left: 38px;
+            font-size: 15.3px;
+            font-weight: bold;
+            height: 35px;
+            width: 239px;
+            box-sizing: border-box;
+        }
 
-    .input {
-        background-color: transparent;
-        border-width: 0;
-        font-size: 15.3px;
-        width: 180px;
-        outline: 0;
-        font-weight: bold;
-        padding: 0;
-        margin: 0;
-    }
+        .small-cell {
+            padding: 0;
+            padding-left: 27px;
+            font-size: 11px;
+            height: 32px;
+            width: 523px;
+            box-sizing: border-box;
+        }
 
-    .percentage:after {
-        content: '%';
-        font-weight: bold;
-        position: relative;
-        right: 155px;
-    }
+        .input {
+            background-color: transparent;
+            border-width: 0;
+            font-size: 15.3px;
+            width: 180px;
+            outline: 0;
+            font-weight: bold;
+            padding: 0;
+            margin: 0;
+        }
 
-    .control.annual-calc-btn,
-    .control.half-annual-calc-btn {
-        display: inline-block;
-        width: 110px;
-        height: 30px;
-        background-color: #BFBFBF;
-        color: #000;
-        text-align: center;
-        line-height: 30px;
-        font-weight: bold;
-    }
+        .percentage:after {
+            content: '%';
+            font-weight: bold;
+            position: absolute;
+            top: 8px;
+            right: 149px;
+        }
 
-    .control.annual-calc-btn.active,
-    .control.half-annual-calc-btn.active {
-        background-color: #F4CF19;
-        color: #000;
-    }
+        .control.annual-calc-btn,
+        .control.half-annual-calc-btn {
+            display: inline-block;
+            width: 110px;
+            height: 30px;
+            background-color: #BFBFBF;
+            color: #000;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+        }
 
-    .control.annual-calc-btn:hover,
-    .control.half-annual-calc-btn:hover {
-        cursor: pointer;
-    }
+        .control.annual-calc-btn.active,
+        .control.half-annual-calc-btn.active {
+            background-color: #F4CF19;
+            color: #000;
+        }
 
-    .annual,
-    .half-annual {
-        position: absolute;
-        display: none;
-    }
+        .control.annual-calc-btn:hover,
+        .control.half-annual-calc-btn:hover {
+            cursor: pointer;
+        }
 
-    .annual.active,
-    .half-annual.active {
-        display: block;
-    }
+        .annual,
+        .half-annual {
+            position: absolute;
+            display: none;
+        }
 
-</style>
+        .annual.active,
+        .half-annual.active {
+            display: block;
+        }
 
-<script>
-    window.onload = function () {
-        var B5_input = document.querySelector('#B5');
+        #B1-half-year {
+            display: block;
+            position: absolute;
+            top: 4px;
+            height: auto;
+            background: rgba(241, 241, 241, 0.83);
+            padding: 5px 0 !important;
+            border-radius: 5px;
+            border: 1px solid grey;
+            z-index: 41;
+        }
 
-        plList.forEach(function (plData) {
-            var option = document.createElement('option');
-            option.value = option.textContent = plData.pl;
-            B5_input.appendChild(option);
-        });
+        #B2-half-year {
+            display: none;
+            position: absolute;
+            top: 4px;
+            height: auto;
+            background: rgba(241, 241, 241, 0.83);
+            padding: 5px 0 !important;
+            border-radius: 5px;
+            border: 1px solid grey;
+            z-index: 40;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+        }
 
-        B5_input.value = 'E7';
+        li {
+            display: block;
+            cursor: pointer;
+            padding: 2px 10px;
+            margin: 0;
+            -background: rgba(241, 241, 241, 0.83);
+        }
 
-        var B12_input = document.querySelector('#B12');
+        li:hover {
+            background: #e6e6e6;
+        }
 
-        markList.forEach(function (markData) {
-            var option = document.createElement('option');
-            option.value = option.textContent = markData.mark;
-            B12_input.appendChild(option);
-        });
+        .pl48 {
+            padding-left: 48px;
+        }
+    </style>
 
-        B12_input.value = 'C';
+    <script>
+        window.onload = function () {
+            var B5_input = document.querySelector('#B5');
 
-        inputs.forEach(function (input) {
-            var element = document.querySelector(input);
-            element.onchange = update;
-            element.onkeyup = update;
-        });
-        controls();
-        update();
+            plList.forEach(function (plData) {
+                var option = document.createElement('option');
+                option.value = option.textContent = plData.pl;
+                B5_input.appendChild(option);
+            });
 
-    };
+            B5_input.value = 'E7';
 
-    var inputs = [
-        '#B5',
-        '#B6',
-        '#B12',
-        '#B18'
-    ];
+            var B12_input = document.querySelector('#B12');
 
-    // позиционный уровень
-    var plList = [
-        {total: 0.5, ind: 0, korp: 0.5, pl: "A"},
-        {total: 0.5, ind: 0.1, korp: 0.4, pl: "M5"},
-        {total: 0.4, ind: 0.1, korp: 0.3, pl: "M4"},
-        {total: 0.4, ind: 0.1, korp: 0.3, pl: "E11"},
-        {total: 0.3, ind: 0, korp: 0.3, pl: "M3 (директор филиала)"},
-        {total: 0.3, ind: 0.1, korp: 0.2, pl: "M3"},
-        {total: 0.3, ind: 0.1, korp: 0.2, pl: "E10"},
-        {total: 0.2, ind: 0.1, korp: 0.1, pl: "M2"},
-        {total: 0.2, ind: 0.1, korp: 0.1, pl: "E9"},
-        {total: 0.15, ind: 0.1, korp: 0.05, pl: "M1"},
-        {total: 0.15, ind: 0.1, korp: 0.05, pl: "E8"},
-        {total: 0.15, ind: 0.1, korp: 0.05, pl: "M"},
-        {total: 0.15, ind: 0.1, korp: 0.05, pl: "E7"},
-        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E6"},
-        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E5"},
-        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E4"},
-        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E3"},
-        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E2"},
-        {total: 0.125, ind: 0.1, korp: 0.025, pl: "E1"}
-    ];
+            markList.forEach(function (markData) {
+                var option = document.createElement('option');
+                option.value = option.textContent = markData.mark;
+                B12_input.appendChild(option);
+            });
 
-    var markList = [
-        {mark: "A", coefficient: 2},
-        {mark: "B", coefficient: 1.5},
-        {mark: "C", coefficient: 1},
-        {mark: "S", coefficient: 0},
-        {mark: "D", coefficient: 0}
+            B12_input.value = 'C';
+
+            inputs.forEach(function (input) {
+                var element = document.querySelector(input);
+                element.onchange = update;
+                element.onkeyup = update;
+            });
+            controls();
+            update();
+
+        };
+
+        var inputs = [
+            '#B5',
+            '#B6',
+            '#B12',
+            '#B18'
+        ];
+
+        // позиционный уровень
+        var plList = [
+            {total: 0.5, ind: 0, korp: 0.5, pl: "A"},
+            {total: 0.5, ind: 0.1, korp: 0.4, pl: "M5"},
+            {total: 0.4, ind: 0.1, korp: 0.3, pl: "M4"},
+            {total: 0.4, ind: 0.1, korp: 0.3, pl: "E11"},
+            {total: 0.3, ind: 0, korp: 0.3, pl: "M3 (директор филиала)"},
+            {total: 0.3, ind: 0.1, korp: 0.2, pl: "M3"},
+            {total: 0.3, ind: 0.1, korp: 0.2, pl: "E10"},
+            {total: 0.2, ind: 0.1, korp: 0.1, pl: "M2"},
+            {total: 0.2, ind: 0.1, korp: 0.1, pl: "E9"},
+            {total: 0.15, ind: 0.1, korp: 0.05, pl: "M1"},
+            {total: 0.15, ind: 0.1, korp: 0.05, pl: "E8"},
+            {total: 0.15, ind: 0.1, korp: 0.05, pl: "M"},
+            {total: 0.15, ind: 0.1, korp: 0.05, pl: "E7"},
+            {total: 0.125, ind: 0.1, korp: 0.025, pl: "E6"},
+            {total: 0.125, ind: 0.1, korp: 0.025, pl: "E5"},
+            {total: 0.125, ind: 0.1, korp: 0.025, pl: "E4"},
+            {total: 0.125, ind: 0.1, korp: 0.025, pl: "E3"},
+            {total: 0.125, ind: 0.1, korp: 0.025, pl: "E2"},
+            {total: 0.125, ind: 0.1, korp: 0.025, pl: "E1"}
+        ];
+
+        var markList = [
+            {mark: "A", coefficient: 2},
+            {mark: "B", coefficient: 1.5},
+            {mark: "C", coefficient: 1},
+            {mark: "S", coefficient: 0},
+            {mark: "D", coefficient: 0}
 //	{ mark: "0", coefficient: 0 }
-    ];
+        ];
 
-    var bindings = [
-        {func: B7, target: '#B7', format: formatPercent},
-        {func: B13, target: '#B13', format: formatPercent},
-        {func: B14, target: '#B14', format: formatNumber},
-        {func: B19, target: '#B19', format: formatPercent},
-        {func: B20, target: '#B20', format: formatNumber},
+        var bindings = [
+            {func: B7, target: '#B7', format: formatPercent},
+            {func: B13, target: '#B13', format: formatPercent},
+            {func: B14, target: '#B14', format: formatNumber},
+            {func: B19, target: '#B19', format: formatPercent},
+            {func: B20, target: '#B20', format: formatNumber},
 
-        {func: B22, target: '#B22', format: formatNumber},
-        {func: B23, target: '#B23', format: formatNumber}
-    ];
+            {func: B22, target: '#B22', format: formatNumber},
+            {func: B23, target: '#B23', format: formatNumber}
+        ];
 
-    // cell B5 after lookup to column "Общий размер"
-    var plTotal;
-    // cell B5 after lookup to column "�?НД"
-    var plInd;
-    // cell B5 after lookup to column "КОРП"
-    var plKorp;
-    // cell B12 after parseFloat(value)
-    var sum;
-    // cell B18 after ( parseFloat(value) / 100 )
-    var percent;
+        // cell B5 after lookup to column "Общий размер"
+        var plTotal;
+        // cell B5 after lookup to column "�?НД"
+        var plInd;
+        // cell B5 after lookup to column "КОРП"
+        var plKorp;
+        // cell B12 after parseFloat(value)
+        var sum;
+        // cell B18 after ( parseFloat(value) / 100 )
+        var percent;
 
-    // cell B12 after lookup
-    var markCoefficient;
+        // cell B12 after lookup
+        var markCoefficient;
 
-    function formatPercent(value) {
-        value *= 1000;
-        value = Math.round(value);
-        value /= 10;
+        function formatPercent(value) {
+            value *= 1000;
+            value = Math.round(value);
+            value /= 10;
 
-        return value + '%';
-    }
-
-    function formatNumber(value) {
-        value = Math.round(value).toString();
-
-        if (value.length >= 5) {
-            value = value.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+            return value + '%';
         }
 
-        return value;
-    }
+        function formatNumber(value) {
+            value = Math.round(value).toString();
 
-    function findPl(pl) {
-        return plList.filter(function (plData) {
-            return plData.pl === pl;
-        })[0];
-    }
+            if (value.length >= 5) {
+                value = value.replace(/(\d)(?=(\d{3})+$)/g, '$1 ');
+            }
 
-    function findMark(mark) {
-        return markList.filter(function (markData) {
-            return markData.mark === mark;
-        })[0];
-    }
+            return value;
+        }
 
-    function controls() {
-        var controls = $('.control'),
-                annualTable = $('.annual'),
-                halfAnnualTable = $('.half-annual');
+        function findPl(pl) {
+            return plList.filter(function (plData) {
+                return plData.pl === pl;
+            })[0];
+        }
 
-        controls.click(function (e) {
-            if (this.dataset.period + '' == 'annual') {
-                $('.control.annual-calc-btn').addClass('active');
-                $('.control.half-annual-calc-btn').removeClass('active');
-                annualTable.addClass('active');
-                halfAnnualTable.removeClass('active');
+        function findMark(mark) {
+            return markList.filter(function (markData) {
+                return markData.mark === mark;
+            })[0];
+        }
 
+        function controls() {
+            var controls = $('.control'),
+                    annualTable = $('.annual'),
+                    halfAnnualTable = $('.half-annual');
+
+            controls.click(function (e) {
+                if (this.dataset.period + '' == 'annual') {
+                    $('.control.annual-calc-btn').addClass('active');
+                    $('.control.half-annual-calc-btn').removeClass('active');
+                    annualTable.addClass('active');
+                    halfAnnualTable.removeClass('active');
+
+                } else {
+                    $('.control.annual-calc-btn').removeClass('active');
+                    $('.control.half-annual-calc-btn').addClass('active');
+                    annualTable.removeClass('active');
+                    halfAnnualTable.addClass('active');
+                }
+            })
+        }
+
+
+        function B5() {
+            var B5_input = document.querySelector('#B5');
+
+            var B5_value = B5_input.options[B5_input.selectedIndex].value;
+
+            return B5_value;
+        }
+
+        function B6() {
+            var B6_input = document.querySelector('#B6');
+            var B6_value = parseFloat(B6_input.value);
+            return B6_value;
+        }
+
+        function B7() {
+            return findPl(B5()).total;
+        }
+
+        function B12() {
+            var B12_input = document.querySelector('#B12');
+
+            var B12_value = B12_input.options[B12_input.selectedIndex].value;
+
+            return B12_value;
+        }
+
+        function B13() {
+            return findPl(B5()).ind * findMark(B12()).coefficient;
+        }
+
+        function B14() {
+            return B6() * B13();
+        }
+
+        function B18() {
+            var B18_input = document.querySelector('#B18');
+
+            var B18_value = parseFloat(B18_input.value) / 100;
+
+            return B18_value;
+        }
+
+        function B19() {
+            return findPl(B5()).korp;
+        }
+
+        function B20() {
+            var B12_value = B12();
+
+            if (B12_value === 'S' || B12_value === 'D' || B12_value === '0') {
+                return 0;
             } else {
-                $('.control.annual-calc-btn').removeClass('active');
-                $('.control.half-annual-calc-btn').addClass('active');
-                annualTable.removeClass('active');
-                halfAnnualTable.addClass('active');
+                return B6() * B19() * B18();
             }
-        })
-    }
-
-
-    function B5() {
-        var B5_input = document.querySelector('#B5');
-
-        var B5_value = B5_input.options[B5_input.selectedIndex].value;
-
-        return B5_value;
-    }
-
-    function B6() {
-        var B6_input = document.querySelector('#B6');
-        var B6_value = parseFloat(B6_input.value);
-        return B6_value;
-    }
-
-    function B7() {
-        return findPl(B5()).total;
-    }
-
-    function B12() {
-        var B12_input = document.querySelector('#B12');
-
-        var B12_value = B12_input.options[B12_input.selectedIndex].value;
-
-        return B12_value;
-    }
-
-    function B13() {
-        return findPl(B5()).ind * findMark(B12()).coefficient;
-    }
-
-    function B14() {
-        return B6() * B13();
-    }
-
-    function B18() {
-        var B18_input = document.querySelector('#B18');
-
-        var B18_value = parseFloat(B18_input.value) / 100;
-
-        return B18_value;
-    }
-
-    function B19() {
-        return findPl(B5()).korp;
-    }
-
-    function B20() {
-        var B12_value = B12();
-
-        if (B12_value === 'S' || B12_value === 'D' || B12_value === '0') {
-            return 0;
-        } else {
-            return B6() * B19() * B18();
         }
-    }
 
-    function B22() {
-        return B20() + B14();
-    }
+        function B22() {
+            return B20() + B14();
+        }
 
-    function B23() {
-        return B22() * 0.5;
-    }
+        function B23() {
+            return B22() * 0.5;
+        }
 
-    function update() {
-        bindings.forEach(function (binding) {
-            var value = binding.func();
+        function update() {
+            bindings.forEach(function (binding) {
+                var value = binding.func();
 
-            if (typeof binding.format === 'function') {
-                value = binding.format(value);
-            }
+                if (typeof binding.format === 'function') {
+                    value = binding.format(value);
+                }
 
-            var element = document.querySelector(binding.target);
-            element.textContent = value;
-        });
-    }
-</script>
-
+                var element = document.querySelector(binding.target);
+                element.textContent = value;
+            });
+        }
+    </script>
+<head>
+<body>
 
 <div class="header-2">Благодарим за Ваш вклад! :)</div>
 
@@ -491,7 +541,7 @@
 
         <tr>
             <td class="header-cell dark-yellow-cell">Общая сумма премии, тг</td>
-            <td id="B22" class="header-right-cell dark-yellow-cell">120 000</td>
+            <td id="B22half" class="header-right-cell dark-yellow-cell">120 000</td>
         </tr>
 
     </table>
@@ -504,55 +554,90 @@
             <td class="left-cell grey-cell">Дата приема на работу</td>
             <td class="right-cell yellow-cell pencil-icon">
                 <!--Insert here input with dates needed-->
-                <select id="B5" class="input"></select>
+                <ul id="B1-half-year" class="li" autofocus>
+                    <li value="6" data-multiply="6" data-month="6" class="selected-date">Ранее, чем в 2015 году</li>
+                    <li value="6" data-multiply="6" data-month="6">Январь 2015</li>
+                    <li value="5" data-multiply="5" data-month="5">Февраль 2015</li>
+                    <li value="4" data-multiply="4" data-month="4">Март 2015</li>
+                    <li value="3" data-multiply="3" data-month="3">Апрель 2015</li>
+                    <li value="2" data-multiply="2" data-month="2">Май 2015</li>
+                    <li value="1" data-multiply="1" data-month="1">Июнь 2015</li>
+                    <li value="0" data-multiply="0" data-month="0">Июль 2015</li>
+                    <li value="0" data-multiply="0" data-month="0">Август 2015</li>
+                    <li value="0" data-multiply="0" data-month="0">Сентябрь 2015</li>
+                    <li value="0" data-multiply="0" data-month="0">Октябрь 2015</li>
+                    <li value="0" data-multiply="0" data-month="0">Ноябрь 2015</li>
+                    <li value="0" data-multiply="0" data-month="0">Декабрь 2015</li>
+                </ul>
             </td>
         </tr>
 
         <tr>
             <td class="left-cell white-cell">PL (позицонный уровень)</td>
             <td class="right-cell yellow-cell pencil-icon">
-                <select id="B5" class="input"></select>
+                <ul id="B2-half-year" class="li">
+                    <li data-amount="50" data-individual="0" value="50">A</li>
+                    <li data-amount="50" data-individual="10" value="50">M5</li>
+                    <li data-amount="40" data-individual="10" value="40">M4</li>
+                    <li data-amount="40" data-individual="10" value="40">E11</li>
+                    <li data-amount="30" data-individual="0" value="30">M3(Директор филиала)</li>
+                    <li data-amount="30" data-individual="10" value="30">M3</li>
+                    <li data-amount="30" data-individual="10" value="30">E10</li>
+                    <li data-amount="20" data-individual="10" value="20">M2</li>
+                    <li data-amount="20" data-individual="10" value="20">E9</li>
+                    <li data-amount="15" data-individual="10" value="15">M1</li>
+                    <li data-amount="15" data-individual="10" value="15">M</li>
+                    <li data-amount="15" data-individual="10" value="E" data-value="E">E8</li>
+                    <li data-amount="15" data-individual="10" value="E" data-value="E">E7</li>
+                    <li data-amount="12.5" data-individual="10" value="E" data-value="E">E6</li>
+                    <li data-amount="12.5" data-individual="10" value="E" data-value="E">E5</li>
+                    <li data-amount="12.5" data-individual="10" value="E" data-value="E">E4</li>
+                    <li data-amount="12.5" data-individual="10" value="E" data-value="E">E3</li>
+                    <li data-amount="12.5" data-individual="10" value="E" data-value="E">E2</li>
+                    <li data-amount="12.5" data-individual="10" value="E" data-value="E">E1</li>
+                </ul>
             </td>
         </tr>
         <tr>
             <td class="left-cell grey-cell">Оклад в месяц, тг</td>
-            <td class="right-cell yellow-cell pencil-icon">
-                <input class="input" id="B6" type="text" value="100000">
+            <td class="right-cell yellow-cell pencil-icon pl48">
+                <input class="input" id="B3-half-year" type="text" value="100000">
             </td>
         </tr>
         <tr>
             <td class="left-cell white-cell">Общий размер целевой премии, %</td>
-            <td id="B7" class="right-cell grey-cell">15,0%</td>
+            <td id="B4-half-year" class="right-cell pl48"></td>
         </tr>
 
         <tr>
             <td class="left-cell white-cell"></td>
-            <td class="right-cell white-cell"></td>
+            <td class="right-cell white-cell pl48"></td>
         </tr>
 
         <!-- header -->
         <tr>
-            <td class="header-cell dark-grey-cell">Полугодие</td>
+            <td class="header-cell dark-grey-cell">Премия за индивидуальные результаты</td>
             <td class="header-right-cell dark-grey-cell"></td>
         </tr>
-        <tr>
-            <td class="left-cell grey-cell">Премия за индивидуальные результаты</td>
-            <td class="right-cell grey-cell">
+        <!--<tr>-->
+            <!--<td class="left-cell grey-cell">Премия за индивидуальные результаты</td>-->
+            <!--<td class="right-cell grey-cell">-->
 
-            </td>
-        </tr>
+            <!--</td>-->
+        <!--</tr>-->
         <tr>
             <td class="left-cell white-cell">Целевой размер полугодовой премии, % к окладу</td>
-            <td id="B13" class="right-cell white-cell">10,0%</td>
+            <td id="B7-half-year" class="right-cell white-cell pl48"></td>
         </tr>
         <tr>
             <td class="left-cell grey-cell">Сумма окладов (01.01.2015-30.06.2015 гг)*</td>
-            <td id="B14" class="right-cell grey-cell">500 000</td>
+            <td id="B8-half-year" class="right-cell grey-cell pl48"></td>
         </tr>
         <tr>
             <td class="left-cell white-cell">Выполнение годовых целей при подведении итогов полугодия, %</td>
-            <td class="right-cell yellow-cell pencil-icon percentage">
-                <input class="input" id="B6" type="text" value="45"><!-- add % icon on left-side of numbers -->
+            <td class="right-cell yellow-cell pencil-icon percentage pl48">
+                <input class="input" id="B9-half-year" type="text" value="0">
+                <!-- adding % by :after-->
             </td>
         </tr>
 
@@ -564,12 +649,176 @@
 
         <tr>
             <td class="header-cell dark-yellow-cell">Сумма полугодовой премии, тг*</td>
-            <td id="B22" class="header-right-cell dark-yellow-cell">45 000</td>
+            <td id="B10-half-year" class="header-right-cell dark-yellow-cell pl48">0</td>
         </tr>
 
 
     </table>
 </div>
+<script>
+    //local variables
+    var cameDateUl = $('#B1-half-year'),
+            cameDateLi = $('#B1-half-year>li'),
+            plUl = $('#B2-half-year'),
+            plLi = $('#B2-half-year>li'),
+            monthSalary = $('#B3-half-year'),
+            amountAwardPercents = $('#B4-half-year'),
+            indAward = $('#B7-half-year'),
+            amountSalary = $('#B8-half-year'),
+            annualPercentage = $('#B9-half-year'),
+            halfAnnualReward = $('#B10-half-year');
+    var multiply;
 
+    //add click handler to li elements of #B1-half-year
+    cameDateUl.on('click', 'li', dateHandler);
+
+    //add click handler to li elements of #B1-half-year
+    plUl.on('click', 'li', plHandler);
+
+    //add input handler
+    monthSalary.on('keyup', function () {
+        amountSalary.text(+monthSalary.val() * multiply);
+    });
+
+    //add input annualPercentage handler
+    annualPercentage.on('keyup', halfAnnualAward);
+
+
+    function dateHandler($event) {
+
+        //clear all classList & hide all li elements
+        cameDateLi.removeClass('selected-date');
+        cameDateLi.css('display', 'none');
+
+        //set selected-date class on target element & show it
+        $event.target.classList.add('selected-date');
+        $event.target.style.display = "block";
+
+        //change bcg & hide border
+        cameDateUl.css("background", "transparent").css("border", "none");
+
+        //delete this handler
+        cameDateUl.off();
+        plUl.css('display', 'block').css("border", "1px solid grey").css("background", "rgba(241, 241, 241, 0.83)");
+        plLi.css('display', 'block');
+
+        //add new handler to have a possibility to display list again
+        cameDateUl.on('click', function () {
+
+            //show li element
+            cameDateLi.removeClass('selected-date');
+            cameDateLi.css('display', 'block');
+            cameDateUl.css("border", "1px solid grey").css("background", "rgba(241, 241, 241, 0.83)");
+
+            //remove this handler && add first handler with recursion
+            cameDateUl.off();
+            cameDateUl.on('click', 'li', dateHandler);
+        })
+    }
+
+
+    function plHandler($event) {
+
+        //clear all classList & hide all li elements
+        plLi.removeClass('selected-pl');
+        plLi.css('display', 'none');
+
+        //set selected-date class on target element & show it
+        $event.target.classList.add('selected-pl');
+        $event.target.style.display = "block";
+
+        //change bcg & hide border
+        plUl.css("background", "transparent").css("border", "none");
+
+        //delete this handler
+        plUl.off();
+//fulfill B4
+        plLi.each(function () {
+            if ($(this).hasClass('selected-pl')) {
+                amountAwardPercents.text($(this).data("amount") + " %");
+            }
+        });
+//fulfill B7
+        //get true or false in first condition
+        function result1() {
+            var result = null;
+            cameDateLi.each(function () {
+                if ($(this).hasClass('selected-date')) {
+                    //get multiply number & set amount salary
+                    multiply = +$(this).data('multiply');
+                    amountSalary.text(+monthSalary.val() * multiply);
+
+
+                    halfAnnualAward();
+
+
+                    result = +$(this).data("month");
+                }
+            });
+            return result > 0;
+        }
+
+        //get true or false in second condition
+        function result2() {
+            var result = null;
+            plLi.each(function () {
+                if ($(this).hasClass('selected-pl')) {
+                    result = $(this).data("value");
+                }
+            });
+            return result == "E";
+        }
+
+        //check general condition and fulfill B7
+        if (result1() && result2()) {
+            plLi.each(function () {
+                if ($(this).hasClass('selected-pl')) {
+
+                    //console.log("individual " + $(this).data("individual") + "%");
+                    indAward.text($(this).data("individual") + " %");
+                }
+            });
+        } else {
+            indAward.text('Вы не являетесь участником программы полугодового премирования');
+        }
+
+        //add new handler to have a possibility to display list again
+        plUl.on('click', function () {
+
+            //show li element
+            plLi.removeClass('selected-pl');
+            plLi.css('display', 'block');
+            plUl.css("border", "1px solid grey").css("background", "rgba(241, 241, 241, 0.83)");
+
+            //remove this handler && add first handler with recursion
+            plUl.off();
+            plUl.on('click', 'li', plHandler);
+        })
+    }
+
+    function halfAnnualAward() {
+        var a = +annualPercentage.val();
+        if (a < 35) {
+            halfAnnualReward.text(0);
+        } else if (a > 50) {
+            if (!isNaN(parseInt(indAward.text()) / 100 * amountSalary.text())) {
+                halfAnnualReward.text(parseInt(indAward.text()) / 100 * +amountSalary.text())
+            } else {
+                halfAnnualReward.text(0);
+            }
+        } else {
+            if (!isNaN(parseInt(indAward.text()) / 100 * +amountSalary.text() * +annualPercentage.val() / 100 * 2)) {
+                halfAnnualReward.text(parseInt(indAward.text()) / 100 * +amountSalary.text() * +annualPercentage.val() / 100 * 2)
+            } else {
+                halfAnnualReward.text(0);
+            }
+        }
+    }
+//rgba(241, 241, 241, 0.83)
+
+</script>
+
+</body>
+</html>
 
 

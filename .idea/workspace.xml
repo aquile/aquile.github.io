@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mts/aside_btns.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/beelife/calc-origin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mts/images.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mts/news.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mts/video.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beelife/calc-new.html" afterPath="$PROJECT_DIR$/beelife/calc-new.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-permission.html" afterPath="$PROJECT_DIR$/my-permission.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/permission-widget.html" afterPath="$PROJECT_DIR$/permission-widget.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/when-then.html" afterPath="$PROJECT_DIR$/when-then.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aquile.github.io.iws" />
@@ -23,22 +32,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/stylesheets/config.css">
+      <file leaf-file-name="calc-new.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/beelife/calc-new.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.70042795">
+              <caret line="645" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="824" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view-style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/stylesheets/view-style.css">
+      <file leaf-file-name="permission-widget.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/permission-widget.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="167" column="19" selection-start-line="167" selection-start-column="19" selection-end-line="167" selection-end-column="19" />
+              <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configuration.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/configuration.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.9583333">
+              <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aside_btns.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mts/aside_btns.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.333334">
+              <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#a#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,81 +78,17 @@
         <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="104" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="104" />
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/javascripts/view.js">
+      <file leaf-file-name="my-permission.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my-permission.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weather.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AJAX/weather.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weather.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AJAX/weather.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wiley-db-slider/build.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="726" column="0" selection-start-line="726" selection-start-column="0" selection-end-line="726" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gunman_gameplay/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Landing_contract_GoIT/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-127.5">
-              <caret line="204" column="23" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calc-new.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/beelife/calc-new.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6205421">
-              <caret line="352" column="0" selection-start-line="352" selection-start-column="0" selection-end-line="352" selection-end-column="0" />
+            <state vertical-scroll-proportion="-46.25">
+              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -132,8 +99,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="Html5" />
       </list>
     </option>
@@ -148,15 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/1/css.css" />
-        <option value="$PROJECT_DIR$/1/index.html" />
-        <option value="$PROJECT_DIR$/AJAX/css/weather.css" />
-        <option value="$PROJECT_DIR$/GoFE/Lesson-13/exam/style.css" />
-        <option value="$PROJECT_DIR$/e-farmer - less/css/normalize.css" />
-        <option value="$PROJECT_DIR$/e-farmer - less/html/index.html" />
-        <option value="$PROJECT_DIR$/e-farmer - less/css/style.less" />
-        <option value="$PROJECT_DIR$/GoFE/Lesson-13/exam/index.html" />
-        <option value="$PROJECT_DIR$/GoFE/Lesson-13/exam/js.js" />
         <option value="$PROJECT_DIR$/AJAX/weather.html" />
         <option value="$PROJECT_DIR$/Desktop/New Ticker/ticker.html" />
         <option value="$PROJECT_DIR$/New Ticker/ticker.html" />
@@ -198,6 +156,16 @@
         <option value="$PROJECT_DIR$/wiley-db-slider/public/stylesheets/config.css" />
         <option value="$PROJECT_DIR$/AJAX/weather.js" />
         <option value="$PROJECT_DIR$/wiley-db-slider/build.html" />
+        <option value="$PROJECT_DIR$/when-then.html" />
+        <option value="$PROJECT_DIR$/my-permission.html" />
+        <option value="$PROJECT_DIR$/permission-widget.html" />
+        <option value="$PROJECT_DIR$/mts/video.html" />
+        <option value="$PROJECT_DIR$/mts/aside_btns.css" />
+        <option value="$PROJECT_DIR$/mts/aside_btns.html" />
+        <option value="$PROJECT_DIR$/mts/images.html" />
+        <option value="$PROJECT_DIR$/mts/news.html" />
+        <option value="$PROJECT_DIR$/beelife/calc-origin.html" />
+        <option value="$PROJECT_DIR$/beelife/calc-new.html" />
       </list>
     </option>
   </component>
@@ -236,7 +204,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -265,12 +232,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="wiley-db-slider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aquile.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aquile.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wiley-db-slider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aquile.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aquile.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aquile.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aquile.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="beelife" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -497,6 +511,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2203125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -504,12 +520,10 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -534,60 +548,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/e-farmer - less/css/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7034483">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-farmer - less/img/Logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/efarmer__landing/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/efarmer__landing/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="440" column="5" selection-start-line="440" selection-start-column="1" selection-end-line="440" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cl-closure-template-master/example/messages/messages.tmpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cl-closure-template-master/example/messages/messages.lisp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cl-closure-template-master/example/messages/messages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TODO/todo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project2/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -790,18 +750,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/configuration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.333333">
-          <caret line="95" column="28" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/inputs.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,23 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/stylesheets/view-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="167" column="19" selection-start-line="167" selection-start-column="19" selection-end-line="167" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="104" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="104" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,19 +771,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/javascripts/view.js">
+    <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/stylesheets/view-style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding />
+          <caret line="167" column="19" selection-start-line="167" selection-start-column="19" selection-end-line="167" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AJAX/weather.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.10128388">
           <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiley-db-slider/build.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.2310987">
+          <caret line="726" column="0" selection-start-line="726" selection-start-column="0" selection-end-line="726" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -856,15 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wiley-db-slider/build.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="726" column="0" selection-start-line="726" selection-start-column="0" selection-end-line="726" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,26 +803,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#span#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Landing_contract_GoIT/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-127.5">
+        <state vertical-scroll-proportion="4.3651924">
           <caret line="204" column="23" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/when-then.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42796007">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/javascripts/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.15862069">
+          <caret line="107" column="7" selection-start-line="88" selection-start-column="4" selection-end-line="107" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/permission-widget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="44" selection-start-line="79" selection-start-column="44" selection-end-line="79" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mts/aside_btns.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.333334">
+          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mts/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32097003">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mts/images.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74322397">
+          <caret line="155" column="14" selection-start-line="0" selection-start-column="0" selection-end-line="161" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mts/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08559201">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wiley-db-slider/public/configuration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9583333">
+          <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-permission.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-46.25">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beelife/calc-origin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-61.875">
+          <caret line="440" column="0" selection-start-line="440" selection-start-column="0" selection-end-line="440" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#11;n#table#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/beelife/calc-new.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6205421">
-          <caret line="352" column="0" selection-start-line="352" selection-start-column="0" selection-end-line="352" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.70042795">
+          <caret line="645" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="824" selection-end-column="0" />
           <folding />
         </state>
       </provider>
