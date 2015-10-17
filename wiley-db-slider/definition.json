@@ -1,7 +1,7 @@
 {
-    "displayName" : "wiley-featured-tile",
-    "name" : "wiley-featured-tile",
-    "description" : "wiley-featured-tile",
+    "displayName" : "wiley-db-slider",
+    "name" : "wiley-db-slider",
+    "description" : "wiley-db-slider",
     "style": "CUSTOM_VIEW",
     "displayWidth" : "ALL",
     "dataProviderKey": "internal",
@@ -12,5 +12,5 @@
         "128": "https://community.jivesoftware.com/servlet/JiveServlet/showImage/102-99994-1-1023036/j.png"
     },
     "config": "/wiley-db-slider/configuration.html",
-    "view": "/wiley-db-slider/view.html?features=os-2.5,core-v3,tile,oauth,responsive"
+    "view": "/wiley-db-slider/view.html?features=os-2.5,core-v3,jq-1.11,tile,oauth,responsive"
 }

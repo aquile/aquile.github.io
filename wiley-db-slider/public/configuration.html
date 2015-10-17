@@ -10,73 +10,98 @@
         angular.module('app', [])
                 .controller('sliderCntl', ['$scope', function ($scope) {
 
-                    $scope.counter = i;
+                    //$scope.counter;
                     $scope.formData = {};
                     $scope.formData.slides = [];
 
-                    //jive.tile.onOpen(function (config, options) {
+                    jive.tile.onOpen(function (config, options) {
+                        console.log(config);
 
-                    //это удалить а следующее раскомитить
-                    var config = {};
-                    config["data"] = {};
-                    config['data']['imageUrl'] = "url-image";
-                    config["data"]["title"] = "Some title";
-                    config["data"]["subtitle"] = "Very very long long long subtitle";
-                    config["data"]["titleUrl"] = "url-title";
+                        gadgets.window.adjustHeight();
+                        //set additional height for the slider config div
+                        function resize() {
+                            gadgets.window.adjustHeight();
+                            setTimeout(function () {
+                                gadgets.window.adjustHeight();
+                            }, 150);
+                            $(window.parent.document.body).find('.js-embed').css('max-height', $('html').height());
+                            setTimeout(function () {
+                                $(window.parent.document.body).find('.j-tile-overlay.j-semitransparent').css('height', $(window.parent.document).height());
+                            }, 100);
+                            setTimeout(function () {
+                                $(window.parent.document.body).find('.j-tile-overlay.j-semitransparent').css('height', $(window.parent.document).height());
+                            }, 350)
+                        }
 
+                        resize();
 
+                        setTimeout(function () {
+//                            var blue = document.body.querySelector("#blue input"),
+//                                    left = document.body.querySelector("#left");
+//                            blue.checked = true;
+//                            left.checked = true;
+                            $scope.$apply(function () {
 //                        // make sure config has default value
-//                        if (config === null) config = {};
-//
-//                        // set default velue
-//                        if (!config["data"]) {
-//                            config['data']['imageUrl'] = "url-image";
-//                            config["data"]["title"] = "Some title";
-//                            config["data"]["subtitle"] = "Very very long long long subtitle";
-//                            config["data"]["titleUrl"] = "url-title";
-//                        }
+                                if (config === null) {
+                                    config = {};
+                                } else {
+                                    //get default settings of the slider
+                                    $scope.formData.interval = config["data"].interval;
+                                    $scope.formData.timeout = config["data"].timeout;
+                                    $scope.formData.slides = config["data"].slides;
+                                    console.log($scope.formData.slides);
+                                    // $scope.default.color = config["data"].color;
+                                }
+                                setTimeout(resize, 1500);
+//                                setTimeout(function () {
+//                                    var actionInput = document.body.querySelectorAll(".action");
+//                                    for (var j = 0; j < actionInput.length; j++) {
+//                                        if (actionInput[j].getAttribute('placeholder') == '') {
+//                                            actionInput[j].setAttribute("value", "Learn more...");
+//                                            actionInput[j].setAttribute("placeholder", "Learn more...");
+//                                        }
+//                                    }
+//                                }, 500)
+                            });
+                        }, 1000);
 
-                    //save to view.html
-                    $scope.default = config["data"];
 
-                    $scope.sendForm = function (data) {
-                        config['data'] = data;
-                        console.log(data);
-//                        config['data']['imageUrl'] = data.imageUrl;
-//                        config["data"]["title"] = data.title;
-//                        config["data"]["subtitle"] = data.subtitle;
-//                        config["data"]["titleUrl"] = data.titleUrl;
+                        $scope.sendForm = function (data) {
+                            var submit = confirm("Did you set ALL the color themes and slider positions?");
+                            if (submit) {
+                                config['data'] = data;
+                                console.log(data);
 
-                        //jive.tile.close(config, {});
-                    };
-
-
-                    $scope.addOne = function () {
-                        i++;
-                        var a = {
-                            //imageUrl: config['data']['imageUrl']
+                                jive.tile.close(config, {});
+                            }
                         };
-                        $scope.formData.slides.unshift(a);
 
-                        b = $scope.formData.slides;
-                        console.log($scope.formData.slides)
-                    };
+                        $scope.addOne = function () {
+                            i++;
+                            var a = {};
+                            $scope.formData.slides.unshift(a);
 
-                    $scope.deleteSlide = function (e) {
-                        console.log(e);
-                       var submit = confirm("Are you sure you " +
-                         "want to delete this slide?");
-                       if (submit) {
-                           b.splice(+e.target.dataset.count, 1);
-                       }
-                    };
+                            //b = $scope.formData.slides; //doesn't need any more
+                            //console.log($scope.formData.slides);
+                            setTimeout(resize, 1300);
+                        };
 
-                    // });
+                        $scope.deleteSlide = function (e) {
+                            console.log(e);
+                            var submit = confirm("Are you sure you want to delete this slide?");
+                            if (submit) {
+                                //deleting the slide
+                                $scope.formData.slides.splice(+e.target.dataset.index, 1);
+                            }
+                            resize();
+                        };
+
+                    });
                 }])
                 .directive('slider', function () {
                     return {
                         restrict: 'A',
-                        templateUrl: 'inputs.html',
+                        //templateUrl: 'inputs.html',
                         scope: {
                             config: "="
                         },
@@ -88,6 +113,7 @@
                 })
     </script>
 </head>
+<body>
 
 <h2>Configure Slider Widget</h2>
 
@@ -95,21 +121,102 @@
 
     <form class="slider-form" ng-controller="sliderCntl" ng-submit="sendForm(formData)" name="configForm">
 
-        <label><p><input name="color" type="radio" ng-model="formData.color" value="magenta">
-            Set Magenta theme</p></label>
+        <!--submit form-->
+        <button class="submit-button" type="submit">Save changes</button>
 
-        <label><p><input name="color" type="radio" ng-model="formData.color" value="greenblue">
-            Set Bluegreen theme</p></label>
+        <!-- set interval & timeout-->
+        <label><p>Set a slider interval, in seconds. It can be an integer or a broken number separated by a dot</p>
+
+            <p><input type="text" ng-model="formData.interval" value="{{formData.interval}}" placeholder="{{formData.interval}}"
+                      maxlength="4">
+            </p>
+        </label>
+
+        <label><p>Set a slider timeout after the user hovers over image, in seconds.</p>
+
+            <p><input type="text" ng-model="formData.timeout" value="{{formData.timeout}}" placeholder="{{formData.timeout}}"
+                      maxlength="4">
+            </p>
+        </label>
+        <!--add new button-->
+        <input type="button" ng-click="addOne()" value="Add new slide">
+
+        <div class="repeat-block" ng-repeat="config in formData.slides track by $index" config="config">
+
+            <!--set color theme of each slide-->
+            <div class="theme-colors">
+                <label id="blue"><input name="color-{{$index}}" type="radio" ng-model="config.color" value="blue">
+                    Set blue theme</label>
+
+                <label id="green"><input name="color-{{$index}}" type="radio" ng-model="config.color" value="green">
+                    Set green theme</label>
+
+                <label id="orange"><input name="color-{{$index}}" type="radio" ng-model="config.color" value="orange">
+                    Set orange theme</label>
+
+                <label id="purple"><input name="color-{{$index}}" type="radio" ng-model="config.color" value="purple">
+                    Set purple theme</label>
+
+                <label id="red"><input name="color-{{$index}}" type="radio" ng-model="config.color" value="red">
+                    Set red theme</label>
+
+                <label id="none"><input name="color-{{$index}}" type="radio" ng-model="config.color" value="none">
+                    Set images only theme</label>
+            </div>
 
 
-        <button ng-click="addOne($event)">Add new slide</button>
-        <div slider ng-repeat="config in formData.slides track by $index" config="config">
+            <!-- set position of each slide-->
+            <div class="slider-position">
+                <label><input id="left-{{$index}}" name="position" type="radio" ng-model="config.position" value="left">
+                    Set slider position LEFT <br/><<<<<<<<<<<</label>
+
+                <label><input name="position-{{$index}}" type="radio" ng-model="config.position" value="right">
+                    Set slider position RIGHT <br/>>>>>>>>>>>></label>
+            </div>
+
+
+            <!--putting contents and links of each slide-->
+
+            <label><p>Title for this slide, max 30 symbols</p>
+
+                <p><input type="text" ng-model="config.title" value="{{config.title}}" placeholder="{{config.title}}"
+                          maxlength="30">
+                </p>
+            </label>
+
+            <label><p>Description for this title, max 120 symbols</p>
+
+                <p><input type="text" ng-model="config.subtitle" value="{{config.subtitle}}"
+                          placeholder="{{config.subtitle}}" maxlength="120"></p>
+            </label>
+
+            <label><p>Action, max 20 symbols. <br/>
+                "Learn more..." as default
+            </p>
+
+                <p><input class="action" type="text" ng-model="config.action" value="{{config.action}}"
+                          placeholder="{{config.action}}" maxlength="20"></p>
+            </label>
+
+            <label><p>Set destination URL</p>
+
+                <p><input type="text" ng-model="config.titleUrl" value="{{config.titleUrl}}"
+                          placeholder="{{config.titleUrl}}"></p>
+            </label>
+
+            <label><p>Set background image URL</p>
+
+                <p><input type="text" ng-model="config.imageUrl" value="{{config.imageUrl}}"
+                          placeholder="{{config.imageUrl}}"></p>
+            </label>
+
+            <!-- delete this slide button-->
+            <input class="delete-button" type="button" ng-click="deleteSlide($event)" data-index="{{$index}}"
+                   value="Delete this slide">
 
         </div>
 
-        <p>
-            <button class="submit-button" type="submit">Save changes</button>
-        </p>
+
     </form>
 </div>
 
