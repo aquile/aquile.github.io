@@ -23,24 +23,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="configuration.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="configuration.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/configuration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="27" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.42796007">
+              <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4764622">
-              <caret line="660" column="49" selection-start-line="660" selection-start-column="49" selection-end-line="660" selection-end-column="49" />
+            <state vertical-scroll-proportion="-2.627451">
+              <caret line="297" column="0" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#1;n#head#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -886,22 +885,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/configuration.html">
+    <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="27" selection-end-column="44" />
-          <folding />
+        <state vertical-scroll-proportion="-2.627451">
+          <caret line="297" column="0" selection-start-line="297" selection-start-column="0" selection-end-line="297" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/view.html">
+    <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/configuration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4764622">
-          <caret line="660" column="49" selection-start-line="660" selection-start-column="49" selection-end-line="660" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#1;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.42796007">
+          <caret line="32" column="46" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
