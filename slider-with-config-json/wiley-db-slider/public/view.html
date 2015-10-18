@@ -623,9 +623,18 @@
     //Declare angular controller
     app.controller('MainController', ['$scope', function ($scope) {
         console.log('modul');
-        jive.tile.onOpen(function (config, options) {
-            //Set nice height of the slider
-            gadgets.window.adjustHeight();
+
+        getSlides();
+
+        function getSlides() {
+            var config = null;
+
+            try {
+                config = JSON.parse(localStorage.getItem('sliderConfig'));
+            } catch (e) {
+                localStorage.clear();
+            }
+            console.log(config);
 
             setTimeout(function () {
 //            //Apply view
@@ -656,7 +665,7 @@
 //                    $scope.position = config.position;
                 });
             }, 500);
-        })
+        }
     }]);
 </script>
 
@@ -747,7 +756,7 @@
                 sliderCircl2.style.right = sliderDiv.offsetWidth * 0.12 - 20 + "px";
             }
             //show after giving the position
-           // if (!sliderWrap.classList.contains('none')) sliderCircl2.style.display = "block";
+            // if (!sliderWrap.classList.contains('none')) sliderCircl2.style.display = "block";
 
             //Hide title and subtitle in .slider-circle-3
             //Add new text picked form data-attr of <a> to title and subtittle in .slider-circle-3
@@ -836,7 +845,7 @@
                     sliderCircl2.style.right = sliderDiv.offsetWidth * 0.12 - 20 + "px";
                 }
                 //show after giving the position
-               // if (!sliderWrap.classList.contains('none')) sliderCircl2.style.display = "block";
+                // if (!sliderWrap.classList.contains('none')) sliderCircl2.style.display = "block";
 
                 //Hide title and subtitle in .slider-circle-3
                 //Add new text picked form data-attr of <a> to title and subtittle in .slider-circle-3
@@ -932,13 +941,13 @@
         window._config = {};
 
         //Please set this values as you like
-        if(sliderWrap.dataset.interval != ''){
+        if (sliderWrap.dataset.interval != '') {
             window._config.sliderInterval = +sliderWrap.dataset.interval * 1000;
         } else {
             window._config.sliderInterval = 3000;
         } //ms
 
-        if(window._config.sliderTimeout != ''){
+        if (window._config.sliderTimeout != '') {
             window._config.sliderTimeout = +sliderWrap.dataset.timeout * 1000;
         } else {
             window._config.sliderTimeout = 7000;
