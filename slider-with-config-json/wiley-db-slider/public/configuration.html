@@ -20,11 +20,11 @@
                     function getContent() {
                         var config = null;
 
-                                    try {
-                                        config = JSON.parse(localStorage.getItem('sliderConfig'));
-                                    } catch (e) {
-                                        localStorage.clear();
-                                    }
+                        try {
+                            config = JSON.parse(localStorage.getItem('sliderConfig'));
+                        } catch (e) {
+                            localStorage.clear();
+                        }
                         console.log(config);
 
                         setTimeout(function () {
@@ -43,10 +43,10 @@
                         }, 1000);
 
                         function Storage() {
-                            this.store = function(slides) {
+                            this.store = function (slides) {
                                 localStorage.setItem('sliderConfig', JSON.stringify(slides));
                             };
-                            this.load = function() {
+                            this.load = function () {
                                 var slides = {};
                                 try {
                                     slides = JSON.parse(localStorage.getItem('sliderConfig'));
@@ -102,7 +102,7 @@
 <body>
 
 <div class="config-wrapper" ng-app="app">
-<h2>Configure Slider Widget</h2>
+    <h2>Configure Slider Widget</h2>
 
     <form class="slider-form" ng-controller="sliderCntl" ng-submit="sendForm(formData)" name="configForm">
 
