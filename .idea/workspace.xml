@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/javascripts/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/stylesheets/config.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/configuration.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/definition.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/backend/routes/configure/get.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/inputs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/stylesheets/view-style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beelife/calc-new.html" afterPath="$PROJECT_DIR$/beelife/calc-new.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/stylesheets/config.css" afterPath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/stylesheets/config.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/configuration.html" afterPath="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/configuration.html" />
     </list>
     <ignored path="aquile.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +27,28 @@
       <file leaf-file-name="configuration.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/configuration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5991441">
-              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+            <state vertical-scroll-proportion="-3.1298146">
+              <caret line="23" column="98" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="98" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TODO/todo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-28.88889">
+              <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/stylesheets/config.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -45,9 +57,12 @@
       <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="30.75">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#1;n#head#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Desktop/New Ticker/ticker.html" />
         <option value="$PROJECT_DIR$/New Ticker/ticker.html" />
         <option value="$PROJECT_DIR$/New Ticker/jquery-1.9.0.min.js" />
         <option value="$PROJECT_DIR$/New Ticker/test-with-counter.html" />
@@ -123,6 +137,7 @@
         <option value="$PROJECT_DIR$/mts/news.html" />
         <option value="$PROJECT_DIR$/beelife/calc-origin.html" />
         <option value="$PROJECT_DIR$/beelife/calc-new.html" />
+        <option value="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/stylesheets/config.css" />
         <option value="$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/configuration.html" />
       </list>
     </option>
@@ -190,7 +205,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="world_clock" />
+              <option name="myItemId" value="TODO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -231,6 +246,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aquile.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aquile.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slider-with-config-json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wiley-db-slider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,20 +543,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/beelife/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beelife/green buttons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.807418">
-          <caret line="67" column="6" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GoJS/добавить текст в ноде = nodeValue.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5991441">
@@ -866,16 +893,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="30.75">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#1;n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/stylesheets/config.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TODO/todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.88889">
+          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/slider-with-config-json/wiley-db-slider/public/configuration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5991441">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        <state vertical-scroll-proportion="-3.1298146">
+          <caret line="23" column="98" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="98" />
           <folding />
         </state>
       </provider>

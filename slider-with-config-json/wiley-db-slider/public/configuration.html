@@ -7,6 +7,7 @@
     <script>
         var b, i = -1;
 
+
         angular.module('app', [])
                 .controller('sliderCntl', ['$scope', function ($scope) {
 
@@ -14,65 +15,55 @@
                     $scope.formData = {};
                     $scope.formData.slides = [];
 
-                    jive.tile.onOpen(function (config, options) {
+                    getContent();
+
+                    function getContent() {
+                        var config = null;
+
+                                    try {
+                                        config = JSON.parse(localStorage.getItem('sliderConfig'));
+                                    } catch (e) {
+                                        localStorage.clear();
+                                    }
                         console.log(config);
 
-                        gadgets.window.adjustHeight();
-                        //set additional height for the slider config div
-//                        function resize() {
-//                            gadgets.window.adjustHeight();
-//                            setTimeout(function () {
-//                                gadgets.window.adjustHeight();
-//                            }, 150);
-//                            $(window.parent.document.body).find('.js-embed').css('max-height', $('html').height());
-//                            setTimeout(function () {
-//                                $(window.parent.document.body).find('.j-tile-overlay.j-semitransparent').css('height', $(window.parent.document).height());
-//                            }, 100);
-//                            setTimeout(function () {
-//                                $(window.parent.document.body).find('.j-tile-overlay.j-semitransparent').css('height', $(window.parent.document).height());
-//                            }, 350)
-//                        }
-
-                        resize();
-
                         setTimeout(function () {
-//                            var blue = document.body.querySelector("#blue input"),
-//                                    left = document.body.querySelector("#left");
-//                            blue.checked = true;
-//                            left.checked = true;
                             $scope.$apply(function () {
 //                        // make sure config has default value
-                                if (config === null) {
+                                if (!config) {
                                     config = {};
                                 } else {
                                     //get default settings of the slider
-                                    $scope.formData.interval = config["data"].interval;
-                                    $scope.formData.timeout = config["data"].timeout;
-                                    $scope.formData.slides = config["data"].slides;
+                                    $scope.formData.interval = config.interval;
+                                    $scope.formData.timeout = config.timeout;
+                                    $scope.formData.slides = config.slides;
                                     console.log($scope.formData.slides);
-                                    // $scope.default.color = config["data"].color;
                                 }
-                                setTimeout(resize, 1500);
-//                                setTimeout(function () {
-//                                    var actionInput = document.body.querySelectorAll(".action");
-//                                    for (var j = 0; j < actionInput.length; j++) {
-//                                        if (actionInput[j].getAttribute('placeholder') == '') {
-//                                            actionInput[j].setAttribute("value", "Learn more...");
-//                                            actionInput[j].setAttribute("placeholder", "Learn more...");
-//                                        }
-//                                    }
-//                                }, 500)
                             });
                         }, 1000);
+
+                        function Storage() {
+                            this.store = function(slides) {
+                                localStorage.setItem('sliderConfig', JSON.stringify(slides));
+                            };
+                            this.load = function() {
+                                var slides = {};
+                                try {
+                                    slides = JSON.parse(localStorage.getItem('sliderConfig'));
+                                } catch (e) {
+                                    localStorage.clear();
+                                }
+                                return slides;
+                            };
+                        }
 
 
                         $scope.sendForm = function (data) {
                             var submit = confirm("Did you set ALL the color themes and slider positions?");
                             if (submit) {
-                                config['data'] = data;
+                                //config['data'] = data;
+                                localStorage.setItem('sliderConfig', JSON.stringify(data));
                                 console.log(data);
-
-                                jive.tile.close(config, {});
                             }
                         };
 
@@ -80,10 +71,6 @@
                             i++;
                             var a = {};
                             $scope.formData.slides.unshift(a);
-
-                            //b = $scope.formData.slides; //doesn't need any more
-                            //console.log($scope.formData.slides);
-                            setTimeout(resize, 1300);
                         };
 
                         $scope.deleteSlide = function (e) {
@@ -93,10 +80,9 @@
                                 //deleting the slide
                                 $scope.formData.slides.splice(+e.target.dataset.index, 1);
                             }
-                            resize();
                         };
 
-                    });
+                    }
                 }])
                 .directive('slider', function () {
                     return {
@@ -115,9 +101,8 @@
 </head>
 <body>
 
+<div class="config-wrapper" ng-app="app">
 <h2>Configure Slider Widget</h2>
-
-<div ng-app="app">
 
     <form class="slider-form" ng-controller="sliderCntl" ng-submit="sendForm(formData)" name="configForm">
 
@@ -127,14 +112,16 @@
         <!-- set interval & timeout-->
         <label><p>Set a slider interval, in seconds. It can be an integer or a broken number separated by a dot</p>
 
-            <p><input type="text" ng-model="formData.interval" value="{{formData.interval}}" placeholder="{{formData.interval}}"
+            <p><input type="text" ng-model="formData.interval" value="{{formData.interval}}"
+                      placeholder="{{formData.interval}}"
                       maxlength="4">
             </p>
         </label>
 
         <label><p>Set a slider timeout after the user hovers over image, in seconds.</p>
 
-            <p><input type="text" ng-model="formData.timeout" value="{{formData.timeout}}" placeholder="{{formData.timeout}}"
+            <p><input type="text" ng-model="formData.timeout" value="{{formData.timeout}}"
+                      placeholder="{{formData.timeout}}"
                       maxlength="4">
             </p>
         </label>
