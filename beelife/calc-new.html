@@ -227,6 +227,19 @@
         .pl48 {
             padding-left: 48px;
         }
+
+        .arrow-icon:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 3px;
+            right: 10px;
+            width: 17px;
+            height: 30px;
+            background: url(https://in.beeline.kz/resources/statics/7685/right1.png?a=1445082594231);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     </style>
 
     <script>
@@ -552,7 +565,7 @@
     <table class="yellow-table">
         <tr>
             <td class="left-cell grey-cell">Дата приема на работу</td>
-            <td class="right-cell yellow-cell pencil-icon">
+            <td class="right-cell yellow-cell pencil-icon arrow-icon">
                 <!--Insert here input with dates needed-->
                 <ul id="B1-half-year" class="li" autofocus>
                     <li value="6" data-multiply="6" data-month="6" class="selected-date">Ранее, чем в 2015 году</li>
@@ -574,7 +587,7 @@
 
         <tr>
             <td class="left-cell white-cell">PL (позицонный уровень)</td>
-            <td class="right-cell yellow-cell pencil-icon">
+            <td class="right-cell yellow-cell pencil-icon arrow-icon">
                 <ul id="B2-half-year" class="li">
                     <li data-amount="50" data-individual="0" value="50">A</li>
                     <li data-amount="50" data-individual="10" value="50">M5</li>
