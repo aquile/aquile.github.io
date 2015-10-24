@@ -59,7 +59,7 @@ function Weather() {
             elem.onclick = function (event) {
                 //console.log(event.currentTarget.dataset.longitude + ' ' + event.currentTarget.dataset.latitude);
 
-                var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?lat=' + event.currentTarget.dataset.longitude + '&lon=' + event.currentTarget.dataset.latitude + '&units=metric';
+                var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?appid=53c50defe390864e563ff1aa30410810&lat=' + event.currentTarget.dataset.longitude + '&lon=' + event.currentTarget.dataset.latitude + '&units=metric';
                 //console.log(urlWeather);
                 Ajax.getJSON(urlWeather, function (weatherData) {
 
