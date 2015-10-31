@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+        .greeting {
+            display: block;
+            height: 50px;
+            position: relative;
+            text-align: left;
+        }
+
+        .greeting .title {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 26px;
+            margin: 10px 0 0 5px;
+            color: #004d66;
+        }
+
+        .custom-class {
+            display: inline-block;
+            float: right;
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            color: #179aca;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            margin-left: 15px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-bottom: 5px solid white;
+        }
+
+        .custom-class:hover {
+            color: #133568;
+            border-bottom: 5px solid #004d66;
+
+        }
+
+        .custom-class i {
+            margin-right: 5px;
+        }
+
+        #fake-ask {
+            display: block;
+            background-color: #179aca;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        #fake-ask h5 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 28px;
+            color: #fff;
+            font-weight: 300;
+            display: block;
+            padding-bottom: 10px;
+            margin-top: 5px;
+        }
+
+        #search-input {
+            display: block;
+            width: 100%;
+            height: 35px;
+            margin: 5px 0 0 0;
+            padding-left: 36px;
+            line-height: 35px;
+            font-family: 'Open Sans', sans-serif;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            color: #d7d7d7;
+            border: none;
+        }
+
+    </style>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+<div class="greeting">
+    <span class="title"></span>
+    <a href="/inbox" class="fa custom-class fa-envelope" target="_top">Check your Inbox</a>
+    <a href="/people" class="fa custom-class fa-search" target="_top">Find People</a>
+</div>
+
+<div id="fake-ask">
+    <form action="" method="post">
+        <label><input id="search-input" type="text" name="test" placeholder="Type your question ..."></label>
+        <input type="submit" style="display: none;">
+    </form>
+</div>
+
+<script>
+    $("form").keypress(function (event) {
+        event.stopPropagation();
+
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == "13") {
+            console.log("Then go back and check out is I'm still here, please))");
+
+            var searchURL = "/search.jspa?q=";
+            searchURL += "?q=" + $("input").val();
+            window.top.location = searchURL;
+        }
+    });
+</script>
+
+<script>
+    jQuery(function () {
+        jQuery.ajax({type: 'GET', url: '/api/core/v3/people/@me'})
+                .always(function (data) {
+                    var json = data.responseText.replace('throw \'allowIllegalResourceCall is false.\';', '');
+
+                    var user = jQuery.parseJSON(json);
+                    jQuery('.greeting .title').html('Welcome <strong>' + user.name.givenName + '</strong>, to the HealthStream Community!');
+                    jQuery('.greeting').show('fast');
+                });
+    });
+</script>
+
+</body>
+</html>

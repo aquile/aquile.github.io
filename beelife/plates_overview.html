@@ -16,6 +16,14 @@
         font-family: Roboto, Arial, Helvetica, sans-serif;
     }
 
+    .hp-tile-container-3 {
+        text-align: center !important;
+    }
+
+    .hp-tile-container-3 .tile {
+        margin: 12px 8px;
+    }
+
     .hp-tile-container-1 a, img, .hp-tile-container-2 a, img {
         border-width: 0;
         outline: 0;
@@ -35,7 +43,7 @@
     }
 
     .hp-tile-container-2 {
-        text-align: center;
+        text-align: justify;
     }
 
     .hp-tile-container-1 .tile, .hp-tile-container-2 .tile {
@@ -46,11 +54,11 @@
         margin-top: 1%;
         margin-bottom: 1%;
         background-color: rgb(255, 221, 0);
-        box-shadow: inset 0 -150em 100em -50em rgba(0, 0, 0, 0.4);
+        -box-shadow: inset 0 -150px 100px -50px rgba(0, 0, 0, 0.4);
     }
 
     .hp-tile-container-2 .tile {
-        margin: calc(4% / 6);
+
     }
 
     .hp-tile-container-1 img, .hp-tile-container-2 img {
@@ -63,6 +71,24 @@
         transition: opacity 0.2s;
     }
 
+    .shadow-top {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        -webkit-box-shadow: inset 0px -85px 66px -8px rgba(0, 0, 0, 0.63);
+        -moz-box-shadow: inset 0px -85px 66px -8px rgba(0, 0, 0, 0.63);
+        box-shadow: inset 0px -85px 66px -8px rgba(0, 0, 0, 0.63);
+    }
+
+    .tile:hover .shadow-top {
+        -webkit-box-shadow: inset 0px -80px 141px -8px rgba(0, 0, 0, 0);
+        -moz-box-shadow: inset 0px -80px 141px -8px rgba(0, 0, 0, 0);
+        box-shadow: inset 0px -80px 141px -8px rgba(0, 0, 0, 0);
+    }
+
     .shadow-bottom {
         position: absolute;
         width: 100%;
@@ -72,10 +98,8 @@
         -webkit-transition: opacity 0.2s;
         transition: opacity 0.2s;
 
-        box-shadow: inset 0 -150em 100em -50em rgba(0, 0, 0, 0.4);
+        box-shadow: inset 0 -150px 100px -50px rgba(0, 0, 0, 0.4);
     }
-
-
 
     .tile:hover img {
         opacity: 0.3;
@@ -90,9 +114,10 @@
         color: #fff;
         position: absolute;
         text-align: left;
-        /*  -webkit-box-shadow: 0 0 0 2em rgb(255, 221, 0);
-          -ms-box-shadow: 0 0 0 2em rgb(255, 221, 0);
-          box-shadow: 0 0 0 2em rgb(255, 221, 0);*/
+        text-transform: uppercase;
+        /*  -webkit-box-shadow: 0 0 0 2px rgb(255, 221, 0);
+          -ms-box-shadow: 0 0 0 2px rgb(255, 221, 0);
+          box-shadow: 0 0 0 2px rgb(255, 221, 0);*/
 
         -ms-transition: color 0.2s, box-shadow 0.2s;
         -webkit-transition: color 0.2s, box-shadow 0.2s;
@@ -108,36 +133,38 @@
     }
 
     .tile:hover .tile-text {
-        /*   -webkit-box-shadow: 0 0 0 2em rgb(0, 0, 0);
-           -ms-box-shadow: 0 0 0 2em rgb(0, 0, 0);
-           box-shadow: 0 0 0 2em rgb(0, 0, 0);*/
+        /*   -webkit-box-shadow: 0 0 0 2px rgb(0, 0, 0);
+           -ms-box-shadow: 0 0 0 2px rgb(0, 0, 0);
+           box-shadow: 0 0 0 2px rgb(0, 0, 0);*/
         color: #000;
         text-shadow: 0 0 0 black;
     }
 
     .arrow {
-        -webkit-box-shadow: 0.125em -0.125em rgb(255, 221, 0);
-        -ms-box-shadow: 0.125em -0.125em rgb(255, 221, 0);
-        box-shadow: 0.125em -0.125em rgb(255, 221, 0);
+        -webkit-box-shadow: 1px -1px rgb(255, 221, 0);
+        -ms-box-shadow: 1px -1px rgb(255, 221, 0);
+        box-shadow: 1px -1px rgb(255, 221, 0);
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
-        width: 1.5em;
-        height: 1.5em;
-        margin-right: 1em;
-        margin-left: -0.5em;
-        margin-top: 0.8em;
+
+        width: 20px;
+        height: 20px;
+        margin-right: 14px;
+        margin-left: -0.5px;
+        margin-top: 12px;
         display: inline-block;
         float: left;
+
         -ms-transition: color 0.2s, box-shadow 0.2s;
         -webkit-transition: color 0.2s, box-shadow 0.2s;
         transition: color 0.2s, box-shadow 0.2s;
     }
 
     .tile:hover .arrow {
-        -webkit-box-shadow: 0.125em -0.125em rgb(0, 0, 0);
-        -ms-box-shadow: 0.125em -0.125em rgb(0, 0, 0);
-        box-shadow: 0.125em -0.125em rgb(0, 0, 0);
+        -webkit-box-shadow: 1px -1px rgb(0, 0, 0);
+        -ms-box-shadow: 1px -1px rgb(0, 0, 0);
+        box-shadow: 1px -1px rgb(0, 0, 0);
     }
 
     .justify-line {
@@ -173,12 +200,13 @@
     <a class="tile " href="https://in.beeline.kz/community/serv/earnings" target="_top">
         <img src="https://in.beeline.kz/resources/statics/2955/raschet.jpg?a=1442847797536">
 
+        <div class="shadow-top"></div>
         <div class="shadow-bottom"></div>
-        <div class="tile-text" style="bottom: 22em;  left: 16em;  width: 240em; height: 35em; padding: 3.5em;">
-            <div class="arrow" style="font-size: 14em"></div>
-            <div class="text-bold" style="font-size: 17em;padding-top: 11px;">Расчетный листок</div>
+        <div class="tile-text" style="bottom: 22px;  left: 16px;  width: 240px; height: 35px; padding: 4px;">
+            <div class="arrow" style="font-size: 14px"></div>
+            <div class="text-bold" style="font-size: 17px;padding-top: 11px;">Расчетный листок</div>
             <br>
-            <span class="text-light" style="font-size: 17em;"></span>
+            <span class="text-light" style="font-size: 17px;"></span>
         </div>
     </a>
 
@@ -186,13 +214,14 @@
     <a class="tile " href="https://in.beeline.kz/community/serv/bonus-calculator" target="_top">
         <img src="https://in.beeline.kz/resources/statics/2955/calc.jpg?a=1442846045350">
 
+        <div class="shadow-top"></div>
         <div class="shadow-bottom"></div>
         <div class="tile-text borderless"
-             style="  bottom: 18em; left: 16em; width: 247em; height: 37.5em; padding: 3.75em;">
-            <div class="arrow" style="font-size: 14em"></div>
-            <div class="text-bold" style="font-size: 17em;padding-top: 11px;">Калькулятор премии</div>
+             style="  bottom: 18px; left: 16px; width: 247px; height: 37px; padding: 4px;">
+            <div class="arrow" style="font-size: 14px"></div>
+            <div class="text-bold" style="font-size: 17px;padding-top: 11px;">Калькулятор премии</div>
             <br>
-            <span class="text-light" style="font-size: 17em;"></span>
+            <span class="text-light" style="font-size: 17px;"></span>
         </div>
     </a>
 
@@ -200,24 +229,26 @@
     <a class="tile " href="https://in.beeline.kz/community/serv/ins" target="_top">
         <img src="https://in.beeline.kz/resources/statics/2955/med2.jpg?a=1442847775414">
 
+        <div class="shadow-top"></div>
         <div class="shadow-bottom"></div>
-        <div class="tile-text borderless" style="bottom: 11em;left: 16em; width: 160em; height: 45em; padding: 4.5em;">
-            <div class="arrow" style="font-size: 14em;"></div>
-            <div class="text-bold" style="font-size: 17em;padding-top: 11px;">Медстраховка</div>
+        <div class="tile-text borderless" style="bottom: 11px;left: 16px; width: 180px; height: 45px; padding: 5px;">
+            <div class="arrow" style="font-size: 14px;"></div>
+            <div class="text-bold" style="font-size: 17px;padding-top: 11px;">Медстраховка</div>
             <br>
-            <span class="text-light" style="font-size: 17em;"></span>
+            <span class="text-light" style="font-size: 17px;"></span>
         </div>
     </a>
 
     <a class="tile " href="https://in.beeline.kz/community/serv/openings" target="_top">
         <img src="https://in.beeline.kz/resources/statics/2955/vacat.jpg?a=1442847976419">
 
+        <div class="shadow-top"></div>
         <div class="shadow-bottom"></div>
-        <div class="tile-text" style="bottom: 22em;  left: 16em;  width: 240em; height: 35em; padding: 3.5em;">
-            <div class="arrow" style="font-size: 14em"></div>
-            <span class="text-bold" style="font-size: 17em;">Открытые </span>
+        <div class="tile-text" style="bottom: 22px;  left: 16px;  width: 240px; height: 35px; padding: 4px;">
+            <div class="arrow" style="font-size: 14px"></div>
+            <span class="text-bold" style="font-size: 17px;">Открытые </span>
             <br>
-            <span class="text-light" style="font-size: 17em;">вакансии</span>
+            <span class="text-light" style="font-size: 17px;">вакансии</span>
         </div>
     </a>
 
@@ -229,13 +260,14 @@
     <a class="tile " href="https://in.beeline.kz/community/serv/it" target="_top">
         <img src="https://in.beeline.kz/resources/statics/2955/helpdesk.jpg?a=1442848600670">
 
+        <div class="shadow-top"></div>
         <div class="shadow-bottom"></div>
         <div class="tile-text borderless"
-             style="  bottom: 18em; left: 16em; width: 247em; height: 37.5em; padding: 3.75em;">
-            <div class="arrow" style="font-size: 14em"></div>
-            <div class="text-bold" style="font-size: 17em;padding-top: 11px;">HelpDesk</div>
+             style="  bottom: 18px; left: 16px; width: 247px; height: 37px; padding: 4px;">
+            <div class="arrow" style="font-size: 14px"></div>
+            <div class="text-bold" style="font-size: 17px;padding-top: 11px;">HelpDesk</div>
             <br>
-            <span class="text-light" style="font-size: 17em;"></span>
+            <span class="text-light" style="font-size: 17px;"></span>
         </div>
     </a>
 
@@ -243,12 +275,13 @@
     <a class="tile " href="https://my.beeline.kz/login.xhtml" target="_blank">
         <img src="https://in.beeline.kz/resources/statics/2955/privat2.jpg?a=1442847781361">
 
+        <div class="shadow-top"></div>
         <div class="shadow-bottom"></div>
-        <div class="tile-text borderless" style="bottom: 11em;left: 16em; width: 200em; height: 45em;padding: 4.5em;">
-            <div class="arrow" style="font-size: 14em;"></div>
-            <span class="text-bold" style="font-size: 17em;">Личный кабинет</span>
+        <div class="tile-text borderless" style="bottom: 11px;left: 16px; width: 200px; height: 45px;padding: 5px;">
+            <div class="arrow" style="font-size: 14px;"></div>
+            <span class="text-bold" style="font-size: 17px;">Личный кабинет</span>
             <br>
-            <span class="text-light" style="font-size: 17em;">по номеру Beeline</span>
+            <span class="text-light" style="font-size: 17px;">по номеру Beeline</span>
         </div>
     </a>
 
@@ -256,14 +289,63 @@
     <a class="tile " href="https://in.beeline.kz/community/serv/assignments" target="_top">
         <img src="https://in.beeline.kz/resources/statics/2955/photo_41599_20150925.jpg?a=1443471131466">
 
+        <div class="shadow-top"></div>
         <div class="shadow-bottom"></div>
         <div class="tile-text borderless"
-             style="  bottom: 18em; left: 16em; width: 247em; height: 37.5em; padding: 3.75em;">
-            <div class="arrow" style="font-size: 14em"></div>
-            <div class="text-bold" style="font-size: 17em;padding-top: 11px;">Командировки</div>
+             style="  bottom: 18px; left: 16px; width: 247px; height: 37px; padding: 4px;">
+            <div class="arrow" style="font-size: 14px"></div>
+            <div class="text-bold" style="font-size: 17px;padding-top: 11px;">Командировки</div>
             <br>
-            <span class="text-light" style="font-size: 17em;"></span>
+            <span class="text-light" style="font-size: 17px;"></span>
         </div>
     </a>
 
+    <a class="tile " href="https://in.beeline.kz/community/serv/hr-service-desk" target="_top">
+        <img src="https://in.beeline.kz/resources/statics/2955/pic-123.png?a=1445418779319">
+
+        <div class="shadow-top"></div>
+        <div class="shadow-bottom"></div>
+        <div class="tile-text borderless"
+             style="  bottom: 18px; left: 16px; width: 247px; height: 37px; padding: 4px;">
+            <div class="arrow" style="font-size: 14px"></div>
+            <div class="text-bold" style="font-size: 17px;padding-top: 11px; ">HR service desk</div>
+            <br>
+            <span class="text-light" style="font-size: 17px;"></span>
+        </div>
+    </a>
+
+    <div class="justify-line"></div>
+</div>
+
+<div class="hp-tile-container-2 hp-tile-container-3">
+
+    <a class="tile " href="https://in.beeline.kz/community/serv/finance-sd" target="_top">
+        <img src="/resources/statics/2955/finance.png?a=1445863323740">
+
+        <div class="shadow-top"></div>
+        <div class="shadow-bottom"></div>
+        <div class="tile-text borderless"
+             style="  bottom: 18px; left: 16px; width: 247px; height: 37px; padding: 4px;">
+            <div class="arrow" style="font-size: 14px"></div>
+            <div class="text-bold" style="font-size: 17px;padding-top: 11px;">Finance Service Desk</div>
+            <br>
+            <span class="text-light" style="font-size: 17px;"></span>
+        </div>
+    </a>
+
+
+    <a class="tile " href="https://in.beeline.kz/community/serv/vendors-sd" target="_blank">
+        <img src="/resources/statics/2955/vendors.png?a=1445863319067">
+
+        <div class="shadow-top"></div>
+        <div class="shadow-bottom"></div>
+        <div class="tile-text borderless" style="bottom: 11px;left: 16px; width: 200px; height: 45px;padding: 5px;">
+            <div class="arrow" style="font-size: 14px;"></div>
+            <span class="text-bold" style="font-size: 17px;">Vendors Service Desk</span>
+            <br>
+            <span class="text-light" style="font-size: 17px;"></span>
+        </div>
+    </a>
+
+    <div class="justify-line"></div>
 </div>
