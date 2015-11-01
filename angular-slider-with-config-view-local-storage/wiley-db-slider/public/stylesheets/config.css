@@ -8,6 +8,9 @@
     margin: 0 auto;
     padding: 5px 0 0;
     text-align: center;
+    -webkit-box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.25);
+    -moz-box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.25);
+    box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.25);
 }
 
 .config-wrapper:after {

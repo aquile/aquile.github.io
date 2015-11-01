@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/Копия public.zip" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/stylesheets/config.css" afterPath="$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/stylesheets/config.css" />
     </list>
     <ignored path="aquile.github.io.iws" />
@@ -24,20 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/stylesheets/config.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74068767">
-              <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+            <state vertical-scroll-proportion="-2.2222223">
+              <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configuration.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="configuration.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/configuration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-43.125">
+            <state vertical-scroll-proportion="1.4764622">
               <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
               <folding />
             </state>
@@ -1026,18 +1025,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/configuration.html">
+    <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/stylesheets/config.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-43.125">
-          <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
+        <state vertical-scroll-proportion="-2.2222223">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/stylesheets/config.css">
+    <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/configuration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74068767">
-          <caret line="63" column="35" selection-start-line="63" selection-start-column="35" selection-end-line="63" selection-end-column="35" />
+        <state vertical-scroll-proportion="1.4764622">
+          <caret line="79" column="60" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
           <folding />
         </state>
       </provider>
