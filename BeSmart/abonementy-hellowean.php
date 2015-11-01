@@ -4,19 +4,24 @@
 <div class="abs_shadow">
     <table class="abs">
         <tr class="ovv abs_price">
-            <td style="text-align: left; font-size: 18px;">Цены</td>
+            <td style="text-align: left; font-size: 18px;">Акционные цены <span style="color: red; font-size: 20px;  font-weight: 800"> дo 31.10.2015</span>
+            </td>
             <td>
-                <span class="price_lett" style="color: #21619a">1500</span> грн
+                <span class="price_lett" style="font-size: 22px;color: #21619a;text-decoration: line-through; font-weight: 400;">&nbsp;1500 </span>
+                <span style="color:red;font-size: 26px;font-weight: 800;"> &nbsp;1050 грн</span>
                 <!--<div style="text-decoration: line-through;"><span class="price_lett" style="font-size: 20px; ">1480</span> грн</div>!-->
             </td>
             <td>
-                <span class="price_lett" style="color: #21619a">1980</span> грн
+                <span class="price_lett" style="font-size: 22px;color: #21619a;text-decoration: line-through; font-weight: 400;">&nbsp;1980 </span>
+                <span style="color:red;font-size: 26px;font-weight: 800;"> &nbsp;1380 грн</span>
             </td>
             <td>
-                <span class="price_lett" style="color: #21619a">3900</span> грн
+                <span class="price_lett" style="font-size: 22px;color: #21619a;text-decoration: line-through; font-weight: 400;">&nbsp;3900 </span>
+                <span style="color:red;font-size: 26px;font-weight: 800;"> &nbsp;2730 грн</span>
             </td>
             <td>
-                <span class="price_lett" style="color: #21619a">5900</span> грн
+                <span class="price_lett" style="font-size: 22px;color: #21619a;text-decoration: line-through; font-weight: 400;">&nbsp;5900 </span>
+                <span style="color:red;font-size: 26px;font-weight: 800;"> &nbsp;4130 грн</span>
             </td>
         </tr>
         <tr class="ovv abs_price">
@@ -27,15 +32,12 @@
             </td>
             <td>
                 <span class="price_lett">20</span>
-                <div style="font-size: 13px; text-align: center">(занятия + дискуссии)</div>
             </td>
             <td>
                 <span class="price_lett">50</span>
-                <div style="font-size: 13px; text-align: center">(занятия + дискуссии)</div>
             </td>
             <td>
                 <span class="price_lett">100</span>
-                <div style="font-size: 13px; text-align: center">(занятия + дискуссии)</div>
             </td>
         </tr>
         <tr class="ovv abs_price">

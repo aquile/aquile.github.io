@@ -96,7 +96,7 @@
 
 <div id="fake-ask">
     <form action="" method="post">
-        <label><input id="search-input" type="text" name="test" placeholder="Type your question ..."></label>
+        <label><input id="search-input" type="text" name="test" placeholder="Type your question ...."></label>
         <input type="submit" style="display: none;">
     </form>
 </div>
@@ -117,14 +117,14 @@
 </script>
 
 <script>
-    jQuery(function () {
-        jQuery.ajax({type: 'GET', url: '/api/core/v3/people/@me'})
+    $(function () {
+        $.ajax({type: 'GET', url: '/api/core/v3/people/@me'})
                 .always(function (data) {
                     var json = data.responseText.replace('throw \'allowIllegalResourceCall is false.\';', '');
 
-                    var user = jQuery.parseJSON(json);
-                    jQuery('.greeting .title').html('Welcome <strong>' + user.name.givenName + '</strong>, to the HealthStream Community!');
-                    jQuery('.greeting').show('fast');
+                    var user = $.parseJSON(json);
+                    $('.greeting .title').html('Welcome <strong>' + user.name.givenName + '</strong>, to the HealthStream Community!');
+                    $('.greeting').show('fast');
                 });
     });
 </script>
