@@ -4,228 +4,7 @@
     <meta charset="UTF-8">
     <title>Slider</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-    <style> /*       .slider__pagination.greenblue {
-            display: block;
-            width: 100%;
-            height: 50px;
 
-            margin: 23px 0 0;
-
-            list-style: none;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .slider__pagination.magenta {
-            display: block;
-            width: 100%;
-            height: 50px;
-
-            margin: 27px 0 0;
-
-            list-style: none;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .slider__pagination li {
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-
-            margin: 0 6px;
-            background: #B9B9B9;
-            cursor: pointer;
-        }
-
-        .slider__pagination-item.active {
-            background: #75CB9C;
-        }
-
-        .slider__pagination-item:hover {
-            background: #75CB9C;
-        }
-
-        .slider-circle-1.greenblue {
-            display: block;
-            width: 456px;
-            height: 456px;
-            position: absolute;
-            left: -163px;
-            bottom: -299px;
-            border-radius: 50%;
-            border: 4px dotted #ffffff;
-        }
-
-        .slider-circle-1.magenta {
-            display: block;
-            width: 456px;
-            height: 456px;
-            position: absolute;
-            left: -410px;
-            bottom: -309px;
-            border-radius: 50%;
-            border: 4px dotted #ffffff;
-        }
-
-        .slider-circle-2.greenblue {
-            display: block;
-            width: 490px;
-            height: 490px;
-            position: absolute;
-            top: -132px;
-            right: 23px;
-            transform: rotate(-45deg);
-            border-radius: 50%;
-            border-top: 4px dotted #19A5B3;
-            border-left: 4px dotted #19A5B3;
-            background: transparent;
-        }
-
-        .slider-circle-3.greenblue {
-            display: block;
-            width: 437px;
-            height: 437px;
-            position: absolute;
-            top: -108px;
-            right: 39px;
-            border-radius: 50%;
-            background: #19A5B3;
-            cursor: pointer;
-            opacity: 0.7;
-            -webkit-transition: opacity ease-in-out 0.5s;
-            -moz-transition: opacity ease-in-out 0.5s;
-            -o-transition: opacity ease-in-out 0.5s;
-            transition: opacity ease-in-out 0.5s;
-        }
-
-        .slider-circle-3.greenblue h2 {
-            position: absolute;
-            bottom: 192px;
-            left: 0;
-            right: 0;
-            padding-left: 52px;
-            font-size: 41px;
-            letter-spacing: -1.4px;
-            font-weight: 700;
-            line-height: 42px;
-            color: #FFFFFF;
-        }
-
-        .slider-circle-3.greenblue p {
-            width: 370px;
-            position: absolute;
-            bottom: 121px;
-            left: 0;
-            right: 0;
-            padding-left: 56px;
-            font-size: 14px;
-            letter-spacing: -0.9px;
-            font-weight: 400;
-            line-height: 19px;
-            color: #FFFFFF;
-        }
-
-        .slider-circle-4.greenblue {
-            display: block;
-            width: 220px;
-            height: 220px;
-            position: absolute;
-            bottom: -105px;
-            right: 62px;
-            border-radius: 50%;
-            background: #095B55;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .slider-circle-4.greenblue p {
-            position: absolute;
-            top: 64px;
-            left: 0;
-            right: 0;
-            padding-left: 5px;
-            font-size: 18px;
-            font-weight: 400;
-        }
-
-        .slider-circle-2.magenta {
-            display: block;
-            width: 550px;
-            height: 513px;
-            position: absolute;
-            top: -459px;
-            left: 289px;
-            z-index: 40;
-            border-radius: 50%;
-            border: 4px dotted #ffffff;
-            background: transparent;
-        }
-
-        .slider-circle-3.magenta {
-            display: block;
-            width: 515px;
-            height: 515px;
-            position: absolute;
-            top: -93px;
-            left: 45px;
-            border-radius: 50%;
-            background: #D10C45;
-            cursor: pointer;
-        }
-
-        .slider-circle-3.magenta h2 {
-            position: absolute;
-            bottom: 231px;
-            left: 0;
-            right: 0;
-            padding-left: 52px;
-            font-size: 46px;
-            letter-spacing: -0.6px;
-            font-weight: 700;
-            line-height: 62px;
-            color: #FFFFFF;
-        }
-
-        .slider-circle-3.magenta p {
-            width: 453px;
-            position: absolute;
-            bottom: 154px;
-            left: 0;
-            right: 0;
-            padding-left: 56px;
-            font-size: 14px;
-            letter-spacing: -1.2px;
-            font-weight: 400;
-            line-height: 19px;
-            color: #FFFFFF;
-        }
-
-        .slider-circle-4.magenta {
-            display: block;
-            width: 193px;
-            height: 159px;
-            position: absolute;
-            bottom: -105px;
-            left: 289px;
-            background: #D10C45;
-            text-align: center;
-            cursor: pointer;
-        }
-
-        .slider-circle-4.magenta p {
-            position: absolute;
-            top: 1px;
-            left: 0;
-            right: 0;
-            padding-left: 5px;
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-            text-align: left;
-        }*/
-    </style>
     <style>
         * {
             -webkit-box-sizing: border-box;
@@ -266,10 +45,9 @@
         .slider-wrapper {
             display: block;
             position: relative;
-            width: 80%;
-            width: 64%;
             width: 100%;
-            height: 345px;
+            max-width: 1000px;
+            height: 300px;
             margin: 0 auto;
             border-radius: 11px;
             overflow: hidden;
@@ -299,6 +77,7 @@
         .slider__images img {
             display: inline-block;
             width: 100%;
+            height: 300px;
 
             vertical-align: top;
             -transform: translateY(-29%);
@@ -308,7 +87,7 @@
         .slider__pagination {
             display: block;
             width: 100%;
-            height: 50px;
+            height: 16px;
 
             margin: 23px 0 0;
 
@@ -319,12 +98,12 @@
 
         .slider__pagination li {
             display: inline-block;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
+            width: 17px;
+            height: 17px;
+            margin: 0 9px;
 
-            margin: 0 6px;
-            background: #B9B9B9;
+            border-radius: 50%;
+            background: #e5e5e5;
             cursor: pointer;
         }
 
@@ -333,11 +112,11 @@
         }
 
         .slider__pagination-item.active {
-            background: #75CB9C;
+            background: #D10C45;
         }
 
         .slider__pagination-item:hover {
-            background: #75CB9C;
+            background: #D10C45;
         }
 
         .slider-circle-1 {
@@ -345,30 +124,32 @@
             width: 456px;
             height: 456px;
             position: absolute;
-            bottom: -299px;
+            bottom: -350px;
             border-radius: 50%;
             border: 4px dotted #ffffff;
+            pointer-events: none;
         }
 
         .slider-circle-2 {
             display: none;
-            width: 490px;
-            height: 490px;
+            width: 501px;
+            height: 501px;
             position: absolute;
-            top: -132px;
+            top: -130px;
             transform: rotate(-45deg);
             border-radius: 50%;
             border-top: 4px dotted #19A5B3;
             border-left: 4px dotted #19A5B3;
             background: transparent;
+            pointer-events: none;
         }
 
         .slider-circle-3 {
             display: none;
-            width: 437px;
-            height: 437px;
+            width: 456px;
+            height: 456px;
             position: absolute;
-            top: -108px;
+            top: -117px;
             border-radius: 50%;
             background: #19A5B3;
             cursor: default;
@@ -376,28 +157,27 @@
 
         .slider-circle-3 h2 {
             position: absolute;
-            bottom: 192px;
+            bottom: 199px;
             left: 0;
             right: 0;
-            width: 400px;
-            padding-left: 52px;
-            font-size: 41px;
-            letter-spacing: -1.4px;
+            width: 433px;
+            padding-left: 56px;
+            font-size: 38px;
             font-weight: 700;
-            line-height: 42px;
+            line-height: 41px;
             color: #FFFFFF;
             cursor: default;
         }
 
         .slider-circle-3 p {
-            width: 370px;
+            width: 395px;
             position: absolute;
-            bottom: 121px;
+            bottom: 135px;
             left: 0;
             right: 0;
             padding-left: 56px;
-            font-size: 14px;
-            letter-spacing: -0.9px;
+            font-size: 12px;
+            -letter-spacing: -0.9px;
             font-weight: 400;
             line-height: 19px;
             color: #FFFFFF;
@@ -406,10 +186,10 @@
 
         .slider-circle-4 {
             display: none;
-            width: 210px;
-            height: 210px;
+            width: 218px;
+            height: 218px;
             position: absolute;
-            bottom: -105px;
+            bottom: -134px;
             border-radius: 50%;
             background: #095B55;
             text-align: center;
@@ -418,11 +198,10 @@
 
         .slider-circle-4 p {
             position: absolute;
-            top: 53px;
+            top: 48px;
             left: 0;
             right: 0;
-            padding-left: 5px;
-            font-size: 18px;
+            font-size: 12px;
             font-weight: 400;
             color: #ffffff;
         }
@@ -433,125 +212,167 @@
         .right .slider-circle-1 {
             display: block;
             left: -163px;
+            opacity: 0;
         }
 
         .right .slider-circle-2 {
             display: block;
-            right: calc(12% - 20px);
+            right: calc(7% - 20px);
+            opacity: 0;
         }
 
         .right .slider-circle-3 {
             display: block;
-            right: 12%;
+            right: 7%;
+            opacity: 0;
         }
 
         .right .slider-circle-4 {
             display: block;
-            right: 15%;
+            right: 6%;
+            opacity: 0;
         }
 
         .left .slider-circle-1 {
             display: block;
             right: -163px;
+            opacity: 0;
         }
 
         .left .slider-circle-2 {
             display: block;
-            left: calc(12% - 20px);
+            left: calc(7% - 20px);
             transform: rotate(130deg);
+            opacity: 0;
         }
 
         .left .slider-circle-3 {
             display: block;
-            left: 12%;
+            left: 7%;
+            opacity: 0;
         }
 
         .left .slider-circle-4 {
             display: block;
-            left: 15%;
+            left: 6%;
+            opacity: 0;
         }
 
         /*color themes variants*/
 
         .blue .slider-circle-2 {
+            display: block;
             border-color: #00a3a8;
+            opacity: 0;
         }
 
         .blue .slider-circle-3 {
+            display: block;
             background: #00abb3;
+            opacity: 0;
         }
 
         .blue .slider-circle-4 {
+            display: block;
             background: #095b55;
+            opacity: 0;
         }
 
         .green .slider-circle-2 {
+            display: block;
             border-color: #00a3a8;
+            opacity: 0;
         }
 
         .green .slider-circle-3 {
+            display: block;
             background: #75cb9c;
+            opacity: 0;
         }
 
         .green .slider-circle-4 {
+            display: block;
             background: #095b55;
+            opacity: 0;
         }
 
         .orange .slider-circle-2 {
+            display: block;
             border-color: #d10c45;
+            opacity: 0;
         }
 
         .orange .slider-circle-3 {
+            display: block;
             background: #fd7822;
+            opacity: 0;
         }
 
         .orange .slider-circle-4 {
+            display: block;
             background: #cd5d15;
+            opacity: 0;
         }
 
         .purple .slider-circle-2 {
+            display: block;
             border-color: #95539b;
+            opacity: 0;
         }
 
         .purple .slider-circle-3 {
+            display: block;
             background: #cdb2cf;
+            opacity: 0;
         }
 
         .purple .slider-circle-4 {
+            display: block;
             background: #95539b;
+            opacity: 0;;
         }
 
         .red .slider-circle-2 {
+            display: block;
             border-color: #d10c45;
+            opacity: 0;
         }
 
         .red .slider-circle-3 {
+            display: block;
             background: #d10c45;
+            opacity: 0;
         }
 
         .red .slider-circle-4 {
+            display: block;
             background: #940931;
+            opacity: 0;
         }
 
         .none .slider-circle-1 {
             display: none !important;
+            opacity: 0;
         }
 
         .none .slider-circle-2 {
             display: none !important;
+            opacity: 0;
         }
 
         .none .slider-circle-3 {
             display: none !important;
+            opacity: 0;
         }
 
         .none .slider-circle-4 {
             display: none !important;
+            opacity: 0;
         }
 
         /*hovers*/
         .slider-circle-3 {
-            opacity: 1;
+            opacity: 0;
             -webkit-transition: opacity ease-in-out 0.5s;
             -moz-transition: opacity ease-in-out 0.5s;
             -o-transition: opacity ease-in-out 0.5s;
@@ -559,7 +380,7 @@
         }
 
         .slider-circle-4 {
-            opacity: 1;
+            opacity: 0;
             -webkit-transition: opacity ease-in-out 0.5s;
             -moz-transition: opacity ease-in-out 0.5s;
             -o-transition: opacity ease-in-out 0.5s;
@@ -576,7 +397,491 @@
 
     </style>
     <script src="javascripts/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>/**
+     * Add dataset support to elements
+     * No globals, no overriding prototype with non-standard methods,
+     *   handles CamelCase properly, attempts to use standard
+     *   Object.defineProperty() (and Function bind()) methods,
+     *   falls back to native implementation when existing
+     * Inspired by http://code.eligrey.com/html5/dataset/
+     *   (via https://github.com/adalgiso/html5-dataset/blob/master/html5-dataset.js )
+     * Depends on Function.bind and Object.defineProperty/Object.getOwnPropertyDescriptor (shims below)
+     * Licensed under the X11/MIT License
+     */
+
+    // Inspired by https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Function/bind#Compatibility
+    if (!Function.prototype.bind) {
+        Function.prototype.bind = function (oThis) {
+            'use strict';
+            if (typeof this !== "function") {
+                // closest thing possible to the ECMAScript 5 internal IsCallable function
+                throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
+            }
+
+            var aArgs = Array.prototype.slice.call(arguments, 1),
+                    fToBind = this,
+                    FNOP = function () {
+                    },
+                    fBound = function () {
+                        return fToBind.apply(
+                                this instanceof FNOP && oThis ? this : oThis,
+                                aArgs.concat(Array.prototype.slice.call(arguments))
+                        );
+                    };
+
+            FNOP.prototype = this.prototype;
+            fBound.prototype = new FNOP();
+
+            return fBound;
+        };
+    }
+
+    /*
+     * Xccessors Standard: Cross-browser ECMAScript 5 accessors
+     * http://purl.eligrey.com/github/Xccessors
+     *
+     * 2010-06-21
+     *
+     * By Eli Grey, http://eligrey.com
+     *
+     * A shim that partially implements Object.defineProperty,
+     * Object.getOwnPropertyDescriptor, and Object.defineProperties in browsers that have
+     * legacy __(define|lookup)[GS]etter__ support.
+     *
+     * Licensed under the X11/MIT License
+     *   See LICENSE.md
+     */
+
+    // Removed a few JSLint options as Notepad++ JSLint validator complaining and
+    //   made comply with JSLint; also moved 'use strict' inside function
+    /*jslint white: true, undef: true, plusplus: true,
+     bitwise: true, regexp: true, newcap: true, maxlen: 90 */
+
+    /*! @source http://purl.eligrey.com/github/Xccessors/blob/master/xccessors-standard.js*/
+
+    (function () {
+        'use strict';
+        var ObjectProto = Object.prototype,
+                defineGetter = ObjectProto.__defineGetter__,
+                defineSetter = ObjectProto.__defineSetter__,
+                lookupGetter = ObjectProto.__lookupGetter__,
+                lookupSetter = ObjectProto.__lookupSetter__,
+                hasOwnProp = ObjectProto.hasOwnProperty;
+
+        if (defineGetter && defineSetter && lookupGetter && lookupSetter) {
+
+            if (!Object.defineProperty) {
+                Object.defineProperty = function (obj, prop, descriptor) {
+                    if (arguments.length < 3) { // all arguments required
+                        throw new TypeError("Arguments not optional");
+                    }
+
+                    prop += ""; // convert prop to string
+
+                    if (hasOwnProp.call(descriptor, "value")) {
+                        if (!lookupGetter.call(obj, prop) && !lookupSetter.call(obj, prop)) {
+                            // data property defined and no pre-existing accessors
+                            obj[prop] = descriptor.value;
+                        }
+
+                        if ((hasOwnProp.call(descriptor, "get") ||
+                                hasOwnProp.call(descriptor, "set"))) {
+                            // descriptor has a value prop but accessor already exists
+                            throw new TypeError("Cannot specify an accessor and a value");
+                        }
+                    }
+
+                    // can't switch off these features in ECMAScript 3
+                    // so throw a TypeError if any are false
+                    if (!(descriptor.writable && descriptor.enumerable &&
+                            descriptor.configurable)) {
+                        throw new TypeError(
+                                "This implementation of Object.defineProperty does not support" +
+                                " false for configurable, enumerable, or writable."
+                        );
+                    }
+
+                    if (descriptor.get) {
+                        defineGetter.call(obj, prop, descriptor.get);
+                    }
+                    if (descriptor.set) {
+                        defineSetter.call(obj, prop, descriptor.set);
+                    }
+
+                    return obj;
+                };
+            }
+
+            if (!Object.getOwnPropertyDescriptor) {
+                Object.getOwnPropertyDescriptor = function (obj, prop) {
+                    if (arguments.length < 2) { // all arguments required
+                        throw new TypeError("Arguments not optional.");
+                    }
+
+                    prop += ""; // convert prop to string
+
+                    var descriptor = {
+                                configurable: true,
+                                enumerable: true,
+                                writable: true
+                            },
+                            getter = lookupGetter.call(obj, prop),
+                            setter = lookupSetter.call(obj, prop);
+
+                    if (!hasOwnProp.call(obj, prop)) {
+                        // property doesn't exist or is inherited
+                        return descriptor;
+                    }
+                    if (!getter && !setter) { // not an accessor so return prop
+                        descriptor.value = obj[prop];
+                        return descriptor;
+                    }
+
+                    // there is an accessor, remove descriptor.writable;
+                    // populate descriptor.get and descriptor.set (IE's behavior)
+                    delete descriptor.writable;
+                    descriptor.get = descriptor.set = undefined;
+
+                    if (getter) {
+                        descriptor.get = getter;
+                    }
+                    if (setter) {
+                        descriptor.set = setter;
+                    }
+
+                    return descriptor;
+                };
+            }
+
+            if (!Object.defineProperties) {
+                Object.defineProperties = function (obj, props) {
+                    var prop;
+                    for (prop in props) {
+                        if (hasOwnProp.call(props, prop)) {
+                            Object.defineProperty(obj, prop, props[prop]);
+                        }
+                    }
+                };
+            }
+        }
+    }());
+
+    // Begin dataset code
+
+    if (!document.documentElement.dataset &&
+                // FF is empty while IE gives empty object
+            (!Object.getOwnPropertyDescriptor(Element.prototype, 'dataset') || !Object.getOwnPropertyDescriptor(Element.prototype, 'dataset').get)
+    ) {
+        var propDescriptor = {
+            enumerable: true,
+            get: function () {
+                'use strict';
+                var i,
+                        that = this,
+                        HTML5_DOMStringMap,
+                        attrVal, attrName, propName,
+                        attribute,
+                        attributes = this.attributes,
+                        attsLength = attributes.length,
+                        toUpperCase = function (n0) {
+                            return n0.charAt(1).toUpperCase();
+                        },
+                        getter = function () {
+                            return this;
+                        },
+                        setter = function (attrName, value) {
+                            return (typeof value !== 'undefined') ?
+                                    this.setAttribute(attrName, value) :
+                                    this.removeAttribute(attrName);
+                        };
+                try { // Simulate DOMStringMap w/accessor support
+                    // Test setting accessor on normal object
+                    ({}).__defineGetter__('test', function () {
+                    });
+                    HTML5_DOMStringMap = {};
+                }
+                catch (e1) { // Use a DOM object for IE8
+                    HTML5_DOMStringMap = document.createElement('div');
+                }
+                for (i = 0; i < attsLength; i++) {
+                    attribute = attributes[i];
+                    // Fix: This test really should allow any XML Name without
+                    //         colons (and non-uppercase for XHTML)
+                    if (attribute && attribute.name &&
+                            (/^data-\w[\w\-]*$/).test(attribute.name)) {
+                        attrVal = attribute.value;
+                        attrName = attribute.name;
+                        // Change to CamelCase
+                        propName = attrName.substr(5).replace(/-./g, toUpperCase);
+                        try {
+                            Object.defineProperty(HTML5_DOMStringMap, propName, {
+                                enumerable: this.enumerable,
+                                get: getter.bind(attrVal || ''),
+                                set: setter.bind(that, attrName)
+                            });
+                        }
+                        catch (e2) { // if accessors are not working
+                            HTML5_DOMStringMap[propName] = attrVal;
+                        }
+                    }
+                }
+                return HTML5_DOMStringMap;
+            }
+        };
+        try {
+            // FF enumerates over element's dataset, but not
+            //   Element.prototype.dataset; IE9 iterates over both
+            Object.defineProperty(Element.prototype, 'dataset', propDescriptor);
+        } catch (e) {
+            propDescriptor.enumerable = false; // IE8 does not allow setting to true
+            Object.defineProperty(Element.prototype, 'dataset', propDescriptor);
+        }
+    }
+    </script>
+
+    <script>
+        /*
+         * classList.js: Cross-browser full element.classList implementation.
+         * 2014-07-23
+         *
+         * By Eli Grey, http://eligrey.com
+         * Public Domain.
+         * NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
+         */
+
+        /*global self, document, DOMException */
+
+        /*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js*/
+
+        if ("document" in self) {
+
+// Full polyfill for browsers with no classList support
+            if (!("classList" in document.createElement("_"))) {
+
+                (function (view) {
+
+                    "use strict";
+
+                    if (!('Element' in view)) return;
+
+                    var
+                            classListProp = "classList"
+                            , protoProp = "prototype"
+                            , elemCtrProto = view.Element[protoProp]
+                            , objCtr = Object
+                            , strTrim = String[protoProp].trim || function () {
+                                        return this.replace(/^\s+|\s+$/g, "");
+                                    }
+                            , arrIndexOf = Array[protoProp].indexOf || function (item) {
+                                        var
+                                                i = 0
+                                                , len = this.length
+                                                ;
+                                        for (; i < len; i++) {
+                                            if (i in this && this[i] === item) {
+                                                return i;
+                                            }
+                                        }
+                                        return -1;
+                                    }
+                    // Vendors: please allow content code to instantiate DOMExceptions
+                            , DOMEx = function (type, message) {
+                                this.name = type;
+                                this.code = DOMException[type];
+                                this.message = message;
+                            }
+                            , checkTokenAndGetIndex = function (classList, token) {
+                                if (token === "") {
+                                    throw new DOMEx(
+                                            "SYNTAX_ERR"
+                                            , "An invalid or illegal string was specified"
+                                    );
+                                }
+                                if (/\s/.test(token)) {
+                                    throw new DOMEx(
+                                            "INVALID_CHARACTER_ERR"
+                                            , "String contains an invalid character"
+                                    );
+                                }
+                                return arrIndexOf.call(classList, token);
+                            }
+                            , ClassList = function (elem) {
+                                var
+                                        trimmedClasses = strTrim.call(elem.getAttribute("class") || "")
+                                        , classes = trimmedClasses ? trimmedClasses.split(/\s+/) : []
+                                        , i = 0
+                                        , len = classes.length
+                                        ;
+                                for (; i < len; i++) {
+                                    this.push(classes[i]);
+                                }
+                                this._updateClassName = function () {
+                                    elem.setAttribute("class", this.toString());
+                                };
+                            }
+                            , classListProto = ClassList[protoProp] = []
+                            , classListGetter = function () {
+                                return new ClassList(this);
+                            }
+                            ;
+// Most DOMException implementations don't allow calling DOMException's toString()
+// on non-DOMExceptions. Error's toString() is sufficient here.
+                    DOMEx[protoProp] = Error[protoProp];
+                    classListProto.item = function (i) {
+                        return this[i] || null;
+                    };
+                    classListProto.contains = function (token) {
+                        token += "";
+                        return checkTokenAndGetIndex(this, token) !== -1;
+                    };
+                    classListProto.add = function () {
+                        var
+                                tokens = arguments
+                                , i = 0
+                                , l = tokens.length
+                                , token
+                                , updated = false
+                                ;
+                        do {
+                            token = tokens[i] + "";
+                            if (checkTokenAndGetIndex(this, token) === -1) {
+                                this.push(token);
+                                updated = true;
+                            }
+                        }
+                        while (++i < l);
+
+                        if (updated) {
+                            this._updateClassName();
+                        }
+                    };
+                    classListProto.remove = function () {
+                        var
+                                tokens = arguments
+                                , i = 0
+                                , l = tokens.length
+                                , token
+                                , updated = false
+                                , index
+                                ;
+                        do {
+                            token = tokens[i] + "";
+                            index = checkTokenAndGetIndex(this, token);
+                            while (index !== -1) {
+                                this.splice(index, 1);
+                                updated = true;
+                                index = checkTokenAndGetIndex(this, token);
+                            }
+                        }
+                        while (++i < l);
+
+                        if (updated) {
+                            this._updateClassName();
+                        }
+                    };
+                    classListProto.toggle = function (token, force) {
+                        token += "";
+
+                        var
+                                result = this.contains(token)
+                                , method = result ?
+                                force !== true && "remove"
+                                        :
+                                force !== false && "add"
+                                ;
+
+                        if (method) {
+                            this[method](token);
+                        }
+
+                        if (force === true || force === false) {
+                            return force;
+                        } else {
+                            return !result;
+                        }
+                    };
+                    classListProto.toString = function () {
+                        return this.join(" ");
+                    };
+
+                    if (objCtr.defineProperty) {
+                        var classListPropDesc = {
+                            get: classListGetter
+                            , enumerable: true
+                            , configurable: true
+                        };
+                        try {
+                            objCtr.defineProperty(elemCtrProto, classListProp, classListPropDesc);
+                        } catch (ex) { // IE 8 doesn't support enumerable:true
+                            if (ex.number === -0x7FF5EC54) {
+                                classListPropDesc.enumerable = false;
+                                objCtr.defineProperty(elemCtrProto, classListProp, classListPropDesc);
+                            }
+                        }
+                    } else if (objCtr[protoProp].__defineGetter__) {
+                        elemCtrProto.__defineGetter__(classListProp, classListGetter);
+                    }
+
+                }(self));
+
+            } else {
+// There is full or partial native classList support, so just check if we need
+// to normalize the add/remove and toggle APIs.
+
+                (function () {
+                    "use strict";
+
+                    var testElement = document.createElement("_");
+
+                    testElement.classList.add("c1", "c2");
+
+                    // Polyfill for IE 10/11 and Firefox <26, where classList.add and
+                    // classList.remove exist but support only one argument at a time.
+                    if (!testElement.classList.contains("c2")) {
+                        var createMethod = function (method) {
+                            var original = DOMTokenList.prototype[method];
+
+                            DOMTokenList.prototype[method] = function (token) {
+                                var i, len = arguments.length;
+
+                                for (i = 0; i < len; i++) {
+                                    token = arguments[i];
+                                    original.call(this, token);
+                                }
+                            };
+                        };
+                        createMethod('add');
+                        createMethod('remove');
+                    }
+
+                    testElement.classList.toggle("c3", false);
+
+                    // Polyfill for IE 10 and Firefox <24, where classList.toggle does not
+                    // support the second argument.
+                    if (testElement.classList.contains("c3")) {
+                        var _toggle = DOMTokenList.prototype.toggle;
+
+                        DOMTokenList.prototype.toggle = function (token, force) {
+                            if (1 in arguments && !this.contains(token) === !force) {
+                                return force;
+                            } else {
+                                return _toggle.call(this, token);
+                            }
+                        };
+
+                    }
+
+                    testElement = null;
+                }());
+
+            }
+
+        }
+    </script>
 </head>
+
+<!--HTML VIEW TEMPLATE-->
 
 <body ng-app="sliderApp">
 <div class="main-wrapper" ng-controller="MainController">
@@ -680,11 +985,13 @@
 
         //Local variables
         var sliderDiv = document.body.querySelector('.slider__images'),
+                sliderDivJQ = $('.slider__images'),
                 sliderWrap = document.body.querySelector('.slider-wrapper'),
                 sliderImgWrp = sliderDiv.querySelector('.slider__images-wrap'),
                 sliderImgArr = sliderImgWrp.querySelectorAll('img'),
                 paginatorArr = document.body.querySelectorAll('.slider__pagination-item'),
                 sliderANodes = sliderImgWrp.querySelectorAll('a'),
+                sliderCircl1 = document.body.querySelector('.slider-circle-1'),
                 sliderCircl2 = document.body.querySelector('.slider-circle-2'),
                 sliderCircl3 = document.body.querySelector('.slider-circle-3'),
                 sliderCircl3H2 = sliderCircl3.querySelector('h2'),
@@ -696,7 +1003,6 @@
                 slidesCounterMax = sliderImgArr.length; //4
         var intId, timeOutId;
         var classesArray = ["blue", "green", "orange", "purple", "red", "none", "left", "right"];
-
 
         //Set width to images wrapper to put them in line
         function setWidths() {
@@ -715,30 +1021,50 @@
 
         //this function slide the images
         function slider() {
+            //console.log('slider');
             slidesCounter++;
             if (slidesCounter == slidesCounterMax) {
                 sliderDiv.style.transition = 'margin-left ease-in-out ' + 0 + 's';
                 sliderDiv.style.marginLeft = "0";
                 slidesCounter = 0;
-            }
-            if (slidesCounter != 0) {
-                fading()
-            }
 
-            paginator();
-            styling();
+                //lets catch end of transition and after that make fading of bubbles
+                sliderDivJQ.one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function () {
+                    if (slidesCounter != 0) {
+                        fading()
+                    }
+                    paginator();
+                });
 
-            intId = setTimeout(slider, interval);
+                styling();
+
+                intId = setTimeout(slider, interval);
+            } else {
+                //hide circles
+                fadeOut(sliderCircl1);
+                fadeOut(sliderCircl2);
+                fadeOut(sliderCircl3);
+                fadeOut(sliderCircl4);
+
+                //lets catch end of transition and after that make fading of bubbles
+                sliderDivJQ.one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function () {
+                    if (slidesCounter != 0) {
+                        fading()
+                    }
+                    paginator();
+                });
+
+                styling();
+
+                intId = setTimeout(slider, interval);
+            }
         }
 
         //concat fadeIn & fadeOut functions
         function fading() {
             index = +sliderImgArr[slidesCounter].dataset.index;
-//hide circles
-            fadeOut(sliderCircl2);
-            fadeOut(sliderCircl3);
-            fadeOut(sliderCircl4);
-//clear class list
+
+            //clear class list
             for (var i = 0; i < classesArray.length; i++) {
                 sliderWrap.classList.remove(classesArray[i]);
             }
@@ -749,11 +1075,11 @@
             //let's break jive-sdk
             if (sliderWrap.classList.contains('left')) {
                 sliderCircl2.style.right = "";
-                sliderCircl2.style.left = sliderDiv.offsetWidth * 0.12 - 20 + "px";
+                sliderCircl2.style.left = sliderDiv.offsetWidth * 0.11 - 20 + "px";
             } //=== "calc(12% - 20px)";
             if (sliderWrap.classList.contains('right')) {
                 sliderCircl2.style.left = "";
-                sliderCircl2.style.right = sliderDiv.offsetWidth * 0.12 - 20 + "px";
+                sliderCircl2.style.right = sliderDiv.offsetWidth * 0.11 - 20 + "px";
             }
             //show after giving the position
             // if (!sliderWrap.classList.contains('none')) sliderCircl2.style.display = "block";
@@ -764,13 +1090,14 @@
             sliderCircl3P.textContent = sliderANodes[index].dataset.subtitle;
             //set default text
             if (sliderANodes[index].dataset.action == "") {
-                sliderCircl4P.textContent = "Learn more...";
+                sliderCircl4P.textContent = "Learn more..."
             } else {
                 sliderCircl4P.textContent = sliderANodes[index].dataset.action;
             }
 
             sliderCircl4.setAttribute("href", sliderANodes[index].getAttribute("href"));
-//show circles
+            //show circles
+            fadeIn(sliderCircl1);
             fadeIn(sliderCircl2);
             fadeIn(sliderCircl3);
             fadeIn(sliderCircl4);
@@ -798,7 +1125,7 @@
 
         //adding pagination controls
         Array.prototype.forEach.call(paginatorArr, function (el, i) {
-            el.addEventListener('click', function () {
+            el.onclick = function () {
                 clearTimeout(intId);
                 clearTimeout(timeOutId);
                 intId = 0;
@@ -812,63 +1139,61 @@
                 sliderDiv.style.transition = 'margin-left ease-in-out ' + transition + 's';
                 sliderDiv.style.marginLeft = "-" + i * sliderDivWidth + "px";
 
-//                //Hide this title&subtitle
-//                fadeOut(sliderCircl3H2);
-//                fadeOut(sliderCircl3P);
-//                //Add new text picked form data-attr of <a> to title and subtittle in .slider-circle-3
-//                sliderCircl3H2.textContent = sliderANodes[i].dataset.title;
-//                sliderCircl3P.textContent = sliderANodes[i].dataset.subtitle;
-//
-//                //Show new title&subtitle
-//                fadeIn(sliderCircl3H2);
-//                fadeIn(sliderCircl3P);
-
                 //hide circles
+                fadeOut(sliderCircl1);
                 fadeOut(sliderCircl2);
                 fadeOut(sliderCircl3);
                 fadeOut(sliderCircl4);
-//clear class list
-                for (var a = 0; a < classesArray.length; a++) {
-                    sliderWrap.classList.remove(classesArray[a]);
-                }
-                //add new classes
-                sliderWrap.classList.add(sliderANodes[i].dataset.color);
-                sliderWrap.classList.add(sliderANodes[i].dataset.position);
 
-                //let's break jive-sdk
-                if (sliderWrap.classList.contains('left')) {
-                    sliderCircl2.style.right = "";
-                    sliderCircl2.style.left = sliderDiv.offsetWidth * 0.12 - 20 + "px";
-                } //=== "calc(12% - 20px)";
-                if (sliderWrap.classList.contains('right')) {
-                    sliderCircl2.style.left = "";
-                    sliderCircl2.style.right = sliderDiv.offsetWidth * 0.12 - 20 + "px";
-                }
-                //show after giving the position
-                // if (!sliderWrap.classList.contains('none')) sliderCircl2.style.display = "block";
+                //lets catch end of transition and after that make fading of bubbles
+                sliderDivJQ.one("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function () {
+                    //clear class list
+                    for (var a = 0; a < classesArray.length; a++) {
+                        sliderWrap.classList.remove(classesArray[a]);
+                    }
+                    //add new classes
+                    (sliderANodes[i].dataset.color) ? sliderWrap.classList.add(sliderANodes[i].dataset.color) : sliderWrap.classList.add('none');
+                    (sliderANodes[i].dataset.position) ? sliderWrap.classList.add(sliderANodes[i].dataset.position) : sliderWrap.classList.add('left');
 
-                //Hide title and subtitle in .slider-circle-3
-                //Add new text picked form data-attr of <a> to title and subtittle in .slider-circle-3
-                sliderCircl3H2.textContent = sliderANodes[i].dataset.title;
-                sliderCircl3P.textContent = sliderANodes[i].dataset.subtitle;
-                //set default text
-                if (sliderANodes[i].dataset.action == "") {
-                    sliderCircl4P.textContent = "Learn more...";
-                } else {
-                    sliderCircl4P.textContent = sliderANodes[i].dataset.action;
-                }
+                    //let's break jive-sdk
+                    if (sliderWrap.classList.contains('left')) {
+                        sliderCircl2.style.right = "";
+                        sliderCircl2.style.left = sliderDiv.offsetWidth * 0.11 - 20 + "px";
+                    } //=== "calc(12% - 20px)";
+                    if (sliderWrap.classList.contains('right')) {
+                        sliderCircl2.style.left = "";
+                        sliderCircl2.style.right = sliderDiv.offsetWidth * 0.11 - 20 + "px";
+                    }
+                    //show after giving the position
+                    // if (!sliderWrap.classList.contains('none')) sliderCircl2.style.display = "block";
 
-                sliderCircl4.setAttribute("href", sliderANodes[i].getAttribute("href"));
-//show circles
-                fadeIn(sliderCircl2);
-                fadeIn(sliderCircl3);
-                fadeIn(sliderCircl4);
+                    //Hide title and subtitle in .slider-circle-3
+                    //Add new text picked form data-attr of <a> to title and subtittle in .slider-circle-3
+                    sliderCircl3H2.textContent = sliderANodes[i].dataset.title;
+                    sliderCircl3P.textContent = sliderANodes[i].dataset.subtitle;
+                    //set default text
+                    if (sliderANodes[i].dataset.action == "") {
+                        sliderCircl4P.textContent = "Learn more..."
+                    } else {
+                        sliderCircl4P.textContent = sliderANodes[i].dataset.action;
+                    }
 
+                    sliderCircl4.setAttribute("href", sliderANodes[i].getAttribute("href"));
+                    //show circles
+                    fadeIn(sliderCircl1);
+                    fadeIn(sliderCircl2);
+                    fadeIn(sliderCircl3);
+                    fadeIn(sliderCircl4);
+
+
+                    //restore slidesCounter
+                    slidesCounter = i;
+                });
 
                 timeOutId = setTimeout(function () {
                     slider();
                 }, timeout)
-            })
+            }
 
         });
 
@@ -884,13 +1209,11 @@
             })
         }
 
-
         function fadeIn(el) {
-            el.style.opacity = 0;
-
+            el.style.visibility = "visible";
             var last = +new Date();
             var tick = function () {
-                el.style.opacity = +el.style.opacity + (new Date() - last) / 800;
+                el.style.opacity = +el.style.opacity + (new Date() - last) / 1200;
                 last = +new Date();
 
                 if (+el.style.opacity < 1) {
@@ -898,25 +1221,13 @@
                     setTimeout(tick, 150);
                 }
             };
-
             tick();
         }
 
         function fadeOut(el) {
-            el.style.opacity = 1;
-
-            var last = +new Date();
-            var tick = function () {
-                el.style.opacity = +el.style.opacity - (new Date() - last) / 800;
-                last = +new Date();
-
-                if (+el.style.opacity > 0) {
-                    (window.requestAnimationFrame && requestAnimationFrame(tick)) ||
-                    setTimeout(tick, 150)
-                }
-            };
-
-            tick();
+            //console.log('fadeOut');
+            el.style.visibility = "hidden";
+            el.style.opacity = "0";
         }
 
         //Default fn and views
@@ -935,31 +1246,30 @@
 
     //Waiting for the applying of the view and building of DOM
     setTimeout(function () {
-        sliderWrap = document.body.querySelector('.slider-wrapper');
+        var sliderWrap = document.body.querySelector('.slider-wrapper');
 
         //Global variables
         window._config = {};
 
         //Please set this values as you like
-        if (sliderWrap.dataset.interval != '') {
+        if (sliderWrap.dataset.interval && sliderWrap.dataset.interval != '') {
             window._config.sliderInterval = +sliderWrap.dataset.interval * 1000;
         } else {
             window._config.sliderInterval = 3000;
         } //ms
 
-        if (window._config.sliderTimeout != '') {
+        if (window._config.sliderTimeout && window._config.sliderTimeout != '') {
             window._config.sliderTimeout = +sliderWrap.dataset.timeout * 1000;
         } else {
             window._config.sliderTimeout = 7000;
         } //ms
-        console.log(window._config.sliderInterval + " && " + window._config.sliderTimeout);
+        //     console.log(window._config.sliderInterval + " && " + window._config.sliderTimeout);
         window._config.transitionInterval = 0.7; //s
 
 
         slider = new Slider(window._config.sliderInterval, window._config.sliderTimeout,
                 window._config.transitionInterval);
     }, 2000);
-
 </script>
 </body>
 </html>
