@@ -57,6 +57,7 @@
     margin: 10px auto;
     text-decoration: none;
     outline: none;
+    z-index: 10;
 }
 
 .add_slide {
@@ -65,6 +66,17 @@
 
 .delete-button {
     background: #E83535 !important;
+}
+
+.add_slide, .delete-button {
+    transform: scale(1, 1);
+    transition: all 0.3s;
+}
+
+.add_slide:hover, .delete-button:hover {
+    transform: scale(1.05, 1.05);
+    z-index: 2;
+    box-shadow: 0 7px 26px 2px rgba(62, 62, 66, 0.58);
 }
 
 .config-wrapper label {
@@ -122,7 +134,16 @@
     font-size: 0.875rem;
     font-weight: 400;
     text-decoration: none;
+
     outline: none;
+    transform: scale(1, 1);
+    transition: all 0.3s;
+}
+
+.submit-button:hover {
+    transform: scale(1.05, 1.05);
+    z-index: 2;
+    box-shadow: 0 7px 26px 2px rgba(62, 62, 66, 0.58);
 }
 
 .config-wrapper input[type = 'text'] {
