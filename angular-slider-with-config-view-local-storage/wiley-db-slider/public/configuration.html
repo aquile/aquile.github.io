@@ -93,11 +93,13 @@
 
 
                         $scope.sendForm = function (data) {
-                            var submit = confirm("Did you set ALL the color themes and slider positions?");
+                            var submit = confirm("Save changes and go to slider?");
                             if (submit) {
                                 //config['data'] = data;
                                 localStorage.setItem('sliderConfig', JSON.stringify(data));
                                 console.log(data);
+                                //window.location.href = "http://localhost:63342/aquile.github.io/angular-slider-with-config-view-local-storage/wiley-db-slider/public/view.html";
+                                window.location.href = "http://aquile.github.io/angular-slider-with-config-view-local-storage/wiley-db-slider/public/view.html";
                             }
                         };
 
