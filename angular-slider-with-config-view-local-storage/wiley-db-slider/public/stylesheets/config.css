@@ -2,7 +2,7 @@
     display: block;
     min-width: 900px;
     width: 45%;
-    background: #CDF3F9;
+    background: #CDF3F9 url("../images/bcggrad.png");
     color: #fff;
     font-family: Roboto, sans-serif;
     margin: 0 auto;
@@ -48,12 +48,20 @@
     cursor: pointer;
     font-family: inherit;
     font-size: 48px;
-    line-height: 46px;
+    line-height: 26px;
     font-weight: 400;
     background-clip: padding-box;
     margin: 10px auto;
     text-decoration: none;
     outline: none;
+}
+
+.add_slide {
+    background: #33E852 !important;
+}
+
+.delete-button {
+    background: #E83535 !important;
 }
 
 .config-wrapper label {
@@ -97,11 +105,11 @@
 .submit-button {
     width: 21%;
     margin: 0 auto 15px;
-    background: #54B9CA;
+    background: #EFFF00;
     box-shadow: 0 3px 4px 0 rgba(62, 62, 66, 0.58);
     display: block;
     text-transform: uppercase;
-    color: #fff;
+    color: #000000;
     padding: 7px 16px;
     text-align: center;
     border: none;
@@ -213,7 +221,6 @@
     bottom: auto;
     width: 100%;
 }
-
 
 /* OLD STYLES
 .config-wrapper {
