@@ -255,6 +255,14 @@
     width: 100%;
 }
 
+.slider-form {
+    min-height: 100px;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
 /* OLD STYLES
 .config-wrapper {
     display: block;
