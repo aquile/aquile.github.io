@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GL/script/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GL/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GL/script/polyfill_class-list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GL/script/polyfill_dataset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GL/script/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GL/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/view.html" afterPath="$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GL/script/jquery-2.1.4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GL/index.html" afterPath="$PROJECT_DIR$/GL/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GL/script/script.js" afterPath="$PROJECT_DIR$/GL/script/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aquile.github.io.iws" />
@@ -29,14 +25,24 @@
     <favorites_list name="aquile.github.io" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5570313">
+    <splitter split-orientation="horizontal" split-proportion="0.5535332">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/GL/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6981424">
-                  <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+                <state vertical-scroll-proportion="0.27817404">
+                  <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="jquery-2.1.4.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/GL/script/jquery-2.1.4.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -56,7 +62,7 @@
             <entry file="file://$PROJECT_DIR$/GL/script/script.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -88,11 +94,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/GL/css/style.css">
+          <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/GL/script/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.95862067">
-                  <caret line="136" column="23" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
+                <state vertical-scroll-proportion="0.020689655">
+                  <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -121,7 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wiley-db-slider/public/configuration.html" />
         <option value="$PROJECT_DIR$/wiley-db-slider/public/stylesheets/config.css" />
         <option value="$PROJECT_DIR$/wiley-db-slider/build.html" />
         <option value="$PROJECT_DIR$/when-then.html" />
@@ -170,8 +175,9 @@
         <option value="$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/view.html" />
         <option value="$PROJECT_DIR$/GL/style.css" />
         <option value="$PROJECT_DIR$/GL/script.js" />
-        <option value="$PROJECT_DIR$/GL/index.html" />
         <option value="$PROJECT_DIR$/GL/css/style.css" />
+        <option value="$PROJECT_DIR$/GL/index.html" />
+        <option value="$PROJECT_DIR$/GL/script/script.js" />
       </list>
     </option>
   </component>
@@ -675,13 +681,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Landing_contract_GoIT/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.3651924">
-          <caret line="204" column="23" selection-start-line="204" selection-start-column="23" selection-end-line="204" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/when-then.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42796007">
@@ -1155,14 +1154,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GL/script/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GL/script/angular.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1181,18 +1172,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GL/index.html">
+    <entry file="file://$PROJECT_DIR$/GL/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6981424">
-          <caret line="100" column="16" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GL/css/style.css">
+    <entry file="file://$PROJECT_DIR$/GL/script/jquery-2.1.4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.95862067">
-          <caret line="136" column="23" selection-start-line="136" selection-start-column="23" selection-end-line="136" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GL/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27817404">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GL/script/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.020689655">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
