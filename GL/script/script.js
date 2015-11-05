@@ -43,7 +43,7 @@ $(document).ready(function () {
 
         function setHandlerEven(index) {
             inputsArr.eq(index).keypress(function (event) {
-                if (+event.which >= 48 && +event.which <= (57 - +inputsArr.eq(index - 1).val())) { // 0-9
+                if (+event.which >= 48 && +event.which <= (57 - +inputsArr.eq(index - 1).val())) { // 0-(9-previous input literal value)
                     notificationNode.textContent = "";
 
                     //set disable controller off to the next input & focus on it
@@ -52,7 +52,7 @@ $(document).ready(function () {
                     setTimeout(function () {
                         inputsArr.eq(index).prop("disabled", true);
                     }, 200);
-                } else if (event.which === 47) { // /
+                } else if (event.which === 47) { // or /
                     notificationNode.textContent = "";
 
                     //set disable controller off to the next input & focus on it

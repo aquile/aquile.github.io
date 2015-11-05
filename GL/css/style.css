@@ -32,19 +32,9 @@ footer, header, menu, nav, section {
 
 body {
     font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-}
-
-h1 {
-    text-align: center;
-}
-
-.notification {
-    display: block;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    color: red;
+    background: #E4E3E3;
+    padding-top: 50px;
+    font-family: Roboto, sans-serif;
 }
 
 .main-wrp {
@@ -52,50 +42,62 @@ h1 {
     position: relative;
     width: 60%;
     min-width: 1000px;
-    height: 250px;
     margin: 0 auto;
-    border: 1px solid black;
     box-sizing: border-box;
-    background: yellow;
 }
 
 .form {
     display: block;
     width: 100%;
-    height: 76px;
-    background: #e5e5e5;
+    padding: 60px 12px;
+    border: 1px;
+    background: #B2DFDB;
     text-align: justify;
+    z-index: 1;
+    opacity: 0.99;
+    box-shadow: 0 3px 6px -2px #545353;
 }
 
 .form_frame {
     display: inline-block;
-    width: calc(100%/12.3);
-    height: 100%;
-    border: 1px solid black;
+    width: 7%;
+    height: 80px;
     vertical-align: top;
     text-align: right;
-
+    margin-left: 12px;
+    background: #009688;
+    /*box-shadow: 0 0 7px 0 #353535;*/
+    box-shadow: 0 1px 2px 1px #777777;
+    border-radius: 2px;
 }
+
+.form_frame:nth-child(1) {
+    margin-left: 12px;
+}
+
 .form_frame:nth-child(10) {
-    width: calc(100%/12.3*1.3);
+    width: 11%;
 }
-.form_frame:last-child {
-    width: calc(100%/12.3*2);
 
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-    -moz-user-select: none;     /* Firefox all */
-    -ms-user-select: none;      /* IE 10+ */
-    user-select: none;          /* Likely future */
+.form_frame:last-child {
+    width: 13%;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
 }
+
 .form_frame label {
     display: inline-block;
-    width: 45%;
+    width: 47%;
     height: 50%;
     text-align: center;
 }
+
 .form_frame:nth-child(10) label {
     width: 30%;
 }
+
 .form_frame input {
     display: inline-block;
     width: 100%;
@@ -104,15 +106,33 @@ h1 {
     text-align: center;
     background: transparent;
     box-sizing: border-box;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.25em;
 }
+
+.form_frame input:focus {
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
 .form_frame label:nth-child(n + 2) input {
-    border-left: 1px solid black;
-    border-bottom:1px solid black;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
+
 .form_frame--bottom {
     display: block;
     width: 100%;
     height: 50%;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 40px;
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
 }
 
 .form_justify-line {
@@ -121,18 +141,25 @@ h1 {
     height: 1px;
 }
 
-.controller {
-    display: block;
-    width: 100%;
-    height: 50%;
-    background: blue;
-}
-
 .form_frame--score {
     display: block;
     width: 100%;
     height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
 
+.form_frame--score .score_summ,
+.form_frame--score .score_header {
+    font-size: 2rem;
+}
+
+.controller {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
 }
 
 .controller ul {
@@ -141,11 +168,15 @@ h1 {
     height: 25%;
     text-align: center;
 }
+
 .controller li {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
     border-radius: 50%;
-    border: 2px solid red;
+    border: 2px solid #00796B;
     text-align: center;
+    color: #727272;
+    line-height: 36px;
 }
