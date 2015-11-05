@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bowling score sheet</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css"/>
     <script src="script/angular.min.js"></script>
 
@@ -15,12 +16,15 @@
 </head>
 <body>
 
+<h1>Bowling score calculator</h1>
+<p class="notification"></p>
+
 <div class="main-wrp">
 
     <ul class="form">
         <li class="form_frame">
             <label><input class="test1" type="text" name="shoot-score" placeholder="" maxlength="1" value="" autofocus></label>
-            <label><input class="test2" type="text" name="shoot-score" placeholder="" maxlength="1" value="" ></label>
+            <label><input class="test2" type="text" name="shoot-score" placeholder="" maxlength="1" value="" disabled></label>
 
             <div class="form_frame--bottom"></div>
 
@@ -103,7 +107,7 @@
             <li>2</li>
         </ul>
         <ul>
-            <li></li>
+            <li>1</li>
         </ul>
     </div>
 
