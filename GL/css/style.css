@@ -86,7 +86,7 @@ body > p {
     vertical-align: top;
     text-align: right;
     margin-left: 12px;
-    background: #009688;
+    background: #FFB900;
     /*box-shadow: 0 0 7px 0 #353535;*/
     box-shadow: 0 1px 2px 1px #777777;
     border-radius: 2px;
@@ -210,5 +210,5 @@ body > p {
 .form_frame.active {
     transform: scale(1.05, 1.06);
     box-shadow: 0 1px 8px 1px #777777;
-    background-color: #009616;
+    background-color: #FD6636;
 }
