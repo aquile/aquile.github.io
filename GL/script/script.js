@@ -1,3 +1,4 @@
+var a;
 $(document).ready(function () {
     //Local variables
     var framesArr = $(".form_frame"),
@@ -11,6 +12,8 @@ $(document).ready(function () {
         activeLiCount = 0,
         timeout = 20,
         results = [];
+
+    var storage = new Storage();
 
     body.style.height = ($(window).height() + "px");
 
@@ -245,6 +248,7 @@ $(document).ready(function () {
         }
     });
 
+    //Local methods---------------------------------------------------------------------
 
     //switch disabling and focus
     function switchFocus(index, i, active) {
@@ -259,7 +263,6 @@ $(document).ready(function () {
         }
         framesArr.eq(active).addClass("active");
     }
-
 
     function disableInput(index) {
         setTimeout(function () {
@@ -381,8 +384,6 @@ $(document).ready(function () {
         observer.observe(target, config);
     }
 
-
-    //Local methods
     function lastFrameScore() {
         var lastSumm = 0,
             resultObj = {};
@@ -404,22 +405,22 @@ $(document).ready(function () {
             bottomScrNode.eq(9).css("visibility", "visible");
             sumScore.textContent = (+bottomScrNode.eq(9).text()) + "";
 
+            results = storage.load();
+
+            // bind player data
+            resultObj.player = "player name";
             resultObj.data = new Date();
             resultObj.score = sumScore.textContent;
 
             results.push(resultObj);
 
-            return results;
+            //save to localStorage player result data
+            return storage.store(results);
         }, timeout);
     }
 
-
-    var storage = new Storage(),
-        score = new Score(storage);
-    //    template = new Template(),
-    //    view = new View(model, template),
-    //    controller = new Controller(model, view);
-
+    //works with storage with
+    //local constructor
     function Storage() {
         this.store = function (resultsArr) {
             localStorage.setItem('results', JSON.stringify(resultsArr));
@@ -431,11 +432,18 @@ $(document).ready(function () {
             } catch (e) {
                 localStorage.clear();
             }
-            return resultsArr;
+
+            a = resultsArr.sort(function(a, b) {
+
+            console.log(a);
+                return parseFloat(b.score) - parseFloat(a.score);
+            });
+
+
+            //sort JSON array of objects by the score field
+            return resultsArr.sort(function(a, b) {
+                return parseFloat(b.score) - parseFloat(a.score);
+            });
         };
-    }
-
-    function Score(x) {
-
     }
 });
