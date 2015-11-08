@@ -7,21 +7,20 @@ $(document).ready(function () {
         bottomScrNode = $(".form_frame--bottom"),
         notificationNode = document.body.querySelector(".notification"),
         sumScore = document.body.querySelector(".score_summ"),
-        controlls = $(".controller li");
+        controlls = $(".controller li"),
+        lastLi = $(".controller #last"),
+        lastLiSpan = $(".controller #last span");
     var bottomNodeCounter = 0,
         activeLiCount = 0,
-        timeout = 20,
-        results = [];
+        timeout = 20;
 
-    var storage = new Storage();
+    //body.style.height = ($(window).height() + "px");
+    //
+    //window.onresize = function () {
+    //    body.style.height = ($(window).height() + "px");
+    //};
 
-    body.style.height = ($(window).height() + "px");
-
-    window.onresize = function () {
-        body.style.height = ($(window).height() + "px");
-    };
-
-    for (var k = 0; k < controlls.length - 1; k++) {
+    for (var k = 0; k <= controlls.length - 2; k++) {
         setBallsHandler(k);
 
         function setBallsHandler(i) {
@@ -30,29 +29,51 @@ $(document).ready(function () {
 
                 target.focus().trigger({type: 'keypress', which: (48 + i)});
                 target.val(controlls.eq(i).data("value"));
+                lastLi.removeClass("active");
             })
         }
     }
 
-    controlls.eq(10).click(function () {
+    var lastCntrl = function () {
+        controlls.eq(10).on("click", lastLiHandler);
+    };
+
+    lastCntrl();
+
+    function lastLiHandler(event) {
+        event.stopPropagation();
         var target = $("input:enabled").eq(0);
 
         if (target.data("approved") === "X") {
             target.focus().trigger({type: 'keypress', which: 120});
             target.val("x");
+            lastLi.removeClass("active");
         } else if (target.data("approved") === "/") {
             target.focus().trigger({type: 'keypress', which: 47});
             target.val("/");
+            lastLi.removeClass("active");
         } else {
-            //add popup
+            controlls.eq(10).off(event);
+            lastLi.addClass("active");
 
-            target.focus().trigger({type: 'keypress', which: 120});
-            target.val("x");
-            //or
-            target.focus().trigger({type: 'keypress', which: 47});
-            target.val("/");
+            lastLiSpan.eq(0).one("click", function (event) {
+                event.stopPropagation();
+                target = $("input:enabled").eq(0);
+                target.focus().trigger({type: 'keypress', which: 120});
+                target.val("X");
+                lastLi.removeClass("active");
+            });
+            //and
+            lastLiSpan.eq(1).one("click", function (event) {
+                event.stopPropagation();
+                target = $("input:enabled").eq(0);
+                target.focus().trigger({type: 'keypress', which: 47});
+                target.val("/");
+                lastLi.removeClass("active");
+            });
+
         }
-    });
+    }
 
     //event listener method for the even inputs
     for (var i = 0; i <= 16; i += 2) {
@@ -214,7 +235,7 @@ $(document).ready(function () {
                     switchFocus(20, 0, activeLiCount);
                     disableInput(19);
 
-                    //20 input handler 0-9 || /
+                    //20 input handler 0-9 || xX
                     inputsArr.eq(20).keypress(function (event) {
                         if ((+event.which >= 48 && +event.which <= 57) || (event.which === 120 || event.which === 88)) { //0-9 or xX lat
 
@@ -265,6 +286,10 @@ $(document).ready(function () {
     }
 
     function disableInput(index) {
+        if (index >= 18) {
+            //rebind handler to the lastLi #10 = x || /
+            lastCntrl();
+        }
         setTimeout(function () {
             inputsArr.eq(index).prop("disabled", true);
         }, timeout);
@@ -386,16 +411,18 @@ $(document).ready(function () {
 
     function lastFrameScore() {
         var lastSumm = 0,
-            resultObj = {};
+            gameResult = {},
+            results;
         setTimeout(function () {
             notificationNode.textContent = "";
             for (var i = 18; i <= 20; i++) {
-                var scrValue;
+                var scrValue,
+                    inputVal = inputsArr.eq(i).val();
 
-                if (+inputsArr.eq(i).val() >= 0) scrValue = inputsArr.eq(i).val();
-                if (inputsArr.eq(i).val() === "/") scrValue = (10 - +inputsArr.eq(i - 1).val()) + "";
-                if (inputsArr.eq(i).val() === "x" || inputsArr.eq(i).val() === "X") scrValue = "10";
-                if (inputsArr.eq(i).val() == "") scrValue = 0;
+                if (+inputVal >= 0) scrValue = inputVal;
+                if (inputVal === "/") scrValue = (10 - +inputsArr.eq(i - 1).val()) + "";
+                if (inputVal === "x" || inputVal === "X") scrValue = "10";
+                if (inputVal == "") scrValue = 0;
 
                 inputsArr.eq(i).data("scr", scrValue);
 
@@ -407,43 +434,17 @@ $(document).ready(function () {
 
             results = storage.load();
 
+            console.log(results);
             // bind player data
-            resultObj.player = "player name";
-            resultObj.data = new Date();
-            resultObj.score = sumScore.textContent;
+            gameResult.player = "player name";
+            gameResult.date = new Date();
+            gameResult.score = sumScore.textContent;
 
-            results.push(resultObj);
+            console.log(gameResult);
+            results.push(gameResult);
 
             //save to localStorage player result data
             return storage.store(results);
         }, timeout);
-    }
-
-    //works with storage with
-    //local constructor
-    function Storage() {
-        this.store = function (resultsArr) {
-            localStorage.setItem('results', JSON.stringify(resultsArr));
-        };
-        this.load = function () {
-            var resultsArr = {};
-            try {
-                resultsArr = JSON.parse(localStorage.getItem('results'));
-            } catch (e) {
-                localStorage.clear();
-            }
-
-            a = resultsArr.sort(function(a, b) {
-
-            console.log(a);
-                return parseFloat(b.score) - parseFloat(a.score);
-            });
-
-
-            //sort JSON array of objects by the score field
-            return resultsArr.sort(function(a, b) {
-                return parseFloat(b.score) - parseFloat(a.score);
-            });
-        };
     }
 });

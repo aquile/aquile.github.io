@@ -6,13 +6,7 @@
     <!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" href="css/style.css"/>
     <script src="script/angular.min.js"></script>
-
-    <script src="script/polyfill_class-list.js"></script>
-    <script src="script/polyfill_dataset.js"></script>
-
     <script src="script/jquery-2.1.4.js"></script>
-
-    <script src="script/script.js"></script>
 </head>
 <body>
 
@@ -20,62 +14,62 @@
 
 <p class="notification"></p>
 
-<div class="main-wrp">
+<div class="main-wrp" ng-app="app">
 
     <ul class="form">
         <li class="form_frame active">
-            <label><input class="test1" type="text" name="shoot-score"  data-approved="X" maxlength="1" data-scr
+            <label><input class="test1" type="text" name="shoot-score" data-approved="X" maxlength="1" data-scr
                           autofocus></label>
-            <label><input class="test2" type="text" name="shoot-score"  data-approved="/" maxlength="1" data-scr
+            <label><input class="test2" type="text" name="shoot-score" data-approved="/" maxlength="1" data-scr
                           disabled></label>
 
             <div class="form_frame--bottom">0</div>
 
         <li class="form_frame">
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="X" data-scr disabled></label>
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="/" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="X" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="/" data-scr disabled></label>
 
             <div class="form_frame--bottom"></div>
 
         <li class="form_frame">
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="X" data-scr disabled></label>
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="/" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="X" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="/" data-scr disabled></label>
 
             <div class="form_frame--bottom"></div>
 
         <li class="form_frame">
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="X" data-scr disabled></label>
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="/" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="X" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="/" data-scr disabled></label>
 
             <div class="form_frame--bottom"></div>
 
         <li class="form_frame">
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="X" data-scr disabled></label>
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="/" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="X" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="/" data-scr disabled></label>
 
             <div class="form_frame--bottom"></div>
 
         <li class="form_frame">
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="X" data-scr disabled></label>
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="/" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="X" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="/" data-scr disabled></label>
 
             <div class="form_frame--bottom"></div>
 
         <li class="form_frame">
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="X" data-scr disabled></label>
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="/" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="X" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="/" data-scr disabled></label>
 
             <div class="form_frame--bottom"></div>
 
         <li class="form_frame">
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="X" data-scr disabled></label>
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="/" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="X" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="/" data-scr disabled></label>
 
             <div class="form_frame--bottom"></div>
 
         <li class="form_frame">
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="X" data-scr disabled></label>
-            <label><input type="text" name="shoot-score" maxlength="1"  data-approved="/" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="X" data-scr disabled></label>
+            <label><input type="text" name="shoot-score" maxlength="1" data-approved="/" data-scr disabled></label>
 
             <div class="form_frame--bottom"></div>
 
@@ -114,14 +108,57 @@
             <li data-value="7" data-score="7">7</li>
             <li data-value="8" data-score="8">8</li>
             <li data-value="9" data-score="9">9</li>
-            <li data-value="X" data-score="10">10</li>
+            <li id="last">10
+                <span class="before">X</span>
+                <span class="after">/</span>
+            </li>
         </ul>
-        <div class="score-table">
-            <span></span>
-        </div>
+    </div>
+
+    <div class="score-table" ng-controller="bowlingScore">
+        <div class="score-table__ask"> Show <span>3</span><span>5</span><span>10</span> results</div>
+
+        <div class="score-table__show"></div>
     </div>
 
 </div>
+<script>
+    //Global method
+    var storage = new Storage();
+
+    //global constructor
+    function Storage() {
+        this.store = function (resultsArr) {
+            localStorage.setItem('results', JSON.stringify(resultsArr));
+        };
+        this.load = function () {
+            var resultsArr;
+            try {
+                resultsArr = JSON.parse(localStorage.getItem('results'));
+
+                if (resultsArr) {
+
+                    console.log(resultsArr.sort(function (a, b) {
+                        return parseFloat(b.score) - parseFloat(a.score);
+                    }));
+
+                    //sort JSON array of objects by the score field
+                    return resultsArr.sort(function (a, b) {
+                        return parseFloat(b.score) - parseFloat(a.score);
+                    });
+                } else {
+                    console.log("null???");
+                    return resultsArr = [];
+                }
+            } catch (e) {
+                localStorage.clear();
+                console.log("Error fetched")
+            }
+        };
+    }
+</script>
+<script src="script/mvc-script.js"></script>
+<script src="script/script.js"></script>
 
 </body>
 </html>
