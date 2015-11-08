@@ -50,14 +50,14 @@ body > h1 {
     font-weight: 800;
 }
 
-body > p {
+.notification {
     display: block;
     width: 320px;
     height: 30px;
     margin: 0 auto;
     font-size: 22px;
     text-align: center;
-    color: red;
+    color: #1F1414;
     text-shadow: 0 0 2px #ABE5A1;
     text-transform: uppercase;
 }
