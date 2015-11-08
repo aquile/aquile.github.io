@@ -12,9 +12,11 @@ angular.module('app', [])
 
             try {
                 data = storage.load();
+                $scope.show.data = data;
             } catch (e) {
                 localStorage.clear();
-                console.log("e catched")
+                console.log("e catched");
+                data = [];
             }
             console.log(data);
 

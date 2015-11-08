@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GL/script/mvc-script.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GL/script/polyfill_class-list.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/GL/script/polyfill_dataset.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GL/index.html" afterPath="$PROJECT_DIR$/GL/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GL/script/script.js" afterPath="$PROJECT_DIR$/GL/script/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GL/script/mvc-script.js" afterPath="$PROJECT_DIR$/GL/script/mvc-script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GL/css/style.css" afterPath="$PROJECT_DIR$/GL/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,18 +29,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GL/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.583332">
-              <caret line="118" column="36" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="36" />
+            <state vertical-scroll-proportion="-75.0">
+              <caret line="120" column="37" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GL/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6275862">
-              <caret line="180" column="33" selection-start-line="180" selection-start-column="33" selection-end-line="180" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="345" column="20" selection-start-line="345" selection-start-column="20" selection-end-line="345" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -52,8 +49,8 @@
       <file leaf-file-name="configuration.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/configuration.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.6794872">
-              <caret line="120" column="21" selection-start-line="17" selection-start-column="18" selection-end-line="120" selection-end-column="21" />
+            <state vertical-scroll-proportion="11.320513">
+              <caret line="166" column="55" selection-start-line="166" selection-start-column="55" selection-end-line="166" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -63,17 +60,17 @@
         <entry file="file://$PROJECT_DIR$/GL/script/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="440" column="52" selection-start-line="440" selection-start-column="52" selection-end-line="440" selection-end-column="52" />
+              <caret line="438" column="29" selection-start-line="438" selection-start-column="23" selection-end-line="438" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mvc-script.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mvc-script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GL/script/mvc-script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.28965518">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -102,7 +99,7 @@
       <file leaf-file-name="view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
+            <state vertical-scroll-proportion="45.0">
               <caret line="5" column="116" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="116" />
               <folding />
             </state>
@@ -188,9 +185,9 @@
         <option value="$PROJECT_DIR$/TODO/todo.js" />
         <option value="$PROJECT_DIR$/AJAX/weather.js" />
         <option value="$PROJECT_DIR$/GL/script/script.js" />
-        <option value="$PROJECT_DIR$/GL/script/mvc-script.js" />
         <option value="$PROJECT_DIR$/GL/index.html" />
         <option value="$PROJECT_DIR$/GL/css/style.css" />
+        <option value="$PROJECT_DIR$/GL/script/mvc-script.js" />
       </list>
     </option>
   </component>
@@ -408,6 +405,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aquile.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aquile.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-slider-with-config-view-local-storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wiley-db-slider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -638,7 +661,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3187251" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3178082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1115,22 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="5" column="116" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="116" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/javascripts/slider-script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.986207">
-          <caret line="262" column="1" selection-start-line="262" selection-start-column="1" selection-end-line="262" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/stylesheets/config.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1034483">
@@ -1163,42 +1170,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GL/script/script.js">
+    <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/javascripts/slider-script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="440" column="52" selection-start-line="440" selection-start-column="52" selection-end-line="440" selection-end-column="52" />
+        <state vertical-scroll-proportion="2.8758621">
+          <caret line="262" column="1" selection-start-line="262" selection-start-column="1" selection-end-line="262" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GL/script/mvc-script.js">
+    <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GL/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.583332">
-          <caret line="118" column="36" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="36" />
+        <state vertical-scroll-proportion="45.0">
+          <caret line="5" column="116" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="116" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/wiley-db-slider/public/configuration.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6794872">
-          <caret line="120" column="21" selection-start-line="17" selection-start-column="18" selection-end-line="120" selection-end-column="21" />
+        <state vertical-scroll-proportion="11.320513">
+          <caret line="166" column="55" selection-start-line="166" selection-start-column="55" selection-end-line="166" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GL/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6275862">
-          <caret line="180" column="33" selection-start-line="180" selection-start-column="33" selection-end-line="180" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="345" column="20" selection-start-line="345" selection-start-column="20" selection-end-line="345" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GL/script/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="438" column="29" selection-start-line="438" selection-start-column="23" selection-end-line="438" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GL/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-75.0">
+          <caret line="120" column="37" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GL/script/mvc-script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28965518">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding />
         </state>
       </provider>

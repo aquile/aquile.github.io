@@ -40,6 +40,7 @@ body {
 }
 
 body > h1 {
+    min-width: 1090px;
     margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
@@ -65,8 +66,8 @@ body > p {
 .main-wrp {
     display: block;
     position: relative;
-    width: 60%;
-    min-width: 1000px;
+    width: 85%;
+    min-width: 1090px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -249,7 +250,6 @@ body > p {
 .score-table {
     display: block;
     width: 100%;
-    height: 300px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.5);
 }
@@ -338,4 +338,10 @@ body > p {
     box-shadow: 0 1px 8px 1px #777777;
     background-color: #FFB900;
     color: black;
+}
+
+.score-table__show {
+    display: block;
+    width: 100%;
+    background: red;
 }
