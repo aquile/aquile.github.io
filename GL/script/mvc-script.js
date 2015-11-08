@@ -1,25 +1,28 @@
-angular.module('app', [])
-    .controller('bowlingScore', ['$scope', function ($scope) {
+//Declare angular module
+var app = angular.module("app", []);
 
-        $scope.show = {};
-        $scope.show.number = 3;
-        $scope.show.data = [];
+//Declare angular controller
+app.controller("bowlingScore", ["$scope", function ($scope) {
 
-        getContent();
+    $scope.show = {};
+    $scope.show.number = 3;
 
-        function getContent() {
-            var data = null;
+    getContent();
 
-            try {
-                data = storage.load();
-                $scope.show.data = data;
-            } catch (e) {
-                localStorage.clear();
-                console.log("e catched");
-                data = [];
-            }
-            console.log(data);
+    function getContent() {
+        var data = null;
 
+        try {
+            data = storage.load();
+            data.forEach(function (item) {
+                item.date = moment(item.date).startOf("minute").fromNow();
+            });
+            $scope.show.data = data;
+        } catch (e) {
+            localStorage.clear();
+            console.log("error fetched - localStorage.clear() used");
+            $scope.show.data = [];
         }
-    }]);
+    }
+}]);
 

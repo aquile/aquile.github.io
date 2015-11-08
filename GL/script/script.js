@@ -14,12 +14,6 @@ $(document).ready(function () {
         activeLiCount = 0,
         timeout = 20;
 
-    //body.style.height = ($(window).height() + "px");
-    //
-    //window.onresize = function () {
-    //    body.style.height = ($(window).height() + "px");
-    //};
-
     for (var k = 0; k <= controlls.length - 2; k++) {
         setBallsHandler(k);
 
@@ -434,17 +428,46 @@ $(document).ready(function () {
 
             results = storage.load();
 
-            console.log(results);
             // bind player data
-            gameResult.player = "player name";
+            //gameResult.player = "player name";
             gameResult.date = new Date();
             gameResult.score = sumScore.textContent;
 
-            console.log(gameResult);
             results.push(gameResult);
 
             //save to localStorage player result data
             return storage.store(results);
         }, timeout);
+    }
+
+    setTimeout(resultsControl, 500);
+
+    function resultsControl() {
+        var paginationBtns = document.body.querySelectorAll(".score-table__ask span"),
+            resultDivs = document.body.querySelectorAll(".score-table__show");
+
+
+        Array.prototype.forEach.call(paginationBtns, function (el) {
+            el.onclick = function () {
+                var max = +el.textContent;
+
+                for (var i = 0; i < resultDivs.length; i++) {
+                    resultDivs[i].style.display = "none";
+                }
+
+                if (+el.textContent > resultDivs.length) {
+                    max = resultDivs.length
+                }
+
+                for (i = 0; i < max; i++) {
+                    resultDivs[i].style.display = "block";
+                }
+
+                for (var j = 0; j < paginationBtns.length; j++) {
+                    paginationBtns[j].classList.remove("active");
+                }
+                el.classList.add("active");
+            }
+        })
     }
 });

@@ -31,9 +31,9 @@ footer, header, menu, nav, section {
 }
 
 body {
-    height: 995px;
+    -height: 995px;
     font-size: 16px;
-    background: url("../img/bg.png") center no-repeat;
+    background: url("../img/bg-mirror.png") center no-repeat;
     background-size: cover;
     padding-top: 50px;
     font-family: Roboto, sans-serif;
@@ -340,8 +340,29 @@ body > p {
     color: black;
 }
 
+.score-table__ask span.active {
+    transform: scale(1.05, 1.05);
+    box-shadow: 0 1px 8px 1px #777777;
+    background-color: #FFB900;
+    color: black;
+}
+
 .score-table__show {
-    display: block;
+    display: none;
     width: 100%;
-    background: red;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 36%;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #8E8E8E;
+    letter-spacing: -0.3px;
+    font-weight: 800;
+    background: rgba(236, 163, 147, 0.4);
+}
+
+.score-table__show span {
+    line-height: 30px;
 }

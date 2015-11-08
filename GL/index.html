@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Bowling score sheet</title>
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAxZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTEzMzIyQTU3RTc4MTFFNUFCOUNDNDk3QkNGQjYyQkUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTEzMzIyQTQ3RTc4MTFFNUFCOUNDNDk3QkNGQjYyQkUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgTWFjaW50b3NoIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9Ijk1Q0IyNkJDMzdENjZGRUNCNTBGRDNCMTY3Mzk0MkEyIiBzdFJlZjpkb2N1bWVudElEPSI5NUNCMjZCQzM3RDY2RkVDQjUwRkQzQjE2NzM5NDJBMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pu//N4EAAAbwSURBVHja7Fp7TFNnFG8LSHlDecn7IRHq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"
+          rel="shortcut icon">
     <!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" href="css/style.css"/>
     <script src="script/angular.min.js"></script>
     <script src="script/jquery-2.1.4.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.1/moment.min.js"></script>
 </head>
 <body>
 
@@ -118,9 +121,9 @@
     <div class="score-table" ng-controller="bowlingScore">
         <div class="score-table__ask"> Show <span>3</span><span>5</span><span>10</span> results</div>
 
-        <div class="score-table__show" ng-repeat="config in show.data">
-            <span class="player">{{elem.player}}</span>
-            <span class="score">{{elem.score}}</span>
+        <div class="score-table__show" ng-repeat="elem in show.data">
+            <!--<span class="player">{{elem.player}}</span>-->
+            <span class="score">Score: {{elem.score}} / </span>
             <span class="date">{{elem.date}}</span>
         </div>
     </div>
@@ -141,17 +144,12 @@
                 resultsArr = JSON.parse(localStorage.getItem('results'));
 
                 if (resultsArr) {
-
-                    console.log(resultsArr.sort(function (a, b) {
-                        return parseFloat(b.score) - parseFloat(a.score);
-                    }));
-
                     //sort JSON array of objects by the score field
                     return resultsArr.sort(function (a, b) {
                         return parseFloat(b.score) - parseFloat(a.score);
                     });
                 } else {
-                    console.log("null???");
+                    console.log("first time");
                     return resultsArr = [];
                 }
             } catch (e) {
