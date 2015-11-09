@@ -435,3 +435,10 @@ body > h1 {
     font-size: 10px;
     line-height: 21px;
 }
+
+.keyboard-mouse {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
