@@ -474,6 +474,7 @@ body.popuped {
 
 #popup_control {
     position: fixed;
+    top: 70px !important;
     right: 0;
     width: 184px;
     height: 130px;

@@ -426,8 +426,6 @@ $(document).ready(function () {
             bottomScrNode.eq(9).css("visibility", "visible");
             sumScore.textContent = (+bottomScrNode.eq(9).text()) + "";
 
-
-
             results = storage.load();
 
             // bind player data
