@@ -1,0 +1,344 @@
+/* 
+    Document   : styles
+    Created on : 10.09.2012, 21:12:45
+    Author     : Viktor Protsenko <pro.victorr@gmail.com>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body {
+    font-family: Arial;
+}
+.x-form-item-label { 
+    font-weight: bold;
+    font-size: 11px;
+    color:  #15428B;
+}
+.x-border-layout-ct {
+    background-color: #fff;
+}
+.x-tree-node-el {
+    font-size: 14px !important;
+    padding: 4px 0 !important;
+}
+
+.x-grid3-cell-inner, .x-grid3-hd-inner {
+    padding: 5px 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.x-form-file-wrap {
+    position: relative;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file {
+    position: absolute;
+    right: 0;
+    -moz-opacity: 0;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file-btn {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.x-form-file-wrap .x-form-file-text {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    color: #777;
+}
+.x-form-file {
+    cursor: pointer;
+}
+
+.image_view_item {
+    width   : 144px;
+    margin  : 10px;
+    box-shadow  : 0 0 3px #aaa;
+}
+
+.image_view_border {
+    width: 164px;
+    float   : left;
+    height: 180px;
+}
+
+.image_view_item_img {
+    border      : 1px solid #777;
+    box-shadow  : 0 0 2px #aaa;
+    background  : #fff;
+}
+.image_view_item_padding {
+    padding: 10px;
+}
+.image_view_item_img img{
+    margin: 1px;
+}
+.image_view_item_name {
+    padding-top: 10px;
+    text-overflow: ellipsis;
+    white-space : nowrap;
+    overflow    : hidden;
+    font-size   : 12px;
+    text-align  : center;
+}
+
+.image_view_item_over .image_view_item{
+    box-shadow  : 0 0 5px #555;
+    cursor: pointer;
+}
+.image_view_item_selected .image_view_item{
+    background  : #D9E8FB;
+    box-shadow  : 0 0 5px #555;
+    font-weight : bold;
+}
+
+.show-label label.x-form-item-label{
+    display: block;
+}
+
+.st-date-time {
+    color: #555;
+    font-size: 11px;
+    margin-left: 5px;
+    font-weight: bold
+}
+
+.st-rating-stars {
+    background  : url(icons/star.png) repeat-x;
+    display     : inline-block;
+    height      :  16px;
+}
+
+.st-rating-stars.s5 {
+    width: 80px;
+}
+.st-rating-stars.s4 {
+    width: 64px;
+}
+.st-rating-stars.s3 {
+    width: 48px;
+}
+.st-rating-stars.s2 {
+    width: 32px;
+}
+.st-rating-stars.s1 {
+    width: 16px;
+}
+
+.eye-grid {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.x-form-field-wrap .x-form-password-trigger {
+    background-image: url('icons/paste_plain.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-position: 50% 50%;
+    border: 1px solid #b5b8c8;
+    width: 30px;
+    height: 20px;
+}
+
+.x-form-field-wrap .x-form-password-trigger.x-form-trigger-over {
+    background-position: 50% 50%;
+    background-color: #fff;
+}
+#msg-div {
+    position: fixed;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: 20000;
+}
+#msg-div .msg {
+    width: 300px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    background: #FFEEBF;
+    border: 2px solid #EFB34A;
+    margin: 3px auto;
+    padding: 10px 15px;
+    color: #555;
+    -moz-box-shadow: 0 5px 8px #ccc;
+    -webkit-box-shadow: 0 5px 8px #ccc;
+    box-shadow: 0 5px 8px #ccc;
+}
+#msg-div .msg h3 {
+    margin: 0 0 8px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#msg-div .msg p {
+    margin: 0;
+    text-align: center;
+}
+#msg-div .msg.success {
+    border-color: green;
+    background-color: #ccff99;
+}
+#msg-div .msg.error {
+    border-color: darkred;
+    background-color: #ffcccc;
+}
+
+.user_type1 td {
+    
+}
+.user_type2 td {
+    /*background-color: #F3E78E;*/
+    /*color: darkred;*/
+}
+
+.ext-cal-day-col .ext-cal-evt {
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.ext-cal-dtitle {
+    cursor: default;
+}
+.ext-cal-day-col-gutter {
+    cursor: pointer;
+}
+
+.ext-cal-ev {
+    cursor: default;
+}
+.x-combo-list-item {
+    border-color: transparent;
+}
+
+.st-ev-inactive {
+    opacity: 0.4;
+}
+.st-ev-onvote {
+    background-image: url('/templates/general/images/bglesson.png') !important; 
+    background-repeat: repeat;
+}
+
+.st-grid-notactive td{
+    color:#888;
+    background-color: #ddd;
+}
+.st-grid-isblocked td {
+    background-color: #ffcccc;
+}
+
+.ext-strict .ext-webkit .x-small-editor .x-form-field-wrap .x-form-trigger {
+    height: 19px;
+}
+
+.st-school-combo {
+    margin-top: 5px;
+}
+
+.field_description {
+    margin-left: 115px;
+    padding: 5px 10px;
+    font-size: 13px;
+    line-height: 16px;
+    background: rgb(201, 230, 142);
+    border: 1px solid #fff;
+}
+
+.st-polls-item {
+    font-size: 12px;
+    border-top: 1px solid #99bbe8;
+    border-bottom: 1px solid #99bbe8;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.st-polls-item-over {
+    background-color: #f8f8f8;
+}
+
+.st-polls-item .st-polls-item-answers {
+    margin-left: 20px;
+}
+
+.st-polls-item .st-polls-item-answers tr td {
+    padding: 5px 10px;
+}
+.st-polls-item .st-polls-item-answers tr td.st-polls-item-answerscount {
+    font-weight: bold;
+    color: #15428b;
+}
+
+.st-polls-item .st-polls-item-title {
+    font-weight: bold;
+    color: #15428b;
+    background-image: url('../js/extjs/resources/images/default/grid/grid3-hrow.gif');
+    background-repeat: repeat-x;
+    line-height: 24px;
+    height: 24px;
+    padding-left: 10px;
+}
+
+.st-polls-item-active, .st-polls-item-notactive  {
+    color: green;
+    display: inline-block;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid #ccc;
+}
+.st-polls-item-notactive {
+    color: #999;
+}
+
+.x-toolbar {
+    background-image: none;
+    background-color: #DEECFD;
+}
+.x-toolbar .x-btn-tl {
+    background-position: 0 0;
+}
+.x-toolbar .x-btn-tr {
+    background-position: -3px 0 ;
+}
+.x-toolbar .x-btn-tc {
+	background-position: 0 -6px;	
+}
+
+.x-toolbar .x-btn-ml {
+    background-position: 0 -24px;
+}
+.x-toolbar .x-btn-mr {
+    background-position: -3px -24px;
+}
+.x-toolbar .x-btn-mc {
+	background-position: 0 -1096px;	
+}
+
+.x-toolbar .x-btn-bl {
+    background-position: 0 -3px;
+}
+.x-toolbar .x-btn-br {
+    background-position: -3px -3px;
+}
+.x-toolbar .x-btn-bc {
+	background-position: 0px -15px;	
+}
+.st-field-description {
+    color: #555;
+}
+.st-only-active-checkbox {
+    padding-left: 20px;
+}
+.st-only-active-checkbox input {
+    vertical-align: top;
+    margin-top: 4px !important;
+    cursor: pointer;
+}
+.st-only-active-checkbox label {
+    font-size: 12px;
+    line-height: 20px;
+    color: #15428b;
+    cursor: pointer;
+    font-weight: bold;
+}

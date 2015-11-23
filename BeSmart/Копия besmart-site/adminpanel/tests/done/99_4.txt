@@ -1,0 +1,20 @@
+a. Last night I {lost} (lose) my keys. I had to ask my neighbours for help. 
+b. I {have lost|'ve lost} (lose) my keys. Can you help me look for them. 
+
+a. I {have visited|'ve visited} (visit) three times. 
+b. Last year I {visited} (visit) Paris.
+
+a. I {knew} (know) my great grandmother for a few years. She died when I was 6.
+b. I {have known|'ve known} (know) my best friend since kindergarten.
+
+a. Sorry, I {have missed|'ve missed} (miss) the bus. I am going to be late.
+b. last week I {missed} (miss) the bus and was late for work.
+
+a. Last month I {went} (go) to Moscow on business.
+b. John is not here. He {has gone|'s gone} (go) out to the shop.
+
+a. We {finished} (finish) repairing the flat a few months ago.
+b. At last we {have finished|'ve finished} (finish) repairing the flat! We are so happy about it!
+
+a. I {have not had|haven't had} (not, have) a lunch yet.
+b. I {didn't have|did not have} (not, have) a lunch yesterday.

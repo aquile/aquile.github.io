@@ -1,0 +1,21 @@
+I {cook} (cook) a desert every Sunday. The desert {is cooked} (cook) every Sunday. 
+
+He {bought} (buy) fish yesterday. Fish {was bought} (buy) yesterday.
+
+She {gave} (give) me the book. The book {was given} (give) to me.
+
+Mona Lisa {was painted} (paint) by Leonardo da Vinci. Leonardo da Vinci {painted} (paint) Mona Lisa.
+
+He {was arrested} (arrest). The police {arrested} (arrest) him.
+
+A thief {has stolen} (steal) the bike. The bike {has been stolen} (steal).
+
+The form {can be obtained} (can, obtain) at the reception. You {can obtain} (can, obtain) the form at the reception.
+
+The operator {enters} (enter) the information into the computer. The information {is entered} (enter) into the computer by the operator.
+
+The editor {will finish} (finish) the brochure next week. The brochure {will be finished} (finish) by the editor next week.
+
+I {was surprised} (surprise) by the news. The news {surprised} (surprise) me.
+
+Three books {are regularly used|are used regularly} (use, regularly) in class. We regularly {use} (use) three books in class.

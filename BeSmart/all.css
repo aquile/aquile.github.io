@@ -2021,3 +2021,22 @@ table.noclass tr td {
 .page_content .page_content div:nth-child(8) tbody tr:nth-child(-n+7) {
     display: none;
 }
+
+.news_item {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: 1px dashed #4fb6d8;
+    width: 500px;
+    min-height: 200px;
+    background-image:url(../images/Have-you-heard.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 534px center;
+    overflow: visible !important;
+    padding-right: 250px !important;
+}
+
+.paging {
+    text-align: center;
+}

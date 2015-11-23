@@ -1,0 +1,2 @@
+[14-Aug-2015 22:29:24 Europe/Helsinki] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/besmarti/public_html/core/phpmailer/class.phpmailer.php:586) in /home/besmarti/public_html/request/request.php on line 305
+[14-Aug-2015 22:29:37 Europe/Helsinki] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/besmarti/public_html/core/phpmailer/class.phpmailer.php:586) in /home/besmarti/public_html/request/request.php on line 305

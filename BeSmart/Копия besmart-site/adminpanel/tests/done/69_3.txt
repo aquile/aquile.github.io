@@ -1,0 +1,17 @@
+Tom {must visit} (must visit/must be visiting/must have visited) his parents more often.
+
+Tom is not here. He {must be visiting} (must visit /must be visiting/must have visited) his parents now.
+
+I have seen Tom today. He {must have visited} (must visit /must be visiting/must have visited) his parents already.
+
+He {may be working} (may work/may have worked/may be working) in the garden now.
+
+There is nobody in the garden. He {may have finished} (may finish/may have finished/may be finishing) the work already.
+
+There is nobody in the classroom, the lessons {must have finished} (must finish/must be finishing/must have finished) already. 
+
+The lesson is over. Children {may go} (may be going/may have gone/may go) home.
+
+The lesson is over and children aren't at home yet. They {may be going} (may be going/may have gone/may go) home now.
+
+The lesson was over 2 hours ago. Children {may have gone} (may be going/may have gone/may go) home already.

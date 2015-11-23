@@ -1,0 +1,38 @@
+<IfModule mod_deflate.c>
+          AddOutputFilterByType DEFLATE text/html text/plain text/xml application/x-json
+</IfModule>
+
+
+Options +FollowSymLinks
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^besmart.in.ua
+    RewriteRule (.*) http://www.besmart.in.ua/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+
+        RewriteRule ^index\.html$ http://www.besmart.in.ua/ [R=301,L]
+
+        RewriteRule ^panel([^\/]{0,})/?$ adminpanel/index.php?dep=$1
+
+        # Data handlers
+        RewriteRule ^panel([^\/]{0,})/data/(.+)/new/?$ adminpanel/data.php?entity=$2&action=new&dep=$1
+        RewriteRule ^panel([^\/]{0,})/data/(.+)/update/(.+)$ adminpanel/data.php?entity=$2&action=update&id=$3&dep=$1
+        RewriteRule ^panel([^\/]{0,})/data/(.+)/delete/(.+)$ adminpanel/data.php?entity=$2&action=delete&id=$3&dep=$1
+        RewriteRule ^panel([^\/]{0,})/data/(.+)/service/(.+)$ adminpanel/data.php?entity=$2&action=$3&dep=$1
+        
+        RewriteRule ^panel([^\/]{0,})/data/(.+)/?$ adminpanel/data.php?entity=$2&action=list&dep=$1
+        RewriteRule ^panel([^\/]{0,})/data/?$ adminpanel/data.php?entity=pages&action=list&dep=$1
+        
+        RewriteRule ^panel([^\/]{0,})/(.*)$ adminpanel/$2
+
+
+        # Images
+        RewriteRule ^images/([^/]+)/(\d+)/(\d+)/(.+)?$ imageIndex.php?type=$1&width=$2&height=$3&name=$4
+
+        RewriteRule ^([a-zA-Z0-9_\-а-я]+)/?$ index.php?page=$1&subpage=&param=
+        RewriteRule ^([a-zA-Z0-9_\-а-я]+)/([a-zA-Z0-9_\-а-я]+)/?$ index.php?page=$1&subpage=$2&param=
+        RewriteRule ^([a-zA-Z0-9_\-а-я]+)/([a-zA-Z0-9_\-а-я]+)/([a-zA-Z0-9_\-а-я]+)/?$ index.php?page=$1&subpage=$2&param=$3
+
+
+ErrorDocument 404 /not_found

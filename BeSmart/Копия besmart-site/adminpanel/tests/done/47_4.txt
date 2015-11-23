@@ -1,0 +1,19 @@
+7 - {seven}
+
+11 - {eleven}
+
+13 - {thirteen}
+
+8 - {eight}
+
+18 - {eighteen}
+
+98 - {ninety-eight}
+
+127 - {one hundred twenty-seven}
+
+480 - {four hundred-eighty}
+
+861 - {eight hundred sixty-one}
+
+1000 - {one thousand}

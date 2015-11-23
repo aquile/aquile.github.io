@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "myspace"
+AuthUserFile "/home/besmarti/.htpasswds/public_html/adminpanel/passwd"
+require valid-user
