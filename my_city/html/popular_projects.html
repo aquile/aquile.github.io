@@ -22,8 +22,8 @@
 <div class="map__pop--wrp">
     <a href="#" class="new-idea">Запропонувати ідею</a>
 
-    <div class="map-controller controller bold active-green">Мапа</div>
-    <div class="popular-controller controller bold">Популярні</div>
+    <div class="map-controller controller bold">Мапа</div>
+    <div class="popular-controller controller bold active-green">Популярні</div>
 
     <div class="popular-wrp wrappers">
         <h2 class="light">Знайдіть ідею яка Вас зацікавить</h2>
@@ -183,17 +183,17 @@
     $(document).ready(function(){
         var wrappers = $(".wrappers"),
                 cntrls = $(".controller");
-        cntrls.eq(0).on("click", function(){
-            cntrls.eq(1).removeClass("active-green");
-            cntrls.eq(0).addClass("active-green");
+        cntrls.eq(1).on("click", function(){
+            cntrls.eq(0).removeClass("active-green");
+            cntrls.eq(1).addClass("active-green");
 
             wrappers.eq(0).removeClass("hide");
             wrappers.eq(1).addClass("hide");
         });
 
-        cntrls.eq(1).on("click", function(){
-            cntrls.eq(0).removeClass("active-green");
-            cntrls.eq(1).addClass("active-green");
+        cntrls.eq(0).on("click", function(){
+            cntrls.eq(1).removeClass("active-green");
+            cntrls.eq(0).addClass("active-green");
 
             wrappers.eq(1).removeClass("hide");
             wrappers.eq(0).addClass("hide");
