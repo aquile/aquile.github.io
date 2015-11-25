@@ -22,14 +22,14 @@
 <div class="map__pop--wrp">
     <a href="#" class="new-idea">Запропонувати ідею</a>
 
-    <div class="map-controller bold">Мапа</div>
-    <div class="popular-controller bold active-green">Популярні</div>
+    <div class="map-controller controller bold active-green">Мапа</div>
+    <div class="popular-controller controller bold">Популярні</div>
 
-    <div class="popular-wrp">
+    <div class="popular-wrp wrappers">
         <h2 class="light">Знайдіть ідею яка Вас зацікавить</h2>
 
         <ul class="interesting">
-            <li class="interesting__img"><img src="../images/cafe.jpg"/>
+            <li class="interesting__img"><img src="http://lorempixel.com/700/600/"/>
             <li class="interesting__story">
                 <div class="story-header">Проект тижня</div>
 
@@ -74,7 +74,7 @@
 
             <div class="popular">
                 <div class="popular__img">
-                    <img src="../images/cafe.jpg"/>
+                    <img src="http://lorempixel.com/700/600/"/>
                 </div>
 
                 <div class="popular__story">
@@ -88,6 +88,7 @@
                             порятунку екології нашого міста!</p>
 
                         <h6 class="light light-blue">вул. В’ячеслава Чорновола 15</h6>
+
                         <div class="progressbar_outer">
                             <div class="progressbar_inner"></div>
                         </div>
@@ -122,11 +123,82 @@
             <div class="justify-line"></div>
         </div>
 
-        <div class="map-wrp"></div>
+    </div>
+    <div class="map-wrp wrappers hide">
+        <div class="tend-wrp">
+
+            <div class="tend-wrp__nav">
+
+                <h4>Напрямки</h4>
+
+                <div class="tend-wrp__nav--directions">
+                    <div class="all">Усі напрямки</div>
+                    <div>міська інфраструктура</div>
+                    <div>озеленення</div>
+                    <div>освіта</div>
+                    <div>соціальна сфера</div>
+                </div>
+            </div>
+            <div class="pop-wrp__list">
+
+                <div class="map-in-popular">
+                    <img src="https://lh6.googleusercontent.com/q0CXP6kw9yTiDNkB2pdTQExys_Ih_e0QVb02ITBaZbyeWi_bVTYp_emueJQWp0K9kCaCqorK-kO27zhhQlutXjUxJffpLlcUSDl9ujF_nfRoHiXKJZw"
+                         alt="lorem"/>
+                </div>
+                <div class="map-search">
+                    <label><input type="text" placeholder="Пошук"/></label>
+                </div>
+
+                <div class="map-info">
+                    <h5 class="light">Міська інфраструктура</h5>
+
+                    <p class="city">
+                        <span class="goal light">Реставруємо фонтан</span>
+                        <span class="point light light-blue">вул. В’ячеслава Чорновола 15</span>
+                        <span class="progressbar_outer"><span class="progressbar_inner"></span></span>
+                    </p>
+                    <h5 class="light">Озеленення</h5>
+                    <p class="tree">
+                        <span class="goal light">Йдемо саджати дерева</span>
+                        <span class="point light light-blue">вул. Хрещатик</span>
+                        <span class="progressbar_outer"><span class="progressbar_inner"></span></span>
+                    </p>
+                    <p class="tree">
+                        <span class="goal light">Йдемо саджати дерева</span>
+                        <span class="point light light-blue">вул. Хрещатик</span>
+                        <span class="progressbar_outer"><span class="progressbar_inner"></span></span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </div>
 
 
 <div id="footer"></div>
+
+<script>
+    $(document).ready(function(){
+        var wrappers = $(".wrappers"),
+                cntrls = $(".controller");
+        cntrls.eq(0).on("click", function(){
+            cntrls.eq(1).removeClass("active-green");
+            cntrls.eq(0).addClass("active-green");
+
+            wrappers.eq(0).removeClass("hide");
+            wrappers.eq(1).addClass("hide");
+        });
+
+        cntrls.eq(1).on("click", function(){
+            cntrls.eq(0).removeClass("active-green");
+            cntrls.eq(1).addClass("active-green");
+
+            wrappers.eq(1).removeClass("hide");
+            wrappers.eq(0).addClass("hide");
+        });
+    })
+</script>
 </body>
 </html>
