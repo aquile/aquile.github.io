@@ -1105,3 +1105,151 @@ footer h2 {
 }
 
 /*---------------------------------------------POPULAR PROJECTS PAGE STYLING END-------------------------------*/
+
+/*---------------------------------------------TENDER DETAILS PAGE STYLING START-------------------------------*/
+.tend-det-main--wrp {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 847px;
+    margin: 0 auto;
+    background: #f7fafa;
+    text-align: center;
+    color: #4a505a;
+    border: 1px solid #d9d9de;
+    border-radius: 7px;
+}
+
+.ten-det--wrp {
+    display: block;
+    width: 100%;
+    height: 665px;
+    margin: 0 auto;
+    -webkit-transition: all ease-in-out 0.4s;
+    -moz-transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.4s;
+}
+
+.ten-det--wrp h2 {
+    font-size: 37px;
+    padding: 18px 0 13px;
+}
+
+.ten-det--wrp h3 {
+    font-size: 21px;
+    padding-bottom: 23px;
+    color: #777e89;
+}
+
+.td-interesting {
+    display: block;
+    width: 100%;
+    max-width: 1152px;
+    height: 665px;
+    margin: 0 auto;
+    padding: 55px 55px 0;
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #d9d9de;
+    overflow: hidden;
+    text-align: left;
+}
+
+.td-interesting__img, .td-interesting__story {
+    display: inline-block;
+    width: 47.5%;
+    height: 361px;
+    vertical-align: top;
+}
+
+.td-interesting__img {
+    padding-right: 5%;
+}
+
+.td-interesting__img img {
+    display: block;
+    width: 100%;
+    height: 323px;
+}
+
+.td-interesting__story .story-header {
+    font-size: 32px;
+    color: #494949;
+    padding-bottom: 36px;
+
+}
+
+.interesting__story .story-body h4 {
+    font-size: 37px;
+    padding: 18px 0 13px;
+}
+
+.interesting__story .story-body h5 {
+    font-size: 21px;
+    padding-bottom: 23px;
+    color: #777e89;
+}
+
+.td-interesting__story > p {
+    max-height: 210px;
+    overflow: hidden;
+    font-size: 28px;
+    line-height: 44px;
+    padding-bottom: 35px;
+    color: #777e89;
+}
+
+.td-interesting .progress-block {
+    display: block;
+    width: 100%;
+    padding: 21px 50px 10px;
+    background: #f7fafa;
+}
+
+.td-interesting .progressbar_outer {
+    display: block;
+    width: 100%;
+    height: 6px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    background: rgba(106, 223, 117, 0.3);
+}
+
+.td-interesting .progressbar_inner {
+    display: block;
+    width: 59%;
+    height: 6px;
+    border-radius: 6px;
+    background: #6adf75;
+}
+
+.td-interesting__story--info {
+    display: inline-block;
+    width: 24%;
+}
+
+.td-interesting__story .count {
+    font-size: 19px;
+}
+
+.td-interesting__story .bottom {
+    font-size: 14px;
+    color: #777e89;
+}
+
+.td-interesting .take-part-btn {
+    display: block;
+    width: 265px;
+    height: 62px;
+    margin: 35px auto 0;
+    background: #6adf75;
+    border-radius: 7px;
+    font-size: 21px;
+    line-height: 63px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*---------------------------------------------TENDER DETAILS PAGE STYLING END-------------------------------*/
