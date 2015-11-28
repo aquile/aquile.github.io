@@ -224,3 +224,24 @@
 </div>
 </div>
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+<!--- blog date by Nastia wishes --->
+
+				<div class="blog-info">
+
+					<?php if(isset($pmc_data['single_display_post_meta'])) { ?>
+					<div class = "post-meta">
+					<?php
+					$day = get_the_time('d');
+					$month= get_the_time('m');
+					$year= get_the_time('Y');
+					?>
+					<?php echo '<a class="post-meta-time" href="'.get_day_link( $year, $month, $day ).'">'; ?><?php the_time('F j, Y') ?></a><a class="post-meta-author" href="<?php echo  the_author_meta( 'user_url' ) ?>"><?php _e('by ','pmc-themes'); echo get_the_author(); ?></a>
+					</div>
+					<?php } ?> <!-- end of post meta -->

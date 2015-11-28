@@ -1,3 +1,5 @@
+@import "media-900px.css" screen;
+
 @font-face {
     font-family: 'sfns_displayregular';
     src: url('../fonts/system_san_francisco_display_regular-webfont.eot');
@@ -21,15 +23,15 @@ body {
 }
 
 .light {
-    font-weight: 300;
+    font-weight: 300 !important;
 }
 
 .semi-bold {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 .bold {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 /*----------------------------------------HEADER STYLING------------------------------------------------------*/
@@ -1252,4 +1254,207 @@ footer h2 {
     text-align: center;
 }
 
-/*---------------------------------------------TENDER DETAILS PAGE STYLING END-------------------------------*/
+/*---------------------------------------------PROJECT DETAILS PAGE STYLING END-------------------------------*/
+
+.project-det-main-wrp {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    min-height: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #f7fafa;
+    text-align: center;
+    color: #4a505a;
+}
+
+.project-det-main-wrp > h2 {
+    font-size: 39px;
+    padding-top: 18px;
+}
+
+.project-det-main-wrp > h3 {
+    font-size: 22px;
+    color: #777e89;
+
+}
+
+.project-det-main-wrp > h4 {
+    display: block;
+    max-width: 1140px;
+    width: 100%;
+    margin: 41px auto 0;
+    padding: 0 20px;
+    font-size: 39px;
+    color: #494949;
+    text-align: left;
+}
+
+.project-det-main-wrp > p {
+    display: block;
+    max-width: 1140px;
+    margin: 29px auto 0;
+    padding: 0 20px;
+    font-size: 29px;
+    line-height: 46px;
+    color: #777e89;
+    text-align: left;
+}
+
+.project-det-main-wrp__story {
+    display: block;
+    width: 100%;
+    max-width: 1152px;
+    height: 539px;
+    margin: 30px auto 0;
+    padding: 46px 50px;
+    background: #FFFFFF;
+    border: 1px solid #d9d9de;
+}
+
+.project-det-main-wrp__story > img {
+    display: inline-block;
+    width: 64%;
+    height: 445px;
+}
+
+.project-det-main-wrp__story .info {
+    display: inline-block;
+    width: 34%;
+    height: 445px;
+    padding-left: 40px;
+    padding-top: 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.project-det-main-wrp__story .info .count {
+    display: block;
+    font-size: 33px;
+    line-height: 46px;
+    margin-top: 19px;
+    padding-left: 40px;
+}
+
+.project-det-main-wrp__story .info .int {
+    display: block;
+    font-size: 20px;
+    color: #494949;
+}
+
+.project-det-main-wrp__story .info .adress {
+    display: block;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.project-det-main-wrp .btn {
+    display: block;
+    width: 100%;
+    max-width: 276px;
+    height: 64px;
+    margin: 19px auto 0;
+    background: #6adf75;
+    border-radius: 7px;
+    font-size: 22px;
+    line-height: 65px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.info .members .count {
+    background: url("../images/Man@2x.png") 0 center no-repeat;
+    -webkit-background-size: 25px;
+    background-size: 25px;
+}
+
+.info .money .count {
+    background: url("../images/Shape@2x.png") 0 center no-repeat;
+    -webkit-background-size: 25px;
+    background-size: 25px;
+}
+
+.info .date .count {
+    background: url("../images/Clock@2x.png") 0 center no-repeat;
+    -webkit-background-size: 25px;
+    background-size: 25px;
+}
+
+.comments .input {
+    display: block;
+    width: 100%;
+    max-width: 1140px;
+    margin: 16px auto;
+    padding: 0 20px;
+    font-size: 22px;
+    color: #9197a3;
+    text-align: left;
+}
+
+.comments .input input {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: 64px;
+    margin: 16px auto;
+    padding-left: 45px;
+    font-size: 22px;
+    border-radius: 6px;
+    border: 1px solid #d9d9de;
+    color: #000000;
+}
+
+.comments .comment {
+    display: block;
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 20px 20px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.comments .comment > img {
+    display: inline-block;
+    height: 52px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.comments .comment .member-info {
+    display: inline-block;
+    height: 52px;
+    vertical-align: top;
+}
+
+.comment .member-info .name {
+    font-size: 17px;
+    color: #777e89;
+    padding-left: 20px;
+}
+
+.comment .member-info .date {
+    font-size: 16px;
+    color: #9197a3;
+    padding-left: 20px;
+}
+
+.comment .message {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 60px;
+    margin: 12px auto 0;
+    padding-left: 45px;
+    background: #d3e0f5;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #9197a3;
+}
+
+.comment .message > p {
+    padding: 16px 0;
+}
