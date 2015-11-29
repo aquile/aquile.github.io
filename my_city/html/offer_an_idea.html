@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tenders</title>
+    <title>Popular projects</title>
     <link rel="stylesheet" href="../css/reset.css"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="shortcut icon"
@@ -12,7 +12,7 @@
     <script src="../javascript/jquery-1.11.3.min.js"></script>
     <script>
         $(function () {
-            $("#header").load("header.html");
+            $("#header").load("header-profile-page.html");
             $("#footer").load("footer.html");
         });
     </script>
@@ -20,8 +20,76 @@
 <body>
 <div id="header"></div>
 
-div.offer_1
+<div class="offer-main-wrp">
+    <div class="offer-wrp-1">
+        <h1 class="light"><span class="text-green light">Що</span> Ви хочете запропонувати?</h1>
 
+        <h2>Я пропоную</h2>
+
+        <label class="light"><input type="text" placeholder="Назва Вашої ідеї"/></label>
+        <label class="light"><input type="text"/></label>
+
+        <h3 class="light">у Моєму Місті</h3>
+
+        <div class="start light-blue">Почати</div>
+
+    </div>
+
+    <div class="offer-wrp-2">
+        <h1 class="light"><span class="text-green light">де</span> Посадити дерева</h1>
+
+        <div class="set-adress">
+            <span>За адресою</span>
+            <label><input type="text" placeholder=""/></label>
+        </div>
+
+        <div class="map"><img src="../images/map@3x.png" alt="map"/></div>
+
+        <div class="nav">
+            <div class="back">Назад</div>
+            <div class="next light-blue">Далі</div>
+        </div>
+    </div>
+
+
+    <div class="offer-wrp-4">
+        <h2 class="light">Йдемо саджати дерева</h2>
+
+        <h3 class="light">команда “Моє Місто”</h3>
+
+        <div class="project-det-main-wrp__story">
+            <img src="http://lorempixel.com/700/600/" alt="img"/>
+
+            <div class="info">
+                <div class="members"><span class="count semi-bold">500</span><span class="int light">учасників</span>
+                </div>
+                <div class="money"><span class="count semi-bold">1500</span><span
+                        class="int light">вартість проекту <span>5000</span> грн.</span>
+                </div>
+                <div class="date"><span class="count semi-bold">20.06.2015 <span class="light">12.00</span></span><span
+                        class="int light">дата та час виконання</span></div>
+                <span class="adress light-blue">вул. В’ячеслава Чорновола 15</span>
+
+                <div class="btn">Допомогти проекту</div>
+            </div>
+        </div>
+
+        <h4>Опис ідеї</h4>
+
+        <p class="light">Територіальний устрій – національно-територіальна організація держави, що охоплює правове
+            становище
+            складових
+            частин держави (республік, штатів, провінцій, земель, кантонів тощо) і порядок взаємовідносин між
+            центральними
+            та місцевими органами влади.
+        </p>
+
+        <div class="nav">
+            <div class="back">Назад</div>
+            <div class="submit">Подати</div>
+        </div>
+    </div>
+</div>
 <div id="footer"></div>
 </body>
 </html>
