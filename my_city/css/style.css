@@ -1961,7 +1961,7 @@ footer a:hover {
     left: 57px;
 }
 
-.profile-top-wrp  .switch-info > .btn {
+.profile-top-wrp .switch-info > .btn {
     display: inline-block;
     padding: 0 15px;
     font-size: 20px;
@@ -1976,7 +1976,7 @@ footer a:hover {
     border-bottom: 2px solid #ffc107;
 }
 
-.profile-top-wrp  .switch-info > .btn.underline {
+.profile-top-wrp .switch-info > .btn.underline {
     border-bottom: 2px solid #ffc107;
 }
 
@@ -2269,6 +2269,177 @@ footer a:hover {
     transform: scale(1.15, 1.15);
 }
 
+.offer-wrp-3 {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1152px;
+    min-height: 1200px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    text-align: center;
+    color: #4a505a;
+    border: 1px solid #d9d9de;
+    border-bottom: none;
+    border-top: none;
+}
+
+.offer-wrp-3 > h2 {
+    font-size: 42px;
+    padding: 90px 0 42px;
+}
+
+.offer-wrp-3 > p {
+    font-size: 24px;
+    padding-bottom: 45px;
+}
+
+.input-cover {
+    display: block;
+    position: relative;
+    width: 900px;
+    max-width: 940px;
+    margin: 0 auto 45px;
+    padding: 0 144px 17px 25px;
+    background: #f7fafa;
+    border-radius: 8px;
+    text-align: left;
+    color: #777e89;
+}
+
+.input-cover > p {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 13px 0;
+}
+
+.input-cover .select, .input-cover select, .input-cover input {
+    display: inline-block;
+    position: relative;
+    width: 769px;
+
+    background: #FFFFFF;
+    border: 1px solid #d9d9de;
+    border-radius: 8px;
+}
+
+.input-cover .checkbox {
+    display: block;
+    position: absolute;
+    top: 58%;
+    right: 35px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #d9d9de;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+.input-cover .checkbox.valid {
+    background: url("../images/checkbox-00@3x.png") center center no-repeat;
+    -webkit-background-size: 14px 10px;
+    background-size: 14px 10px;
+}
+
+.drag-n-drop .select {
+    height: 99px;
+    padding: 27px 0 0 85px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #959ba4;
+    background: #FFFFFF url("../images/photo-icon@3x.png") 25px center no-repeat;
+    -webkit-background-size: 40px 35px;
+    background-size: 40px 35px;
+}
+
+.drag-n-drop .choose {
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 29px;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.15s;
+    -moz-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
+}
+
+.drag-n-drop .choose:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.input-cover select {
+    height: 40px;
+    padding: 27px 0 0 85px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #959ba4;
+    background: #FFFFFF url("../images/clock@3x.png") 25px center no-repeat;
+    -webkit-background-size: 23px 23px;
+    background-size: 23px 23px;
+}
+
+.input-cover option {
+    padding-left: 85px;
+}
+
+.radio-btns label {
+    display: inline-block;
+    width: 15%;
+}
+
+.input-cover[type="radio"] {
+
+}
+
+.details input {
+    height: 190px;
+}
+
+.add-file {
+    position: absolute;
+    bottom: 35px;
+    right: 170px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.15s;
+    -moz-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
+}
+
+.add-file:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.offer-wrp-3 .back {
+    color: #999ca3;
+}
+
+.offer-wrp-3 .nav {
+    display: block;
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 50px 0 87px;
+    text-align: right;
+}
+
+.offer-wrp-3 .back, .offer-wrp-3 .next {
+    display: inline-block;
+    font-size: 28px;
+    padding-left: 59px;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.15s;
+    -moz-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
+}
+
+.offer-wrp-3 .back:hover, .offer-wrp-3 .next:hover {
+    transform: scale(1.15, 1.15);
+}
+
 .offer-wrp-4 {
     display: block;
     position: relative;
@@ -2445,3 +2616,5 @@ footer a:hover {
     transform: scale(1.05, 1.05);
     box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.44);
 }
+
+
