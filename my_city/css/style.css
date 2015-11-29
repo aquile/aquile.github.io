@@ -1761,7 +1761,7 @@ footer a:hover {
     border-bottom: 2px solid #2196f3;
 }
 
-.switch-info > .btn.underline {
+.company-top-wrp .switch-info > .btn.underline {
     border-bottom: 2px solid #2196f3;
 }
 
@@ -1934,7 +1934,7 @@ footer a:hover {
     padding-left: 0;
 }
 
-.switch-info {
+.profile-top-wrp .switch-info {
     display: block;
     position: relative;
     width: 100%;
@@ -1949,7 +1949,7 @@ footer a:hover {
     color: #9197a3;
 }
 
-.switch-info:after {
+.profile-top-wrp .switch-info:after {
     content: "";
     display: block;
     position: absolute;
@@ -1961,7 +1961,7 @@ footer a:hover {
     left: 57px;
 }
 
-.switch-info > .btn {
+.profile-top-wrp  .switch-info > .btn {
     display: inline-block;
     padding: 0 15px;
     font-size: 20px;
@@ -1972,11 +1972,11 @@ footer a:hover {
     cursor: pointer;
 }
 
-.switch-info > .btn:hover {
+.profile-top-wrp .switch-info > .btn:hover {
     border-bottom: 2px solid #ffc107;
 }
 
-.switch-info > .btn.underline {
+.profile-top-wrp  .switch-info > .btn.underline {
     border-bottom: 2px solid #ffc107;
 }
 
