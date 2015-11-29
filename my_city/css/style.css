@@ -129,7 +129,7 @@ footer h2 {
     line-height: 43px;
     border-radius: 4px;
 
-    box-shadow: -1px 1px 1px #d9d9de;
+    box-shadow: -2px 2px 4px #89898A;
     -webkit-transition: all ease-in-out 0.15s;
     -moz-transition: all ease-in-out 0.15s;
     -o-transition: all ease-in-out 0.15s;
@@ -138,8 +138,9 @@ footer h2 {
 }
 
 .new-idea__footer:hover {
+    text-decoration: none !important;
     transform: scale(1.05, 1.05);
-    box-shadow: -3px 3px 10px #aaa;
+    box-shadow: -3px 3px 10px #89898A;
 }
 
 .footer-contacts {
@@ -244,6 +245,9 @@ footer h2 {
     background-size: contain;
 }
 
+footer a:hover {
+    text-decoration: underline;
+}
 /*---------------------------------------------END OF FOOTER STYLING----------------------------------------------*/
 
 /*---------------------------------------------MAIN PAGE STYLING START----------------------------------------------*/
@@ -1830,6 +1834,7 @@ footer h2 {
     background: #f7fafa url("../images/home@3x.png") 40px center no-repeat;
     -webkit-background-size: 20px;
     background-size: 20px;
+    text-align: left;
 }
 
 .company-bottom-wrp .city .goal {
