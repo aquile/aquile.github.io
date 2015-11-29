@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_city/css/media-900px.css" afterPath="$PROJECT_DIR$/my_city/css/media-900px.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_city/html/project_details.html" afterPath="$PROJECT_DIR$/my_city/html/project_details.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_city/css/style.css" afterPath="$PROJECT_DIR$/my_city/css/style.css" />
     </list>
     <ignored path="aquile.github.io.iws" />
@@ -50,8 +48,8 @@
           <file leaf-file-name="media-900px.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/my_city/css/media-900px.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.57931036">
-                  <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="40" selection-end-column="5" />
+                <state vertical-scroll-proportion="0.7862069">
+                  <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="37" />
                   <folding />
                 </state>
               </provider>
@@ -115,11 +113,12 @@
             <entry file="file://$PROJECT_DIR$/my_city/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="1109" column="4" selection-start-line="1109" selection-start-column="4" selection-end-line="1109" selection-end-column="4" />
+                  <caret line="1131" column="4" selection-start-line="1131" selection-start-column="4" selection-end-line="1131" selection-end-column="4" />
                   <folding>
-                    <marker date="1448794918000" expanded="true" signature="5090:5515" placeholder="{...}" />
-                    <marker date="1448794918000" expanded="true" signature="23405:23544" placeholder="{...}" />
-                    <marker date="1448794918000" expanded="true" signature="27427:27668" placeholder="{...}" />
+                    <marker date="1448798463000" expanded="true" signature="2434:2789" placeholder="{...}" />
+                    <marker date="1448798463000" expanded="true" signature="5714:6139" placeholder="{...}" />
+                    <marker date="1448798463000" expanded="true" signature="24029:24168" placeholder="{...}" />
+                    <marker date="1448798463000" expanded="true" signature="28051:28292" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -132,10 +131,10 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/my_city/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8965517">
-                  <caret line="1388" column="0" selection-start-line="1388" selection-start-column="0" selection-end-line="1388" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.62068963">
+                  <caret line="216" column="5" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
                   <folding>
-                    <marker date="1448794918000" expanded="true" signature="23405:23544" placeholder="{...}" />
+                    <marker date="1448798463000" expanded="true" signature="24029:24168" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -1059,18 +1058,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_city/css/media-900px.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57931036">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="40" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.7862069">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_city/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8965517">
-          <caret line="1388" column="0" selection-start-line="1388" selection-start-column="0" selection-end-line="1388" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.62068963">
+          <caret line="216" column="5" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
           <folding>
-            <marker date="1448794918000" expanded="true" signature="23405:23544" placeholder="{...}" />
+            <marker date="1448798463000" expanded="true" signature="24029:24168" placeholder="{...}" />
           </folding>
         </state>
       </provider>
