@@ -254,6 +254,18 @@ footer h2 {
     line-height: 43px;
     border-radius: 0 0 4px 4px;
     text-align: center;
+
+    box-shadow: -1px 1px 1px #d9d9de;
+    -webkit-transition: all ease-in-out 0.15s;
+    -moz-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
+    cursor: pointer;
+}
+
+.new-idea:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: -3px 3px 10px #aaa;
 }
 
 .main_image {
@@ -1253,7 +1265,8 @@ footer h2 {
     text-align: center;
 }
 
-/*---------------------------------------------PROJECT DETAILS PAGE STYLING END-------------------------------*/
+/*---------------------------------------------TENDER DETAILS PAGE STYLING END-------------------------------*/
+/*---------------------------------------------PROJECT DETAILS PAGE STYLING START-------------------------------*/
 
 .project-det-main-wrp {
     display: block;
@@ -1360,6 +1373,18 @@ footer h2 {
     line-height: 65px;
     color: #FFFFFF;
     text-align: center;
+
+    box-shadow: 0 0 1px #d9d9de;
+    -webkit-transition: all ease-in-out 0.15s;
+    -moz-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
+    cursor: pointer;
+}
+
+.project-det-main-wrp .btn:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: -3px 3px 10px #aaa;
 }
 
 .info .members .count {
@@ -1412,6 +1437,7 @@ footer h2 {
     margin: 30px auto 0;
     text-align: left;
 }
+
 .interesting__story .story-header::after {
     content: "";
     display: block;
@@ -1490,5 +1516,122 @@ footer h2 {
 /*-------------POPUP--------------*/
 
 .hidden {
-    display: none;
+    display: none !important;
 }
+
+.hidden-body {
+    overflow: hidden;
+}
+
+.popup__hide-all {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(119, 119, 119, 0.40);
+}
+
+.popup__choose-help {
+    display: block;
+    width: 750px;
+    height: 375px;
+    position: absolute;
+    top: calc(50% - 190px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #d9d9de;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup__choose-help > h6 {
+    font-size: 27px;
+    color: #4a505a;
+    margin: 0 auto;
+    padding: 53px 0 67px;
+}
+
+.popup__choose-help .switch {
+    display: inline-block;
+    width: 184px;
+    color: #9197a3;
+    vertical-align: top;
+}
+
+.popup__choose-help .switch.middle {
+    width: 274px;
+}
+
+.popup__choose-help .btn {
+    display: block;
+    width: 184px;
+    height: 60px;
+    margin: 0 0 22px;
+    border-radius: 7px;
+    box-shadow: -3px 3px 3px #d9d9de;
+    color: #FFFFFF;
+    font-size: 21px;
+    line-height: 61px;
+    -webkit-transition: all ease-in-out 0.15s;
+    -moz-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
+    cursor: pointer;
+}
+
+.popup__choose-help .btn:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: -3px 3px 10px #aaa;
+}
+
+.orange {
+    background: #ffc107;
+}
+
+.green {
+    background: #6adf75;
+    margin: 0 auto 22px !important;
+}
+
+.blue {
+    background: #2196f3;
+}
+
+.popup__choose-help .skills {
+    width: 184px;
+    margin: 0 auto;
+}
+
+.popup__close {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    background: url("../images/rectangle-371@3x.png") center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 0.15s;
+    -moz-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
+}
+
+.popup__close:hover {
+    width: 19px;
+    height: 19px;
+    top: 16px;
+    right: 16px;
+}
+
+/*---------------------------------------------PROJECT DETAILS PAGE STYLING END-------------------------------*/

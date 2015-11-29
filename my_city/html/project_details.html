@@ -82,22 +82,23 @@
 </div>
 <div class="popup__hide-all hidden">
     <div class="popup__choose-help">
-        <h6>Оберіть, яким способом Ви хочете допомогти</h6>
+        <div class="popup__close"></div>
+        <h6 class="light">Оберіть, яким способом Ви хочете допомогти</h6>
 
-        <div class="switch">
-            <div class="btn">Я волонтер</div>
+        <div class="switch ">
+            <div class="btn orange light">Я волонтер</div>
             <div class="skills">Я можу допомогти
                 своїми силами
             </div>
         </div>
-        <div class="switch">
-            <div class="btn">Я інвестор</div>
+        <div class="switch middle">
+            <div class="btn green light">Я інвестор</div>
             <div class="skills">Я можу допомогти
                 своїми грошами
             </div>
         </div>
-        <div class="switch">
-            <div class="btn">Я спеціаліст</div>
+        <div class="switch ">
+            <div class="btn blue light">Я спеціаліст</div>
             <div class="skills">Я можу допомогти
                 своїми знаннями
             </div>
@@ -106,5 +107,22 @@
 </div>
 
 <div id="footer"></div>
+
+<script>
+    $(document).ready(function () {
+        var toHelpBtn = $(".project-det-main-wrp .btn"),
+                toClosePopupBtn = $(".popup__close");
+
+        toHelpBtn.on("click", function () {
+            $("body").addClass("hidden-body");
+            $(".popup__hide-all").removeClass("hidden");
+        });
+
+        toClosePopupBtn.on("click", function () {
+            $("body").removeClass("hidden-body");
+            $(".popup__hide-all ").addClass("hidden");
+        })
+    })
+</script>
 </body>
 </html>

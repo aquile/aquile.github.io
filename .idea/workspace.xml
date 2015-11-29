@@ -50,8 +50,8 @@
           <file leaf-file-name="media-900px.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/my_city/css/media-900px.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.2689655">
-                  <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
+                <state vertical-scroll-proportion="0.57931036">
+                  <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="40" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -74,7 +74,7 @@
           <file leaf-file-name="tender_details.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/my_city/html/tender_details.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="16.416666">
+                <state vertical-scroll-proportion="22.041666">
                   <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
                   <folding />
                 </state>
@@ -84,8 +84,8 @@
           <file leaf-file-name="project_details.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/my_city/html/project_details.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-19.833334">
-                  <caret line="82" column="27" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="27" />
+                <state vertical-scroll-proportion="-21.708334">
+                  <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -115,9 +115,11 @@
             <entry file="file://$PROJECT_DIR$/my_city/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="1097" column="4" selection-start-line="1097" selection-start-column="4" selection-end-line="1097" selection-end-column="4" />
+                  <caret line="1109" column="4" selection-start-line="1109" selection-start-column="4" selection-end-line="1109" selection-end-column="4" />
                   <folding>
-                    <marker date="1448791700000" expanded="true" signature="23082:23221" placeholder="{...}" />
+                    <marker date="1448794918000" expanded="true" signature="5090:5515" placeholder="{...}" />
+                    <marker date="1448794918000" expanded="true" signature="23405:23544" placeholder="{...}" />
+                    <marker date="1448794918000" expanded="true" signature="27427:27668" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -130,10 +132,10 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/my_city/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5487106">
-                  <caret line="1475" column="23" selection-start-line="1475" selection-start-column="23" selection-end-line="1475" selection-end-column="23" />
+                <state vertical-scroll-proportion="0.8965517">
+                  <caret line="1388" column="0" selection-start-line="1388" selection-start-column="0" selection-end-line="1388" selection-end-column="0" />
                   <folding>
-                    <marker date="1448791700000" expanded="true" signature="23082:23221" placeholder="{...}" />
+                    <marker date="1448794918000" expanded="true" signature="23405:23544" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -210,9 +212,9 @@
         <option value="$PROJECT_DIR$/my_city/html/popular_projects.html" />
         <option value="$PROJECT_DIR$/mannequin-parade/single.php" />
         <option value="$PROJECT_DIR$/my_city/html/tender_details.html" />
+        <option value="$PROJECT_DIR$/my_city/css/media-900px.css" />
         <option value="$PROJECT_DIR$/my_city/html/project_details.html" />
         <option value="$PROJECT_DIR$/my_city/css/style.css" />
-        <option value="$PROJECT_DIR$/my_city/css/media-900px.css" />
       </list>
     </option>
   </component>
@@ -651,16 +653,16 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1921875" sideWeight="0.873838" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -1027,6 +1029,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my_city/html/tender_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="22.041666">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my_city/html/popular_projects.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.583333">
@@ -1039,37 +1049,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_city/html/tender_details.html">
+    <entry file="file://$PROJECT_DIR$/my_city/html/project_details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.416666">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state vertical-scroll-proportion="-21.708334">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_city/html/project_details.html">
+    <entry file="file://$PROJECT_DIR$/my_city/css/media-900px.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.833334">
-          <caret line="82" column="27" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.57931036">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="40" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_city/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1097" column="4" selection-start-line="1097" selection-start-column="4" selection-end-line="1097" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.8965517">
+          <caret line="1388" column="0" selection-start-line="1388" selection-start-column="0" selection-end-line="1388" selection-end-column="0" />
           <folding>
-            <marker date="1448791700000" expanded="true" signature="23082:23221" placeholder="{...}" />
+            <marker date="1448794918000" expanded="true" signature="23405:23544" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_city/css/media-900px.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2689655">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
