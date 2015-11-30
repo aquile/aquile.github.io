@@ -1565,7 +1565,7 @@ footer a:hover {
 }
 
 .hidden-body {
-    overflow: hidden;
+    -overflow: hidden;
 }
 
 .popup__hide-all {
@@ -1580,6 +1580,7 @@ footer a:hover {
     height: 1890px;
     overflow: hidden;
     background: rgba(119, 119, 119, 0.40);
+    z-index: 5;
 }
 
 .popup__choose-help {
