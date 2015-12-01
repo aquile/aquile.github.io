@@ -79,6 +79,10 @@ header nav a {
     opacity: 0.5;
 }
 
+.opacity1 {
+    opacity: 1 !important;
+}
+
 .profile {
     width: 26%;
     text-align: right;
@@ -109,7 +113,7 @@ footer {
     display: block;
     width: 100%;
     max-width: 1440px;
-    height: 350px;
+    height: 280px;
     margin: 0 auto;
     padding: 0 20px 20px;
     background: #6adf75;
@@ -118,9 +122,9 @@ footer {
 }
 
 footer h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    padding: 36px 0 31px;
+    padding: 20px 0 21px;
 }
 
 .new-idea__footer {
@@ -156,8 +160,8 @@ footer h2 {
     display: block;
     width: 100%;
     max-width: 1000px;
-    height: 169px;
-    margin: 36px auto 0;
+    height: 143px;
+    margin: 22px auto 0;
     border-top: 2px solid #ffffff;
     text-align: left;
 }
@@ -165,7 +169,7 @@ footer h2 {
 .footer-contacts__left {
     display: inline-block;
     width: 25%;
-    height: 169px;
+    height: 143px;
     vertical-align: top;
 }
 
@@ -175,24 +179,17 @@ footer h2 {
     text-decoration: none;
 }
 
-.footer-contacts__left a:first-child {
-    font-size: 22px;
-    font-weight: 400;
-    padding-top: 12px;
-    line-height: 22px;
+.footer-contacts__left a:nth-child(1) {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 15px;
+    line-height: 18px;
 }
 
 .footer-contacts__left a:nth-child(2) {
     font-size: 18px;
     font-weight: 300;
-    padding-top: 23px;
-    line-height: 18px;
-}
-
-.footer-contacts__left a:nth-child(3) {
-    font-size: 24px;
-    font-weight: 300;
-    padding-top: 30px;
+    padding-top: 60px;
     line-height: 24px;
 }
 
@@ -206,14 +203,14 @@ footer h2 {
 .footer-contacts__right {
     display: inline-block;
     width: 70%;
-    height: 169px;
+    height: 143px;
     vertical-align: top;
 }
 
 .footer-contacts__right p {
     display: block;
     text-align: left;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     padding: 12px 0 22px;
 }
@@ -315,13 +312,27 @@ footer a:hover {
 
 .main_image {
     display: block;
+    position: relative;
     width: 100%;
     max-width: 1440px;
-    height: 690px;
-    background: #f7fafa url("../images/main.png") center center no-repeat;
+    height: calc(100vh - 160px);
+    background: #f7fafa url("../images/City_back.png") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     margin: 0 auto -2px;
+}
+
+.main_image > img {
+    display: block;
+    width: 100%;
+    max-width: 1152px;
+    height: 95%;
+    margin: 0 auto;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .main_description {
@@ -360,10 +371,10 @@ footer a:hover {
 
 .main_description__how-it-works div {
     display: inline-block;
-    width: 20%;
-    height: 290px;
+    width: 29%;
+    height: 300px;
     vertical-align: top;
-    padding-top: 245px;
+    padding-top: 255px;
     -webkit-user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
@@ -372,6 +383,7 @@ footer a:hover {
 
 .main_description__how-it-works div span {
     color: #4a505a;
+    font-size: 22px;
 }
 
 .main_description__how-it-works .line {
@@ -385,33 +397,35 @@ footer a:hover {
 }
 
 .main_description__how-it-works div:nth-child(4) {
-    background: url("../images/idea-copy@3x.png") center 1% no-repeat;
-    -webkit-background-size: 47%;
-    background-size: 47%;
+    background: url("../images/idea-copy@3x.png") 43% 0 no-repeat;
+    -webkit-background-size: 55%;
+    background-size: 55%;
+    width: 18%;
 }
 
 .main_description__how-it-works div:nth-child(5) {
-    background: url("../images/people@3x.png") center 46% no-repeat;
-    -webkit-background-size: 78%;
-    background-size: 78%;
+    background: url("../images/people@3x.png") center 44% no-repeat;
+    -webkit-background-size: 96%;
+    background-size: 96%;
+    width: 18%;
 }
 
 .main_description__how-it-works div:nth-child(6) {
-    background: url("../images/bar.png") center 55% no-repeat;
-    -webkit-background-size: 90%;
-    background-size: 90%;
+    background: url("../images/bar.png") center 47% no-repeat;
+    -webkit-background-size: 80%;
+    background-size: 80%;
 }
 
 .main_description__how-it-works div:nth-child(7) {
-    background: url("../images/worker@3x.png") center 43% no-repeat;
-    -webkit-background-size: 80%;
-    background-size: 80%;
+    background: url("../images/worker@3x.png") center 36% no-repeat;
+    -webkit-background-size: 65%;
+    background-size: 65%;
 }
 
 .main_description__how-it-works div:nth-child(8) {
-    background: url("../images/like@3x.png") center 50% no-repeat;
-    -webkit-background-size: 80%;
-    background-size: 80%;
+    background: url("../images/like@3x.png") center 45% no-repeat;
+    -webkit-background-size: 67%;
+    background-size: 67%;
 }
 
 .main_description__how-it-works p {
@@ -433,16 +447,16 @@ footer a:hover {
 .main_description__your-part h3 {
     font-size: 33px;
     color: #4a505a;
-    padding: 40px 0 65px;
+    padding: 40px 0 48px;
     font-weight: 400;
 }
 
 .main_description__your-part div {
     display: inline-block;
     width: 30%;
-    height: 383px;
+    height: 400px;
     vertical-align: top;
-    padding-top: 245px;
+    padding-top: 270px;
     -webkit-user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
@@ -469,8 +483,8 @@ footer a:hover {
 
 .main_description__your-part div:nth-child(4) {
     background: url("../images/investor@3x.png") 42% 18% no-repeat;
-    -webkit-background-size: 35%;
-    background-size: 35%;
+    -webkit-background-size: 36%;
+    background-size: 36%;
 }
 
 /*---------------------------------------------MAIN PAGE STYLING END----------------------------------------------*/
