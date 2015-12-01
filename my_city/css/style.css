@@ -921,12 +921,18 @@ footer a:hover {
     width: 24%;
 }
 
+.interesting__story--info:nth-child(1) {
+    width: 27%;
+}
+.interesting__story--info:nth-child(3) {
+    width: 20%;
+}
 .interesting__story .count {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .interesting__story .bottom {
-    font-size: 10px;
+    font-size: 13px;
     color: #777e89;
 }
 
@@ -1719,14 +1725,15 @@ footer a:hover {
 }
 
 .company-top > h2 {
-    font-size: 48px;
-    padding: 70px 0 12px 340px;
+    font-size: 36px;
+    padding: 7px 0 25px 340px;
 }
 
 .company-top > span {
     display: inline-block;
-    font-size: 26px;
-    padding-bottom: 19px;
+    font-size: 24px;
+    color: #d9d9de;
+    padding-top: 149px;
     padding-left: 340px;
 }
 
@@ -1749,7 +1756,7 @@ footer a:hover {
     color: #9197a3;
 }
 
-.company-top-wrp .switch-info:after {
+.company-top-wrp .switch-info::after {
     content: "";
     display: block;
     position: absolute;
@@ -1761,9 +1768,16 @@ footer a:hover {
     left: 57px;
 }
 
-.switch-info > .btn {
+.company-logo, .company-profile {
+    display: block;
+    position: absolute;
+}
+
+.company-top-wrp .switch-info > .btn {
     display: inline-block;
-    padding: 0 15px;
+    position: relative;
+    height: 100%;
+    padding: 0 45px;
     font-size: 20px;
     -webkit-transition: all ease-in-out 0.1s;
     -moz-transition: all ease-in-out 0.1s;
@@ -1772,17 +1786,24 @@ footer a:hover {
     cursor: pointer;
 }
 
-.switch-info > .btn:hover {
-    border-bottom: 2px solid #2196f3;
-}
-
-.company-top-wrp .switch-info > .btn.underline {
-    border-bottom: 2px solid #2196f3;
-}
-
-.company-logo, .company-profile {
+.company-top-wrp .switch-info > .btn::after {
+    content: "";
     display: block;
+    width: 135px;
+    height: 2px;
+    margin: 0 auto;
     position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.company-top-wrp .switch-info > .btn:hover::after {
+    background: #2196f3;
+}
+
+.company-top-wrp .switch-info > .btn.underline::after {
+    background: #2196f3;
 }
 
 .company-logo {
@@ -1934,14 +1955,14 @@ footer a:hover {
 }
 
 .profile-top > h2 {
-    font-size: 48px;
-    padding: 70px 0 12px 340px;
+    font-size: 36px;
+    padding: 7px 0 25px 340px;
 }
 
 .profile-top > span {
     display: inline-block;
-    font-size: 26px;
-    padding-bottom: 19px;
+    font-size: 24px;
+    padding-top: 149px;
     padding-left: 340px;
 }
 
@@ -1978,7 +1999,9 @@ footer a:hover {
 
 .profile-top-wrp .switch-info > .btn {
     display: inline-block;
-    padding: 0 15px;
+    height: 100%;
+    position: relative;
+    padding: 0 45px;
     font-size: 20px;
     -webkit-transition: all ease-in-out 0.1s;
     -moz-transition: all ease-in-out 0.1s;
@@ -1987,12 +2010,24 @@ footer a:hover {
     cursor: pointer;
 }
 
-.profile-top-wrp .switch-info > .btn:hover {
-    border-bottom: 2px solid #ffc107;
+.profile-top-wrp .switch-info > .btn::after {
+    content: "";
+    display: block;
+    width: 135px;
+    height: 2px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-.profile-top-wrp .switch-info > .btn.underline {
-    border-bottom: 2px solid #ffc107;
+.profile-top-wrp .switch-info > .btn:hover::after {
+    background: #ffc107;
+}
+
+.profile-top-wrp .switch-info > .btn.underline::after {
+    background: #ffc107;
 }
 
 .profile-logo, .profile-profile {
