@@ -63,37 +63,55 @@ header {
     background-size: 42px 50px;
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-transition: all ease-in-out 0.4s;
-    -moz-transition: all ease-in-out 0.4s;
-    -o-transition: all ease-in-out 0.4s;
-    transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.15s;
+    -moz-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
 }
 
-header nav a {
+.logo:hover {
+    transform: scale(1.1, 1.1);
+}
+
+header nav > a {
     display: inline-block;
+    position: relative;
     width: 13%;
+    height: 60px;
     font-size: 17px;
+    line-height: 61px;
     text-decoration: none;
     color: #000000;
     vertical-align: middle;
-    opacity: 0.5;
 }
 
-.opacity1 {
-    opacity: 1 !important;
+header nav > .anchor:after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: all ease-in-out 0.15s;
+    -moz-transition: all ease-in-out 0.15s;
+    -o-transition: all ease-in-out 0.15s;
+    transition: all ease-in-out 0.15s;
+}
+
+header nav > .anchor:hover::after {
+    background: #6adf75;
+}
+
+header nav > .anchor.navigator::after {
+    background: #6adf75;
 }
 
 .profile {
     width: 26%;
     text-align: right;
-}
-
-.navigator {
-    opacity: 1;
-}
-
-header nav a:hover {
-    opacity: 1;
 }
 
 .light-blue {
@@ -260,7 +278,7 @@ footer a:hover {
 /*---------------------------------------------MAIN PAGE STYLING START----------------------------------------------*/
 
 .below_header {
-    display: block;
+    display: none;
     position: relative;
     width: 100%;
     max-width: 1440px;
@@ -315,10 +333,10 @@ footer a:hover {
     position: relative;
     width: 100%;
     max-width: 1440px;
-    height: calc(100vh - 160px);
-    background: #f7fafa url("../images/City_back.png") center center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    height: calc(100vh - 60px);
+    background: #f7fafa url("../images/City_back.png") center 100% no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
     margin: 0 auto -2px;
 }
 
@@ -779,6 +797,7 @@ footer a:hover {
 
 .map-controller, .popular-controller {
     display: inline-block;
+    width: 85px;
     padding: 37px 20px;
     font-size: 16px;
 }
@@ -924,9 +943,11 @@ footer a:hover {
 .interesting__story--info:nth-child(1) {
     width: 27%;
 }
+
 .interesting__story--info:nth-child(3) {
     width: 20%;
 }
+
 .interesting__story .count {
     font-size: 18px;
 }
@@ -1724,17 +1745,26 @@ footer a:hover {
     text-align: left;
 }
 
+.company-top-wrp .company-top {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
 .company-top > h2 {
     font-size: 36px;
-    padding: 7px 0 25px 340px;
+    padding-top: 100px;
+    padding-left: 310px;
 }
 
 .company-top > span {
     display: inline-block;
     font-size: 24px;
     color: #d9d9de;
-    padding-top: 149px;
-    padding-left: 340px;
+
+    padding: 7px 0 75px 310px;
 }
 
 .counter.light.text-green {
@@ -1954,16 +1984,24 @@ footer a:hover {
     text-align: left;
 }
 
+.profile-top-wrp .profile-top {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
 .profile-top > h2 {
     font-size: 36px;
-    padding: 7px 0 25px 340px;
+    padding-top: 100px;
+    padding-left: 310px;
 }
 
 .profile-top > span {
     display: inline-block;
     font-size: 24px;
-    padding-top: 149px;
-    padding-left: 340px;
+    padding: 7px 0 75px 310px;
 }
 
 .counter.light.text-blue {
