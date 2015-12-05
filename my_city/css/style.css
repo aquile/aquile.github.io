@@ -1762,16 +1762,14 @@ footer a:hover {
 
 .company-top > h2 {
     font-size: 36px;
-    padding-top: 100px;
+    padding-top: 148px;
     padding-left: 310px;
 }
 
 .company-top > span {
     display: inline-block;
     font-size: 24px;
-    color: #d9d9de;
-
-    padding: 7px 0 75px 310px;
+    padding: 7px 0 25px 310px;
 }
 
 .counter.light.text-green {
