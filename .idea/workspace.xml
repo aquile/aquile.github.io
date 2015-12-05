@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_city/css/style.css" afterPath="$PROJECT_DIR$/my_city/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aquile.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,8 +92,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/my_city/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.91260743">
-                  <caret line="2267" column="20" selection-start-line="2267" selection-start-column="20" selection-end-line="2267" selection-end-column="20" />
+                <state vertical-scroll-proportion="0.5687679">
+                  <caret line="2280" column="22" selection-start-line="2280" selection-start-column="22" selection-end-line="2280" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -1037,8 +1038,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my_city/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91260743">
-          <caret line="2267" column="20" selection-start-line="2267" selection-start-column="20" selection-end-line="2267" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.5687679">
+          <caret line="2280" column="22" selection-start-line="2280" selection-start-column="22" selection-end-line="2280" selection-end-column="22" />
           <folding />
         </state>
       </provider>
