@@ -2262,6 +2262,7 @@ textarea {
     background: #FFFFFF url("../images/line.png") center no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
+    resize: none;
 }
 
 .offer-wrp-1 input {
