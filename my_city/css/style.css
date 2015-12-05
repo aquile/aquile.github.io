@@ -2239,13 +2239,28 @@ footer a:hover {
 }
 
 .offer-wrp-1 > h1 {
-    padding: 130px 0;
+    padding: 45px 0 107px;
     font-size: 48px;
 }
 
 .offer-wrp-1 > h2 {
     padding-bottom: 75px;
     font-size: 42px;
+}
+
+textarea {
+    display: block;
+    width: 500px;
+    height: 118px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    border: none;
+    border-bottom: 2px solid #C9CCD2;
+    background: #FFFFFF url("../images/line.png") center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
 }
 
 .offer-wrp-1 input {
