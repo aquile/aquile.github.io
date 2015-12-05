@@ -988,7 +988,7 @@ footer a:hover {
     display: inline-block;
     width: 30%;
     max-width: 320px;
-    height: 481px;
+    height: 490px;
     background: #FFFFFF;
     border-radius: 6px;
     border: 1px solid #d9d9de;
@@ -999,8 +999,12 @@ footer a:hover {
 .popular__img, .popular__story {
     display: block;
     width: 100%;
-    height: 50%;
+    height: 220px;
     vertical-align: top;
+}
+
+.popular__story {
+    height: calc(100% - 220px);
 }
 
 .popular__img img {
@@ -1013,22 +1017,23 @@ footer a:hover {
     display: block;
     position: relative;
     width: 100%;
-    padding: 24px;
+    height: 100%;
+    padding: 18px;
 }
 
 .popular__story .story-body h4 {
-    font-size: 14px;
+    font-size: 18px;
     padding-bottom: 8px;
 }
 
 .popular__story .story-body h5 {
-    font-size: 13px;
+    font-size: 14px;
     padding-bottom: 15px;
 }
 
 .popular__story .story-body > p {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 13px;
+    line-height: 20px;
     padding-bottom: 13px;
 }
 
@@ -1058,14 +1063,15 @@ footer a:hover {
     display: inline-block;
     width: 23%;
     vertical-align: top;
+    margin-right: 8px;
 }
 
 .popular__story .count {
-    font-size: 9px;
+    font-size: 18px;
 }
 
 .popular__story .bottom {
-    font-size: 7px;
+    font-size: 8px;
     color: #777e89;
 }
 
