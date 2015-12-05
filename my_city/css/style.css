@@ -1343,13 +1343,15 @@ footer a:hover {
     width: 24%;
 }
 
-.td-interesting__story .count {
+.td-interesting__story--info .count {
     font-size: 19px;
+    font-weight: 600;
 }
 
-.td-interesting__story .bottom {
-    font-size: 14px;
+.td-interesting__story--info .bottom {
     color: #777e89;
+    font-weight: 100;
+    font-size: 13px;
 }
 
 .td-interesting .take-part-btn {
