@@ -2255,6 +2255,7 @@ textarea {
     margin: 0 auto;
     text-align: center;
     font-size: 30px;
+    line-height: 59px;
     font-weight: 200;
     border: none;
     border-bottom: 2px solid #C9CCD2;
