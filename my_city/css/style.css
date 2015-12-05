@@ -1119,20 +1119,27 @@ footer a:hover {
 
 .map-search {
     display: block;
-    width: 100%;
+    width: 400px;
     height: 40px;
-    box-shadow: inset 0 1px 3px rgba(119, 125, 136, 0.4);
+    -box-shadow: inset 0 1px 3px rgba(119, 125, 136, 0.4);
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: #ffffff;
+    border: 1px solid #d9d9de;
 }
 
 .map-search input {
     display: block;
     width: 100%;
     height: 40px;
-    background: rgba(119, 125, 136, 0.17) url("../images/search@3x.png") 44% center no-repeat;
+    background: #ffffff url("../images/search@3x.png") 10% center no-repeat;
     -webkit-background-size: 20px;
     background-size: 20px;
-    border: rgba(119, 125, 136, 0.4);
-    text-align: center;
+    border: none;
+    text-align: left;
+    padding-left: 22%;
+    font-size: 14px;
 }
 
 .map-info {
