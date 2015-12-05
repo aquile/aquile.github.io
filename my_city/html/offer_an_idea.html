@@ -62,6 +62,7 @@
             <div class="select">
                 <span>Це фото буде “обкладинкою” Вашої ідеї!</span> <br/>
                 <span>JPEG, PNG, GIF, BMP</span>
+
                 <div class="choose light-blue">Оберіть фото</div>
             </div>
 
@@ -70,32 +71,41 @@
 
         <div class="input-cover money-deadline">
             <p>Строк збору коштів</p>
-            <select name="#" id="put-here-id">
-                <option value="">2 тижні</option>
-                <option value="">1 мисяць</option>
-                <option value="">3 роки</option>
-            </select>
+
+            <div class="money-deadline-wrp">
+                <select name="#" id="put-here-id">
+                    <option value="" disabled selected></option>
+                    <option value="">2 тижні</option>
+                    <option value="">1 мисяць</option>
+                    <option value="">3 роки</option>
+                </select>
+            </div>
 
             <div class="checkbox valid"></div>
         </div>
 
         <div class="input-cover categories">
-            <p>Строк збору коштів</p>
-            <select name="#" id="puthere">
-                <option value="">битва екстрасенсів</option>
-                <option value="">дім 2</option>
-                <option value="">дай гранату Вітє</option>
-            </select>
+            <p>Категорія</p>
+
+            <div class="categories-wrp">
+                <select name="#" id="puthere">
+                    <option value="" disabled selected></option>
+                    <option value="">битва екстрасенсів</option>
+                    <option value="">дім 2 з олей поляковой</option>
+                    <option value="">дай гранату Вітє</option>
+                </select>
+            </div>
 
             <div class="checkbox"></div>
         </div>
 
         <div class="input-cover radio-btns">
             <p>Проект потребує</p>
+
             <div class="select">
-                <label><input name="project-needs" type="radio"/>Волонтерів</label>
-                <label><input name="project-needs" type="radio"/>Інвесторів</label>
-                <label><input name="project-needs" type="radio"/>Спеціалістів</label>
+                <div class="radio-select">Волонтерів</div>
+                <div class="radio-select selected">Інвесторів</div>
+                <div class="radio-select">Спеціалістів</div>
             </div>
             <div class="checkbox"></div>
         </div>

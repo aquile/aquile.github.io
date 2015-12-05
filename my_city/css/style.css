@@ -335,8 +335,8 @@ footer a:hover {
     max-width: 1440px;
     height: calc(100vh - 60px);
     background: #f7fafa url("../images/City_back.png") center 100% no-repeat;
-    -webkit-background-size: contain;
-    background-size: contain;
+    -webkit-background-size: 100% 90%;
+    background-size: 100% 90%;
     margin: 0 auto -2px;
 }
 
@@ -488,7 +488,7 @@ footer a:hover {
 }
 
 .main_description__your-part div:nth-child(2) {
-    background: url("../images/idea@3x.png") center 0 no-repeat;
+    background: url("../images/Idea.png") center 0 no-repeat;
     -webkit-background-size: 35%;
     background-size: 35%;
 }
@@ -500,7 +500,7 @@ footer a:hover {
 }
 
 .main_description__your-part div:nth-child(4) {
-    background: url("../images/investor@3x.png") 42% 18% no-repeat;
+    background: url("../images/Investor.png") 42% 18% no-repeat;
     -webkit-background-size: 36%;
     background-size: 36%;
 }
@@ -2395,6 +2395,26 @@ footer a:hover {
     color: #777e89;
 }
 
+.money-deadline-wrp, .categories-wrp {
+    height: 40px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #959ba4;
+    background: #FFFFFF url("../images/category-icon@3x.png") 25px center no-repeat;
+    -webkit-background-size: 23px 23px;
+    background-size: 23px 23px;
+    padding-left: 85px;
+    border: 1px solid #d9d9de;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.money-deadline-wrp {
+    background: #FFFFFF url("../images/clock@3x.png") 25px center no-repeat;
+    -webkit-background-size: 23px 23px;
+    background-size: 23px 23px;
+}
+
 .input-cover > p {
     font-size: 24px;
     line-height: 36px;
@@ -2404,11 +2424,12 @@ footer a:hover {
 .input-cover .select, .input-cover select, .input-cover input {
     display: inline-block;
     position: relative;
-    width: 769px;
+    width: 100%;
 
     background: #FFFFFF;
     border: 1px solid #d9d9de;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .input-cover .checkbox {
@@ -2458,14 +2479,15 @@ footer a:hover {
 }
 
 .input-cover select {
-    height: 40px;
-    padding: 27px 0 0 85px;
+    height: 38px;
     font-size: 14px;
     line-height: 25px;
     color: #959ba4;
-    background: #FFFFFF url("../images/clock@3x.png") 25px center no-repeat;
-    -webkit-background-size: 23px 23px;
-    background-size: 23px 23px;
+    border: none;
+    width: 104%;
+    background: #FFFFFF url("../images/arrow@3x.png") 90% center no-repeat;
+    -webkit-background-size: 19px 11px;
+    background-size: 19px 11px;
 }
 
 .input-cover option {
@@ -2526,6 +2548,24 @@ footer a:hover {
 
 .offer-wrp-3 .back:hover, .offer-wrp-3 .next:hover {
     transform: scale(1.15, 1.15);
+}
+
+.radio-select {
+    display: inline-block;
+    height: 40px;
+    font-size: 16px;
+    line-height: 41px;
+    color: #959ba4;
+    background: #FFFFFF url("../images/checkbox-5@3x.png") 25px center no-repeat;
+    -webkit-background-size: 23px 23px;
+    background-size: 23px 23px;
+    padding-left: 85px;
+}
+
+.radio-select.selected {
+    background: #FFFFFF url("../images/Checkbox.png") 25px center no-repeat;
+    -webkit-background-size: 23px 23px;
+    background-size: 23px 23px;
 }
 
 .offer-wrp-4 {
