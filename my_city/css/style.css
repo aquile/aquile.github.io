@@ -621,6 +621,7 @@ footer a:hover {
     height: 42px;
     text-align: left;
     font-size: 14px;
+    vertical-align: middle;
 }
 
 .reg-form input[type="submit"] {
@@ -1253,7 +1254,6 @@ footer a:hover {
 .ten-det--wrp h3 {
     font-size: 21px;
     padding-bottom: 23px;
-    color: #777e89;
 }
 
 .td-interesting {
