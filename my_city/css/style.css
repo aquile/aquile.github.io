@@ -112,6 +112,8 @@ header nav > .anchor.navigator::after {
 .profile {
     width: 26%;
     text-align: right;
+    color: #777e89;
+    font-size: 19px;
 }
 
 .light-blue {
