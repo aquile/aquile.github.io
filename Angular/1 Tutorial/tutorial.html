@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+</head>
+
+<body ng-app="myapp">
+<!--this is view-->
+<div ng-controller="HelloController" >
+
+    <h2>Hello {{helloTo.title}} !</h2>
+
+    //1/interpolation directive
+    <div>
+        <span>{{myData.textf()}}</span>
+    </div>
+
+</div>
+
+
+<script>
+    //this is controller
+    angular.module("myapp", [])
+            .controller("HelloController", function($scope) {
+                //this is model
+                $scope.helloTo = {};
+                $scope.helloTo.title = "World, AngularJS";
+
+                //1/interpolation directive
+                $scope.myData = {};
+                $scope.myData.textf = function() { return "A text from a function"; };
+            });
+</script>
+</body>
+</html>
