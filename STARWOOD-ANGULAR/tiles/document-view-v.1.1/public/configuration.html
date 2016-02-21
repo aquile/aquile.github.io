@@ -1,0 +1,256 @@
+<html>
+<head>
+<style>
+    body {
+        color: #5e5e5e;
+        font: 13px "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+
+    h2 {
+        /*text-align: center;*/
+    }
+    .left{
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
+    .right{
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+        width: 50%;
+        border-radius: 11px;
+    }
+    .last{
+        margin: 0 32%;
+    }
+    input[type = 'button'], button {
+        display: block;
+        width: 100%;
+        color: #000000;
+        padding: 7px 16px;
+        /*text-align: center;*/
+        text-shadow: 0 2px white;
+        border: 1px solid #bbb;
+        border-radius: 3px;
+        background: #fff;
+        background: #fff linear-gradient(to bottom, rgba(0, 0, 0, 0.07) 0%, rgba(0, 255, 11, 0.25) 100%);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.13);
+        cursor: pointer;
+        line-height: normal;
+        -text-shadow: 0 1px 0 white;
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 500;
+        background-clip: padding-box;
+        margin: 10px 0;
+        text-decoration: none;
+        outline: none;
+    }
+
+    label {
+        display: block;
+        width: 90%;
+        margin: 14px 0;
+        box-sizing: border-box;
+        text-align: left;
+        cursor: pointer;
+        text-shadow: 0 2px white;
+        vertical-align: top;
+        color: rgb(94, 94, 94);
+        font-weight: 600;
+    }
+
+    .submit-button {
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 7px;
+        background: #fff linear-gradient(to bottom, rgba(0, 0, 0, 0.07) 0%, rgba(255, 255, 0, 0.25) 100%);
+        font-size: 18px;
+        text-shadow: 0 2px white;
+    }
+    #place{
+        /*text-align: center;*/
+        font-size: 20px;
+        color: #A13FA1;
+        margin: 15px 0 -10px 0;
+    }
+    input[type = 'text'] {
+        display: block;
+        width: 100%;
+        /*margin: 0 auto;*/
+        border-radius: 4px;
+        border: 1px solid #bbb;
+        border-bottom: 1px solid #dadada;
+        padding: 6px 4px;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        transition: all .3s linear;
+        outline: none;
+        font: 13px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+
+    input:focus {
+        box-shadow: inset 0 0 10px rgba(255, 143, 0, 0.54);
+    }
+
+    span.remove:hover {
+        background: lightcoral;
+    }
+    span.remove {
+        cursor: pointer;
+        background-color: red;
+        color: #FFFFFF;
+        padding: 1px 6px 1px 7px;
+        font-size: 12px;
+        border-radius: 50%;
+    }
+
+
+    .input-container {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .input-container.inline {
+        margin-left: 0;
+    }
+    .input-container.inline {
+        display: inline-block;
+        margin-left: 4px;
+        width: 50%;
+        float: left;
+    }
+    .focused{
+        border-color: red !important;
+        border: 1px solid;
+        color: red !important;
+        border-style: dashed;
+    }
+</style>
+    <script>
+    var ConfigFactory = function (config) {
+        var that = this;
+        this.renderAll = function(){
+            if (config === null) config = { };
+            if (!config["data"]) {
+                config["data"] = { };
+                config["data"]["placeID"] = null;
+                config["data"]["placeHref"] = null;
+                config["data"]["placeName"] = null;
+                config["data"]["tagName"] = null;
+                config["data"]["pageSize"] = null;
+                config["data"]["globalTitle"] = null;
+            }else{
+                $("#place").attr('data-id', config["data"]["placeID"])
+                $("#place").attr('data-href', config["data"]["placeHref"])
+                $("#place").html('<a href="'+config["data"]["placeHref"]+'" tagret="_top">'+config["data"]["placeName"]+'</a>')
+                $("#tag").val(config["data"]["tagName"])
+                $("#count").val(config["data"]["pageSize"])
+                $("#global-title").val(config["data"]["globalTitle"])
+            }
+            gadgets.window.adjustHeight();
+            setTimeout(gadgets.window.adjustHeight,300);
+            setTimeout(gadgets.window.adjustHeight,500);
+        };
+        this.validateAndSave = function(){
+            //todo: validation
+            config["data"]["tagName"] = $("#tag").val();
+            config["data"]["pageSize"] = $("#count").val();
+            config["data"]["globalTitle"] = $("#global-title").val();
+            if ((typeof config["data"]["tagName"] !== "undefined" && config["data"]["tagName"] && config["data"]["tagName"] !== null )
+            && (typeof config["data"]["placeID"] !== "undefined" && config["data"]["placeID"] && config["data"]["placeID"] !== null )
+            && ( config["data"]["pageSize"].match(/^[0-9]*$/) !== null ||  !config["data"]["pageSize"]) )
+            {
+                jive.tile.close(config, {} );
+            }else{
+                if (!config["data"]["pageSize"].length){
+                    $("#count").addClass('focused');
+                }
+                else{
+                    if(typeof config["data"]["placeID"] !== "undefined" && config["data"]["placeID"] !== null)
+                    $("#tag").addClass('focused');
+                    else
+                    $("#place").addClass('focused');
+                }
+            }
+        };
+        this.initPlacesPicker = function(){
+            $("#place").removeClass('focused');
+            osapi.jive.corev3.search.requestPicker({
+                excludeContent : true,
+                excludePlaces : false,
+                excludePeople : true,
+                success: function(data){
+                    console.log('success: '+JSON.stringify(data));
+
+                        config["data"]["placeID"] = data.placeID;
+                        config["data"]["placeName"] = data.name;
+                        config["data"]["placeHref"] = data.resources.html.ref;
+
+                        $("#place").attr('data-id', config["data"]["placeID"])
+                        $("#place").attr('data-href', config["data"]["placeHref"])
+                        $("#place").html('<a href="'+config["data"]["placeHref"]+'" tagret="_top">'+config["data"]["placeName"]+'</a>')
+                        console.log('config["data"]:',config["data"])
+
+
+                },
+                error: function(data){
+                    console.log('error: '+JSON.stringify(data));
+                }
+            });
+        };
+        this.handleSubmit = function(){
+            config["data"]["placeID"] = $("#place").attr('data-id');
+            that.validateAndSave(config);
+        }
+    }
+
+    jive.tile.onOpen(function(config, options ) {
+        console.log('config: ', config);
+        var confObj = new ConfigFactory(config);
+        confObj.renderAll();
+        document.querySelector('#set_place').onclick = confObj.initPlacesPicker;
+        document.querySelector('.btn.submit-button').onclick = confObj.validateAndSave;
+       $('input').on('focus',function(){
+         $(this).removeClass('focused');
+       })
+    });
+
+</script>
+</head>
+<body>
+<h3>Configuration Tips:</h3>
+<h4>
+    <ul>
+        <li>Configure Place where LOA documents are stored in</li>
+        <li>Configure Tag Name(tile gets tagged content from space)</li>
+    </ul>
+</h4>
+<div class="left">
+    <div class="input-container">
+        <label for="global-title">Tile title(optional)</label>
+        <input type="text" id="global-title" class="btn" placeholder="type a title...">
+    </div>
+    <div class="input-container inline">
+        <label for="tag">Tag Name</label>
+        <input type="text" id="tag" class="btn" placeholder="type a tag...">
+    </div>
+    <div class="input-container inline" style="width: calc(50% - 8px);">
+        <label for="count">Per page items</label>
+        <input class="btn" id="count" placeholder="type a number..." type="text">
+    </div>
+    <div class="input-container">
+        <div id="place">No Place selected</div><br>
+        <button id="set_place" class="btn">Select</button>
+    </div>
+</div>
+<a href="http://www.socialedgeconsulting.com/" target="_top"><img src="images/se_logo.jpg" class="right"></a>
+<div class="btn-container last">
+    <input type="submit" value="Save configuration" class="btn submit-button">
+</div>
+</body>
+</html>

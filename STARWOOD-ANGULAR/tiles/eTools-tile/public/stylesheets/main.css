@@ -1,0 +1,129 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+.eTools-body {
+    display: block;
+    width: 100%;
+    /*padding: 21px;*/
+    overflow: hidden;
+    border-radius: 7px;
+    background: #ffffff;
+    font: 14px "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-align: left;
+}
+
+.eTools-main-wrp {
+    display: block;
+    width: 100%;
+}
+
+.eTools-title {
+    font-size: 14px;
+    color: #3f7793;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.eTools-search-input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin: 14px auto;
+    padding-left: 13px;
+    border: 1px solid #e7e7e7;
+    color: #adadad;
+    background: #f0f0f0 url("../images/search.png") calc(100% - 15px) center no-repeat;
+    line-height: 20px;
+    font-size: 14px;
+    font-style: italic;
+    outline: none;
+    outline-offset: 0;
+}
+
+.eTools-list-wrp {
+    display: block;
+    width: 100%;
+    height: 181px;
+}
+
+.eTools-link {
+    display: table;
+    position: relative;
+    width: 100%;
+    min-height: 45px;
+    padding: 10px 35px 10px 0;
+    font-size: 17px;
+    color: #787878;
+    background: #ffffff url("../images/arrow.png") calc(100% - 15px) center no-repeat;
+    border-top: 1px solid #f0f0f0;
+    text-decoration: none;
+    -webkit-background-size: 10px;
+    background-size: 10px;
+
+    -webkit-transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+    -o-transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+    transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.eTools-link:last-child {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.eTools-link:hover {
+    color: #4882d0;
+    background: #ffffff url("../images/arrow-hover.png") calc(100% - 10px) center no-repeat;
+    -webkit-background-size: 11px;
+    background-size: 10px;
+}
+
+/*.eTools-link:visited {
+    color: #3f7793;
+}*/
+
+.eTools-avatar {
+    display: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #e1e1e1;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    /*top: cacl(50% - 16px);*/
+}
+
+.eTools-name {
+    display: table-cell;
+    line-height: 23px;
+    text-decoration: none;
+    vertical-align: middle;
+}

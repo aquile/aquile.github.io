@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>eTools tile configuration</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/config.css">
+    <script src="javascript/libs/angular.min.js"></script>
+</head>
+<body>
+
+<h2>Configure eTools Tile</h2>
+
+<div ng-app="eToolsApp">
+
+    <form class="trending-form" ng-controller="eToolsController" ng-submit="sendForm(formData)" name="configForm">
+
+        <!-- set interval & images URL-->
+        <label>
+            <p>Set tile title</p>
+
+            <p><input type="text" ng-model="formData.tileTitle" value="{{formData.tileTitle}}">
+            </p>
+
+        </label>
+
+        <label>
+            <p>Set parent placeID</p>
+
+            <p><input type="text" ng-model="formData.ID" value="{{formData.ID}}">
+            </p>
+
+        </label>
+
+        <label>
+            <p>Set default message if user does not have access to any spaces</p>
+
+            <p><input type="text" ng-model="formData.message" value="{{formData.message}}">
+            </p>
+
+        </label>
+
+
+        <!--submit form-->
+        <button class="submit-button" type="submit">Save changes</button>
+
+    </form>
+</div>
+<script>
+    angular.module('eToolsApp', [])
+            .controller('eToolsController', ['$scope', function ($scope) {
+                $scope.formData = {};
+
+                jive.tile.onOpen(function (config, options) {
+
+                    //set additional height for the tile config div
+                    gadgets.window.adjustHeight();
+                    if (!config.data) {
+                        config.data = {};
+                        $scope.formData.tileTitle = "My eTools";
+                        $scope.formData.ID = "2006";
+                        $scope.formData.message = "You do not have access to any eTools";
+
+                        console.log('no config.data');
+                    } else {
+                        //get default settings of the tile
+                        $scope.formData.tileTitle = config.data.tileTitle;
+                        $scope.formData.ID = config.data.ID;
+                        $scope.formData.message = config.data.message;
+
+                        console.log('config.data is present');
+                        console.log(config);
+                    }
+                    setTimeout(function () {
+                        $scope.$apply();
+                    }, 250);
+
+
+                    $scope.sendForm = function (data) {
+                        config.data = data;
+                        console.log(config);
+                        window.dataTest = config;
+                        jive.tile.close(config, {});
+                    };
+                });
+            }])
+
+</script>
+
+</body>
+</html>

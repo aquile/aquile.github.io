@@ -1,0 +1,56 @@
+{
+    "integrationUser": {
+        "systemAdmin": false
+    },
+    "tiles": [
+        {
+            "displayName": "document-view-v.1.1",
+            "name": "document-view-v.1.1",
+            "description": "document-view-v.1.1",
+            "style": "CUSTOM_VIEW",
+            "displayWidth": "ALL",
+            "dataProviderKey": "internal",
+            "pageTypes": [
+                "PLACE",
+                "USER"
+            ],
+            "icons": {
+                "16": "https://developer.jivesoftware.com/DeveloperAssets/images/icons/jivedev-xsmall.png",
+                "48": "https://developer.jivesoftware.com/DeveloperAssets/images/icons/jivedev-small.png",
+                "128": "https://developer.jivesoftware.com/DeveloperAssets/images/icons/jivedev-med.png"
+            },
+            "config": "/public/tiles/document-view-v.1.1/configuration.html?features=os-2.5,core-v3,jq-1.11,tile,oauth,responsive",
+            "view": "/public/tiles/document-view-v.1.1/view.html?features=os-2.5,core-v3,jq-1.11,tile,oauth,responsive"
+        },
+        {
+            "displayName": "eTools-tile",
+            "name": "eTools-tile",
+            "description": "eTools-tile",
+            "style": "CUSTOM_VIEW",
+            "displayWidth": "ALL",
+            "dataProviderKey": "internal",
+            "pageTypes": [
+                "PLACE",
+                "USER",
+                "NEWS"
+            ],
+            "icons": {
+                "16": "https://developer.jivesoftware.com/DeveloperAssets/images/icons/jivedev-xsmall.png",
+                "48": "https://developer.jivesoftware.com/DeveloperAssets/images/icons/jivedev-small.png",
+                "128": "https://developer.jivesoftware.com/DeveloperAssets/images/icons/jivedev-med.png"
+            },
+            "config": "/public/tiles/eTools-tile/configuration.html",
+            "view": "/public/tiles/eTools-tile/view.html"
+        }
+    ],
+    "templates": [
+        {
+            "name": "defaultTemplate",
+            "displayName": "Contains: [document-view-v.1.1, eTools-tile] ",
+            "description": "Extension UUID 5faf8024-fcea-4f88-b168-a5745ebde3c9 Contains: [document-view-v.1.1, eTools-tile] ",
+            "tiles": [
+                "eTools-tile"
+            ]
+        }
+    ]
+}
