@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Directives</title>
+    <style>
+        p {
+            font-weight: 600;
+            color: red;
+        }
+    </style>
+    <script src="../angular.min.js"></script>
+</head>
+<body ng-app="myapp">
+<p>Directive Types</p>
+<pre>
+    Element directives
+Attribute directives
+CSS class directives
+Comment directives
+</pre>
+
+<p>A Basic Directive</p>
+<pre>
+    myapp = angular.module("myapp", []);
+
+    myapp.directive('div', function () {   <<<<< THIS IS FACTORY FUNCTION <<<<<<
+        var directive = {};
+
+        directive.restrict = 'E';
+        /* restrict this directive to elements */
+
+        directive.template = "My first directive: {{textToInsert}}";
+
+        return directive;
+    });
+</pre>
+
+<p>The template and templateUrl Properties</p>
+
+<div ng-controller="MyController">
+    <div>This div will be replaced</div>
+</div>
+
+<p>Isolating the $scope From the Directive</p>
+
+<div ng-controller="MyController">
+    <userinfo user="jakob"></userinfo>
+    <userinfo user="john"></userinfo>
+</div>
+
+<script>
+    var myapp = angular.module("myapp", []);
+
+    myapp.directive('userinfo', function () {
+        var directive = {};
+
+        directive.restrict = 'E';
+
+        directive.template = "User : <b>{{user.firstName}}</b> <b>{{user.lastName}}</b>";
+
+        directive.scope = {
+            user: "=user"
+        };
+
+        return directive;
+    });
+
+    myapp.controller("MyController", function ($scope, $http) {
+        $scope.jakob = {};
+        $scope.jakob.firstName = "Jakob";
+        $scope.jakob.lastName = "Jenkov";
+
+        $scope.john = {};
+        $scope.john.firstName = "John";
+        $scope.john.lastName = "Doe";
+    });
+
+
+</script>
+
+</body>
+</html>
