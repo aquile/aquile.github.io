@@ -38,26 +38,27 @@ Comment directives
 
 <p>The template and templateUrl Properties</p>
 
-<div ng-controller="MyController">
+<div ng-controller="MyController1">
     <div>This div will be replaced</div>
 </div>
 
 <p>Isolating the $scope From the Directive</p>
 
-<div ng-controller="MyController">
-    <userinfo user="jakob"></userinfo>
-    <userinfo user="john"></userinfo>
+<div ng-controller="MyController1">
+    <userinfo1 user="jakob"></userinfo1>
+    <userinfo1 user="john"></userinfo1>
 </div>
+
 
 <script>
     var myapp = angular.module("myapp", []);
 
-    myapp.directive('userinfo', function () {
+    myapp.directive('userinfo1', function () {
         var directive = {};
 
         directive.restrict = 'E';
 
-        directive.template = "User : <b>{{user.firstName}}</b> <b>{{user.lastName}}</b>";
+        directive.template = "User : <b>{{user.firstName}}</b> <b>{{user.lastName}}</b> </br>";
 
         directive.scope = {
             user: "=user"
@@ -66,7 +67,7 @@ Comment directives
         return directive;
     });
 
-    myapp.controller("MyController", function ($scope, $http) {
+    myapp.controller("MyController1", function ($scope, $http) {
         $scope.jakob = {};
         $scope.jakob.firstName = "Jakob";
         $scope.jakob.lastName = "Jenkov";
@@ -79,5 +80,131 @@ Comment directives
 
 </script>
 
+<p>The compile() and link() Functions</p>
+<pre>
+    myapp = angular.module("myapp", []);
+    myapp.directive('userinfo', function() {
+    var directive = {};
+
+    directive.restrict = 'E'; /* restrict this directive to elements */
+
+
+    directive.compile = function(element, attributes) {
+        // do one-time configuration of element.
+
+        var linkFunction = function($scope, element, atttributes) {
+            // bind element to data in $scope
+        }
+
+        return linkFunction;
+    }
+
+    return directive;
+});
+</pre>
+<p>MyController2</p>
+<div ng-controller="MyController2">
+    <div userinfo3 ng-click="doClick()">{{ adf() }}</div>
+</div>
+
+<script>
+    myapp.directive('userinfo3', [function () {
+        return {
+            restrict: "EA",
+            link: function (scope, element, attrs) {
+
+                console.log(scope);
+
+//                scope.$watch('firstName', function(newVal, oldVal) { //>>>>>>>>>>>>>>>>>>>> or use watcher to render html
+//                    element.html("This is the new content: " + newVal);
+//                });
+                var count = 0;
+                scope.adf = function() {
+                    console.log(++count);
+                    return scope.firstName;
+                };
+
+//                scope.$on('change', function(event, val) { //>>>>>>>>>>>>>>>>>>>>>  listener for $broadcast/$emit "change"
+//                    element.html("This is the new content: " + val);
+//                });
+
+//                element.html("This is the new content: " + scope.firstName);
+                element.css("background-color", "#ffff00");
+            }
+        };
+    }]);
+
+    myapp.controller("MyController2", function ($scope, $http) {
+        $scope.cssClass = "notificationDiv";
+
+        $scope.firstName = "Jakob";
+
+        $scope.doClick = function () {
+            console.log("doClick() called");
+            $scope.firstName = "Jakob" + Math.random();
+
+            $scope.$broadcast('change',  $scope.firstName); // создаем кастомний ивент >>> ВНИЗ (ИЗ КОНТРОЛЛЕРА В ДИРЕКТИВУ)
+            // $emit >> ВВЕРХ
+            console.log($scope.firstName);
+        };
+
+
+    });
+
+
+</script>
+<p>MyController3</p>
+//myCtrl
+<div ng-controller="MyController3">
+    <userinfo2 ng-click="doClick()">This will be replaced</userinfo2>
+</div>
+
+<script>
+    myapp.directive('userinfo2', function () {
+        var directive = {};
+
+        directive.restrict = 'E';
+        /* restrict this directive to elements */
+
+        directive.link = function ($scope, element, attributes) {
+            element.html("This is the new content: " + $scope.firstName);
+            element.css("background-color", "#ffff00");
+        };
+
+        return directive;
+    });
+    myapp.controller("MyController3", function ($scope, $http) {
+        $scope.cssClass = "notificationDiv";
+
+        $scope.firstName = "Jakobs Monarh!";
+
+        $scope.doClick = function () {
+            console.log("doClick() called");
+            $scope.firstName = "Jakobs Monarh" + Math.random();
+            console.log($scope.firstName);
+        }
+    });
+</script>
+
+<p>Directives Which Wraps Elements Via Transclusion</p>
+
+<div ng-controller="MyController4">
+    <mytransclude>This is a transcluded directive {{firstName}}</mytransclude>
+</div>
+<script>
+    myapp.directive('mytransclude', function () {
+        var directive = {};
+
+        directive.restrict = 'E';
+        /* restrict this directive to elements */
+        directive.transclude = true;
+        directive.template = "<div class='myTransclude' ng-transclude></div>";
+
+        return directive;
+    });
+    myapp.controller("MyController4", function ($scope, $http) {
+        $scope.firstName = "Jakob";
+    });
+</script>
 </body>
 </html>

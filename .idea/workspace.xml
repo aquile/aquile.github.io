@@ -2,8 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ANROM/mts" afterPath="$PROJECT_DIR$/ANROM/mts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/beelife/index.html" afterPath="$PROJECT_DIR$/beelife/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/starwood-angular-tile/sergio-widget.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/15.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/17.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/19.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/heart_alpha.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/heart_alpha.psd.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/hearts_1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/logo_anim.psd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/mts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CALLMINER/search.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html" afterPath="$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Angular/6 Forms/forms.html" afterPath="$PROJECT_DIR$/Angular/6 Forms/forms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aquile.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,69 +57,73 @@
       <file leaf-file-name="custom_directives.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="168" column="41" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/beelife/index.html">
+      <file leaf-file-name="ajax_json_rest.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Angular/5 AJAX/ajax_json_rest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29957205">
-              <caret line="14" column="108" selection-start-line="14" selection-start-column="108" selection-end-line="14" selection-end-column="108" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directive.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Angular/directive.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
               <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#702#1012#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beelife/controller.js">
+      <file leaf-file-name="ssr-widget.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DAVID-YURMAN new/ssr-widget.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sergio-widget.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/starwood-angular-tile/sergio-widget.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.20827389">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding>
-                <element signature="e#0#52#0" expanded="false" />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beelife/style.css">
+      <file leaf-file-name="translations.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Angular/translations.json">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-              <folding>
-                <element signature="e#1302#2975#1" expanded="true" />
-              </folding>
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setLocalStorage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beelife/setLocalStorage.js">
+      <file leaf-file-name="ssr-widget.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DAVID-YURMAN/ssr-widget.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#52#0" expanded="false" />
-                <marker date="1455993004000" expanded="true" signature="5534:5564" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="5684:5714" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="5758:5788" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="5891:5921" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="5970:6000" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="6616:6646" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="7016:7044" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="7081:7111" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="7151:7181" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="13633:13656" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="21219:21249" placeholder="..." />
-                <marker date="1455993004000" expanded="true" signature="21273:21303" placeholder="..." />
-              </folding>
+              <caret line="167" column="54" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,9 +133,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Html5" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Html5" />
       </list>
     </option>
   </component>
@@ -115,15 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Angular/SinglePageApp/app.js" />
-        <option value="$PROJECT_DIR$/Angular/SinglePageApp/js/controllers.js" />
-        <option value="$PROJECT_DIR$/Angular/SinglePageApp/pages/homepage.html" />
-        <option value="$PROJECT_DIR$/Angular/SinglePageApp/pages/about.html" />
-        <option value="$PROJECT_DIR$/Angular/SinglePageApp/pages/date.html" />
-        <option value="$PROJECT_DIR$/Angular/SinglePageApp/css/style.css" />
-        <option value="$PROJECT_DIR$/Angular/SinglePageApp/pages/index.html" />
-        <option value="$PROJECT_DIR$/Angular/SinglePageApp/index.html" />
-        <option value="$PROJECT_DIR$/Angular/FormValidation/index.html" />
         <option value="$PROJECT_DIR$/Angular/FormValidation/script.js" />
         <option value="$PROJECT_DIR$/Angular/Marshrutization/index.html" />
         <option value="$PROJECT_DIR$/nodeJs/program.js" />
@@ -154,7 +179,6 @@
         <option value="$PROJECT_DIR$/ANROM/mts/scripts/hearts-script.js" />
         <option value="$PROJECT_DIR$/Angular/6 Forms/7 Forms.html" />
         <option value="$PROJECT_DIR$/Angular/8 Timeout interval/intervals timeout.js" />
-        <option value="$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html" />
         <option value="$PROJECT_DIR$/Belife_in_portfolio/libs/underscore.js" />
         <option value="$PROJECT_DIR$/Belife_in_portfolio/setLocalStorage.js" />
         <option value="$PROJECT_DIR$/Belife_in_portfolio/controller.js" />
@@ -166,6 +190,16 @@
         <option value="$PROJECT_DIR$/STARWOOD/tiles/eTools-tile/public/javascript/view.js" />
         <option value="$PROJECT_DIR$/starwood-3-snippet/.gitignore" />
         <option value="$PROJECT_DIR$/beelife/index.html" />
+        <option value="$PROJECT_DIR$/Angular/6 Forms/forms.html" />
+        <option value="$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html" />
+        <option value="$PROJECT_DIR$/DAVID-YERMAN/libs/moment.mon.js" />
+        <option value="$PROJECT_DIR$/DAVID-YERMAN/libs/moment.min.js" />
+        <option value="$PROJECT_DIR$/interview.js" />
+        <option value="$PROJECT_DIR$/DAVID-YERMAN/ssr-widget.html" />
+        <option value="$PROJECT_DIR$/DAVID-YURMAN/ssr-widget.html" />
+        <option value="$PROJECT_DIR$/Angular/translations.json" />
+        <option value="$PROJECT_DIR$/Angular/directive.html" />
+        <option value="$PROJECT_DIR$/starwood-angular-tile/sergio-widget.html" />
       </list>
     </option>
   </component>
@@ -209,7 +243,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,38 +271,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="starwood-react-tile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="starwood-react-tile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screenshots" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="starwood-angular-tile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -284,62 +285,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="starwood-angular-tile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screenshots" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beelife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ANROM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ANROM" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mts" />
+              <option name="myItemId" value="DAVID-YURMAN new" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,11 +319,11 @@
       <recent name="$PROJECT_DIR$/Ciklum" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CALLMINER" />
       <recent name="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw" />
       <recent name="$PROJECT_DIR$/Ciklum/1_part" />
       <recent name="$PROJECT_DIR$/Angular/SinglePageApp/pages" />
       <recent name="$PROJECT_DIR$/Angular/SinglePageApp/js" />
-      <recent name="$PROJECT_DIR$/Angular/ng-repeat-addone-snippet" />
     </key>
   </component>
   <component name="RunManager">
@@ -568,27 +520,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22109374" sideWeight="0.08632138" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18671875" sideWeight="0.078353256" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52058434" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22109374" sideWeight="0.91367865" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18671875" sideWeight="0.9216468" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09452055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.58565736" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -616,73 +568,49 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/beelife/controller.js">
+    <entry file="file://$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#52#0" expanded="false" />
-          </folding>
+          <caret line="106" column="18" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beelife/style.css">
+    <entry file="file://$PROJECT_DIR$/Angular/5 AJAX/ajax_json_rest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-          <folding>
-            <element signature="e#1302#2975#1" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beelife/setLocalStorage.js">
+    <entry file="file://$PROJECT_DIR$/DAVID-YURMAN/ssr-widget.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="false" />
-            <marker date="1455993004000" expanded="true" signature="5534:5564" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="5684:5714" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="5758:5788" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="5891:5921" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="5970:6000" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="6616:6646" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="7016:7044" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="7081:7111" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="7151:7181" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="13633:13656" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="21219:21249" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="21273:21303" placeholder="..." />
-          </folding>
+          <caret line="167" column="54" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Angular/SinglePageApp/pages/date.html">
+    <entry file="file://$PROJECT_DIR$/DAVID-YURMAN/ssr-widget.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <caret line="161" column="43" selection-start-line="161" selection-start-column="43" selection-end-line="161" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Angular/SinglePageApp/index.html">
+    <entry file="file://$PROJECT_DIR$/CALLMINER/client-callminer/callminer_widgets/Top_Discussions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.556701">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="762" column="20" selection-start-line="762" selection-start-column="20" selection-end-line="762" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Angular/SinglePageApp/css/style.css">
+    <entry file="file://$PROJECT_DIR$/CALLMINER/client-callminer/callminer_widgets/Top_Articles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14734773">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mannequin-parade/brixton/brixton/lang/brixton.pot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0644699">
-          <caret line="407" column="20" selection-start-line="407" selection-start-column="20" selection-end-line="407" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -725,13 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28965518">
           <caret line="899" column="0" selection-start-line="899" selection-start-column="0" selection-end-line="899" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -826,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callminer/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Angular/2 Directives/angular-included-fragment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -861,59 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ANROM/mts/soy/nav/header.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74786323">
-          <caret line="82" column="51" selection-start-line="82" selection-start-column="51" selection-end-line="82" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/hearts_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ANROM/mts/scripts/jquery-ui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2888889">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ANROM/mts/scripts/3g/tableAutoFill.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06410257">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Angular/2 Directives/directives-snippets.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49115044">
           <caret line="273" column="53" selection-start-line="273" selection-start-column="46" selection-end-line="273" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ANROM/mts/styles/hearts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ANROM/mts/styles/override.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="815" column="37" selection-start-line="815" selection-start-column="37" selection-end-line="815" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ANROM/mts/soy/template/template.soy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -931,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Angular/6 Forms/forms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42225394">
-          <caret line="210" column="18" selection-start-line="210" selection-start-column="18" selection-end-line="210" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16551724">
@@ -945,69 +803,139 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ANROM/mts/scripts/hearts-script.js">
+    <entry file="file://$PROJECT_DIR$/beelife/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4">
-          <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beelife/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1793103">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beelife/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32097003">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beelife/setLocalStorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25787964">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular/6 Forms/forms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25677603">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="9" selection-start-line="107" selection-start-column="9" selection-end-line="107" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starwood-react-tile/src/etools-tile/helpers/apiHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="282" column="3" selection-start-line="282" selection-start-column="3" selection-end-line="283" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CALLMINER/client-callminer/callminer_widgets/Top_Articles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="19.921541">
+          <caret line="931" column="46" selection-start-line="931" selection-start-column="46" selection-end-line="931" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CALLMINER/client-callminer/callminer_widgets/Top_Discussions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="762" column="20" selection-start-line="762" selection-start-column="20" selection-end-line="762" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAVID-YURMAN/ssr-widget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="167" column="54" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <caret line="168" column="41" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beelife/style.css">
+    <entry file="file://$PROJECT_DIR$/Angular/5 AJAX/ajax_json_rest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular/translations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Angular/directive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
           <folding>
-            <element signature="e#1302#2975#1" expanded="true" />
+            <element signature="e#702#1012#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beelife/setLocalStorage.js">
+    <entry file="file://$PROJECT_DIR$/starwood-angular-tile/tiles/eTools-tile/public/javascript/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="false" />
-            <marker date="1455993004000" expanded="true" signature="5534:5564" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="5684:5714" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="5758:5788" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="5891:5921" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="5970:6000" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="6616:6646" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="7016:7044" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="7081:7111" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="7151:7181" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="13633:13656" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="21219:21249" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="21273:21303" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.06896552">
+          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beelife/controller.js">
+    <entry file="file://$PROJECT_DIR$/DAVID-YURMAN new/ssr-widget.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#52#0" expanded="false" />
-          </folding>
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beelife/index.html">
+    <entry file="file://$PROJECT_DIR$/starwood-angular-tile/sergio-widget.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29957205">
-          <caret line="14" column="108" selection-start-line="14" selection-start-column="108" selection-end-line="14" selection-end-column="108" />
+        <state vertical-scroll-proportion="0.20827389">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

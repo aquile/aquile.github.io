@@ -41,6 +41,14 @@
         <input type="radio" ng-model="myForm.whichNewsletter" value="">monthlyNews <br/>
         {{myForm.whichNewsletter}}
     </form>
+    <script>
+        var myApp = angular.module("myapp", []);
+        myApp.controller("MyController1", function ($scope) {
+            $scope.myForm = {};
+            $scope.myForm.firstName = "Jakob";
+            $scope.myForm.lastName = "Jenkov";
+        })
+    </script>
 
     <p>Binding Select Boxes</p>
 
@@ -57,6 +65,12 @@
             {{myForm.car}}
         </div>
     </div>
+    <script>
+        myApp.controller("MyController2", function ($scope) {
+            $scope.myForm = {};
+            $scope.myForm.car = "nissan";
+        })
+    </script>
 
     <p>ng-options</p>
 
@@ -72,6 +86,18 @@
             {{myForm.car}}
         </div>
     </div>
+    <script>
+        myApp.controller("MyController3", function ($scope) {
+            $scope.myForm = {};
+            $scope.myForm.car = "basan";
+
+            $scope.myForm.options = [
+                {id: "lisan", name: "Lissan"},
+                {id: "basan", name: "Basan"},
+                {id: "fatjan", name: "Fatjan"}
+            ];
+        })
+    </script>
 
     <p>Empty Options</p>
 
@@ -84,6 +110,19 @@
         </form>
         {{myForm.car}}
     </div>
+
+    <script>
+        myApp.controller("MyController4", function ($scope) {
+            $scope.myForm = {};
+            $scope.myForm.car = "lisan";
+
+            $scope.myForm.options = [
+                {id: "lisan", name: "Lissan"},
+                {id: "basan", name: "Basan"},
+                {id: "fatjan", name: "Fatjan"}
+            ];
+        })
+    </script>
 
     <p>Selecting Multiple Options</p>
 
@@ -98,6 +137,19 @@
             {{myForm.car}}
         </div>
     </div>
+    <script>
+        myApp.controller("MyController5", function ($scope) {
+            $scope.myForm = {};
+            $scope.myForm.car = ["mult"];
+
+            $scope.myForm.options = [
+                {id: "mult", name: "Multiple"}
+                , {id: "toyota", name: "Toyota"}
+                , {id: "fiat", name: "Fiat"}
+            ];
+
+        })
+    </script>
 
     <p style="font-weight: 800; color: orange;">Form Validation</p>
 
@@ -113,6 +165,12 @@
         </div>
     </div>
 
+    <script>
+        myApp..controller("MyController6", function ($scope) {
+            $scope.myForm = {};
+            $scope.myForm.name = "Jakob Jenkov";
+        })
+    </script>
     <p>ng-pattern</p>
 
     <div ng-controller="MyController7">
@@ -124,6 +182,12 @@
             {{myForm.name}}
         </div>
 
+        <script>
+            myApp.controller("MyController7", function ($scope) {
+                $scope.myForm = {};
+                $scope.myForm.name = "1";
+            })
+        </script>
         <p>ng-required</p>
 
         <p>The ng-required directive checks if the value of the form field is empty or not. Actually, you just use the
@@ -152,80 +216,31 @@
 
 </div>
 <script>
-    angular.module("myapp", [])
-            .controller("MyController1", function ($scope) {
-                $scope.myForm = {};
-                $scope.myForm.firstName = "Jakob";
-                $scope.myForm.lastName = "Jenkov";
-            })
-            .controller("MyController2", function ($scope) {
-                $scope.myForm = {};
-                $scope.myForm.car = "nissan";
-            })
-            .controller("MyController3", function ($scope) {
-                $scope.myForm = {};
-                $scope.myForm.car = "basan";
+    myApp.controller("MyController8", function ($scope, $http) {
+        $scope.myForm = {};
 
-                $scope.myForm.options = [
-                    {id: "lisan", name: "Lissan"},
-                    {id: "basan", name: "Basan"},
-                    {id: "fatjan", name: "Fatjan"}
-                ];
-            })
-            .controller("MyController4", function ($scope) {
-                $scope.myForm = {};
-                $scope.myForm.car = "lisan";
+        $scope.myForm.getFormFieldCssClass = function (ngModelController) {
+            //console.log("getting css class: " + ngModelController.$valid) ;
+            if (ngModelController.$pristine) return "";
+            return ngModelController.$valid ? "fieldValid" : "fieldInvalid";
+        };
 
-                $scope.myForm.options = [
-                    {id: "lisan", name: "Lissan"},
-                    {id: "basan", name: "Basan"},
-                    {id: "fatjan", name: "Fatjan"}
-                ];
-            })
-            .controller("MyController5", function ($scope) {
-                $scope.myForm = {};
-                $scope.myForm.car = ["mult"];
+        $scope.myForm.submitTheForm = function (item, event) {
+            console.log("--> Submitting form");
+            var dataObject = {
+                name: $scope.myForm.name
+                , car: $scope.myForm.car
+            };
 
-                $scope.myForm.options = [
-                    {id: "mult", name: "Multiple"}
-                    , {id: "toyota", name: "Toyota"}
-                    , {id: "fiat", name: "Fiat"}
-                ];
-
-            })
-            .controller("MyController6", function ($scope) {
-                $scope.myForm = {};
-                $scope.myForm.name = "Jakob Jenkov";
-            })
-            .controller("MyController7", function ($scope) {
-                $scope.myForm = {};
-                $scope.myForm.name = "1";
-            })
-            .controller("MyController8", function ($scope, $http) {
-                $scope.myForm = {};
-
-                $scope.myForm.getFormFieldCssClass = function (ngModelController) {
-                    //console.log("getting css class: " + ngModelController.$valid) ;
-                    if (ngModelController.$pristine) return "";
-                    return ngModelController.$valid ? "fieldValid" : "fieldInvalid";
-                };
-
-                $scope.myForm.submitTheForm = function(item, event) {
-                    console.log("--> Submitting form");
-                    var dataObject = {
-                        name : $scope.myForm.name
-                        ,car  : $scope.myForm.car
-                    };
-
-                    var responsePromise = $http.post("/angularjs-examples/json-test-data.jsp", dataObject, {});
-                    responsePromise.success(function(dataFromServer, status, headers, config) {
-                        console.log(dataFromServer.title);
-                    });
-                    responsePromise.error(function(data, status, headers, config) {
-                        alert("Submitting form failed!");
-                    });
-                }
-            })
+            var responsePromise = $http.post("/angularjs-examples/json-test-data.jsp", dataObject, {});
+            responsePromise.success(function (dataFromServer, status, headers, config) {
+                console.log(dataFromServer.title);
+            });
+            responsePromise.error(function (data, status, headers, config) {
+                alert("Submitting form failed!");
+            });
+        }
+    })
 </script>
 
 </body>
