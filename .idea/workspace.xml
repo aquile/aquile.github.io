@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular-slider-with-config-view-local-storage/pure-js-slider/public/view.html" afterPath="$PROJECT_DIR$/angular-slider-with-config-view-local-storage/pure-js-slider/public/view.html" />
-    </list>
+    <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="" />
     <ignored path="aquile.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
