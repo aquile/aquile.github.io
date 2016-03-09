@@ -2,37 +2,391 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/starwood-angular-tile/sergio-widget.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/17.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/18.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/19.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/20.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/heart_alpha.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/heart_alpha.psd.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/hearts_1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/Prostor_Hearts_Raw/logo_anim.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/mts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CALLMINER/search.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html" afterPath="$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Angular/6 Forms/forms.html" afterPath="$PROJECT_DIR$/Angular/6 Forms/forms.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview_task_and_questions/flex-sample.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview_task_and_questions/flex-w3c.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interview_task_and_questions/script.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/ANROM-Social Edge SOW #2.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ANROM/callminer-4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CALLMINER/callminer-SEARCH WIDGET/search.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CALLMINER/client-callminer" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAVID-YURMAN new/drafts/blog_post_top_NICE_CODE.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAVID-YURMAN new/libs/angular-1.2.29.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAVID-YURMAN new/libs/moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAVID-YURMAN new/libs/promise.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAVID-YURMAN new/ssr-widget.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAVID-YURMAN/drafts/blog_post_top_NICE_CODE.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAVID-YURMAN/libs/angular-1.2.29.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAVID-YURMAN/libs/moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAVID-YURMAN/libs/promise.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DAVID-YURMAN/ssr-widget.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HSTREAM/just-test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/HSTREAM/search-widget-backup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/db/jiveExtension.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/db/tileDefinition.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/data/eula.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/data/extension-128.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/data/extension-16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/data/extension-48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/data/install_instructions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/data/overview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/data/privacy_policy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/data/screenshot_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/data/screenshot_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/definition.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/i18n/en.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/i18n/root.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/meta.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/javascripts/bootstrap-30.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/javascripts/bootstrap-30.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/javascripts/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/javascripts/jQuery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/javascripts/jquery-1.8.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/javascripts/jquery.base64.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/stylesheets/bootstrap-30.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/stylesheets/bootstrap-30.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/stylesheets/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/stylesheets/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/stylesheets/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/configuration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/css/jquery.tablesorter.pager.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/css/theme.default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/asc.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/desc.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/first.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/icon_pencil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/prev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/images/se_logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/js/jquery.tablesorter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/js/jquery.tablesorter.pager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/js/jquery.tablesorter.widgets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/js/moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/js/mustache.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/document-view-v.1.1/view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/configuration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/images/arrow-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/images/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/images/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/javascript/configuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/javascript/libs/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/javascript/libs/jquery.easing.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/javascript/libs/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/javascript/libs/jquery.nicescroll.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/javascript/libs/jquery.nicescroll.plus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/javascript/libs/underscore.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/javascripts/configuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/javascripts/view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/stylesheets/config.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/stylesheets/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/extension_src/public/tiles/eTools-tile/view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/jiveclientconfiguration.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/javascripts/bootstrap-30.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/javascripts/bootstrap-30.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/javascripts/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/javascripts/jQuery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/javascripts/jquery-1.8.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/javascripts/jquery.base64.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/stylesheets/bootstrap-30.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/stylesheets/bootstrap-30.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/stylesheets/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/stylesheets/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/public/stylesheets/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/backend/routes/configure/get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/definition.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/configuration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/images/arrow-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/images/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/images/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/javascript/configuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/javascript/libs/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/javascript/libs/jquery.easing.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/javascript/libs/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/javascript/libs/jquery.nicescroll.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/javascript/libs/jquery.nicescroll.plus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/javascript/libs/underscore.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/javascript/view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/stylesheets/config.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/stylesheets/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/eTools-tile/public/view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular-tile/tiles/templates.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/404.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/admin-functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/admin-interface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/admin-style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/css/colorpicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/1col.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/2-col-portfolio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/2cl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/2cr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/3-col-portfolio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/3cm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/3cr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/4-col-portfolio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/accept.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/admin-team-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/button_check.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/cart-admin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/cherry-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_hex.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_hsb_b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_hsb_h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_hsb_s.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_indic.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_overlay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_rgb_b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_rgb_g.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_rgb_r.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_select.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/colorpicker_submit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/colorpicker/select.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/dropdown-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-404.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-backup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-blog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-contact.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-delete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-docs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-edit.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-footer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-notice.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-paint.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-portfolio.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-settings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-slider.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-social.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-text.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-translation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon-warn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/icon_option.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/import.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/loading-bottom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/select.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/sign_warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/stop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/toggle_tabs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/update.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/warning.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/images/wrench.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/import/brixton.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/import/plugins/class-widget-data.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/import/plugins/parsers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/import/plugins/wordpress-importer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/import/widget.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/js/ajaxupload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/js/aq-medialibrary-uploader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/js/colorpicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/js/cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/js/jquery.maskedinput-1.2.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/js/of-medialibrary-uploader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/layouts/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/layouts/placebo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/theme-functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/admin/theme-options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/category.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/comments.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/brixton-resp-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/brixton-resp-menu@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/dark_rounded/btnNext.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/dark_rounded/btnPrevious.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/dark_rounded/contentPattern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/dark_rounded/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/dark_rounded/sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/dark_square/btnNext.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/dark_square/btnPrevious.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/dark_square/contentPattern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/dark_square/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/dark_square/sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/facebook/btnNext.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/facebook/btnPrevious.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/facebook/contentPatternBottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/facebook/contentPatternLeft.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/facebook/contentPatternRight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/facebook/contentPatternTop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/facebook/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/facebook/sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/light_rounded/btnNext.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/light_rounded/btnPrevious.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/light_rounded/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/light_rounded/sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/light_square/btnNext.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/light_square/btnPrevious.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/light_square/default_thumbnail.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/light_square/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/prettyPhoto/light_square/sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/scribbo-resp-menu-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/images/scribbo-resp-menu-icon@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/options.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/prettyPhoto.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/css/style_options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/footer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/header.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/blog-social-separator-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/blog-social-separator.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/blog-social-single-background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-blog-border.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-blog-comment-icon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-blog-tag-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-blog-time-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-border-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-border-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-dribbble-about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-dribbble-about@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-facebook-about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-facebook-about@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-flickr-about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-flickr-about@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-google-about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-google-about@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-instagram-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-list-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-meta-ribbon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-ornament-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-ornament-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-ornament.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-pinterest-about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-pinterest-about@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-resp-menu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-resp-menu@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-stumbleupon-about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-stumbleupon-about@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-twitter-about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-twitter-about@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/brixton-twitter-sidebar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/quote-icon-brixton-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/quote-icon-brixton-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/quote-icon-brixton.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/scribo-about-romb-background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/scribo-about-title-holder-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/scribo-about-title-holder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/images/tag-icon-scribbo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/includes/boxes/loopBlog.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/includes/boxes/loopBlogLink.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/includes/boxes/loopBlogQuote.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/includes/widgets/popular_post_widget.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/includes/widgets/recent_post_widget.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/includes/widgets/social_widget.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/includes/wp-pagenavi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/js/custom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/js/gistfile_pmc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/js/jquery.bxslider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/js/jquery.cycle.all.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/js/jquery.easing.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/js/jquery.fitvids.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/js/jquery.prettyPhoto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/js/jquery.scrollTo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/js/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/js/retina.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/lang/brixton.pot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/lang/en_GB.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/page-sidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/page.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/screenshot.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/search.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/sidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/single.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/tag.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/update/class-envato-protected-api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/brixton/brixton/update/envato-wp-theme-updater.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mannequin-parade/single.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/dist/9cb64c5c81bdd0f813a31580691bedc1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/dist/bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/dist/bundle.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/dist/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/src/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/src/components/ItemsInput.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/src/components/ListItem.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/src/containers/Root.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/src/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/src/images/modern-word-combinations-urban-dictionary-9__880.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/src/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/src/store/configureStore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/src/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/react-project 2/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/configuration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/css/jquery.tablesorter.pager.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/css/theme.default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/asc.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/desc.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/first.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/icon_pencil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/last.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/next.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/prev.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/images/se_logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/js/jquery.tablesorter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/js/jquery.tablesorter.pager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/js/jquery.tablesorter.widgets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/js/moment.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/js/mustache.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/extension_src/public/tiles/document-view-v.1.1/view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/screenshots/screenshot-main.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/screenshots/screenshot-search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/starwood-migration-workspace/add-users-to-group.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/starwood-migration-workspace/application.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/starwood-migration-workspace/starwood1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/starwood-migration-workspace/starwood2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/tiles/document-view-v.1.1/backend/routes/configure/get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/tiles/document-view-v.1.1/definition.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-angular-tile/tiles/document-view-v.1.1/readme.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/extension.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/screenshots/screenshot-main.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/screenshots/screenshot-search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/src/etools-tile/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/src/etools-tile/components/Configuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/src/etools-tile/components/View.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/src/etools-tile/configuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/src/etools-tile/helpers/apiHelper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/src/etools-tile/view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/src/etools-tile/webpack.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/backend/routes/configure/get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/definition.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/configuration.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/images/arrow-hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/images/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/images/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/javascripts/configuration.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/javascripts/libs/jquery.easing.1.3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/javascripts/libs/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/javascripts/libs/jquery.nicescroll.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/javascripts/libs/jquery.nicescroll.plus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/javascripts/view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/stylesheets/config.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/stylesheets/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/public/view.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/starwood-react-tile/tiles/etools-tile/readme.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aquile.github.io.iws" />
@@ -57,7 +411,7 @@
       <file leaf-file-name="custom_directives.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="168" column="41" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="41" />
               <folding />
             </state>
@@ -86,43 +440,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ssr-widget.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAVID-YURMAN new/ssr-widget.html">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interview_task_and_questions/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sergio-widget.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/starwood-angular-tile/sergio-widget.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20827389">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="translations.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Angular/translations.json">
+      <file leaf-file-name="inter.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Global Logic/inter.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ssr-widget.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DAVID-YURMAN/ssr-widget.html">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Global Logic/script/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="167" column="54" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
+              <caret line="468" column="43" selection-start-line="468" selection-start-column="43" selection-end-line="468" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flex-w3c.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interview_task_and_questions/flex-w3c.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flex-sample.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interview_task_and_questions/flex-sample.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.0648735">
+              <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -149,9 +511,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Angular/FormValidation/script.js" />
-        <option value="$PROJECT_DIR$/Angular/Marshrutization/index.html" />
-        <option value="$PROJECT_DIR$/nodeJs/program.js" />
         <option value="$PROJECT_DIR$/fotorama-fix/script.js" />
         <option value="$PROJECT_DIR$/fotorama-fix/style.css" />
         <option value="$PROJECT_DIR$/aetna-world-clock/index.html" />
@@ -200,6 +559,9 @@
         <option value="$PROJECT_DIR$/Angular/translations.json" />
         <option value="$PROJECT_DIR$/Angular/directive.html" />
         <option value="$PROJECT_DIR$/starwood-angular-tile/sergio-widget.html" />
+        <option value="$PROJECT_DIR$/interview_task_and_questions/script.js" />
+        <option value="$PROJECT_DIR$/interview_task_and_questions/flex-w3c.html" />
+        <option value="$PROJECT_DIR$/interview_task_and_questions/flex-sample.html" />
       </list>
     </option>
   </component>
@@ -242,7 +604,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,7 +632,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="starwood-angular-tile" />
+              <option name="myItemId" value="wiley-db-slider" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,13 +646,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DAVID-YURMAN new" />
+              <option name="myItemId" value="interview_task_and_questions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -522,12 +884,12 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18671875" sideWeight="0.078353256" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52058434" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18671875" sideWeight="0.06507304" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.063013695" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18671875" sideWeight="0.9216468" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1898332" sideWeight="0.934927" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -568,56 +930,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="18" selection-start-line="106" selection-start-column="18" selection-end-line="106" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Angular/5 AJAX/ajax_json_rest.html">
+    <entry file="file://$PROJECT_DIR$/interview_task_and_questions/flex-sample.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAVID-YURMAN/ssr-widget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="167" column="54" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAVID-YURMAN/ssr-widget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="161" column="43" selection-start-line="161" selection-start-column="43" selection-end-line="161" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CALLMINER/client-callminer/callminer_widgets/Top_Discussions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="762" column="20" selection-start-line="762" selection-start-column="20" selection-end-line="762" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CALLMINER/client-callminer/callminer_widgets/Top_Articles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mannequin-parade/brixton/brixton/includes/boxes/loopBlog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10344828">
-          <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -684,13 +1001,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HSTREAM/search-widget-backup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.42796007">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Global Logic/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -702,34 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HSTREAM/just-test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.96861625">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ANROM/callminer-4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.342368">
-          <caret line="753" column="0" selection-start-line="753" selection-start-column="0" selection-end-line="753" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Global Logic/inter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.1448274">
-          <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Global Logic/script/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -758,13 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68308705">
           <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/react-project 2/src/containers/Root.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81042653">
-          <caret line="38" column="15" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -852,35 +1127,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starwood-react-tile/src/etools-tile/helpers/apiHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="282" column="3" selection-start-line="282" selection-start-column="3" selection-end-line="283" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CALLMINER/client-callminer/callminer_widgets/Top_Articles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="19.921541">
-          <caret line="931" column="46" selection-start-line="931" selection-start-column="46" selection-end-line="931" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CALLMINER/client-callminer/callminer_widgets/Top_Discussions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="762" column="20" selection-start-line="762" selection-start-column="20" selection-end-line="762" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAVID-YURMAN/ssr-widget.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="167" column="54" selection-start-line="167" selection-start-column="54" selection-end-line="167" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Angular/8 Custom Directives/custom_directives.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -899,9 +1145,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Angular/translations.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.021398002">
           <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -915,28 +1160,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starwood-angular-tile/tiles/eTools-tile/public/javascript/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06896552">
-          <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DAVID-YURMAN new/ssr-widget.html">
+    <entry file="file://$PROJECT_DIR$/interview_task_and_questions/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starwood-angular-tile/sergio-widget.html">
+    <entry file="file://$PROJECT_DIR$/Global Logic/inter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20827389">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Global Logic/script/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="468" column="43" selection-start-line="468" selection-start-column="43" selection-end-line="468" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interview_task_and_questions/flex-w3c.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interview_task_and_questions/flex-sample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.0648735">
+          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
