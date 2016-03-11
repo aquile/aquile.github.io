@@ -31,6 +31,10 @@ footer, header, menu, nav, section {
 }
 
 body {
+    width: 100%;
+    min-width: 500px;
+    max-width: 1000px;
+    margin: 50px auto;
     font-size: 16px;
 }
 
@@ -38,16 +42,62 @@ body {
     display: block;
     position: relative;
     width: 100%;
-    min-width: 1000px;
-    max-width: 1300px;
-    height: 350px;
+    height: 300px;
     margin: 0 auto;
     border-radius: 11px;
     overflow: hidden;
-    -background: lightgoldenrodyellow;
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
+    /*background: #F0EDEA;*/
+    background: #800049;
+}
+
+.loading.bar {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    height: 2px;
+    width: 500px;
+    margin: 150px auto 0;
+    background: #fff;
+}
+
+.loading .circle {
+    position: absolute;
+    top: -30px;
+    margin-left: -30px;
+    height: 60px;
+    width: 60px;
+    left: 0;
+    background: #fff;
+    border-radius: 30%;
+    -webkit-animation: move 4s infinite;
+    animation: loading 4s infinite;
+}
+
+.loading .foo {
+    position: absolute;
+    top: -19px;
+    right: -85px;
+    text-transform: uppercase;
+    color: #800049;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@-webkit-keyframes move {
+    0% {left: 0;}
+    50% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+    75% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+    100% {right: 100%;}
+}
+
+@keyframes loading {
+    0% {left: 0;}
+    50% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+    75% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
+    100% {right: 100%;}
 }
 
 .slider__images {
@@ -58,32 +108,38 @@ body {
 }
 
 .slider__images-wrap {
-    -width: 300%;
+    display: table;
+    word-spacing: -.36em;
+    list-style-type: none;
     font-size: 0;
-
-    height: 529px;
-
+    height: 300px;
     white-space: nowrap;
-
 }
 
-.slider__images img {
-    display: inline-block;
+.inline-block {
+    display: block;
+    float: left;
     width: 100%;
-    height: 350px;
+    height: 300px;
+}
 
-    vertical-align: top;
-    -transform: translateY(-29%);
+.link {
+    display: block;
+    height: 300px;
+}
+
+.slider__images .img {
+    display: block;
+    width: 100%;
+    height: 300px;
 }
 
 /*DEFAULT STYLES - SHOULD BE DELETED LATER*/
 .slider__pagination {
-    display: block;
+    display: table;
     width: 100%;
     height: 16px;
-
     margin: 23px 0 0;
-
     list-style: none;
     text-align: center;
     cursor: pointer;
@@ -94,7 +150,6 @@ body {
     width: 17px;
     height: 17px;
     margin: 0 9px;
-
     border-radius: 50%;
     background: #e5e5e5;
     cursor: pointer;
@@ -105,12 +160,12 @@ body {
 }
 
 .slider__pagination-item.active {
-    background: #D10C45;
+    background: #D10C45 !important;
 }
 
-.slider__pagination-item:hover {
-    background: #D10C45;
-}
+/*.slider__pagination-item:hover {*/
+/*background: #D10C45;*/
+/*}*/
 
 .slider-circle-1 {
     display: none;
@@ -129,7 +184,7 @@ body {
     width: 255px;
     height: 505px;
     position: absolute;
-    top: -130px;
+    top: -140px;
     background: transparent;
     pointer-events: none;
     overflow: hidden;
@@ -147,21 +202,24 @@ body {
     top: -117px;
     border-radius: 50%;
     background: #19A5B3;
-    cursor: default;
+    cursor: pointer;
 }
 
 .slider-circle-3 h2 {
+    width: 433px;
+    max-height: 125px;
+    overflow: hidden;
     position: absolute;
-    bottom: 199px;
+    bottom: 220px;
     left: 0;
     right: 0;
-    width: 433px;
     padding-left: 56px;
-    font-size: 38px;
+    padding-bottom: 7px;
+    font-size: 26px;
     font-weight: 700;
-    line-height: 41px;
+    line-height: 35px;
     color: #FFFFFF;
-    cursor: default;
+    cursor: pointer;
 }
 
 .slider-circle-3 p {
@@ -171,12 +229,12 @@ body {
     left: 0;
     right: 0;
     padding-left: 56px;
-    font-size: 12px;
+    font-size: 14px;
     -letter-spacing: -0.9px;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 21px;
     color: #FFFFFF;
-    cursor: default;
+    cursor: pointer;
 }
 
 .slider-circle-4 {
@@ -196,12 +254,18 @@ body {
     top: 48px;
     left: 0;
     right: 0;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     color: #ffffff;
 }
 
+.slider-circle-1 svg {
+    overflow: visible;
+}
+
 /*end of default styles*/
+
+/*custom styles_______________________________________________________________________________________*/
 
 /*position variants*/
 .right .slider-circle-1 {
@@ -212,7 +276,7 @@ body {
 
 .right .slider-circle-2 {
     display: block;
-    right: calc(32% - 20px);
+    right: calc(37% - 20px);
     opacity: 0;
 }
 
@@ -236,7 +300,7 @@ body {
 
 .left .slider-circle-2 {
     display: block;
-    left: calc(32% - 20px);
+    left: calc(37% - 20px);
     transform: rotate(180deg);
     opacity: 0;
 }
@@ -306,7 +370,7 @@ body {
 }
 
 .orange rect.dotted-line {
-    stroke: #d10c45;
+    stroke: #fd7822;
 }
 
 .orange .slider-circle-3 {
@@ -340,7 +404,7 @@ body {
 .purple .slider-circle-4 {
     display: block;
     background: #95539b;
-    opacity: 0;;
+    opacity: 0;
 }
 
 .red .slider-circle-2 {
@@ -385,7 +449,9 @@ body {
     opacity: 0;
 }
 
-/*hovers*/
+/*end of custom styles______________________________________________________________________________*/
+
+/*hovers____________________________________________________________________________________________*/
 .slider-circle-3 {
     opacity: 0;
     -webkit-transition: opacity ease-in-out 0.5s;
@@ -410,6 +476,159 @@ body {
     opacity: 0.75 !important;
 }
 
+.mobile .slider-circle-3:hover {
+    opacity: 1 !important;
+}
+
+.mobile .slider-circle-4:hover {
+    opacity: 1 !important;
+}
+
+/*end of hovers _____________________________________________________________________________________*/
+
+/*begining of the mobile view styles******************************************************************/
+/*position variants*/
+
+/*RRRRRRRRRRRRRRRRRRRRRRRRR below*/
+.mobile.right .slider-circle-1 {
+    left: -255px;
+    bottom: -300px;
+    text-align: right;
+}
+
+.mobile.right .slider-circle-1 svg {
+    height: 300px !important;
+    width: 300px !important;
+}
+
+.mobile.right .slider-circle-1 rect {
+    stroke-dasharray: 7px, 9px !important;
+    stroke-width: 7px !important;
+}
+
+.mobile.right .slider-circle-2 {
+    width: 0;
+    height: 0;
+}
+
+.mobile.right .slider-circle-3 {
+    right: -14%;
+    width: 381px;
+    height: 381px;
+}
+
+.mobile.right .slider-circle-3 h2 {
+    width: 381px;
+    height: 125px;
+    top: 170px;
+    overflow: hidden;
+    padding-left: 32px;
+    padding-right: 130px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: right;
+}
+
+.mobile.right .slider-circle-4 {
+    right: -8%;
+    width: 190px;
+    height: 190px;
+    bottom: -83px;
+}
+
+.mobile.right .slider-circle-4 p {
+    width: 190px;
+    height: 65px;
+    padding-right: 80px;
+    overflow: hidden;
+    top: 45px;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    text-align: right;
+    padding-left: 28px;
+    font-weight: 600;
+    vertical-align: top;
+}
+
+.mobile.right .slider-circle-3 p {
+    display: none;
+}
+
+/*LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL below*/
+
+.mobile.left .slider-circle-1 {
+    right: -255px;
+    bottom: -300px;
+}
+
+.mobile.left .slider-circle-1 svg {
+    height: 300px !important;
+    width: 300px !important;
+}
+
+.mobile.left .slider-circle-1 rect {
+    stroke-dasharray: 7px, 9px !important;
+    stroke-width: 7px !important;
+}
+
+.mobile.left .slider-circle-2 {
+    width: 0;
+    height: 0;
+}
+
+.mobile.left .slider-circle-3 {
+    left: -14%;
+    width: 381px;
+    height: 381px;
+}
+
+.mobile.left .slider-circle-3 h2 {
+    width: 381px;
+    height: 125px;
+    bottom: 100px;
+    overflow: hidden;
+    padding-left: 120px;
+    padding-right: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.mobile.left .slider-circle-4 {
+    left: -8%;
+    width: 190px;
+    height: 190px;
+    bottom: -83px;
+}
+
+.mobile.left .slider-circle-4 p {
+    vertical-align: top;
+    width: 165px;
+    height: 65px;
+    overflow: hidden;
+    top: 45px;
+    left: 0;
+    right: 50px;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 80px;
+    font-weight: 600;
+}
+
+/*for the both left and right*/
+.mobile .slider-circle-3 p {
+    display: none;
+}
+
+.mobile .slider__pagination-item:hover, .mobile .slider__pagination-item:focus, .mobile .slider__pagination-item:active {
+background: #e5e5e5;
+}
+
+/*end of the mobile view styles***********************************************************************/
+
+
 .config {
     display: block;
     position: absolute;
@@ -431,4 +650,8 @@ body {
 
 .config:hover {
     opacity: 1;
+}
+
+img {
+    vertical-align: top;
 }

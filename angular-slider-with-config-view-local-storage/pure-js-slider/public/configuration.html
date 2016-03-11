@@ -36,13 +36,13 @@
 //                        // make sure config has default value
                                 if (!config) {
                                     //config = {}; use if you want to show empty config on the first start
-                                    $scope.formData.interval = 3;
+                                    $scope.formData.interval = 5;
                                     $scope.formData.timeout = 5;
                                     $scope.formData.slides = [
                                         {
                                             action: "Another action",
                                             color: "purple",
-                                            imageUrl: "http://lorempixel.com/1000/310/",
+                                            imageUrl: "http://lorempixel.com/1000/550/",
                                             position: "right",
                                             subtitle: "This doesn't catch images that error'd before we got a chance to listen for them, unfortunately the DOM doesn't give us",
                                             title: "Title 1",
@@ -50,7 +50,7 @@
                                         },
                                         {
                                             color: "orange",
-                                            imageUrl: "http://lorempixel.com/1000/300/",
+                                            imageUrl: "http://lorempixel.com/1000/600/",
                                             position: "left",
                                             subtitle: "You punch the air! About time right? You've used these Promise things before but it bothers you that all implementations",
                                             title: "Title 2",
@@ -58,7 +58,7 @@
                                         },
                                         {
                                             color: "blue",
-                                            imageUrl: "http://lorempixel.com/1000/320/",
+                                            imageUrl: "http://lorempixel.com/1000/500/",
                                             position: "right",
                                             subtitle: "This isn't sneezy at all. We get the image, add a couple of listeners, then JavaScript can stop executing until one of t",
                                             title: "Title 3",
@@ -99,7 +99,7 @@
                                 localStorage.setItem('sliderConfig', JSON.stringify(data));
                                 console.log(data);
                                 //window.location.href = "http://localhost:63342/aquile.github.io/angular-slider-with-config-view-local-storage/pure-js-slider/public/view.html";
-                                window.location.href = "..//public/view.html";
+                                window.location.href = "../public/view.html";
                            // }
                         };
 
