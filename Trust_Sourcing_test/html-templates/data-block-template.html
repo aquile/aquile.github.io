@@ -1,0 +1,12 @@
+<div class="data__block" ng-if="items.length > 0" scroll-glue>
+    <div class="data__item" ng-repeat="item in items">
+        <figure>
+            <img ng-src="{{item.image}}" alt="some img" class="item__img"/>
+            <figcaption>
+                <h3 class="item__header">{{item.title}}</h3>
+
+                <p class="item__description">{{item.paragraph}}</p>
+            </figcaption>
+        </figure>
+    </div>
+</div>
