@@ -26,11 +26,11 @@ app.controller("tsCntrl", ["$scope", "$http", function ($scope, $http) {
         el.toggleClass("active");
         $scope.switch = !el.hasClass("active");
 
-        if (el.hasClass("active")) getJSON(); getJSON();
+        if (el.hasClass("active")) getJSON(); getJSON(); getJSON();
     };
 
 
-    document.body.onscroll = function () {
+    window.onscroll = function () {
         var displayHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
             scrolled = displayHeight + (window.pageYOffset || document.documentElement.scrollTop),
             body = document.body,
@@ -38,7 +38,7 @@ app.controller("tsCntrl", ["$scope", "$http", function ($scope, $http) {
             height = Math.max(body.scrollHeight, body.offsetHeight,
                 html.clientHeight, html.scrollHeight, html.offsetHeight);
 
-        //console.log(scrolled + ' === ' + height);
+        console.log(scrolled + ' === ' + height);
         if ((scrolled === height) && !$scope.switch) getJSON();
 
     };
