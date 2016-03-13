@@ -9,16 +9,16 @@
 <body ng-app="tsApp" class="store" scroll-glue>
 <div class="main-wrp" ng-controller="tsCntrl">
     <header>
-        <div class="data__switch-btn">Enable infinite scrolling</div>
+        <div class="data__switch-btn" ng-click="switchScroll($event)">Enable infinite scrolling</div>
     </header>
     <!-- you can use "scroll-glue" if you want to scroll to bottom every time the items are loaded -->
     <section></section>
 
     <footer>
-        <div class="data_load-more-btn" ng-click="loadMore()">Load more</div>
+        <div class="data_load-more-btn" ng-if="switch" ng-click="loadMore()">Load more</div>
     </footer>
 </div>
-<script src="scripts/services/nice-scroll.js"></script>
+<!--<script src="scripts/services/nice-scroll.js"></script>-->
 <script src="scripts/script.js"></script>
 </body>
 </html>
