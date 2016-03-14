@@ -100,6 +100,9 @@ body .active.data__switch-btn::before {
 
 body .data__block {
     min-height: calc(100vh - 100px);
+    max-width: 1250px;
+    margin: 0 auto;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
