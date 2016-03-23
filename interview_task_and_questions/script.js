@@ -28,3 +28,9 @@ var unboundSlice = Array.prototype.slice,
     slice = Function.prototype.call.bind(unboundSlice);
 
 slice(argument);
+
+function bind(func, contetx){
+    return function(){
+        return func.apply(contetx, arguments)
+    }
+}
