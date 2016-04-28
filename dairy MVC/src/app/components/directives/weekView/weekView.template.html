@@ -1,0 +1,8 @@
+<div class="week" flex layout="row">
+  <div class="day" ng-repeat="day in main.week" flex data-day-key="{{day.key}}">
+    <p>{{day.day}}</p>
+    <p>{{day.date}}</p>
+    <events></events>
+  </div>
+  <div class="justify-line"></div>
+</div>
