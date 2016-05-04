@@ -1,5 +1,4 @@
 {
-  "generator-loopback": {},
   "generator-gulp-angular": {
     "version": "1.0.2",
     "props": {
@@ -38,8 +37,8 @@
         "module": null
       },
       "router": {
-        "key": "angular-route",
-        "module": "ngRoute"
+        "key": "noRouter",
+        "module": null
       },
       "ui": {
         "key": "angular-material",
@@ -55,8 +54,8 @@
         "srcExtension": "es6"
       },
       "htmlPreprocessor": {
-        "key": "noHtmlPrepro",
-        "extension": "html"
+        "key": "jade",
+        "extension": "jade"
       },
       "bootstrapComponents": {
         "name": null,
