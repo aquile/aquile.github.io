@@ -104,3 +104,8 @@ body {
 .right-anchor p {
     font-size: 12px;
 }
+
+.controller-link {
+    display: block;
+    margin-top: 50px;
+}
