@@ -2,262 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/netent_test/canvas-script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/netent_test/canvas-style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/netent_test/canvas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mts/city-good-deeds-wodget.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/events/events.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/events/events.style.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/events/events.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/beetroot_test/client/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/navigation/navigation.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/navigation/navigation.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/popup/popup.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/popup/popup.style.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/popup/popup.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/weekView/weekView.style.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css-test/css.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/githubContributor/githubContributor.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/githubContributor/githubContributor.service.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/malarkey/malarkey.directive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/malarkey/malarkey.directive.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/malarkey/malarkey.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/navbar/navbar.directive.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/navbar/navbar.directive.spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/navbar/navbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/navbar/navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/webDevTec/webDevTec.service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/webDevTec/webDevTec.service.spec.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AJAX/css/owfont-regular.min.css" afterPath="$PROJECT_DIR$/legacy_projects/AJAX/css/owfont-regular.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AJAX/css/weather.css" afterPath="$PROJECT_DIR$/legacy_projects/AJAX/css/weather.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AJAX/fonts/owfont-regular.eot" afterPath="$PROJECT_DIR$/legacy_projects/AJAX/fonts/owfont-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AJAX/fonts/owfont-regular.otf" afterPath="$PROJECT_DIR$/legacy_projects/AJAX/fonts/owfont-regular.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AJAX/fonts/owfont-regular.svg" afterPath="$PROJECT_DIR$/legacy_projects/AJAX/fonts/owfont-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AJAX/fonts/owfont-regular.ttf" afterPath="$PROJECT_DIR$/legacy_projects/AJAX/fonts/owfont-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AJAX/fonts/owfont-regular.woff" afterPath="$PROJECT_DIR$/legacy_projects/AJAX/fonts/owfont-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AJAX/weather.html" afterPath="$PROJECT_DIR$/legacy_projects/AJAX/weather.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AJAX/weather.js" afterPath="$PROJECT_DIR$/legacy_projects/AJAX/weather.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/AJAX/weather.png" afterPath="$PROJECT_DIR$/legacy_projects/AJAX/weather.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/JS/1.js" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/JS/1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/JS/indoor_1.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/JS/indoor_1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-10/HomeWork/Layer-29.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-10/HomeWork/Layer-29.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-10/HomeWork/Layer-31 copy.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-10/HomeWork/Layer-31 copy.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-10/HomeWork/Layer-32.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-10/HomeWork/Layer-32.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-10/HomeWork/Layer-33.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-10/HomeWork/Layer-33.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-10/HomeWork/Layer-34.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-10/HomeWork/Layer-34.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-10/HomeWork/Layer-35.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-10/HomeWork/Layer-35.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-10/HomeWork/Task-1.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-10/HomeWork/Task-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-10/HomeWork/reset.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-10/HomeWork/reset.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-10/HomeWork/task-1.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-10/HomeWork/task-1.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-2/HomeWork/Task-1.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-2/HomeWork/Task-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-2/HomeWork/Task-2.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-2/HomeWork/Task-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-2/HomeWork/Task-3.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-2/HomeWork/Task-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-2/HomeWork/Task-4.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-2/HomeWork/Task-4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-2/HomeWork2/task-1.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-2/HomeWork2/task-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-2/HomeWork2/task-2.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-2/HomeWork2/task-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-2/HomeWork2/task-3.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-2/HomeWork2/task-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-2/HomeWork2/task-4.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-2/HomeWork2/task-4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/Task-1.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/Task-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/Task-2.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/Task-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/Task-3.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/Task-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/Task-4.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/Task-4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/Task-5.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/Task-5.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/Task-6.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/Task-6.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/task1.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/task1.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/task2.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/task2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/task4.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/task4.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/task5.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/task5.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-3/HomeWork/task6.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-3/HomeWork/task6.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-4/HomeWork/Task-1.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-4/HomeWork/Task-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-4/HomeWork/Task-2.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-4/HomeWork/Task-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-4/HomeWork/Task-3.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-4/HomeWork/Task-3.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-4/HomeWork/task1.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-4/HomeWork/task1.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-4/HomeWork/task2.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-4/HomeWork/task2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-4/HomeWork/task3.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-4/HomeWork/task3.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-5/HomeWork/Shape-1.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/Shape-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-5/HomeWork/Task-1.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-5/HomeWork/Task-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-5/HomeWork/Task-2.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-5/HomeWork/Task-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-5/HomeWork/task1.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-5/HomeWork/task1.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-5/HomeWork/task2.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-5/HomeWork/task2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/HomeWork/...............................................................-copy.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/...............................................................-copy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/HomeWork/Layer-94.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/Layer-94.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/HomeWork/Layer-95.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/Layer-95.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/HomeWork/Rectangle-35 copy.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/Rectangle-35 copy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/HomeWork/Shape-1.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/HomeWork/Shape-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/HomeWork/Task-1.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/HomeWork/Task-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/HomeWork/Task-2.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/HomeWork/Task-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/HomeWork/task1.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/HomeWork/task1.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/HomeWork/task2.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/HomeWork/task2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/Narrow.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/Narrow.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-6/narrow.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/narrow.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/...............................................................-copy.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/HomeWork/...............................................................-copy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/Banner-witout-text.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/Banner-witout-text.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/Company-Name.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/Company-Name.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/Ellipse-17 copy 4.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/Ellipse-17 copy 4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/Ellipse-17 copy 5.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/Ellipse-17 copy 5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/Layer-94.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/HomeWork/Layer-94.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/Layer-95.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/HomeWork/Layer-95.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/Rectangle-35 copy.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-6/HomeWork/Rectangle-35 copy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/Shape-1.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-5/HomeWork/Shape-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/Task-1.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/Task-1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/Task-2.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/Task-2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/alert-img.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/alert-img.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/banner-above-the-footer.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/banner-above-the-footer.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/banner-on-the-meddle-position.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/banner-on-the-meddle-position.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/banner-under-the-header.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/banner-under-the-header.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/detect-img.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/detect-img.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/faceboock_icon.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/faceboock_icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/in_icon.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/in_icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/lesson10indoorwork/spec.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/lesson10indoorwork/spec.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/lesson10indoorwork/spec1.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/lesson10indoorwork/spec1.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/mailto_icon.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/mailto_icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/map_icon.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/map_icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/middle-banner.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/middle-banner.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/middle-section_temprorary.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/middle-section_temprorary.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/phone_icon.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/phone_icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/protect-img.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/protect-img.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/task1.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/task1.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/task2.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/task2.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/Lesson-7/twitter_icon.png" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/Lesson-7/twitter_icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/exam1_backup/exam.html" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/exam1_backup/exam.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/exam1_backup/reset.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/exam1_backup/reset.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/exam1_backup/style_desctop.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/exam1_backup/style_desctop.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/exam1_backup/style_phone.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/exam1_backup/style_phone.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoFE/exam1_backup/style_tablet.css" afterPath="$PROJECT_DIR$/legacy_projects/GoFE/exam1_backup/style_tablet.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task-codewars.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task-codewars.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task1.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task2.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task2.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task3.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task4.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task4.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task5.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task5.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task6.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task6.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task7.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task7.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task8.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-10/InDoorWork-Task8.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-12/InDoor-1 reduse.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-12/InDoor-1 reduse.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-12/Task 2 - set time out.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-12/Task 2 - set time out.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-12/Task-3 decorator.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-12/Task-3 decorator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-13/InDoorWork.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-13/InDoorWork.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-13/Task-1 creating coffemachine.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-13/Task-1 creating coffemachine.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-13/Task-2 creating coffemachine with switcher.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-13/Task-2 creating coffemachine with switcher.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-13/Task-3 refrigerator.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-13/Task-3 refrigerator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-2/HomeWork.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-2/HomeWork.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-3/HomeWork.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-3/HomeWork.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-3/if else.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-3/if else.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-4/HomeWork.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-4/HomeWork.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-5/HomeWork5.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-5/HomeWork5.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-5/Lesson-5.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-5/Lesson-5.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-6/HomeWork6.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-6/HomeWork6.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-6/indoorTasks.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-6/indoorTasks.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-7/HomeWork_7.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-7/HomeWork_7.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-7/IndoorWork.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-7/IndoorWork.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-7/LearnJS_2.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-7/LearnJS_2.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-7/LearnJS_filter.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-7/LearnJS_filter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-7/LearnJS_sort.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-7/LearnJS_sort.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-8/HomeWork_8.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-8/HomeWork_8.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-8/Lesson-8.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-8/Lesson-8.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/Lessons - learn.javascript.ru/Lesson-9/IndoorWork.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/Lessons - learn.javascript.ru/Lesson-9/IndoorWork.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/TODO list/.gitignore" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/TODO list/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/TODO list/TODO/index2.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/TODO list/TODO/index2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/TODO list/TODO/style.css" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/TODO list/TODO/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/TODO list/TODO/todo.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/TODO list/TODO/todo.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/bubbling/index.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/bubbling/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/bubbling/messages.css" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/bubbling/messages.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/Date's.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/Date's.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/Lesson15_inDoorWork.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/Lesson15_inDoorWork.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/OOP methods 2.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/OOP methods 2.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/OOP methods.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/OOP methods.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/Selective fear of numbers.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/Selective fear of numbers.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/accumulator.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/accumulator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/arguments.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/arguments.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/arrays - eratosphere.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/arrays - eratosphere.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/arrays metods.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/arrays metods.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/arrays перебирающие методы.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/arrays перебирающие методы.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/arrays.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/arrays.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/codewars-28-08.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/codewars-28-08.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/constructor.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/constructor.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/events/events - onclick - start/event onclick.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/events/events - onclick - start/event onclick.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/events/events - onclick - start/methods.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/events/events - onclick - start/methods.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/events/events - onclick - start/style.css" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/events/events - onclick - start/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/events/events - onclick+cntrl/mouse onclick.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/events/events - onclick+cntrl/mouse onclick.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/events/events - onclick+cntrl/style.css" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/events/events - onclick+cntrl/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/for (key in obj).js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/for (key in obj).js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/functions.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/functions.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/getter_setter.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/getter_setter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/oop.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/oop.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/sum of keys value.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/sum of keys value.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/else tasks/while, for.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/else tasks/while, for.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/notification task/index-notification.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/notification task/index-notification.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/notification task/notification.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/notification task/notification.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/notification task/style-notification.css" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/notification task/style-notification.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider-smiles/index.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider-smiles/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider-smiles/js.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider-smiles/js.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider-smiles/style.css" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider-smiles/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/css/boot.css" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/css/boot.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/css/font-awesome.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/css/style.css" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/font/FontAwesome.otf" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/font/FontAwesome.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/font/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/font/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/font/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/font/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/font/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/font/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/font/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/font/fontawesome-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/img/example-slide-1.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/img/example-slide-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/img/example-slide-2.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/img/example-slide-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/img/example-slide-3.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/img/example-slide-3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/img/example-slide-4.jpg" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/img/example-slide-4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/img/pagination.png" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/img/pagination.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/index.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/slider1/slider.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/slider1/slider.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/добавить текст в ноде = nodeValue.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/добавить текст в ноде = nodeValue.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/позиционирование в документе DOM/ball at the field.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/позиционирование в документе DOM/ball at the field.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/позиционирование в документе DOM/cloneElement_insertBefore.html" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/позиционирование в документе DOM/cloneElement_insertBefore.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/GoJS/позиционирование в документе DOM/js.js" afterPath="$PROJECT_DIR$/legacy_projects/GoJS/позиционирование в документе DOM/js.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/Contract_FE.png" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/Contract_FE.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/Credit_card.png" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/Credit_card.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/Header_bcg_narrow.png" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/Header_bcg_narrow.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/Helvetica.ttf" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/Helvetica.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/LCD_Screen.png" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/LCD_Screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/Liqpay_img.png" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/Liqpay_img.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/Logo_GoIT.png" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/Logo_GoIT.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/Sertificate.png" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/Sertificate.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/Smartphone_ringing.png" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/Smartphone_ringing.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/background.jpg" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/background.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/index.html" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/normalise.css" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/normalise.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/style.css" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Landing_contract_GoIT/vertical-line.png" afterPath="$PROJECT_DIR$/legacy_projects/Landing_contract_GoIT/vertical-line.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/aetna-world-clock/index.html" afterPath="$PROJECT_DIR$/legacy_projects/aetna-world-clock/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/fonts/FontAwesome.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/fonts/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/fonts/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/fonts/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/fonts/fontawesome-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/fonts/fontawesome-webfont.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/full_category.html" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/full_category.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/images-bookstore/bg.png" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/images-bookstore/bg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/images-bookstore/book-cover-full.png" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/images-bookstore/book-cover-full.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/images-bookstore/book-cover.png" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/images-bookstore/book-cover.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/images-bookstore/logo-img.png" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/images-bookstore/logo-img.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/index.html" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/script/script-bookstore.js" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/script/script-bookstore.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bookstore/style.css" afterPath="$PROJECT_DIR$/legacy_projects/bookstore/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/weekView.directive.js" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/weekView/weekView.directive.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/weekView.style.less" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/navigation/navigation.style.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/weekView.template.html" afterPath="$PROJECT_DIR$/dairy MVC/src/app/components/directives/weekView/weekView.template.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/gradient/narkotiki.html" afterPath="$PROJECT_DIR$/legacy_projects/gradient/narkotiki.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/miroslavas tz/index.html" afterPath="$PROJECT_DIR$/legacy_projects/miroslavas tz/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/miroslavas tz/index1.1.html" afterPath="$PROJECT_DIR$/legacy_projects/miroslavas tz/index1.1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/miroslavas tz/tz.js" afterPath="$PROJECT_DIR$/legacy_projects/miroslavas tz/tz.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/miroslavas tz/tz1.html" afterPath="$PROJECT_DIR$/legacy_projects/miroslavas tz/tz1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/aquile.github.io.iml" afterPath="$PROJECT_DIR$/.idea/aquile.github.io.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dairy MVC/bower.json" afterPath="$PROJECT_DIR$/dairy MVC/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homsters/THREE.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homsters/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homsters/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/homsters/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Angular/6 Forms/forms.html" afterPath="$PROJECT_DIR$/Angular/6 Forms/forms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dairy MVC/src/app/index.config.js" afterPath="$PROJECT_DIR$/dairy MVC/src/app/index.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dairy MVC/src/index.html" afterPath="$PROJECT_DIR$/dairy MVC/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dairy MVC/src/app/index.less" afterPath="$PROJECT_DIR$/dairy MVC/src/app/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dairy MVC/src/app/index.module.js" afterPath="$PROJECT_DIR$/dairy MVC/src/app/index.module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dairy MVC/src/app/main/main.controller.js" afterPath="$PROJECT_DIR$/dairy MVC/src/app/main/main.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Angular/1 Tutorial/tutorial.html" afterPath="$PROJECT_DIR$/Angular/1 Tutorial/tutorial.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="aquile.github.io.iws" />
@@ -278,58 +27,7 @@
     <favorites_list name="aquile.github.io" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="news.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beetroot_test/common/models/news.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="news.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beetroot_test/common/models/news.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beetroot_test/server/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beetroot_test/client/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/curves/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -351,10 +49,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Trust_Sourcing_test/scripts/scroll.js" />
-        <option value="$PROJECT_DIR$/Trust_Sourcing_test/styles/font-awesome.min.css" />
-        <option value="$PROJECT_DIR$/Trust_Sourcing_test/json/items.json" />
-        <option value="$PROJECT_DIR$/Trust_Sourcing_test/html-templates/data-block-template.html" />
         <option value="$PROJECT_DIR$/Trust_Sourcing_test/scripts/script.js" />
         <option value="$PROJECT_DIR$/Trust_Sourcing_test/index.html" />
         <option value="$PROJECT_DIR$/Trust_Sourcing_test/styles/style.css" />
@@ -402,6 +96,10 @@
         <option value="$PROJECT_DIR$/netent_test/canvas-style.css" />
         <option value="$PROJECT_DIR$/netent_test/canvas-script.js" />
         <option value="$PROJECT_DIR$/beetroot_test/client/index.html" />
+        <option value="$PROJECT_DIR$/beelife/index.html" />
+        <option value="$PROJECT_DIR$/beelife/style.css" />
+        <option value="$PROJECT_DIR$/simple/script.js" />
+        <option value="$PROJECT_DIR$/simple/index.html" />
       </list>
     </option>
   </component>
@@ -596,6 +294,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -625,27 +324,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="legacy_projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aquile.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="curves" />
+              <option name="myItemId" value="homsters" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -668,11 +352,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/dairy MVC/src/app/components/directives/popup" />
       <recent name="$PROJECT_DIR$/dairy MVC/src/app/components/directives/events" />
       <recent name="$PROJECT_DIR$/dairy MVC/src/app/components/directives/headerNav" />
       <recent name="$PROJECT_DIR$/Trust_Sourcing_test/scripts/libs" />
-      <recent name="$PROJECT_DIR$/Trust_Sourcing_test/json" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/legacy_projects" />
@@ -892,16 +576,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24305004" sideWeight="0.3219178" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45546874" sideWeight="0.5139442" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34246576" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24305004" sideWeight="0.67808217" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30136988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2640625" sideWeight="0.4860558" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -909,10 +592,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6015936" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3001328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -940,175 +624,53 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-slider-with-config-view-local-storage/pure-js-slider/public/stylesheets/normalize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84827584">
-          <caret line="41" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/legacy_projects/miroslavas tz/index1.1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.614836">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/e-farmer - less/css/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23537803">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/beelife/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/main/main.controller.spec.js">
+    <entry file="file://$PROJECT_DIR$/beelife/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="19" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beelife/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="78" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beelife/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_city/html/popular_projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_city/html/tenders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4516129">
-          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_city/html/offer_an_idea.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36290324">
-          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/weekView/weekView.style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/events/events.style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/navigation/navigation.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/.tmp/serve/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044247787">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/navigation/navigation.style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/weekView/weekView.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/events/events.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/weekView/weekView.directive.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/events/events.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/index.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9583334">
-          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/popup/popup.style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/navigation/navigation.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16375546">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/components/directives/popup/popup.template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_city_катя/html/participate_form.html">
+    <entry file="file://$PROJECT_DIR$/legacy_projects/my_city_катя/html/participate_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06637168">
           <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_city_катя/html/profile_edit.html">
+    <entry file="file://$PROJECT_DIR$/legacy_projects/my_city_катя/html/profile_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_city_катя/html/map.html">
+    <entry file="file://$PROJECT_DIR$/legacy_projects/my_city_катя/html/map.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1122,7 +684,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mts/city-good-deeds-wodget.html">
+    <entry file="file://$PROJECT_DIR$/legacy_projects/mts/city-good-deeds-wodget.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
@@ -1178,13 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DAVIDY/INDEX.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.541666">
-          <caret line="199" column="59" selection-start-line="199" selection-start-column="59" selection-end-line="199" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Angular/1 Tutorial/tutorial.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1196,17 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="26" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/index.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1214,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1222,28 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding>
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1455993004000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/main/main.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1251,7 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26548672">
           <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1259,7 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.12820514">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,7 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34188035">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,50 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15929204">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beetroot_test/common/models/news.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beetroot_test/client/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beetroot_test/common/models/news.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beetroot_test/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/beetroot_test/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1326,6 +800,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAVIDY/iframe_widget.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="20.432243">
+          <caret line="199" column="59" selection-start-line="199" selection-start-column="59" selection-end-line="199" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/main/main.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dairy MVC/src/app/index.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33103448">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gunman_gameplay/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Global Logic/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beelife/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="19" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/THREE.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beelife/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6205421">
+          <caret line="29" column="78" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homsters/THREE.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08275862">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
