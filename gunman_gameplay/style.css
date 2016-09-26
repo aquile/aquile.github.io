@@ -1,0 +1,180 @@
+.mainframe {
+    display: block;
+    position: relative;
+    width: 792px;
+    height: 602px;
+    margin: 0 auto;
+    background: #000000 url("bg.png") center center no-repeat;
+    background-size: contain;
+    font-family: 'Arvo', serif;
+    overflow: hidden;
+}
+
+.timer {
+    display: block;
+    position: absolute;
+    left: 400px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.fire {
+    display: none;
+    min-width: 140px;
+    max-width: 240px;
+    height: 50px;
+    margin: 0 auto;
+
+    position: absolute;
+
+    top: 145px;
+    right: 0;
+    left: 0;
+
+    color: #000000;
+    font-family: 'Arvo', serif;
+    background: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: 5px;
+
+    border-radius: 10px;
+    border: 0 solid red;
+}
+
+.score {
+    display: block;
+    position: absolute;
+    color: #FFFFFF;
+    left: 40px;
+    bottom: 0;
+    font-size: 20px;
+}
+
+.score span {
+    color: #00FF00;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.gunman {
+    display: block;
+    width: 96px;
+    height: 204px;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    background: url("gunman.png");
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-size: 1462%;
+}
+
+.lose {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: red;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+.lose p {
+    margin: 30% 0;
+}
+
+.win {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: green;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+.win p {
+    margin: 30% 0;
+}
+
+.flashing {
+    background: #000;
+}
+
+.play_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url("video_play.png") center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+
+    transform-origin: center center;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+
+    -webkit-transition: all  ease-in-out 0.7s;
+    -moz-transition: all  ease-in-out 0.7s;
+    -o-transition: all  ease-in-out 0.7s;
+    transition: all  ease-in-out 0.7s;
+}
+
+.play_button-wrapper {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(248, 255, 142, 0.9);
+    text-align: center;
+    font-size: 30px;
+    line-height: 426px;
+    z-index: 3;
+}
+
+.play_button:hover {
+    transform: rotate(360deg);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.mainframe:hover {
+    cursor: url(main_cursor.png), cell;
+}
+
+.play_button-wrapper:hover {
+    cursor: auto;
+}
+.play_button:hover {
+    cursor: pointer;
+}
+
+.version {
+    display: block;
+    width: 13%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 21px;
+}

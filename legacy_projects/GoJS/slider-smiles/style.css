@@ -1,0 +1,50 @@
+.frame {
+    display: block;
+    position: relative;
+    width: 470px;
+    height: 125px;
+    overflow: hidden;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: lightgrey;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+figure {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.arrow-left {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    color: grey;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.arrow-right {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    color: grey;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+/*can't add transition for appearing and disappearing*/
+img {
+    width: 0;
+    float: left;
+    transition: width ease-out 1s;
+}
+
+.active {
+    width: 130px;
+}
+

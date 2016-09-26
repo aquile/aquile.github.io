@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notification</title>
+    <link rel="stylesheet" href="style-notification.css" type="text/css"/>
+</head>
+<body>
+<h1>Notification</h1>
+
+<p id="parent">Let's make it!!!</p>
+
+<script src="notification.js"></script>
+<script>
+    new Notification({
+        top: 100,
+        right: 100,
+        html: "Вы прочитали это сообщение ",
+        className: "notification"
+    });
+
+</script>
+</body>
+</html>

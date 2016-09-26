@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+</head>
+
+<body ng-app="myapp">
+
+<div ng-controller="myController">
+    {{data.time}}
+
+    <br/>
+    <button ng-click="updateTime()">update time - ng-click</button>
+    <button id="updateTimeButton1">update time1</button>
+    <button id="updateTimeButton2">update time2</button>
+</div>
+
+
+<script>
+    var module = angular.module("myapp", []);
+    var myController1 = module.controller("myController", function ($scope) {
+
+        $scope.data = {time: new Date()};
+
+        $scope.updateTime = function () {
+            $scope.data.time = new Date();
+        };
+
+        document.getElementById("updateTimeButton1")
+                .addEventListener('click', function () {
+                    console.log("update time clicked");
+                    $scope.data.time = new Date();
+                    $scope.$digest();
+                });
+
+        document.getElementById("updateTimeButton2")
+                .addEventListener('click', function () {
+                    $scope.$apply(function () {
+                        console.log("update time clicked");
+                        $scope.data.time = new Date();
+                    }); // =>> then angular will call $scope.$digest(); function internally and update new data bindings
+                });
+    });
+</script>
+</body>
+</html>

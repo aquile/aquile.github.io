@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p {
+            color: red;
+            border-top: 3px solid turquoise;
+        }
+
+        input {
+            display: block;
+            width: 150px;
+            height: 30px;
+            padding: 5px;
+            background: beige;
+            border: 1px solid blueviolet;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+</head>
+<body ng-app="myapp">
+<script>var module = angular.module("myapp", []);</script>
+
+<div ng-controller="interpolation">
+    <p>interpolation directive:</p>
+    <span>{{myData.text}}</span>
+</div>
+
+<script>
+    var interpolation = module.controller("interpolation", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.text = "A text from a function";
+        console.log($scope.myData.textf)
+    });
+</script>
+
+
+<div ng-controller="ngBind">
+    <p>ngBind directive from fn:</p>
+    <span>{{myData.textf()}}</span>
+</div>
+
+<script>
+    var ngBind = module.controller("ngBind", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.textf = function () {
+            return "A text from a function";
+        };
+    });
+</script>
+
+
+<div ng-controller="ngBindHtmlUnSafe">
+    <p>ng-bind-html-unsafe= directive</p>
+    <span ng-bind-html-unsafe="myData.textf()">{{myData.textf()}}</span>
+</div>
+
+<script>
+    module.controller("ngBindHtmlUnSafe", function ($scope) {
+        $scope.myData = {};
+        console.log('11');
+        $scope.myData.textf = function () {
+            return "\<i>do smthng bad\<\/i>";
+        };
+    });
+</script>
+
+
+<div ng-controller="ShowHide">
+    <p>ng-show= && ng-hide= Directives</p>
+    <span ng-show="myData.showIt">showIt</span>
+    <span ng-hide="myData.showIt">hideIt</span>
+</div>
+
+<script>
+
+    var ShowHide = module.controller("ShowHide", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.showIt = true;
+    });
+</script>
+
+
+<div ng-controller="Switch">
+    <p>ng-swith =>> ng-switch-when= && ng-switch-default directive:</p>
+
+    <div ng-switch on="myData.switch">
+        <div ng-switch-when="1">Shown when switch is 1</div>
+        <div ng-switch-when="2">Shown when switch is 2</div>
+        <div ng-switch-default>Shown when switch is anything else than 1 and 2</div>
+    </div>
+</div>
+
+<script>
+
+    var Switch = module.controller("Switch", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.switch = 3;
+    });
+</script>
+
+
+<div ng-controller="ngIf">
+    <p>ng-if= directive:</p>
+
+    <div ng-if="myData.showIt">ng-if Show it</div>
+</div>
+
+<script>
+    var ngIf = module.controller("ngIf", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.showIt = true;
+    });
+</script>
+
+<div ng-controller="ngInclude">
+    <p>ng-include= directive</p>
+
+    <div ng-include="'angular-included-fragment.html'"></div>
+</div>
+
+
+<script>
+
+    var ngInclude = module.controller("ngInclude", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.showIt = true;
+    });
+</script>
+
+
+<div ng-controller="MyController">
+    <p>ng-include= directive with condition:</p>
+
+    <div ng-include="myData.showIt &&
+                        'fragment-1.html' ||
+                        'fragment-2.html'">
+
+    </div>
+    <p><input type="button" ng-click="switchFragment()" value="Switch the pages!"/></p>
+</div>
+
+<script>
+
+    var ngInclwithCondition;
+    ngInclwithCondition = module.controller("MyController", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.showIt = true;
+
+        $scope.switchFragment = function () {
+            $scope.myData.showIt = ($scope.myData.showIt === true) ? false : true;
+            console.log($scope.myData.showIt);
+        }
+
+    });
+</script>
+
+<div ng-controller="ngRepeat">
+    <p>ng-repeat= </p>
+    <ol>
+        <li ng-repeat="theItem in myData.items">{{theItem.text}}</li>
+    </ol>
+</div>
+
+<script>
+
+    module.controller("ngRepeat", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.items = [{text: "one"}, {text: "two"}, {text: "three"}];
+    });
+</script>
+
+<div ng-controller="ngRepeatFn">
+    <p>ng-repeat= from function:</p>
+    <ol>
+        <li ng-repeat="theItem in myData.getItems()">{{theItem.text}}</li>
+    </ol>
+</div>
+
+<script>
+    module.controller("ngRepeatFn", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.items = [{text: "one"}, {text: "two"}, {text: "three"}];
+        $scope.myData.getItems = function () {
+            return this.items;
+        };
+    });
+</script>
+
+<div ng-controller="ngRepeatObj">
+    <p>ng-repeat="(name, value) in myData.myObject" </p>
+    <ol>
+        <li ng-repeat="(name, value) in myData.myObject">{{name}} = {{value}}</li>
+    </ol>
+</div>
+
+<script>
+    module.controller("ngRepeatObj", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.myObject = {var1: "val1", var2: "val3", var3: "val3"};
+    });
+</script>
+
+
+<div ng-controller="ngRepeatObjMultW">
+    <p>Repeating Multiple Elements</p>
+
+    <p>with wrapper</p>
+
+    <div ng-repeat="(name, value) in myData.myObject">
+        <div>{{name}}</div>
+        <div>{{value}}</div>
+    </div>
+</div>
+<script>
+    module.controller("ngRepeatObjMultW", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.myObject = {var1: "val1", var2: "val3", var3: "val3"};
+    });
+</script>
+
+<div ng-controller="ngRepeatObjMult">
+    <p>without wrapping</p>
+
+    <ol>
+        <li ng-repeat-start="(name, value) in myData.myObject">{{name}}</li>
+        <li ng-repeat-end>{{value}}</li>
+    </ol>
+</div>
+<script>
+    module.controller("ngRepeatObjMult", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.myObject = {var1: "val1", var2: "val3", var3: "val3"};
+    });
+</script>
+<p>
+    Filter Description <br/>
+    date Formats the variable as a date according to the given date format <br/>
+    currency Formats the variable as a number with a currency symbol <br/>
+    number Formats the variable as a number <br/>
+    lowercase Converts the variable to lowercase <br/>
+    uppercase Converts the variable to uppercase <br/>
+    json Converts the variable to a JSON string <br/>
+</p>
+
+<div ng-controller="FilterArray">
+   <p> FilterArray directive:</p>
+    <p>ng-repeat="item in myData.items | limitTo: 3 | filter:filterArray"</p>
+    <ol>
+        <li ng-repeat="item in myData.items | limitTo: 3 | filter:filterArray">
+            {{item.text}} : {{$first}}, {{$middle}}, {{$last}}
+        </li>
+    </ol>
+</div>
+<script>
+
+    var FilterArray = module.controller("FilterArray", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.items =
+                [{text: "one"}, {text: "two"}, {text: "three"}, {text: "four"}, {text: "four"}, {text: "four"}];
+
+        $scope.filterArray = function (item) {
+            if (item.text == "two") return false;
+            return true;
+        }
+    });
+</script>
+
+<div ng-controller="sortField_reverse">
+    <p>sortField_reverse directive:</p>
+    <ol>
+        <li ng-repeat="item in myData.items | orderBy:sortField:reverse">
+            {{item.text}} : {{$first}}, {{$middle}}, {{$last}}
+        </li>
+    </ol>
+</div>
+
+<script>
+
+    var sortField_reverse = module.controller("sortField_reverse", function ($scope) {
+        $scope.myData = {};
+        $scope.myData.items = [{text: "one"}, {text: "two"}, {text: "three"}, {text: "four"}];
+        $scope.sortField = "text";
+        $scope.reverse = true;
+    });
+</script>
+
+</body>
+</html>

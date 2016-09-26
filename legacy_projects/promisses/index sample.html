@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<img width="200"
+     src="http://img0.joyreactor.cc/pics/post/full/%D0%BA%D0%BE%D1%82%D0%B8%D0%BA-%D0%BC%D0%B8%D0%BC%D0%B8%D0%BC%D0%B8-%D0%B5%D0%B1%D0%B8%D1%81%D1%8C%D0%BE%D0%BD%D0%BE%D0%B2%D1%81%D0%B5%D0%BA%D0%BE%D0%BD%D0%B5%D0%BC-%D0%BF%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0-1168743.jpeg"
+     alt=""/>
+
+<script>
+//    var img1 = document.querySelector('img');
+//
+//    var Ajax = {
+//        getJSON: function (url, callback) {
+//            var xhr = new XMLHttpRequest();
+//            xhr.open('GET', url, true);
+//            xhr.send();
+//
+//            xhr.onreadystatechange = function () {
+//                if (xhr.readyState != 4) return;
+//                callback(JSON.parse(xhr.responseText))
+//            };
+//
+//        }
+//    };
+//
+//
+//    var promise = new Promise(function (resolve, reject) {
+//        // do a thing, possibly async, then…
+//        var result = null;
+//        var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?appid=53c50defe390864e563ff1aa30410810&lat=' + 37 + '&lon=' + 122 + '&units=metric';
+//        Ajax.getJSON(urlWeather, function (weatherData) {
+//            //console.log(weatherData);
+//            result = weatherData;
+//            return console.log(weatherData);
+//        });
+//
+//        if(result) {
+//            resolve("Stuff worked!");
+//        }
+//        else {
+//            reject(Error("It broke"));
+//        }
+//
+//    });
+//
+//    promise.then(function (result) {
+//        console.log(result); // "Stuff worked!"
+//    }, function (err) {
+//        console.log(err); // Error: "It broke"
+//    });
+
+    var urlWeather = 'http://api.openweathermap.org/data/2.5/weather?appid=53c50defe390864e563ff1aa30410810&lat=' + 37 + '&lon=' + 122 + '&units=metric';
+
+    function Http () {
+        /**
+         * Helper for http calls
+         * @param method
+         * @param url
+         * @param data
+         * @returns {Promise}
+         */
+        function makeRequest(method,url,data) {
+            var data = data || '';
+            // Return a new promise.
+            return new Promise(function(resolve, reject) {
+                var req = new XMLHttpRequest();
+                req.open(method, url);
+
+                req.onload = function() {
+                    if (req.status == 200) {
+                        resolve(req.response);
+                    }
+                    else {
+                        reject(Error(req.statusText));
+                    }
+                };
+                req.onerror = function() {
+                    reject(Error("Something went wrong ... "));
+                };
+                req.send(data);
+            });
+        }
+        this.makeRequest = makeRequest;
+    }
+
+    //// usage example
+    var http = new Http();
+
+    http.makeRequest('GET', urlWeather).then(
+            function (response) {
+                console.log(JSON.parse(response));
+            }, function (error) {
+                console.error("Failed!", error);
+            });
+
+</script>
+</body>
+</html>

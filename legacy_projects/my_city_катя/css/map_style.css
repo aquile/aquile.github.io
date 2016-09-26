@@ -1,0 +1,200 @@
+.project_map-wrp {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 900px;
+    padding: 0 5%;
+    background-color: #f7fafa;
+    color: #4a505a;;
+}
+
+.project_map-header {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.project_map {
+    display: inline-block;
+}
+
+.project_map:hover {
+    color: #6adf75;
+    cursor: pointer;
+}
+
+.project_popular {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.project_popular:hover {
+    color: #6adf75;
+    cursor: pointer;
+}
+
+.directions {
+    display: inline-block;
+    position: relative;
+    width: 27%;
+    min-height: 760px;
+    margin-right: 4%;
+    padding-top: 25px;
+    background: #fff;
+    border: 1px solid #d9d9de;
+    vertical-align: top;
+}
+
+.directions h4 {
+    display: block;
+    width: 100%;
+    height: 45px;
+    text-align: left;
+    font-size: 24px;
+    vertical-align: bottom;
+    padding: 0 0 9px 32px;
+    border-bottom: 1px solid #dedede;
+    font-weight: 300;
+}
+
+.directions_sections {
+    padding-top: 20px;
+}
+
+.directions_sections > div {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px 5px 10px 75px;
+    font-size: 16px;
+    -webkit-transition: border ease-in-out 0.2s;
+    -moz-transition: border ease-in-out 0.2s;
+    -o-transition: border ease-in-out 0.2s;
+    transition: border ease-in-out 0.2s;
+}
+
+.directions_sections .all {
+    color: #00b2ff;
+    padding: 10px 5px 10px 32px;
+}
+
+.directions_sections div:hover {
+    border-left: 4px solid #6adf75;
+    cursor: pointer;
+}
+
+.directions_sections .all:hover {
+    border-left: 4px solid #00b2ff;
+    cursor: pointer;
+}
+
+.directions_sections .active {
+    border-left: 4px solid #6adf75;
+}
+
+.directions_sections .all.active {
+    border-left: 4px solid #00b2ff;
+}
+
+.directions_sections div:nth-child(2) {
+    background: url("../images/home@3x.png") 32px center no-repeat;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+}
+
+.directions_sections div:nth-child(3) {
+    background: url("../images/tree@3x.png") 32px center no-repeat;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+}
+
+.directions_sections div:nth-child(4) {
+    background: url("../images/education@3x.png") 32px center no-repeat;
+    -webkit-background-size: 20px;
+    background-size: 20px;
+}
+
+.directions_sections div:nth-child(5) {
+    background: url("../images/social@3x.png") 35px center no-repeat;
+    -webkit-background-size: 12px;
+    background-size: 12px;
+}
+
+.infra_wrp {
+    display: inline-block;
+    position: relative;
+    width: 68%;
+    height: 100%;
+    vertical-align: top;
+    margin-bottom: 60px;
+}
+
+.infra_wrp img {
+    display: block;
+    width: 100%;
+}
+
+.infra_wrp h2 {
+    margin: 25px 0;
+}
+
+.infrastructure,
+.landscaping {
+    margin-left: 12%;
+}
+
+.infrastructure_header-logo,
+.landscaping_header-logo {
+    position: relative;
+    padding-left: 55px;
+    line-height: 28px;
+    margin-top: 25px;
+
+}
+
+.infrastructure_header-logo {
+    background: url("../images/home@3x.png") left no-repeat;
+    background-size: contain;
+}
+
+.landscaping_header-logo {
+    background: url("../images/tree@3x.png") left no-repeat;
+    background-size: contain;
+}
+.infra-name,
+.infra-address{
+    display: inline-block;
+    width: 35%;
+}
+.infra-address {
+    font-size: 14px;
+    color: #00b2ff;
+}
+
+.infrastructure_header-logo .progressbar_outer,
+.landscaping_header-logo .progressbar_outer{
+    display: block;
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 14px;
+    width: 16%;
+    height: 7px;
+    border-radius: 5px;
+    background: #d6d6d6;
+}
+
+.infrastructure_header-logo .progressbar_inner,
+.landscaping_header-logo .progressbar_inner {
+    display: block;
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;
+    background: #6adf75;
+}
+.progressbar_inner.first{
+    width: 60%;
+}
+.progressbar_inner.second{
+    width: 25%;
+}

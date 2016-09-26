@@ -1,0 +1,42 @@
+@media screen and (max-width: 1100px) {
+    .project-det-main-wrp > h2 {
+        padding-top: 27px !important;
+    }
+
+    .project-det-main-wrp__story > img {
+        width: 58% !important;
+    }
+
+    .project-det-main-wrp__story .info {
+        width: 41% !important;
+    }
+
+    .project-det-main-wrp__story .info .count {
+        font-size: 25px !important;
+        line-height: 35px !important;
+        margin-top: 10px !important;
+
+    }
+
+    .project-det-main-wrp__story .info .int {
+        font-size: 16px !important;
+    }
+
+    .project-det-main-wrp__story .info .adress {
+        font-size: 19px !important;
+    }
+
+    .hover {
+        box-shadow: -1px 1px 1px #d9d9de;
+        -webkit-transition: all ease-in-out 0.15s;
+        -moz-transition: all ease-in-out 0.15s;
+        -o-transition: all ease-in-out 0.15s;
+        transition: all ease-in-out 0.15s;
+        cursor: pointer;
+    }
+
+    .popup__choose-help .btn:hover {
+        transform: scale(1.05, 1.05);
+        box-shadow: -3px 3px 10px #aaa;
+    }
+}

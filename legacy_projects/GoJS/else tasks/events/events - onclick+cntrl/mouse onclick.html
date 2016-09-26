@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <title></title>
+</head>
+<body>
+<ul id="ul">
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>four</li>
+</ul>
+
+<script>
+    var ul = document.getElementById('ul');
+    for (var i = 0; i < ul.children.length; i++) {
+        var lastClickedLi = null;
+
+        ul.children[i].onclick = function (event) {
+
+            if (event.ctrlKey || event.metaKey) {
+                this.classList.toggle('active');
+                lastClickedLi = event.target;
+            }
+            else {
+                for (var j = 0; j < ul.children.length; j++) {
+                    ul.children[j].classList.remove('active');
+                }
+                this.classList.add('active');
+
+            }
+        };
+    }
+
+
+</script>
+
+</body>
+</html>

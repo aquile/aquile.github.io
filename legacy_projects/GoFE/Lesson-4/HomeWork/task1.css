@@ -1,0 +1,28 @@
+nav {
+    position: relative;
+    max-width: 900px;
+    display: block;
+    margin: 0 auto;
+    background: #c0f;
+    text-align: center;
+}
+
+a {
+    font-family: impact;
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+div {
+    background: #c0f;
+    box-shadow: 0 0 5px 0px #aaa;
+}
+a:hover {
+    background: #eee;
+    color: #999;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    box-shadow: 0 0 5px 0px #aaa;
+
+}

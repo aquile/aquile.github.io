@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <title>BOOKSTORE</title>
+    <!--[if IE 9]>
+    <style type="text/css">
+        body {
+            background: url(images-bookstore/bg.png); /* for browser IE9 */
+        }
+
+        .wrapper {
+            box-shadow: none;
+        }
+
+        .categories,
+        form {
+            margin-top: -75px;
+        }
+        .navigation-link:hover {
+            background: #d7d7d7;
+        }
+        .navigation-link:hover,
+        .categories-title:hover {
+            background: #d7d7d7;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <div class="wrapper-logo">
+        <div class="logo">
+            <a href="#" class="logo-bookstore">
+                <img src="images-bookstore/logo-img.png" alt="" class="logo-img"/>
+            </a>
+        </div>
+        <div class="pseudo"></div>
+    </div>
+</div>
+
+<div class="wrapper-main">
+    <div class="wrapper-content">
+
+        <a href="#menu" id="toggle"><span></span></a>
+
+        <div class="categories" id="menu">
+
+            <h2 class="categories-header">Categories</h2>
+            <!-- in attr. data-category-title name of the category for class="category-title" -->
+            <a href="#" class="categories-title audiobooks" data-category-title="Audiobooks">Audiobooks</a>
+
+            <a href="#" class="categories-title audible-audiobooks" data-category-title="Audible Audiobooks">Audible
+                Audiobooks</a>
+
+            <a href="#" class="categories-title biographies-memoirs" data-category-title="Biographies & Memoirs">Biographies
+                & Memoirs</a>
+
+            <a href="#" class="categories-title business-investing" data-category-title="Business & Investing">Business
+                & Investing</a>
+
+            <a href="#" class="categories-title calendars" data-category-title="Calendars">Calendars</a>
+
+            <a href="#" class="categories-title childrens-books" data-category-title="Children's Books">Children's
+                Books</a>
+
+            <a href="#" class="categories-title christian-books" data-category-title="Christian Books">Christian
+                Books</a>
+
+            <a href="#" class="categories-title comics-graphic_novels" data-category-title="Comics & Graphic Novels">Comics
+                & Graphic Novels</a>
+
+            <a href="#" class="categories-title christian-books" data-category-title="Christian Books">Christian
+                Books</a>
+
+        </div>
+        <!-- form for the site search -->
+        <form>
+            <div><input type="search" name="q" placeholder="">
+                <input type="submit" value="Search"></div>
+        </form>
+
+        <div class="content">
+            <!-- tag below should take data-category-title and push into class="category-title" via html injection-->
+            <h2 class="category-title">Cat title </h2>
+
+            <div class="content-slides-block">
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+                <a href="full_category.html" class="book-thumbnail" data-book-src="http://" target="_blank">
+                    <img src="images-bookstore/book-cover.png" alt="Book title"/>
+                    <i class="fa fa-play-circle-o"></i>
+                </a> <!-- put needed data in DATA-BOOK-SRC attr -->
+            </div>
+
+            <div class="paginator">
+                <ul>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><span>...</span></li>
+                    <li><a href="#">22</a></li>
+                    <li><a href="#">23</a></li>
+                    <li><a href="#">24</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="wrapper-advertising-navigation"> <!-- this wrapper for bkgnd gradient -->
+    <div class="wrapper-advertising-navigation__main"> <!-- this block for content centering -->
+        <div class="navigation first">
+            <h2 class="navigation-header">Navigation 1</h2>
+            <a href="#" class="navigation-link">Specials</a>
+            <a href="#" class="navigation-link">New products</a>
+            <a href="#" class="navigation-link">Best sellers</a>
+            <a href="#" class="navigation-link">Our stores</a>
+            <a href="#" class="navigation-link">Contact us</a>
+        </div>
+        <div class="navigation second">
+            <h2 class="navigation-header">Navigation 2</h2>
+            <a href="#" class="navigation-link">My orders</a>
+            <a href="#" class="navigation-link">My credit slips My credit slips My credit slips</a>
+            <a href="#" class="navigation-link">My addresses</a>
+            <a href="#" class="navigation-link">My personal info</a>
+            <a href="#" class="navigation-link">My favourite products</a>
+        </div>
+        <div class="advertising">
+            <div class="advertising-block">
+                Блок разного контента
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="wrapper-footer">
+        <p class="presta-shop">&#x00A9; 2015 Powered by <a href="#" target="_blank" class="presta-shop link">Presta
+            shop</a> <span>TM</span></p>
+        <a href="#" class="rss-link">RSS</a>
+    </div>
+</footer>
+<script src="script/script-bookstore.js"></script>
+</body>
+</html>

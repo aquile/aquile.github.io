@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script>
+        angular.module('app', [])
+                .controller('testCtrl', ['$scope', function($scope) {
+                    $scope.Arr = [];
+                    var i = 0;
+                    $scope.addOne = function() {
+                        $scope.Arr.push({name:i});
+                        i++;
+                    }
+                }]);
+    </script>
+</head>
+<body>
+<div ng-app="app">
+    <div ng-controller="testCtrl">
+
+        <button ng-click="addOne()">add</button>
+        <div ng-repeat="item in Arr">{{item.name}}</div>
+    </div>
+</div>
+</body>
+</html>

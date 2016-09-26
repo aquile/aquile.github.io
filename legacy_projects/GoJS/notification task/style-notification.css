@@ -1,0 +1,17 @@
+body {
+    position: absolute;
+    width: 100%;
+}
+
+.notification {
+    text-align: center;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+</head>
+
+<body ng-app="myapp">
+<!--this is view-->
+<div ng-controller="HelloController">
+
+    <h2>Hello {{helloTo.title}} !</h2>
+
+    <div>
+        <span>{{myData.textf()}}</span>
+    </div>
+
+    <img ng-src="{{helloTo.img}}" alt="dfs"/>
+
+    <div ng-click="changeImg()">Change image source</div>
+</div>
+
+<div ng-controller="HelloController2">
+
+    <h2>Hello {{helloTo.title}} !</h2>
+
+    <div>
+        <span>{{myData.textf()}}</span>
+    </div>
+</div>
+
+
+<script>
+    //this is controller
+    angular.module("myapp", [])
+            .controller("HelloController", function ($scope) {
+                //this is model
+                $scope.helloTo = {};
+                $scope.helloTo.title = "World, AngularJS";
+                $scope.helloTo.img = "http://9jatravel.com.ng/wp-content/uploads/2015/10/maxresdefault.jpg";
+
+                $scope.changeImg = function () {
+                    $scope.helloTo.img =  "http://stuffpoint.com/stardoll/image/54056-stardoll-sdfs.jpg";
+                };
+
+                //1/interpolation directive
+                $scope.myData = {};
+                $scope.myData.textf = function () {
+                    return "A text from a function";
+                };
+            })
+            .controller("HelloController2", function ($scope) {
+                //this is model
+                $scope.helloTo = {};
+                $scope.helloTo.title = "Kata";
+
+                //1/interpolation directive
+                $scope.myData = {};
+                $scope.myData.textf = function () {
+                    return "text from another fn";
+                };
+            });
+</script>
+</body>
+</html>

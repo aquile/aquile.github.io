@@ -1,0 +1,7 @@
+#first-picture {
+    display: block;
+    margin: 50px auto;
+    width: 500px;
+    height: 375px;
+    border: 1px dotted grey;
+}

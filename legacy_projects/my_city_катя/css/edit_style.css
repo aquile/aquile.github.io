@@ -1,0 +1,123 @@
+body{
+    font-family: 'sfns_displayregular', sans-serif;
+}
+.profile_edit {
+    background-color: #ffc107;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 244px;
+    color: #fff;
+    position: relative;
+}
+
+.profile_photo{
+    background: url("../images/profile_logo.png") center no-repeat;
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: 75px;
+}
+
+.profile_name{
+    display: block;
+    font-size: 30px;
+    position: relative;
+    padding-top: 90px;
+    padding-left: 25%;
+}
+.profile_company{
+    display: inline-block;
+    padding: 8px 60px;
+    background-color: #ff9800;
+    border-radius: 8px;
+    position: absolute;
+    top: 126px;
+    right: 5%;
+}
+.profile_company:hover{
+    transform: scale(1.05, 1.05);
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.44);
+    cursor: pointer;
+}
+.what_changes{
+    background-color: #fff;
+    color: #777e89;
+    width: 90%;
+    border: 1px solid #d9d9de;
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+    text-align: center;
+    margin: 60px auto 0;
+    padding: 28px 0;
+}
+.line {
+    width: 88%;
+    height: 1px;
+    background-color: #d9d9de;
+    margin: -1px auto;
+}
+.changes_wrp{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #d9d9de;
+    border-top: none;
+    padding: 16px 56px 0 56px;
+    color: #777e89;
+}
+.change_data{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.change_data label {
+    display: block;
+}
+.change_data input[type="text"],
+.change_data input[type="password"]{
+width: 90%;
+border-radius: 10px;
+outline: none;
+border: 1px solid #d9d9de;
+height: 34px;
+margin: 10px 0;
+padding-left: 16px;
+}
+
+.changes_wrp input[type="submit"] {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    background-color: #6adf75;
+    color: #FFFFFF;
+    padding: 20px 52px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    margin: 86px auto 150px;
+}
+.changes_wrp input[type='submit']:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.44);
+    cursor: pointer;
+}
+
+.change_data h3{
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.change_social_header{
+    margin-bottom: 10px;
+}
+.disable_acc{
+    padding-right: 15px;
+}
+.change_acc,
+.disable_acc{
+    float: right;
+    color: #00b2ff;
+}
+.photo_upload {
+    color: #00b2ff;
+}
