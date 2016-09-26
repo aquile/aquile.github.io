@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/aquile_github_io_node_modules.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/aquile.github.io.iml" afterPath="$PROJECT_DIR$/.idea/aquile.github.io.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/.jshintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/.yo-rc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/client/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/client/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/common/models/news.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/common/models/news.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/server/boot/authentication.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/server/boot/root.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/server/component-config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/server/config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/server/datasources.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/server/middleware.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/server/middleware.production.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/server/model-config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/beetroot_test/server/server.js" afterPath="" />
     </list>
     <ignored path="aquile.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -481,7 +496,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1440831728650</updated>
-      <workItem from="1474902188443" duration="86000" />
+      <workItem from="1474902188443" duration="158000" />
     </task>
     <task id="LOCAL-00001" summary="..">
       <created>1441140299587</created>
@@ -648,14 +663,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86000" />
+    <option name="totallyTimeSpent" value="158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45546874" sideWeight="0.5139442" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2640625" sideWeight="0.4860558" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2640625" sideWeight="0.4860558" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
