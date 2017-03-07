@@ -31,7 +31,7 @@ var drawTheMap = function() {
     var material = new THREE.PointsMaterial({
         size: 1,
         color: 0xFF9900,
-        sizeAttenuation: true
+        sizeAttenuation: false
     });
     for (var y = 0, y2 = imagedata.height; y < y2; y += 2) {
         for (var x = 0, x2 = imagedata.width; x < x2; x += 2) {
