@@ -30,18 +30,17 @@ var drawTheMap = function() {
     var geometry = new THREE.Geometry();
     var material = new THREE.PointsMaterial({
         size: 1,
-        color: 0xFF9900,
+        color: 0xFFFFFF,
         sizeAttenuation: false
     });
-    for (var y = 0, y2 = imagedata.height; y < y2; y += 2) {
-        for (var x = 0, x2 = imagedata.width; x < x2; x += 2) {
+    for (var y = 0, y2 = imagedata.height * 4; y < y2; y += 2) {
+        for (var x = 0, x2 = imagedata.width * 4; x < x2; x += 2) {
             if (imagedata.data[(x * 4 + y * 4 * imagedata.width)] < 128) {
 
                 var vertex = new THREE.Vector3();
                 vertex.x = x - imagedata.width / 2;
                 vertex.y = -y + imagedata.height / 2;
                 vertex.z = -Math.random()*500;
-
                 vertex.speed = Math.random() / speed + 0.015;
 
                 geometry.vertices.push(vertex);

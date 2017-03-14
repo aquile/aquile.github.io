@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simple/index.html" afterPath="$PROJECT_DIR$/simple/index.html" />
-    </list>
+    <list default="true" id="6702da90-f966-4da1-ae75-752b6ff383f8" name="Default" comment="" />
     <ignored path="aquile.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -274,8 +272,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/beetroot_test_SPA/client/beetroot_SPA/node_modules" />
-    <handled-path value="$PROJECT_DIR$/beetroot_test_SPA/node_modules" />
     <handled-path value="$PROJECT_DIR$/dairy MVC/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
@@ -442,7 +438,7 @@
       <workItem from="1474902188443" duration="158000" />
       <workItem from="1475568457724" duration="207000" />
       <workItem from="1483371924001" duration="11000" />
-      <workItem from="1488901011010" duration="219000" />
+      <workItem from="1488901011010" duration="688000" />
     </task>
     <task id="LOCAL-00001" summary="..">
       <created>1441140299587</created>
@@ -609,11 +605,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="595000" />
+    <option name="totallyTimeSpent" value="1064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45546874" sideWeight="0.5139442" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26290706" sideWeight="0.4860558" order="0" side_tool="false" content_ui="combo" />
